@@ -1,0 +1,13 @@
+<config>	
+	<insertAfter xpath="/traders/trader_info[@id='4']/trader_items/item[@group='foodAll']" >			
+			<item name="drinkJarCoffee" count="1,3"/>
+			<item name="drinkJarCoffee" count="1,3"/>
+			<item group="cannedfood" count="2,4"/>
+			<item group="cannedfood" count="2,4"/>
+			<item group="cannedfood" count="2,4"/>		
+			<item group="preparedDrink" count="1,3"/>
+			<item group="preparedDrink" count="1,3"/>
+			<item name="drugPainkillers"/>
+			<item name="medicalFirstAidBandage" count="1,3"/>		
+	</insertAfter>	
+</config>

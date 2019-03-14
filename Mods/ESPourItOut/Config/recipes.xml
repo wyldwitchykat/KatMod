@@ -1,0 +1,57 @@
+<configs>
+<!-- Add in conversion recipes from dinks to empty jars. -->
+<append xpath="/recipes">
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarBeer" count="1"/>
+	</recipe>
+
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarBoiledWater" count="1"/>
+	</recipe>
+
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarCoffee" count="1"/>
+	</recipe>
+
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarGoldenRodTea" count="1"/>
+	</recipe>
+
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarGrainAlcohol" count="1"/>
+	</recipe>
+
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarGrandpasAwesomeSauce" count="1"/>
+	</recipe>
+		
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarGrandpasLearningElixir" count="1"/>
+	</recipe>
+
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarGrandpasMoonshine" count="1"/>
+	</recipe>
+
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarRiverWater" count="1"/>
+	</recipe>
+		
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarSnowberryJuice" count="1"/>
+	</recipe>
+		
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarYuccaJuice" count="1"/>
+	</recipe>
+
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkYuccaJuiceSmoothie" count="1"/>
+	</recipe>
+
+	<recipe name="drinkJarEmpty" count="1">
+		<ingredient name="drinkJarRedTea" count="1"/>
+	</recipe>
+
+</append>
+</configs>

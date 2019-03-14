@@ -1,0 +1,168 @@
+<stallionsden>
+<append xpath="/blocks">
+<!-- LOOTABLE PALLET INSERTION START -->
+<block name="palletWhiteBagsBaseFull">
+			<property name="Extends" value="palletWhiteBagsBase"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="208"/>
+		</block>
+		<block name="palletWhiteBagsBaseEmpty">
+			<property name="Extends" value="palletWhiteBagsBase"/>
+		</block>		
+		
+<block name="palletWhiteBagsTileFull">
+			<property name="Extends" value="palletWhiteBagsTile"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="208"/>
+		</block>
+		<block name="palletWhiteBagsTileEmpty">
+			<property name="Extends" value="palletWhiteBagsTile"/>
+		</block>
+		
+<block name="palletWhiteBagsTopFull">
+			<property name="Extends" value="palletWhiteBagsTop"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="208"/>
+		</block>
+		<block name="palletWhiteBagsTopEmpty">
+			<property name="Extends" value="palletWhiteBagsTop"/>
+		</block>
+	
+	<block name="palletWhiteBagsPartial1Full">
+			<property name="Extends" value="palletWhiteBagsPartial1"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="208"/>
+		</block>
+		<block name="palletWhiteBagsPartial1Empty">
+			<property name="Extends" value="palletWhiteBagsPartial1"/>
+		</block>
+	
+	<block name="palletWhiteBagsPartial2Full">
+			<property name="Extends" value="palletWhiteBagsPartial2"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="208"/>
+		</block>
+		<block name="palletWhiteBagsPartial2Empty">
+			<property name="Extends" value="palletWhiteBagsPartial2"/>
+		</block>
+
+	<block name="palletWhiteBagsLooseFull">
+			<property name="Extends" value="palletWhiteBagsLoose"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="208"/>
+		</block>
+		<block name="palletWhiteBagsLooseEmpty">
+			<property name="Extends" value="palletWhiteBagsLoose"/>
+		</block>
+	
+	<block name="palletBrownBoxesBaseFull">
+			<property name="Extends" value="palletBrownBoxesBase"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="209"/>
+		</block>
+		<block name="palletBrownBoxesBaseEmpty">
+			<property name="Extends" value="palletBrownBoxesBase"/>
+		</block>
+
+	<block name="palletBrownBoxesTileFull">
+			<property name="Extends" value="palletBrownBoxesTile"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="209"/>
+		</block>
+		<block name="palletBrownBoxesTileEmpty">
+			<property name="Extends" value="palletBrownBoxesTile"/>
+		</block>
+	
+	<block name="palletBrownBoxesTopFull">
+			<property name="Extends" value="palletBrownBoxesTop"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="209"/>
+		</block>
+		<block name="palletBrownBoxesTopEmpty">
+			<property name="Extends" value="palletBrownBoxesTop"/>
+		</block>
+	
+	<block name="palletBrownBoxesLooseFull">
+			<property name="Extends" value="palletBrownBoxesLoose"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="209"/>
+		</block>
+		<block name="palletBrownBoxesLooseEmpty">
+			<property name="Extends" value="palletBrownBoxesLoose"/>
+		</block>
+	
+	<block name="palletBricksBaseFull">
+			<property name="Extends" value="palletBricksBase"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="210"/>
+		</block>
+		<block name="palletBricksBaseEmpty">
+			<property name="Extends" value="palletBricksBase"/>
+		</block>
+	
+	<block name="palletBricksTileFull">
+			<property name="Extends" value="palletBricksTile"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="210"/>
+		</block>
+		<block name="palletBricksTileEmpty">
+			<property name="Extends" value="palletBricksTile"/>
+		</block>
+	
+	<block name="palletBricksTopFull">
+			<property name="Extends" value="palletBricksTop"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="210"/>
+		</block>
+		<block name="palletBricksTopEmpty">
+			<property name="Extends" value="palletBricksTop"/>
+		</block>
+	
+	<block name="palletBricksPartial1Full">
+			<property name="Extends" value="palletBricksPartial1"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="210"/>
+		</block>
+		<block name="palletBricksPartial1Empty">
+			<property name="Extends" value="palletBricksPartial1"/>
+		</block>
+	
+	<block name="palletBricksPartial2Full">
+			<property name="Extends" value="palletBricksPartial2"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="210"/>
+		</block>
+		<block name="palletBricksPartial2Empty">
+			<property name="Extends" value="palletBricksPartial2"/>
+		</block>
+	
+	<block name="palletBricksLooseFull">
+			<property name="Extends" value="palletBricksLoose"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="210"/>
+		</block>
+		<block name="palletBricksLooseEmpty">
+			<property name="Extends" value="palletBricksLoose"/>
+		</block>
+	
+	<block name="palletBlueTarpBaseFull">
+			<property name="Extends" value="palletBlueTarpBase"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="211"/>
+		</block>
+		<block name="palletBlueTarpBaseEmpty">
+			<property name="Extends" value="palletBlueTarpBase"/>
+		</block>
+	
+	<block name="palletBlueTarpTileFull">
+			<property name="Extends" value="palletBlueTarpTile"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="211"/>
+		</block>
+		<block name="palletBlueTarpTileEmpty">
+			<property name="Extends" value="palletBlueTarpTile"/>
+		</block>
+
+<!-- LOOTABLE PALLET INSERTION END -->
+</append>
+</stallionsden>

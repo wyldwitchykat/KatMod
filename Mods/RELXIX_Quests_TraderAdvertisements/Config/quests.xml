@@ -1,0 +1,25 @@
+<config>
+	<!-- This will log as a WRN for not able to remove -->
+	<!-- This is done on purpose to have a log entry showing this file was read -->
+	<remove xpath="/Successfully_Loaded[@modname='RELXIX_Quests_TraderAdvertisements'][@version='1.0.3'][@filename='\Config\quests.xml']" />
+
+	<append xpath="/quests" >
+			<quest id="quest_TraderAdvert">
+				<property name="group_name" value="Trader Advertisement" />
+				<property name="offer" value="Come buy and sell at the nearest Trader!" />
+				<property name="name" value="Go To Trader" />
+				<property name="subtitle_key" value="quest_WhiteRiverCitizen1_subtitle" />
+				<property name="description_key" value="quest_WhiteRiverCitizen1_description" />
+				<property name="icon" value="ui_game_symbol_map_trader" />
+				<property name="category_key" value="quest" />
+				<property name="difficulty" value="medium" />
+				<property name="shareable" value="false" />
+				<property name="repeatable" value="true" />
+	
+				<objective type="Goto" id="trader" value="5" />
+		
+	  		<!--<reward type="Exp" value="1" />-->
+	    </quest>
+	
+	</append>
+</config>

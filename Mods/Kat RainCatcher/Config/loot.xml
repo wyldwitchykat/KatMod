@@ -1,0 +1,12 @@
+<stallionsden>
+
+<insertAfter xpath="/lootcontainers/lootcontainer[@id='116']" >		
+		<!-- Condenser -->
+	<lootcontainer id="224" count="0,4" size="8,9" sound_open="cement_mixer_open" sound_close="cement_mixer_close" destroy_on_close="true" loot_quality_template="baseTemplate" >
+		<item name="drinkJarBoiledWater" count="1,4" prob="0.1"/>
+		<item name="drinkJarBoiledWater" count="1,4" prob="0.1"/>
+		<item name="drinkJarBoiledWater" count="1,4" prob="0.1"/>
+		<item name="drinkJarBoiledWater" count="1,4" prob="0.1"/>
+		</lootcontainer>
+</insertAfter>
+</stallionsden>

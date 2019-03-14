@@ -1,0 +1,40 @@
+<configs>
+	<append xpath="/recipes">
+
+	<recipe name="Herbivore_Bait" count="1" craft_area="campfire" craft_tool="toolBeaker" craft_time="15" tags="learnable">
+		<ingredient name="foodCropCorn" count="4"/>
+		<ingredient name="foodCornMeal" count="2"/>
+		<ingredient name="drinkJarRiverWater" count="2"/>
+	</recipe>
+	
+	<recipe name="Herbivore_Bait" count="1" craft_area="chemistryStation" craft_time="15" tags="learnable">
+		<ingredient name="foodCropCorn" count="2"/>
+		<ingredient name="foodCornMeal" count="1"/>
+		<ingredient name="drinkJarRiverWater" count="1"/>
+	</recipe>
+	
+	<recipe name="Unbaited_Primitive_Rabbit_Trap" count="1" craft_time="150" tags="learnable">
+		<ingredient name="resourceWood" count="200"/>
+		<ingredient name="resourceYuccaFibers" count="20"/>
+	</recipe>
+	
+	<recipe name="Baited_Primitive_Rabbit_Trap" count="1" craft_time="1" tags="learnable">
+		<ingredient name="Unbaited_Primitive_Rabbit_Trap" count="1"/>
+		<ingredient name="Herbivore_Bait" count="1"/>
+	</recipe>
+	
+	<recipe name="Unbaited_Reusable_Rabbit_Trap" count="1" craft_area="workbench" craft_time="150" tags="learnable">
+		<ingredient name="resourceWood" count="200"/>
+		<ingredient name="resourceNail" count="20"/>
+		<ingredient name="resourceDuctTape" count="4"/>
+		<ingredient name="barbedWireSheet" count="2"/>
+		<ingredient name="resourceSpring" count="2"/>
+	</recipe>
+	
+	<recipe name="Baited_Reusable_Rabbit_Trap" count="1" craft_time="1" tags="learnable">
+		<ingredient name="Unbaited_Reusable_Rabbit_Trap" count="1"/>
+		<ingredient name="Herbivore_Bait" count="1"/>
+	</recipe>
+
+	</append>
+</configs>

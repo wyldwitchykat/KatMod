@@ -1,0 +1,74 @@
+<RemoveModSchematics>
+<!--
+		modGun
+		modShot
+		modMelee
+		modArmor
+		
+-->
+<!-- Remove mod schematics from items -->
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	<remove xpath="/items/item[contains(@name, 'modMelee')]" />
+	
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	<remove xpath="/items/item[contains(@name, 'modGun')]" />
+	
+	<remove xpath="/items/item[contains(@name, 'modShot')]" />
+	
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	<remove xpath="/items/item[contains(@name, 'modArmor')]" />
+	
+</RemoveModSchematics>

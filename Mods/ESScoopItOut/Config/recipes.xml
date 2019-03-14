@@ -1,0 +1,67 @@
+<configs>
+<!-- Add in conversion recipes from dinks to empty jars. -->
+<append xpath="/recipes">
+
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanChili" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanHam" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanBeef" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanChicken" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanLamb" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanCatfood" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanDogfood" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanTuna" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanPasta" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanSalmon" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanMiso" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanPeas" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanPears" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanSoup" count="1"/>
+</recipe>
+
+<recipe name="drinkCanEmpty" count="1" >
+	<ingredient name="foodCanStock" count="1"/>
+</recipe>
+
+</append>
+</configs>

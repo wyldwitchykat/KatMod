@@ -1,0 +1,229 @@
+<configs>
+  <append xpath="/recipes">
+    <recipe name="doorDouble1" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="30" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+	  <ingredient name="glassCTRSheet" count="4" />
+	  <ingredient name="resourceForgedIron" count="2" />
+    </recipe>
+
+    <recipe name="doorDouble2" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="30" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+	  <ingredient name="glassCTRSheet" count="4" />
+	  <ingredient name="resourceForgedIron" count="2" />
+    </recipe>
+
+    <recipe name="doorDouble3" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="30" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+	  <ingredient name="glassCTRSheet" count="4" />
+	  <ingredient name="resourceForgedIron" count="2" />
+    </recipe>
+
+    <recipe name="doorDouble4" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="30" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+	  <ingredient name="glassCTRSheet" count="4" />
+	  <ingredient name="resourceForgedIron" count="2" />
+    </recipe>
+
+    <recipe name="doorDouble5" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="30" />
+      <ingredient name="resourceScrapPolymers" count="10" />
+	  <ingredient name="glassCTRSheet" count="4" />
+	  <ingredient name="resourceForgedIron" count="2" />
+    </recipe>
+
+    <recipe name="doorSingle1Left" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+
+    <recipe name="doorSingle2Left" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+	
+    <recipe name="doorSingle3Left" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+	
+    <recipe name="doorSingle4Left" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+
+    <recipe name="doorSingle5Left" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+
+    <recipe name="doorSingle1Right" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+
+    <recipe name="doorSingle2Right" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+
+    <recipe name="doorSingle3Right" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+
+    <recipe name="doorSingle4Right" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+
+    <recipe name="doorSingle5Right" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="15" />
+      <ingredient name="resourceScrapPolymers" count="5" />
+	  <ingredient name="glassCTRSheet" count="2" />
+	  <ingredient name="resourceForgedIron" count="1" />
+    </recipe>
+	
+    <recipe name="windowBasic1" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+
+    <recipe name="windowBasic2" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+	
+    <recipe name="windowBasic3" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+
+    <recipe name="windowBasic4" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+
+    <recipe name="windowBasic5" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+	
+    <recipe name="windowBasic1Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+
+    <recipe name="windowBasic2Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+
+    <recipe name="windowBasic3Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+
+    <recipe name="windowBasic4Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+
+    <recipe name="windowBasic5Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>
+
+    <recipe name="windowArch1" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+	
+    <recipe name="windowArch2" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+
+    <recipe name="windowArch3" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+
+    <recipe name="windowArch4" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+
+    <recipe name="windowArch5" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+	
+    <recipe name="windowArch1Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+	
+    <recipe name="windowArch2Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+	
+    <recipe name="windowArch3Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+	
+    <recipe name="windowArch4Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+	
+    <recipe name="windowArch5Centre" count="1" craft_area="tablesaw">
+      <ingredient name="resourceWood" count="8" />
+      <ingredient name="resourceScrapPolymers" count="3" />
+	  <ingredient name="glassCTRSheet" count="1" />
+    </recipe>	
+	
+  </append>
+</configs>

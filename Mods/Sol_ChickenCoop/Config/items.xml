@@ -1,0 +1,51 @@
+<configs>
+
+	<append xpath="/items">
+
+		<item name="Chicken_Feed">
+			<!--<property name="DescriptionKey" value="Chicken_Feed"/> -->
+			<property name="Degradation" value="1" param1="true" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mfarmland"/>
+			<property name="CustomIcon" value="plantedAloe1" />
+			<property name="CustomIconTint" value="221,221,44" />
+			<property name="Weight" value="1" />
+			<property name="HoldType" value="45"/>
+			<property name="EconomicValue" value="8"/>
+		</item>
+		
+		<item name="Chicken_Nest">
+			<!--<property name="DescriptionKey" value="Chicken_Nest"/> -->
+			<property name="Degradation" value="1" param1="true" />
+			<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+			<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+			<property name="Material" value="Mfarmland"/>
+			<property name="CustomIcon" value="cntBirdnest" />
+			<property name="Weight" value="1" />
+			<property name="HoldType" value="45"/>
+			<property name="EconomicValue" value="8"/>
+		</item>
+		
+		<item name="Living_Off_The_Land_Rank_3">
+			<!--<property name="DescriptionKey" value="Living_Off_The_Land_Rank_3"/> -->
+			<property name="Extends" value="unlockBookMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property class="Action0">
+				<requirement name="CVarCompare" cvar="Chicken_Feed" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="Chicken_Nest" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="Chicken_Cage_Needs_Nest" operation="Equals" value="0"/>
+			</property>
+				<effect_group tiered="false">
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Chicken_Feed" operation="set" value="1"/>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Chicken_Nest" operation="set" value="1"/>
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Chicken_Cage_Needs_Nest" operation="set" value="1"/>
+				</effect_group>
+		</item>
+	
+	</append>
+	
+	<append xpath="/items/*/property[@class='Action1']/property[@name='Allowed_upgrade_items']/@value">Chicken_Feed,Chicken_Nest,foodEgg,</append>
+	
+</configs>

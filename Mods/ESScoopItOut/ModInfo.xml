@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Canned food/Empty Can Conversion" />
+        <Description value="This modlet allows yout to convert canned food to empty cans. Just scoop cat food out instead of scrapping it." />
+        <Author value="EpicSpire" />
+        <Version value="1.0" />
+    </ModInfo>
+</xml>

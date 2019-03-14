@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Servers>
+	<ServerGroup Name="My Mods" Logo="" Description="">
+	
+		<Server Name="KatMod a17.2" Logo="">
+			<Description>
+Just a collection of mods for my friends and myself to play.
+			</Description>
+			<EAC>Disabled</EAC>
+			<DownloadMode>Clone</DownloadMode>
+			<Version>Alpha17.2</Version>
+			<ReleaseNotes></ReleaseNotes>
+			<Downloads>
+				<Download>https://gitlab.com/wyldwitchykat/katmod.git</Download>
+			</Downloads>
+		</Server>
+		
+		
+	
+	</ServerGroup>
+</Servers>
+
+

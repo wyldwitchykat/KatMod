@@ -1,0 +1,5 @@
+<config>
+
+	<set xpath="/traders/trader_info[@id='1' and @reset_interval='3']/@reset_interval">1</set>
+
+</config>

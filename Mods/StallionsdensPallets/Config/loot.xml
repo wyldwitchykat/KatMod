@@ -1,0 +1,512 @@
+<stallionsden>
+
+	<append xpath="/lootcontainers">
+	
+	<!-- Packaging, for non brick pallets. -->
+		<lootgroup name="palletPackaging_sm" count="1">
+			<item name="resourceCandyTin" count="3,10" prob="0.05" />
+			<item name="resourceBrokenGlass" count="3,10" prob="0.05" />
+			<item name="resourcePaper" count="3,10" prob="0.05" />
+			<item name="resourceCloth" count="3,10" prob="0.05" />
+			<item name="resourceScrapIron" count="3,10" prob="0.05" />
+			<item name="resourceForgedIron" count="3,10" prob="0.05" />
+			<item name="resourceWood" count="3,10" prob="0.05" />
+			<item name="drinkCanEmpty" count="3,10" prob="0.05" />
+		</lootgroup>
+	
+	<!-- Items common to multiple pallets -->
+	
+		<lootgroup name="palletCommon_sm" count="1">
+			<item name="resourceScrapPolymers" count="3,10" prob="0.05" />
+			<item name="resourceLeather" count="3,10" prob="0.05" />
+			<item name="resourcePaint" count="50,150" prob="0.05" />
+			<item name="resourceAcid" count="3,10" prob="0.05" />
+			<item name="candle" count="1,3" prob="0.05" />
+			<item name="resourceDoorKnob" count="1,3" prob="0.05" />
+			<item name="resourceFishingWeight" count="3,10" prob="0.05" />
+			<item name="resourceArrowHeadIron" count="3,10" prob="0.05" />
+			<item name="resourceArrowHeadSteelAP" count="3,10" prob="0.05" />
+			<item name="ammoArrowSteelAP" count="3,10" prob="0.05" />
+			<item name="resourceHeadlight" count="3,10" prob="0.05" />
+			<item name="resourceDuctTape" count="3,10" prob="0.05" />
+			<item group="questChallenge" count="1" prob="0.05" />
+			<item group="treasureMaps" count="1" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="palletFurniture_sm" count="2">
+			<item name="toolCookingPot" count="1" prob="0.05" />
+			<item name="cntStorageGeneric" count="1" prob="0.05" />
+			<item name="cntCabinetBottom" count="1" prob="0.05" />
+			<item name="cntWallOven" count="1" prob="0.05" />
+			<item name="cntGraniteSink" count="1" prob="0.05" />
+			<item name="cntCabinetOldBottom" count="1" prob="0.05" />
+			<item name="cntCabinetOldSink" count="1" prob="0.05" />
+			<item name="cntCabinetOldTop" count="1" prob="0.05" />
+			<item name="cntCupboardCabinetOldTopClosed" count="1" prob="0.05" />
+			<item name="utilitySink" count="1" prob="0.05" />
+			<item name="cntCharcoalGrillClosed" count="1" prob="0.05" />
+			<item name="cntGasGrillClosed" count="1" prob="0.05" />
+			<item name="cntStoveOldVer1Closed" count="1" prob="0.05" />
+			<item name="cntMicrowaveOvenVer1Closed" count="1" prob="0.05" />
+			<item name="cntRetroFridgeVer1Closed" count="1" prob="0.05" />
+			<item name="cntFridgeStainlessSteel" count="1" prob="0.05" />
+			<item name="cntWashingMachine" count="1" prob="0.05" />
+			<item name="cntLaundryBasketVer1Empty" count="1" prob="0.05" />
+			<item name="cntLaundryBasketVer2Full" count="1" prob="0.05" />
+			<item name="cntTrashCompactor" count="1" prob="0.05" />
+			<item name="faucet02" count="1" prob="0.05" />
+			<item name="faucet04" count="1" prob="0.05" />
+			<item name="faucetBrass02" count="1" prob="0.05" />
+			<item name="faucetBrass04" count="1" prob="0.05" />
+			<item name="cntToilet01" count="1" prob="0.05" />
+			<item name="showerHead" count="1" prob="0.05" />
+			<item name="cntToilet02" count="1" prob="0.05" />
+			<item name="cntToilet03" count="1" prob="0.05" />
+			<item name="radiatorHouse01" count="1" prob="0.05" />
+			<item name="cntTrash_can01" count="1" prob="0.05" />
+			<item name="cntBin" count="1" prob="0.05" />
+			<item name="cntFancyGarbageCan" count="1" prob="0.05" />
+			<item name="cable1" count="1" prob="0.05" />
+			<item name="conduit01" count="1" prob="0.05" />
+			<item name="cntNightstandClosed" count="1" prob="0.05" />
+			<item name="cntMedicineCabinetClosed" count="1" prob="0.05" />
+			<item name="cntPillCaseClosed" count="1" prob="0.05" />
+			<item name="mirror" count="1" prob="0.05" />
+			<item name="cntWeaponsBagSmall" count="1" prob="0.05" />
+			<item name="fountain" count="1" prob="0.05" />
+			<item name="cntWeaponsBagLarge" count="1" prob="0.05" />
+			<item name="pictureFrameFilled" count="1" prob="0.05" />
+			<item name="pictureFrame" count="1" prob="0.05" />
+			<item name="heatVent" count="1" prob="0.05" />
+			<item name="heatVentIndustrial" count="1" prob="0.05" />
+			<item name="cntWoodDesk01Closed" count="1" prob="0.05" />
+			<item name="cntMetalDesk02Closed" count="1" prob="0.05" />
+			<item name="schoolDesk" count="1" prob="0.05" />
+			<item name="coffeeTable" count="1" prob="0.05" />
+			<item name="decoPicnicTable" count="1" prob="0.05" />
+			<item name="officeChair01" count="1" prob="0.05" />
+			<item name="barracksChair" count="1" prob="0.05" />
+			<item name="barStool" count="1" prob="0.05" />
+			<item name="leatherCouchSofa2" count="1" prob="0.05" />
+			<item name="couchSofa01" count="1" prob="0.05" />
+			<item name="leatherChairCouchSofa2" count="1" prob="0.05" />
+			<item name="cntWaterCoolerFull" count="1" prob="0.05" />
+			<item name="cntWaterCoolerBottle" count="1" prob="0.05" />
+			<item name="tv" count="1" prob="0.05" />
+			<item name="wineBarrel" count="1" prob="0.05" />
+			<item name="decoSwingSet" count="1" prob="0.05" />
+			<item name="decoTreadmill" count="1" prob="0.05" />
+			<item name="decoMetalSlide" count="1" prob="0.05" />
+			<item name="decoWeightBar" count="1" prob="0.05" />
+			<item name="decoBenchPress" count="1" prob="0.05" />
+			<item name="bed01" count="1" prob="0.05" />
+			<item name="bed02" count="1" prob="0.05" />
+			<item name="gurneyBed" count="1" prob="0.05" />
+			<item name="hospitalBed" count="1" prob="0.05" />
+			<item name="cntFileCabinetShortClosed" count="1" prob="0.05" />
+			<item name="cntFileCabinetTallClosed" count="1" prob="0.05" />
+			<item name="cntCoolerClosed" count="1" prob="0.05" />
+			<item name="cntBeerCooler" count="1" prob="0.05" />
+			<item name="cntLockersShortClosed" count="1" prob="0.05" />
+			<item name="cntLockersTallClosed" count="1" prob="0.05" />
+			<item name="cntLockersTallDoubleClosed" count="1" prob="0.05" />
+			<item name="cntBathTubEmpty" count="1" prob="0.05" />
+			<item name="cntBookcaseFull" count="1" prob="0.05" />
+			<item name="cntPillCase" count="1" prob="0.05" />
+			<item name="cntCashRegister" count="1" prob="0.05" />
+			<item name="cntVendingMachine" count="1" prob="0.05" />
+			<item name="cntVendingMachine2" count="1" prob="0.05" />
+			<item name="birdBathPlanter" count="1" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="hardwareCommon_sm" count="1">
+			<item name="bucketEmpty" count="1" prob="0.05" />
+			<item name="meleeClubWood" count="1" prob="0.05" />
+			<item name="meleeToolClawHammer" count="1" prob="0.05" />
+			<item name="meleeToolFlashlight02" count="1" prob="0.05" />
+			<item name="meleeToolHoeIron" count="1" prob="0.05" />
+			<item name="meleeToolHuntingKnife" count="1" prob="0.05" />
+			<item name="meleeToolPaintTool" count="1" prob="0.05" />
+			<item name="meleeToolShovelIron" count="1" prob="0.05" />
+			<item name="meleeToolWrench" count="1" prob="0.05" />
+			<item name="overalls" count="1" prob="0.05" />
+			<item name="paintMagazineDecorations" count="1" prob="0.05" />
+			<item name="paintMagazineFaux" count="1" prob="0.05" />
+			<item name="paintMagazineMasonry" count="1" prob="0.05" />
+			<item name="paintMagazineMetal" count="1" prob="0.05" />
+			<item name="paintMagazineWallCoverings" count="1" prob="0.05" />
+			<item name="paintMagazineWoodAndRoofing" count="1" prob="0.05" />
+			<item name="resourceDoorKnob" count="1,15" prob="0.05" />
+			<item name="resourceElectricParts" count="1,15" prob="0.05" />
+			<item name="resourceElectronicParts" count="1,15" prob="0.05" />
+			<item name="resourceForgedIron" count="1,15" prob="0.05" />
+			<item name="resourceGlue" count="1,15" prob="0.05" />
+			<item name="resourceHubcap" count="1" prob="0.05" />
+			<item name="resourceInsulator" count="1,15" prob="0.05" />
+			<item name="resourceMechanicalParts" count="1,15" prob="0.05" />
+			<item name="resourceMetalPipe" count="1,15" prob="0.05" />
+			<item name="resourceNail" count="10,150" prob="0.05" />
+			<item name="resourcePaint" count="10,150" prob="0.05" />
+			<item name="resourceWood" count="10,150" prob="0.5" />
+		</lootgroup>
+		
+		<lootgroup name="hardwareUncommon_sm" count="1">
+			<item name="goggles" count="1" prob="0.05" />
+			<item name="magazinePerkAdvancedEngineering" count="1" prob="0.05" />
+			<item name="magazinePerkGreaseMonkey" count="1" prob="0.05" />
+			<item name="magazinePerkHammerForge" count="1" prob="0.05" />
+			<item name="magazinePerkLuckyLooter" count="1" prob="0.05" />
+			<item name="magazinePerkSalvageOperations" count="1" prob="0.05" />
+			<item name="meleeToolFireaxeIron" count="1" prob="0.05" />
+			<item name="meleeToolMachete" count="1" prob="0.05" />
+			<item name="meleeToolPickaxeIron" count="1" prob="0.05" />
+			<item name="meleeToolShovelSteel" count="1" prob="0.05" />
+			<item name="meleeToolSledgehammer" count="1" prob="0.05" />
+			<item name="meleeToolWireTool" count="1" prob="0.05" />
+			<item name="resourceForgedSteel" count="1,15" prob="0.05" />
+			<item name="resourceHeadlight" count="1,15" prob="0.05" />
+			<item name="resourceOil" count="1,15" prob="0.05" />
+			<item name="resourceRepairKit" count="1,15" prob="0.05" />
+			<item name="resourceSpring" count="1,15" prob="0.05" />
+			<item name="toolBellows" count="1" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="hardwareRare_sm" count="1">
+			<item name="carBattery" count="1" prob="0.05" />
+			<item name="gasMask" count="1" prob="0.05" />
+			<item name="gunToolNailgun" count="1" prob="0.05" />
+			<item name="meleeToolAugerSchematic" count="1" prob="0.05" />
+			<item name="meleeToolChainsawSchematic" count="1" prob="0.05" />
+			<item name="meleeToolFireaxeSteel" count="1" prob="0.05" />
+			<item name="meleeToolPickaxeSteel" count="1" prob="0.05" />
+			<item name="resourceRadiator" count="1" prob="0.05" />
+			<item name="smallEngine" count="1" prob="0.05" />
+			<item name="toolAndDieSet" count="1" prob="0.05" />
+			<item name="toolAnvil" count="1" prob="0.05" />
+			<item name="toolForgeCrucible" count="1" prob="0.05" />
+			<item name="vehicleBicycleChassis" count="1" prob="0.05" />
+			<item name="vehicleBicycleHandlebars" count="1" prob="0.05" />
+			<item name="vehicleWheels" count="1" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="hardwareLegendary_sm" count="1">
+			<item name="meleeToolAuger" count="1" prob="0.05" />
+			<item name="meleeToolChainsaw" count="1" prob="0.05" />
+			<item name="solarCell" count="1" prob="0.05" />
+			<item name="vehicle4x4TruckAccessories" count="1" prob="0.05" />
+			<item name="vehicleBicyclePlaceable" count="1" prob="0.05" />
+			<item name="vehicleGyroCopterAccessories" count="1" prob="0.05" />
+			<item name="vehicleMinibikeChassis" count="1" prob="0.05" />
+			<item name="vehicleMinibikeHandlebars" count="1" prob="0.05" />
+			<item name="vehicleMotorcycleChassis" count="1" prob="0.05" />
+			<item name="vehicleMotorcycleHandlebars" count="1" prob="0.05" />
+		</lootgroup>
+	
+		<lootgroup name="foodCommon_sm" count="1">
+			<item name="medicalBandage" count="1,3" prob="0.05" />
+			<item name="medicalSplint" count="1,3" prob="0.05" />
+			<item name="foodMoldyBread" count="1,3" prob="0.05" />
+			<item name="foodShamSandwich" count="1,3" prob="0.05" />
+			<item name="foodEgg" count="1,3" prob="0.05" />
+			<item name="foodCornMeal" count="1,3" prob="0.05" />
+			<item name="foodRottingFlesh" count="1,3" prob="0.05" />
+			<item name="drinkJarEmpty" count="1,3" prob="0.05" />
+			<item name="drinkCanEmpty" count="1,3" prob="0.05" />
+			<item name="foodHoney" count="1,3" prob="0.05" />
+			<item name="foodCanCatfood" count="1,3" prob="0.05" />
+			<item name="foodCanDogfood" count="1,3" prob="0.05" />
+			<item name="foodCanChili" count="1,3" prob="0.05" />
+			<item name="foodCanTuna" count="1,3" prob="0.05" />
+			<item name="foodCanHam" count="1,3" prob="0.05" />
+			<item name="foodCanPasta" count="1,3" prob="0.05" />
+			<item name="foodCanSalmon" count="1,3" prob="0.05" />
+			<item name="foodCanMiso" count="1,3" prob="0.05" />
+			<item name="foodCanPeas" count="1,3" prob="0.05" />
+			<item name="foodCanPears" count="1,3" prob="0.05" />
+			<item name="foodCanSoup" count="1,3" prob="0.05" />
+			<item name="foodCanStock" count="1,3" prob="0.05" />
+			<item name="medicalAloeCream" count="1,3" prob="0.05" />
+			<item name="drugVitamins" count="1,3" prob="0.05" />
+			<item name="resourceCandyTin" count="1,3" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="foodUncommon_sm" count="1">
+			<item name="medicalFirstAidBandage" count="1,3" prob="0.05" />
+			<item name="foodCanBeef" count="1,3" prob="0.05" />
+			<item name="foodCanChicken" count="1,3" prob="0.05" />
+			<item name="foodCanLamb" count="1,3" prob="0.05" />
+			<item name="drinkJarCoffee" count="1,3" prob="0.05" />
+			<item name="drinkJarBeer" count="1,3" prob="0.05" />
+			<item name="drinkJarGoldenRodTea" count="1,3" prob="0.05" />
+			<item name="drinkJarBoiledWater" count="1,3" prob="0.05" />
+			<item name="resourceTallow" count="1,3" prob="0.05" />
+			<item name="resourcePotassiumNitratePowder" count="1,3" prob="0.05" />
+			<item name="drugPainkillers" count="1,3" prob="0.05" />
+			<item name="toolCookingGrill" count="1,3" prob="0.05" />
+			<item name="resourceCropCoffeeBeans" count="1,3" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="foodRare_sm" count="1">
+			<item name="medicalFirstAidKit" count="1,3" prob="0.05" />
+			<item name="drugHerbalAntibiotics" count="1,3" prob="0.05" />
+			<item name="drinkJarSnowberryJuice" count="1,3" prob="0.05" />
+			<item name="drinkJarYuccaJuice" count="1,3" prob="0.05" />
+			<item name="drinkJarRedTea" count="1,3" prob="0.05" />
+			<item name="drinkCanMegaCrush" count="1,3" prob="0.05" />
+			<item name="resourceAcid" count="1,3" prob="0.05" />
+			<item name="resourceTestosteroneExtract" count="1,3" prob="0.05" />
+			<item name="toolBeaker" count="1,3" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="foodLegendary_sm" count="1">
+			<item name="drugAntibiotics" count="1,3" prob="0.05" />
+			<item name="drugSteroids" count="1,3" prob="0.05" />
+			<item name="drugRecog" count="1,3" prob="0.05" />
+			<item name="drugFortBites" count="1,3" prob="0.05" />
+			<item name="drinkJarGrandpasMoonshine" count="1,3" prob="0.05" />
+			<item name="drinkJarGrandpasAwesomeSauce" count="1,3" prob="0.05" />
+			<item name="drinkJarGrandpasLearningElixir" count="1,3" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="attachmentsCommon_sm" count="1">
+			<item name="modArmorHelmetLight" count="1" prob="0.05" />
+			<item name="modArmorImprovedFittings" count="1" prob="0.05" />
+			<item name="modArmorAdvancedMuffledConnectors" count="1" prob="0.05" />
+			<item name="modArmorCoolingMesh" count="1" prob="0.05" />
+			<item name="modArmorDoubleStoragePocket" count="1" prob="0.05" />
+			<item name="modArmorInsulatedLiner" count="1" prob="0.05" />
+			<item name="modArmorMuffledConnectors" count="1" prob="0.05" />
+			<item name="modArmorTripleStoragePocket" count="1" prob="0.05" />
+			<item name="modArmorReinforcedPadding" count="1" prob="0.05" />
+			<item name="modGunBowPolymerString" count="1" prob="0.05" />
+			<item name="modArmorImpactBracing" count="1" prob="0.05" />
+			<item name="modMeleeErgonomicGrip" count="1" prob="0.05" />
+			<item name="modArmorScrapPlating" count="1" prob="0.05" />
+			<item name="modArmorPlasticPlating" count="1" prob="0.05" />
+			<item name="modMeleeFortifyingGrip" count="1" prob="0.05" />
+			<item name="modMeleeClubBurningShaft" count="1" prob="0.05" />
+			<item name="modMeleeClubBarbedWire" count="1" prob="0.05" />
+			<item name="modMeleeClubMetalSpikes" count="1" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="attachmentsUncommon_sm" count="1">
+			<item name="modGunForegrip" count="1" prob="0.05" />
+			<item name="modGunBipod" count="1" prob="0.05" />
+			<item name="modGunBarrelExtender" count="1" prob="0.05" />
+			<item name="modGunTriggerGroupSemi" count="1" prob="0.05" />
+			<item name="modGunScopeLarge" count="1" prob="0.05" />
+			<item name="modGunScopeMedium" count="1" prob="0.05" />
+			<item name="modGunChoke" count="1" prob="0.05" />
+			<item name="modGunDuckbill" count="1" prob="0.05" />
+			<item name="modGunFlashlight" count="1" prob="0.05" />
+			<item name="modGunScopeSmall" count="1" prob="0.05" />
+			<item name="modGunRodAndSpring" count="1" prob="0.05" />
+			<item name="modGunLaserSight" count="1" prob="0.05" />
+			<item name="modGunReflexSight" count="1" prob="0.05" />
+			<item name="modGunRetractingStock" count="1" prob="0.05" />
+			<item name="modArmorIronPlating" count="1" prob="0.05" />
+			<item name="resourceRepairKit" count="1" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="attachmentsRare_sm" count="1">
+			<item name="modGunFlashSuppressor" count="1" prob="0.05" />
+			<item name="modGunMuzzleBrake" count="1" prob="0.05" />
+			<item name="modGunSoundSuppressorSilencer" count="1" prob="0.05" />
+			<item name="modArmorMilitaryPlating" count="1" prob="0.05" />
+			<item name="modGunMagazineExtender" count="1" prob="0.05" />
+			<item name="modArmorSteelPlating" count="1" prob="0.05" />
+			<item name="modGunTriggerGroupAutomatic" count="1" prob="0.05" />
+			<item name="modGunTriggerGroupBurst" count="1" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="attachmentsLegendary_sm" count="1">
+			<item name="modYoureFired" count="1" prob="0.05" />
+			<item name="modGunCrippleEm" count="1" prob="0.05" />
+			<item name="modShotgunSawedOffBarrel" count="1" prob="0.05" />
+			<item name="modGunMeleeBlessedMetal" count="1" prob="0.05" />
+			<item name="modGunMeleeFeelTheHeat" count="1" prob="0.05" />
+			<item name="modGunMeleeFlammableOil" count="1" prob="0.05" />
+			<item name="modGunMeleeLiquidNitrogen" count="1" prob="0.05" />
+			<item name="modGunMeleeNiCdBattery" count="1" prob="0.05" />
+			<item name="modGunMeleeRadRemover" count="1" prob="0.05" />
+			<item name="modGunMeleeTheHunter" count="1" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="tarpBlocksCommon_sm" count="1">
+			<item name="woodBlock" count="5,15" prob="0.05" />
+			<item name="woodFenceSheet" count="5,15" prob="0.05" />
+			<item name="whitePicketFenceSheet" count="5,15" prob="0.05" />
+			<item name="houseFrontDoor1_v1" count="5,15" prob="0.05" />
+			<item name="houseFrontDoor2_v1" count="5,15" prob="0.05" />
+			<item name="secureDoorWooden" count="5,15" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="tarpBlocksUncommon_sm" count="1">
+			<item name="metalTrussingBlock" count="5,15" prob="0.05" />
+			<item name="corrugatedMetalBlock" count="5,15" prob="0.05" />
+			<item name="awningBlock" count="5,15" prob="0.05" />
+			<item name="commercialDoor1_v1" count="5,15" prob="0.05" />
+			<item name="commercialDoor2_v1" count="5,15" prob="0.05" />
+			<item name="commercialDoor4_v1" count="5,15" prob="0.05" />
+			<item name="garageDoorHouse" count="5,15" prob="0.05" />
+			<item name="ironDoor1_v1" count="5,15" prob="0.05" />
+			<item name="window04" count="5,15" prob="0.05" />
+			<item name="window03Wood" count="5,15" prob="0.05" />
+			<item name="window02" count="5,15" prob="0.05" />
+			<item name="glassCTRSheet" count="5,15" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="tarpBlocksRare_sm" count="1">
+			<item name="rebarFrameBlock" count="5,15" prob="0.05" />
+			<item name="rScrapIronBlock" count="5,15" prob="0.05" />
+			<item name="garageDoorMetal_v1" count="5,15" prob="0.05" />
+			<item name="brickWindowCircle" count="5,15" prob="0.05" />
+			<item name="ironBarsCentered" count="5,15" prob="0.05" />
+			<item name="ironBars" count="5,15" prob="0.05" />
+			<item name="concreteBarrier1" count="5,15" prob="0.05" />
+			<item name="concreteBarrier2" count="5,15" prob="0.05" />
+			<item name="concreteBarrier3" count="5,15" prob="0.05" />
+			<item name="securityGateCTRPlate" count="5,15" prob="0.05" />
+			<item name="securityGatePlate" count="5,15" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="tarpBlocksLegendary_sm" count="1">
+			<item name="bridgeMetalRivetBlock" count="5,15" prob="0.05" />
+			<item name="jailDoorStaticCentered" count="5,15" prob="0.05" />
+			<item name="jailDoorStatic" count="5,15" prob="0.05" />
+			<item name="vaultDoor01" count="5,15" prob="0.05" />
+			<item name="jailBars" count="5,15" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="bricksCommon_sm" count="1">
+			<item name="terrStone" count="5,15" prob="0.05" />
+			<item name="flagstoneBlock" count="5,15" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="bricksUncommon_sm" count="1">
+			<item name="cobblestoneBlock" count="5,15" prob="0.05" />
+			<item name="brickBlock" count="5,15" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="bricksRare_sm" count="1">
+			<item name="concreteBlock" count="5,15" prob="0.05" />
+			<item name="glassBusinessBlock" count="5,15" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="bricksLegendary_sm" count="1">
+			<item name="glassBulletproofBlock" count="5,15" prob="0.05" />
+			<item name="bridgeConcreteBlock" count="5,15" prob="0.05" />
+			<item name="rConcreteBlock" count="5,15" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="powdersCommon_sm" count="1">
+			<item name="resourceClayLump" count="50,150" prob="0.05" />
+			<item name="resourceCobblestones" count="50,150" prob="0.05" />
+			<item name="resourceCrushedSand" count="50,150" prob="0.05" />
+			<item name="resourceRockSmall" count="50,150" prob="0.05" />
+			<item name="resourceYuccaFibers" count="50,150" prob="0.05" />
+			<item name="terrGravel" count="5,15" prob="0.05" />
+			<item name="terrSand" count="5,15" prob="0.05" />
+			<item name="terrForestGround" count="5,15" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="powdersUncommon_sm" count="1">
+			<item name="resourceCoal" count="50,150" prob="0.05" />
+			<item name="resourceCement" count="50,150" prob="0.05" />
+			<item name="resourcePotassiumNitratePowder" count="50,150" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="powdersRare_sm" count="1">
+			<item name="resourceConcreteMix" count="50,150" prob="0.05" />
+			<item name="resourceOilShale" count="50,150" prob="0.05" />
+			<item name="terrAsphalt" count="5,15" prob="0.05" />
+			<item name="terrConcrete" count="5,15" prob="0.05" />
+		</lootgroup>
+		
+		<!-- Now we are up to the pallets! -->
+		
+		<lootgroup name="palletBlueTarp" count="1">
+			<item group="palletFurniture_sm" count="1" prob="0.05" />
+			<item group="palletCommon_sm" count="1" prob="0.05" />
+			<item group="tarpBlocksCommon_sm" count="1" prob="0.05" />
+			<item group="tarpBlocksUncommon_sm" count="1" prob="0.05" />
+			<item group="tarpBlocksRare_sm" count="1" prob="0.05" />
+			<item group="tarpBlocksLegendary_sm" count="1" prob="0.05" />
+			<item group="hazmatGear" count="1" prob="0.05" />
+			<item group="hardwareCommon_sm" count="1" prob="0.05" />
+			<item group="hardwareUncommon_sm" count="1" prob="0.05" />
+			<item group="hardwareRare_sm" count="1" prob="0.05" />
+			<item group="hardwareLegendary_sm" count="1" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="palletBricks" count="1">
+			<item group="bricksCommon_sm" count="1" prob="0.05" />
+			<item group="bricksUncommon_sm" count="1" prob="0.05" />
+			<item group="bricksRare_sm" count="1" prob="0.05" />
+			<item group="bricksLegendary_sm" count="1" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="palletWhiteBags" count="1">
+			<item group="palletCommon_sm" count="1" prob="0.05" />
+			<item group="powdersCommon_sm" count="1" prob="0.05" />
+			<item group="powdersUncommon_sm" count="1" prob="0.05" />
+			<item group="powdersRare_sm" count="1" prob="0.05" />
+		</lootgroup>
+
+		<lootgroup name="palletBrownBoxes" count="2">
+			<item group="palletFurniture_sm" count="1" prob="0.05" />
+			<item group="palletCommon_sm" count="1" prob="0.05" />
+			<item group="hardwareCommon_sm" count="1" prob="0.05" />
+			<item group="hardwareUncommon_sm" count="1" prob="0.05" />
+			<item group="hardwareRare_sm" count="1" prob="0.05" />
+			<item group="hardwareLegendary_sm" count="1" prob="0.05" />
+			<item group="attachmentsCommon_sm" count="1" prob="0.05" />
+			<item group="attachmentsUncommon_sm" count="1" prob="0.05" />
+			<item group="attachmentsRare_sm" count="1" prob="0.05" />
+			<item group="attachmentsLegendary_sm" count="1" prob="0.05" />
+			<item group="foodCommon_sm" count="1" prob="0.05" />
+			<item group="foodUncommon_sm" count="1" prob="0.05" />
+			<item group="foodRare_sm" count="1" prob="0.05" />
+			<item group="foodLegendary_sm" count="1" prob="0.05" />
+			<item group="clothes" count="1" prob="0.05" />
+			<item group="weaponsBasicGuns+ammo" count="1" prob="0.05" />
+			<item group="weaponsCrossbow+ammo" count="1" prob="0.05" />
+			<item group="weaponsBasicGuns+ammo" count="1" prob="0.05" />
+			<item group="weaponsMilitaryGuns+ammo" count="1" prob="0.05" />
+		</lootgroup>
+
+		<!-- LOOTCONTAINER INSERTION START -->
+		
+		<lootgroup name="pwbwp" count="all">
+			<item group="palletWhiteBags" prob="0.05" />
+			<item group="palletPackaging_sm" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="pbbwp" count="all">
+			<item group="palletBrownBoxes" prob="0.05" />
+			<item group="palletPackaging_sm" prob="0.05" />
+		</lootgroup>
+		
+		<lootgroup name="pbtwp" count="all">
+			<item group="palletBlueTarp" prob="0.05" />
+			<item group="palletPackaging_sm" prob="0.05" />
+		</lootgroup>
+
+		<lootcontainer id="208" count="0,1" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="treasureTemplate">
+			<item group="pwbwp" prob="0.05" />
+		</lootcontainer>
+
+		<lootcontainer id="209" count="0,1" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="treasureTemplate">
+			<item group="pbbwp" prob="0.05" />
+		</lootcontainer>
+		<lootcontainer id="210" count="0,1" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="treasureTemplate">
+			<item group="palletBricks" prob="0.05" />
+		</lootcontainer>
+		
+		<lootcontainer id="211" count="0,1" size="8,9" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="treasureTemplate">
+			<item group="pbtwp" prob="0.05" />
+		</lootcontainer>
+
+	</append>
+
+</stallionsden>

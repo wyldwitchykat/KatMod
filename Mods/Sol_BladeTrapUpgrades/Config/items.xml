@@ -1,0 +1,18 @@
+<configs>
+	<append xpath="/items">
+
+		<item name="Advanced_Engineering_Rank_1">
+			<!--<property name="DescriptionKey" value="Huntsman_Rank_1_Desc"/> -->
+			<property name="Extends" value="unlockBookMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property class="Action0">
+				<requirement name="CVarCompare" cvar="Reinforced_Blade_Trap" operation="Equals" value="0"/>
+			</property>
+				<effect_group tiered="false">
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Reinforced_Blade_Trap" operation="set" value="1"/>
+				</effect_group>
+		</item>
+	
+	</append>
+</configs>

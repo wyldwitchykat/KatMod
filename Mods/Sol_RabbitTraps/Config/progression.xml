@@ -1,0 +1,10 @@
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkTheHuntsman']">
+	
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="Herbivore_Bait,Unbaited_Primitive_Rabbit_Trap,Baited_Primitive_Rabbit_Trap"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="Unbaited_Reusable_Rabbit_Trap,Baited_Reusable_Rabbit_Trap"/>
+		</effect_group>
+		
+	</append>
+</configs>

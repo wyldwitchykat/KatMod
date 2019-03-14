@@ -1,0 +1,11 @@
+<configs>
+	<append xpath="/blocks">
+	
+		<block name="Long_Rental_Vending_Machine">
+			<property name="Extends" value="cntVendingMachineTrader"/>
+			<property name="CustomIcon" value="cntVendingMachineTrader"/>
+			<property name="TraderID" value="11"/>
+		</block>
+	
+	</append>
+</configs>

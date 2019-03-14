@@ -1,0 +1,31 @@
+<stallionsden>
+<append xpath="/blocks">
+<!-- LOOTABLE PALLET INSERTION START -->
+<block name="wineBarrelFull">
+			<property name="Extends" value="wineBarrel"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="218"/>
+		</block>
+		<block name="wineBarrelEmpty">
+			<property name="Extends" value="wineBarrel"/>
+		</block>
+		<block name="wineBarrelSetFull">
+			<property name="Extends" value="wineBarrelSet"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="219"/>
+		</block>
+		<block name="wineBarrelSetEmpty">
+			<property name="Extends" value="wineBarrelSet"/>
+		</block>
+		<block name="wineBarrelPlainFull">
+			<property name="Extends" value="wineBarrelPlain"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="220"/>
+		</block>
+		<block name="wineBarrelPlainEmpty">
+			<property name="Extends" value="wineBarrelPlain"/>
+		</block>
+</append>
+<!-- LOOTABLE PALLET INSERTION END -->
+
+</stallionsden>

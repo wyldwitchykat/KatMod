@@ -1,0 +1,540 @@
+<configs>
+
+	<!-- Copies the entire set of wooden frames and makes then upgrade to fragstone blocks for the same cost of crafting the flagstone blocks. -->
+	
+	<append xpath="/blocks">
+	
+		<block name="flagstoneFrameBlock">
+			<property name="Extends" value="woodFrameMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Mesh" value="opaque"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="cube_frame"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="Path" value="solid"/>
+			<property name="Texture" value="241"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="Group" value="Building,Basics"/>
+			<property name="CanPickup" value="true"/>
+			<property name="CustomIcon" value="woodFrameBlock"/>
+			<property name="CustomIconTint" value="808080"/>
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneBlock"/>
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+		</block>
+		
+		<block name="flagstoneFrameWedgeIncline">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge60_incline" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0440" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeIncline"/>
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeIncline"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFramePlateOffset">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="tube_center_straight" />
+			<property name="SortOrder2" value="0171" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstonePlateOffset" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFramePlateOffset"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameRamp">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Group" value="Building,Basics" />
+			<property name="CanPickup" value="true" />
+			<property name="Mesh" value="opaque" />
+			<property name="UseGlobalUV" value="Local" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="ramp_frame" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="Texture" value="241" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneRamp" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameRamp"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedge">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge60" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0290" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedge" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedge"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameGableInvertedHalf">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Path" value="solid" />
+			<property name="Model" value="gable_inverted_half" />
+			<property name="SortOrder2" value="0255" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneGableInvertedHalf" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameGableInvertedHalf"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameGableInvertedQuarter">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Path" value="solid" />
+			<property name="Model" value="gable_inverted_quarter" />
+			<property name="SortOrder2" value="0400" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneGableInvertedQuarter" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameGableInvertedQuarter"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeCNRInsideSteepBase">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Path" value="solid" />
+			<property name="Model" value="wedge_inside_corner_top" />
+			<property name="SortOrder2" value="0360" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeCNRInsideSteepBase" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeCNRInsideSteepBase"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameCNRFull">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="ramp_outside_corner" />
+			<property name="SortOrder2" value="0210" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneCNRFull" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameCNRFull"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameCNRInside">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Path" value="solid" />
+			<property name="Model" value="ramp_inside_corner" />
+			<property name="SortOrder2" value="0220" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneCNRInside" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameCNRInside"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameQuarterTeeSCtr">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="quarter_t_centered" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0110" />
+			<property name="DescriptionKey" value="shapeQuarterTeeSCtrGroupDesc" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneQuarterTeeSCtr" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameQuarterTeeSCtr"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameQuarterSCtr">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="quarter_centered_wall" /><property name="Place" value="TowardsPlacerInverted" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="SortOrder2" value="0110" />
+			<property name="DescriptionKey" value="shapeQuarterSCtrGroupDesc" />
+			<property name="UseGlobalUV" value="Global" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneQuarterSCtr" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameQuarterSCtr"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeCNRSteepBase">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge60_tip_corner_base" />
+			<property name="SortOrder2" value="0320" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeCNRSteepBase" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeCNRSteepBase"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeCNRSteepTop">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge60_tip_corner_top" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="SortOrder2" value="0330" />
+			<drop event="Fall" count="0" prob="0" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeCNRSteepTop" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeCNRSteepTop"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameHalf">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="cube_half" />
+			<property name="SortOrder2" value="0060" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneHalf" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameHalf"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameQuarterCNR3Way">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="quarter_inside_corner_3way" />
+			<property name="SortOrder2" value="0090" />
+			<property name="DescriptionKey" value="shapeQuarterCNR3WayGroupDesc" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneQuarterCNR3Way" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameQuarterCNR3Way"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameQuarterCNR">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="quarter_inside_corner" />
+			<property name="SortOrder2" value="0080" />
+			<property name="DescriptionKey" value="shapeQuarterCNRGroupDesc" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneQuarterCNR" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameQuarterCNR"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeCNRInsideSteepTop">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge_inside_corner_base" />
+			<property name="SortOrder2" value="0370" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeCNRInsideSteepTop" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeCNRInsideSteepTop"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameArch">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="Arch" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0500" />
+			<property name="CanPickup" value="true" />
+				<property class="UpgradeBlock"><property name="ToBlock" value="flagstoneArch" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameArch"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameGableQuarter">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge_tip_quarter" />
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
+			<property name="SortOrder2" value="0390" />
+			<drop event="Fall" count="0" prob="0" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneGableQuarter" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameGableQuarter"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameGableInvertedSteep">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="gable_inverted_steep" />
+			<property name="SortOrder2" value="0420" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneGableInvertedSteep" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameGableInvertedSteep"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameStairs25CornerCNR">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="stairs_filled_corner" /><property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0560" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneStairs25CornerCNR" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameStairs25CornerCNR"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameCNRRampFiller">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Path" value="solid" />
+			<property name="Model" value="ramp_corner_filler" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0240" />
+			<property name="UseGlobalUV" value="Global" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneCNRRampFiller" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameCNRRampFiller"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeCNRInsideTop">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Path" value="solid" />
+			<property name="Model" value="wedge60_inside_corner_2" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0350" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeCNRInsideTop" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeCNRInsideTop"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeCNRInsideBottom">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge60_inside_corner" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0340" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeCNRInsideBottom" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeCNRInsideBottom"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeTipCNRFullBottom">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge60_tip_corner" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0300" />
+			<drop event="Fall" count="0" prob="0" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeTipCNRFullBottom" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeTipCNRFullBottom"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeTipStairs">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge_tip_stairs" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0570" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeTipStairs" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeTipStairs"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeTipCNRFullTop">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Model" value="wedge60_corner" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0310" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeTipCNRFullTop" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeTipCNRFullTop"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+		<block name="flagstoneFrameWedgeStairs">
+			<property name="Extends" value="woodFrameMaster" />
+			<property name="CreativeMode" value="Player" />
+			<property name="Shape" value="New" />
+			<property name="Path" value="solid" /><!-- This is a hint for the AI. It prevents extra raycasts to determine the shape. Removing solid will still allow the AI to detect obstacles. -->
+			<property name="Model" value="wedge_stairs" />
+			<property name="Place" value="TowardsPlacerInverted" />
+			<property name="SortOrder2" value="0580" />
+			<property name="CanPickup" value="true" />
+			<property class="UpgradeBlock">
+				<property name="ToBlock" value="flagstoneWedgeStairs" />
+				<property name="Item" value="resourceCobblestones"/>
+				<property name="ItemCount" value="4"/>
+				<property name="UpgradeHitCount" value="4"/>
+			</property>
+			<property name="CustomIcon" value="woodFrameWedgeStairs"/>
+			<property name="CustomIconTint" value="808080"/>
+		</block>
+
+	</append>
+	
+</configs>

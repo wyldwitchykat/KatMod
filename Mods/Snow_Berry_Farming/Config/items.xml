@@ -1,0 +1,16 @@
+<configs>
+	<append xpath="/items">
+		
+		<item name="Snow_Berry_Seeds">
+			<property name="Extends" value="unlockBookMaster"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property class="Action0">
+			</property>
+				<effect_group tiered="false">
+						<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedSnowberry1" operation="set" value="1"/>
+				</effect_group>
+		</item>
+		
+	</append>
+</configs>

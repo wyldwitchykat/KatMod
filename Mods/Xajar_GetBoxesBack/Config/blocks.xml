@@ -1,0 +1,14 @@
+<configs>
+
+	<!-- Removes the wood you recieve from breaking chests since we are giving the box back -->
+	<set xpath="/blocks/block[@name='cntSecureStorageChest']/drop[@event='Destroy' and @count='1,3']/@count">0</set>
+
+	<!-- Returns a chest when breaking one. -->
+	<set xpath="/blocks/block[@name='cntStorageChest']/drop[@event='Destroy' and @count='1,3']/@count">1</set>
+	<set xpath="/blocks/block[@name='cntStorageChest']/drop[@event='Destroy'and @name='resourceWood']/@name">cntSecureStorageChest</set>
+	
+	<!-- Returns a storage box when breaking one. -->
+	<set xpath="/blocks/block[@name='cntStorageGenericInsecure']/drop[@event='Destroy' and @count='0']/@count">1</set>
+	<setattribute xpath="/blocks/block[@name='cntStorageGenericInsecure']/drop[@event='Destroy']" name="name">cntStorageGeneric</setattribute>
+
+</configs>

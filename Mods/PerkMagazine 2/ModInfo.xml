@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="PerkMagazine" />
+		<Description value="PerkMagazine gives you a perk point when you read a magazine" />
+		<Author value="Sarsante" />
+		<Version value="0.99" />
+
+</ModInfo>
+</xml>

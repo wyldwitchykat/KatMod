@@ -1,0 +1,117 @@
+<configs>
+	<append xpath="/recipes">
+	
+		<recipe name="flagstoneFrameBlock" count="1">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+		
+		<recipe name="flagstoneFrameWedgeIncline" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameCNRFull" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameCNRInside" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameRamp" count="1">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedge" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeIncline" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeTipCNRFullTop" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeTipCNRFullBottom" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeCNRInsideBottom" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeCNRInsideTop" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameStairs25CornerCNR" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameCNRRampFiller" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameArch" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeStairs" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeTipStairs" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeCNRSteepTop" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeCNRSteepBase" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeCNRInsideSteepTop" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameWedgeCNRInsideSteepBase" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameQuarterCNR" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameQuarterCNR3Way" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameQuarterTeeSCtr" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameQuarterSCtr" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameGableInvertedSteep" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameGableQuarter" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameGableInvertedQuarter" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+
+		<recipe name="flagstoneFrameGableInvertedHalf" count="1" craft_area="tablesaw">
+			<ingredient name="resourceWood" count="2"/>
+		</recipe>
+		
+	</append>
+</configs>

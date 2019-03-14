@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="xItemTiers" />
+        <Description value="Creates a tiered system, making T6 tools, weapons, and armor better then T1." />
+		<Author value="Xajar" />
+		<Version value="1.01" />
+		<Website value="https://7daystodie.com/forums/showthread.php?100868-Xajar-s-Mod-Collection" />
+    </ModInfo>
+</xml>

@@ -1,0 +1,167 @@
+<configs>
+	<append xpath="/blocks">
+
+ 		<block name="Jail Prision">
+     		<property name="CustomIcon" value="jailDoorStatic"/>
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Msteel"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+			<property name="Tag" value="Door"/>
+			<property name="Place" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="Model" value="Entities/Doors/jail_doorPrefab"/> <property name="ModelOffset" value="0,.5,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExclude" value="true"/>
+				<property name="OpenSound" value="open_door_jail"/>
+			<property name="CloseSound" value="close_door_jail"/>
+	<property class="RepairItems"> <property name="resourceForgedSteel" value="12"/> </property>
+	
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="spring" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="mechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="20,60"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building"/>
+</block>
+
+<block name="Folding Garage Door">
+	<property name="CustomIcon" value="garageDoorHouse"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="MaxDamage" value="1300"/> <!-- need higher hit points to account for their area -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Model" value="Entities/Doors/garage_house_testPrefab"/><property name="ModelOffset" value="0,0,0"/>
+	<property name="Mesh-Damage-1" value="Door/Box1"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="MultiBlockDim" value="5,3,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="43"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="OpenSound" value="open_garage_door"/>
+	<property name="CloseSound" value="close_garage_door"/>
+	<property class="RepairItems">
+		<property name="resourceScrapIron" value="240"/>
+		<property name="resourceMechanicalParts" value="12"/>
+	</property>
+	
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="90" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="1,2" prob="1" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="2,7" prob="1" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building"/>
+	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0400"/> <!-- SortDoors -->
+</block>
+
+<block name="Jails Bars">
+	<property name="Material" value="Msteel"/>
+	<property name="CustomIcon" value="jailBars"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Doors/jail_barsPrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="DisplayType" value="blockHardenedMulti" />
+	<property name="ImposterExclude" value="true"/>
+	<property name="DescriptionKey" value="jailBarsDesc"/>
+	<drop event="Harvest" name="resourceScrapIron" count="20,60" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0070"/> <!-- SortDoors -->
+</block>
+
+<block name="Barrier Concrete">
+	<property name="Extends" value="concreteNoUpgradeMaster"/>
+	<property name="CustomIcon" value="concreteBarrier1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Industrial/concrete_barrierPrefab"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="MultiBlockDim" value="3,1,1"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="FilterTags" value="fbuilding,fdecor,fother,fwindows,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0051"/> <!-- SortDoors -->
+</block>
+
+<block name="Security Plate">
+	<property name="Extends" value="securityGateCTRPlate"/>
+	<property name="Model" value="security_gate_plate"/>
+	<property name="CustomIcon" value="securityGateCTRPlate"/>
+	<property name="ImposterExchange" value="imposterPlate" param1="144"/>
+	<property name="SortOrder2" value="0050"/> <!-- SortDoors -->
+		</block>
+
+<block name="commercialDoor1_v1">
+<property name="CustomIcon" value="commercialDoor1_v1"/>
+	<property name="DescriptionKey" value="doorGroupDesc"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/> <!-- build restriction -->
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="Entities/Doors/commercial_door_1_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="9"/>
+	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+	<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+	<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+	<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+	<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+	<property name="OpenSound" value="open_door_metal"/>
+	<property name="CloseSound" value="close_door_metal"/>
+	<property class="RepairItems"> <property name="resourceForgedIron" value="2"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="commercialDoor1_v2"/>
+		<property name="Item" value="resourceWood"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="CustomUpgradeSound" value="place_block_wood"/>
+	<drop event="Harvest" name="resourceScrapIron" count="8" prob="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0200"/> <!-- SortDoors -->
+</block>
+
+<block name="commercialDoor4_v1">
+	<property name="CustomIcon" value="commercialDoor4_v1"/>
+	<property name="Extends" value="commercialDoor1_v1"/>
+	<property name="Model" value="Entities/Doors/commercial_door_4_v1Prefab"/>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="commercialDoor4_v2"/> </property>
+	<property name="SortOrder2" value="0260"/> <!-- SortDoors -->
+</block>
+
+<block name="houseFrontDoor2_v1">
+	<property name="CustomIcon" value="houseFrontDoor2_v1"/>
+	<property name="Extends" value="houseFrontDoor1_v1"/>
+	<property name="Model" value="Entities/Doors/house_frontDoor2_v1Prefab"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="70"/>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="houseFrontDoor2_v2"/> </property>
+	<property name="SortOrder2" value="0160"/> <!-- SortDoors -->
+</block>
+
+	</append>
+</configs>

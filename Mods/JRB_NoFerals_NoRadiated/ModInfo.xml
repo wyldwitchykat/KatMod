@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="JRB_NoFerals_NoRadiated" />
+		<Description value="Replaces all Feral/Radiated with normal versions, except for Wight, there is no normal Wight." />
+		<Author value="jrbarrio" />
+		<Version value="1.0" />
+
+	</ModInfo>
+</xml>

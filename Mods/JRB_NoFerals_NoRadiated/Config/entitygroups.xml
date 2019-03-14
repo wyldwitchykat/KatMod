@@ -1,0 +1,194 @@
+<NoFerals_NoRadiated>
+
+<!--
+	Groups: (these are just 'contain' parameters for entity groups, for target paths)
+	Zombie (only uppercase, general groups including;night,Biomes)
+	Horde (all hordes)
+	Group (groups biome specific + zombie with lower case that uppercase misses)
+	Animal (biomes mostly)
+	Wolf (stand alone)
+	
+	NOTE: Since there is no non-Feral/Radiated Wight, the WightFeral stays in. You can adjust the Feral walk Speed to whatever you like.
+
+
+	Spider NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'SpiderRad')]/@name">zombieSpiderFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'SpiderRad')]/@name">zombieSpiderFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'SpiderFeral')]/@name">zombieSpider</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'SpiderFeral')]/@name">zombieSpider</set>
+
+
+	<!-- Wight NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'WightRad')]/@name">zombieWightFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'WightRad')]/@name">zombieWightFeral</set>
+
+
+	<!-- zombieVulture NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'VultureRad')]/@name">animalZombieVulture</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'VultureRad')]/@name">animalZombieVulture</set>
+	
+	
+	<!-- Screamer NoFeral -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'ScreamerFeral')]/@name">zombieScreamer</set>
+	
+	
+	<!-- Boe NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'BoeRad')]/@name">zombieBoeFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'BoeRad')]/@name">zombieBoeFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'BoeRad')]/@name">zombieBoeFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'BoeFeral')]/@name">zombieBoe</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'BoeFeral')]/@name">zombieBoe</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'BoeFeral')]/@name">zombieBoe</set>
+	
+	
+	<!-- Joe NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'JoeRad')]/@name">zombieJoeFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'JoeRad')]/@name">zombieJoeFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'JoeRad')]/@name">zombieJoeFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'JoeFeral')]/@name">zombieJoe</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'JoeFeral')]/@name">zombieJoe</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'JoeFeral')]/@name">zombieJoe</set>
+	
+	
+	<!-- Moe NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'MoeRad')]/@name">zombieMoeFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'MoeRad')]/@name">zombieMoeFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'MoeFeral')]/@name">zombieMoe</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'MoeFeral')]/@name">zombieMoe</set>
+	
+	
+	<!-- Yo NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'YoRad')]/@name">zombieYoFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'YoRad')]/@name">zombieYoFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'YoRad')]/@name">zombieYoFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'YoFeral')]/@name">zombieYo</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'YoFeral')]/@name">zombieYo</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'YoFeral')]/@name">zombieYo</set>
+	
+	
+	<!-- Arlene NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'ArleneRad')]/@name">zombieArleneFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'ArleneRad')]/@name">zombieArleneFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'ArleneRad')]/@name">zombieArleneFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'ArleneFeral')]/@name">zombieArlene</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'ArleneFeral')]/@name">zombieArlene</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'ArleneFeral')]/@name">zombieArlene</set>
+	
+	
+	<!-- Darlene NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'DarleneRad')]/@name">zombieDarleneFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'DarleneFeral')]/@name">zombieDarlene</set>
+	
+	
+	<!-- Marlene NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'MarleneRad')]/@name">zombieMarleneFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'MarleneRad')]/@name">zombieMarleneFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'MarleneFeral')]/@name">zombieMarlene</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'MarleneFeral')]/@name">zombieMarlene</set>
+	
+	
+	<!-- BusinessMan NoFeral -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'BusinessManFeral')]/@name">zombieBusinessMan</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'BusinessManFeral')]/@name">zombieBusinessMan</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'BusinessManFeral')]/@name">zombieBusinessMan</set>
+	
+	
+	<!-- Steve NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'SteveRad')]/@name">zombieSteveFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'SteveRad')]/@name">zombieSteveFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'SteveFeral')]/@name">zombieSteve</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'SteveFeral')]/@name">zombieSteve</set>
+	
+	
+	<!-- SteveCrawler NoFeral -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'CrawlerFeral')]/@name">zombieSteveCrawler</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'CrawlerFeral')]/@name">zombieSteveCrawler</set>
+	
+	
+	<!-- Skateboarder NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'boarderRad')]/@name">zombieSkateboarderFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'boarderRad')]/@name">zombieSkateboarderFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'boarderRad')]/@name">zombieSkateboarderFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'boarderFeral')]/@name">zombieSkateboarder</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'boarderFeral')]/@name">zombieSkateboarder</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'boarderFeral')]/@name">zombieSkateboarder</set>
+	
+	
+	<!-- Cheerleader NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'leaderRad')]/@name">zombieCheerleaderFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'leaderRad')]/@name">zombieCheerleaderFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'leaderFeral')]/@name">zombieCheerleader</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'leaderFeral')]/@name">zombieCheerleader</set>
+	
+	
+	<!-- OldTimer NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'TimerRad')]/@name">zombieOldTimerFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'TimerRad')]/@name">zombieOldTimerFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'TimerFeral')]/@name">zombieOldTimer</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'TimerFeral')]/@name">zombieOldTimer</set>
+	
+	
+	<!-- Farmer NoFeral -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'FarmerFeral')]/@name">zombieFarmer</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'FarmerFeral')]/@name">zombieFarmer</set>
+	
+	
+	<!-- Stripper NoFeral -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'StripperFeral')]/@name">zombieStripper</set>
+	
+	
+	<!-- Nurse NoFeral -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'NurseFeral')]/@name">zombieNurse</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'NurseFeral')]/@name">zombieNurse</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'NurseFeral')]/@name">zombieNurse</set>
+	
+	
+	<!-- Biker NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'BikerRad')]/@name">zombieBikerFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'BikerRad')]/@name">zombieBikerFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'BikerFeral')]/@name">zombieBiker</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'BikerFeral')]/@name">zombieBiker</set>
+	
+	
+	<!-- Lab NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'LabRad')]/@name">zombieLabFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'LabFeral')]/@name">zombieLab</set>
+	
+	
+	<!-- Snow NoFeral -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'SnowFeral')]/@name">zombieSnow</set>
+	
+	
+	<!-- UtilityWorker NoFeral -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'UtilityWorkerFeral')]/@name">zombieUtilityWorker</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'UtilityWorkerFeral')]/@name">zombieUtilityWorker</set>
+	
+	
+	<!-- FatCop NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'CopRad')]/@name">zombieFatCopFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'CopRad')]/@name">zombieFatCopFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'CopFeral')]/@name">zombieFatCop</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'CopFeral')]/@name">zombieFatCop</set>
+	
+	
+	<!-- FatHawaiian NoFeral -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'HawaiianFeral')]/@name">zombieFatHawaiian</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'HawaiianFeral')]/@name">zombieFatHawaiian</set>
+	
+	
+	<!-- FemaleFat NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'FatRad')]/@name">zombieFemaleFatFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'FatRad')]/@name">zombieFemaleFatFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'FatRad')]/@name">zombieFemaleFatFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Zombie')]/entity[contains(@name, 'FatFeral')]/@name">zombieFemaleFat</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'FatFeral')]/@name">zombieFemaleFat</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'FatFeral')]/@name">zombieFemaleFat</set>
+	
+	
+	<!-- Soldier NoFeral_NoRad -->
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'dierRad')]/@name">zombieSoldierFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'dierRad')]/@name">zombieSoldierFeral</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Horde')]/entity[contains(@name, 'dierFeral')]/@name">zombieSoldier</set>
+	<set xpath="/entitygroups/entitygroup[contains(@name, 'Group')]/entity[contains(@name, 'dierFeral')]/@name">zombieSoldier</set>
+	
+</NoFerals_NoRadiated>

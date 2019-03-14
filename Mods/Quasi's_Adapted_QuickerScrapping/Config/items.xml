@@ -1,0 +1,47 @@
+<Config>
+	
+	<append xpath="/items/item[@name='resourceYuccaFibers']">
+		<property name="CraftingIngredientTime" value="0.9"/>
+	</append>
+	
+	<append xpath="/items/item[@name='resourceScrapBrass']">
+		<property name="CraftingIngredientTime" value="0.2"/>
+	</append>
+	
+	<append xpath="/items/item[@name='resourceScrapLead']">
+		<property name="CraftingIngredientTime" value="0.2"/>
+	</append>
+	
+	<append xpath="/items/item[@name='resourceCloth']">
+		<property name="CraftingIngredientTime" value="0.9"/>
+	</append>
+	
+	<append xpath="/items/item[@name='resourcePaper']">
+		<property name="CraftingIngredientTime" value="0.8"/>
+	</append>
+	
+	<set xpath="/items/item[@name='resourceScrapIron']/property[@name='CraftingIngredientTime']/@value">0.15</set>
+	
+	<set xpath="/items/item[@name='resourceRockSmall']/property[@name='CraftingIngredientTime']/@value">0.4</set>
+
+	<set xpath="/items/item[@name='resourceWood']/property[@name='CraftingIngredientTime']/@value">0.2</set>
+	
+	<set xpath="/items/item[@name='resourceScrapPolymers']/property[@name='CraftingIngredientTime']/@value">1</set>
+	
+	<set xpath="/items/item[@name='resourceLeather']/property[@name='CraftingIngredientTime']/@value">1.5</set>
+	
+	<set xpath="/items/item[@name='resourceMilitaryFiber']/property[@name='CraftingIngredientTime']/@value">5</set>
+	
+	<set xpath="/items/item[@name='resourceElectricParts']/property[@name='CraftingIngredientTime']/@value">1.5</set>
+	
+	<set xpath="/items/item[@name='resourceElectronicParts']/property[@name='CraftingIngredientTime']/@value">1.5</set>
+	
+	<set xpath="/items/item[@name='resourceMechanicalParts']/property[@name='CraftingIngredientTime']/@value">1.5</set>	
+
+	<insertAfter  xpath="/items/item[@name='resourceBrokenGlass']/property[@name='EconomicBundleSize']">
+		<property name="CraftingIngredientTime" value="0.5"/>
+	</insertAfter>
+	
+	<!-- If you want to reduce the time it takes to scrap stuff to one or more of the resources, just reduce the CraftingIngredientTime value to your liking -->
+
+	</Config>

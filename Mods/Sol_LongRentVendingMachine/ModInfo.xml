@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Long Rent Vending Machine" />
+		<Description value="Adds a duplicate rental vending machine that has longer rental duration" />
+		<Author value="Sinz / Sol" />
+		<Version value="1" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

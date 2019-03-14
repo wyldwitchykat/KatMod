@@ -1,0 +1,103 @@
+<configs>
+	<append xpath="/blocks">
+
+	<block name="Baited_Reusable_Rabbit_Trap">
+		<!--<property name="DescriptionKey" value="Baited_Reusable_Rabbit_Trap_Desc"/> -->
+		<property name="Material" value="Mwood" />
+		<property name="Shape" value="New"/>
+		<property name="Model" value="gable_inverted_half"/>
+		<property name="Mesh" value="cutout"/> 
+		<property name="Frame"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="MultiBlockDim" value="3,1,3"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Texture" value="381,68,381,381,381,381" />
+		<property name="CustomIcon" value="woodGableInvertedSteep"/>
+		<property name="CustomIconTint" value="255,0,0" />
+		<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+		<property name="HeatMapStrength" value="0.5"/>
+		<property name="HeatMapTime" value="1200"/>
+		<property name="HeatMapFrequency" value="25"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="15"/>
+		<property name="Class" value="UpgradeRated"/>
+		<property name="UpgradeRated.ToBlock" value="Sprung_Reusable_Rabbit_Trap"/>
+		<property name="UpgradeRated.Rate" value="7"/>
+		<drop event="Destroy" name="Unbaited_Reusable_Rabbit_Trap" count="1"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10"/>
+			</property>
+	</block>
+
+	<block name="Sprung_Reusable_Rabbit_Trap">
+		<property name="CustomIcon" value="woodFrameMaster"/>
+		<property name="CustomIconTint" value="255,0,0" />
+		<property name="HeatMapStrength" value="3"/>
+		<property name="HeatMapTime" value="1200"/>
+		<property name="HeatMapFrequency" value="25"/>
+		<property name="Class" value="SpawnEntity"/>
+			<property name="SpawnClass" value="Trapped_Rabbit"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Shape" value="New"/>
+		<property name="Model" value="cube"/>
+		<property name="Mesh" value="cutout"/>
+		<property name="Frame"/>
+		<property name="Texture" value="381"/>
+	<drop event="Destroy" name="Unbaited_Reusable_Rabbit_Trap" count="1"/>
+	</block>
+	
+	<block name="Baited_Primitive_Rabbit_Trap">
+		<!--<property name="DescriptionKey" value="Baited_Primitive_Rabbit_Trap_Desc"/> -->
+		<property name="Material" value="Mwood_weak" />
+		<property name="Shape" value="New"/>
+		<property name="Model" value="Arch"/>
+		<property name="Mesh" value="cutout"/> 
+		<property name="Frame"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="MultiBlockDim" value="3,1,3"/>
+		<property name="OnlySimpleRotations" value="true"/>
+		<property name="Texture" value="381,68,381,381,381,381" />
+		<property name="CustomIcon" value="woodFrameArch"/>
+		<property name="CustomIconTint" value="0,255,0" />
+		<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+		<property name="HeatMapStrength" value="0.5"/>
+		<property name="HeatMapTime" value="1200"/>
+		<property name="HeatMapFrequency" value="25"/>
+		<property name="DisplayInfo" value="Name"/>
+		<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.FertileLevel" value="1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="15"/>
+		<property name="Class" value="UpgradeRated"/>
+			<property name="UpgradeRated.ToBlock" value="Sprung_Primitive_Rabbit_Trap"/>
+			<property name="UpgradeRated.Rate" value="3"/>
+		<property class="RepairItems">
+			<property name="resourceWood" value="10"/>
+		</property>
+		<drop event="Destroy" count="0"/>
+	</block>
+	
+	<block name="Sprung_Primitive_Rabbit_Trap">
+		<property name="CustomIcon" value="woodFrameMaster"/>
+		<property name="CustomIconTint" value="0,255,0" />
+		<property name="HeatMapStrength" value="3"/>
+		<property name="HeatMapTime" value="1200"/>
+		<property name="HeatMapFrequency" value="25"/>
+		<property name="Class" value="SpawnEntity"/>
+			<property name="SpawnClass" value="Trapped_Rabbit"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Material" value="Mwood_weak"/>
+		<property name="Shape" value="New"/>
+		<property name="Model" value="cube"/>
+		<property name="Mesh" value="cutout"/>
+		<property name="Texture" value="381"/>
+		<property name="Frame"/>
+		<drop event="Destroy" count="0"/>
+	</block>
+	
+	</append>
+</configs>

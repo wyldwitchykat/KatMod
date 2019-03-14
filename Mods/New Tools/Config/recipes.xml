@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+	<configs>
+
+		<append xpath="/recipes">
+
+<!-- add stone hoe to recipes -->
+			
+			<recipe name="StoneHoe" count="1">
+				<ingredient name="resourceRockSmall" count="10"/>
+				<ingredient name="resourceYuccaFibers" count="5"/>
+				<ingredient name="resourceWood" count="5"/>
+			</recipe>
+			
+			<recipe name="Stone Pickaxe" count="1">
+				<ingredient name="resourceRockSmall" count="10"/>
+				<ingredient name="resourceYuccaFibers" count="5"/>
+				<ingredient name="resourceWood" count="5"/>
+			</recipe>
+			
+			<recipe name="meleeToolMultiIron" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedIron" count="60"/>
+			<ingredient name="resourceWood" count="30"/>
+		</recipe>
+		
+		<recipe name="meleeToolMultiSteel" count="1" craft_area="workbench">
+			<ingredient name="resourceForgedSteel" count="60"/>
+			<ingredient name="resourceWood" count="30"/>
+		</recipe>
+		
+		<recipe name="Stone Knife" count="1">
+            <ingredient name="resourceRockSmall" count="3"/>
+        </recipe>
+
+		</append>
+
+	</configs>

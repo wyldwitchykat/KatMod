@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configs>
+
+<!-- magazinePerkGunslinger -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkGunslinger']/property[@class='Action0']"/>
+		
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkGunslinger']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkGunslinger"/>
+				</property>
+		</append>
+
+<!-- magazinePerkShotgunMessiah -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkShotgunMessiah']/property[@class='Action0']"/>
+		
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkShotgunMessiah']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkShotgunMessiah"/>
+				</property>
+		
+		</append>
+		
+<!-- magazinePerkAutomaticWeapons -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkAutomaticWeapons']/property[@class='Action0']"/>
+		
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkAutomaticWeapons']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkAutomaticWeapons"/>
+				</property>
+
+		</append>	
+
+<!-- perkDeadEye -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkDeadEye']/property[@class='Action0']"/>
+		
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkDeadEye']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkDeadEye"/>
+				</property>
+
+		</append>
+
+<!-- magazinePerkArchery -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkArchery']/property[@class='Action0']"/>
+		
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkArchery']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkArchery"/>
+				</property>
+
+		</append>
+		
+<!-- magazinePerkExplosiveWeapons -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkExplosiveWeapons']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkExplosiveWeapons']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkExplosiveWeapons']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkExplosiveWeapons"/>
+				</property>
+
+		</append>
+
+<!-- magazinePerkHeadshot -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkHeadshot']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkHeadshot']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkHeadshot']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkHeadshot"/>
+				</property>
+
+		</append>		
+		
+<!-- magazinePerkRunAndGun -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkRunAndGun']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkRunAndGun']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkRunAndGun']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkRunAndGun"/>
+				</property>
+
+		</append>		
+		
+<!-- perkLuckyLooter -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkLuckyLooter']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkLuckyLooter']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkLuckyLooter']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkLuckyLooter"/>
+				</property>
+
+		</append>		
+		
+<!-- perkSalvageOperations -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkSalvageOperations']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkSalvageOperations']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkSalvageOperations']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkSalvageOperations"/>
+				</property>
+
+		</append>		
+		
+<!-- perkSexualTrex -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkSexualTrex']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkSexualTrex']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkSexualTrex']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkSexualTrex"/>
+				</property>
+
+		</append>		
+		
+<!-- perkFlurryOfBlows -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkFlurryOfBlows']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkFlurryOfBlows']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkFlurryOfBlows']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkFlurryOfBlows"/>
+				</property>
+
+		</append>		
+		
+<!-- perkDeepCuts -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkDeepCuts']/property[@class='Action0']"/>
+		
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkDeepCuts']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkDeepCuts"/>
+				</property>
+
+		</append>		
+		
+<!-- perkStayDown -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkStayDown']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkStayDown']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkStayDown']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkStayDown"/>
+				</property>
+
+		</append>		
+		
+<!-- perkHeavyMetal -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkHeavyMetal']/property[@class='Action0']"/>
+		
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkHeavyMetal']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkHeavyMetal"/>
+				</property>
+
+		</append>		
+		
+<!-- perkSkullCrusher -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkSkullCrusher']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkSkullCrusher']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkSkullCrusher']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkSkullCrusher"/>
+				</property>
+
+		</append>
+
+<!-- perkMiner69r -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkMiner69r']/property[@class='Action0']"/>
+		
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkMiner69r']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkMiner69r"/>
+				</property>
+
+		</append>
+		
+<!-- perkPackMule -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkPackMule']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkPackMule']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkPackMule']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkPackMule"/>
+				</property>
+
+		</append>
+
+<!-- perkMotherLode -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkMotherLode']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkMotherLode']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkMotherLode']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkMotherLode"/>
+				</property>
+
+		</append>
+		
+<!-- perkHeavyArmor -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkHeavyArmor']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkHeavyArmor']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkHeavyArmor']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkHeavyArmor"/>
+				</property>
+
+		</append>		
+
+<!-- perkTheHuntsman -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkTheHuntsman']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkTheHuntsman']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkTheHuntsman']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkTheHuntsman"/>
+				</property>
+
+		</append>
+		
+<!-- perkIntrinsicImmunity -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkIntrinsicImmunity']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkIntrinsicImmunity']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkIntrinsicImmunity']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkIntrinsicImmunity"/>
+				</property>
+
+		</append>		
+		
+<!-- perkWellInsulated -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkWellInsulated']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkWellInsulated']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkWellInsulated']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkWellInsulated"/>
+				</property>
+
+		</append>		
+		
+<!-- perkLivingOffTheLand -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkLivingOffTheLand']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkLivingOffTheLand']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkLivingOffTheLand']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkLivingOffTheLand"/>
+				</property>
+
+		</append>		
+		
+<!-- perkPainTolerance -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkPainTolerance']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkPainTolerance']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkPainTolerance']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkPainTolerance"/>
+				</property>
+
+		</append>		
+		
+<!-- HealingFactor -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkHealingFactor']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkHealingFactor']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkHealingFactor']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkHealingFactor"/>
+				</property>
+
+		</append>		
+		
+<!-- perkSlowMetabolism -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkSlowMetabolism']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkSlowMetabolism']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkSlowMetabolism']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkSlowMetabolism"/>
+				</property>
+
+		</append>		
+		
+<!-- perkSelfMedicated -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkSelfMedicated']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkSelfMedicated']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkSelfMedicated']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkSelfMedicated"/>
+				</property>
+
+		</append>		
+		
+<!-- perkRuleOneCardio -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkRuleOneCardio']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkRuleOneCardio']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkRuleOneCardio']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkRuleOneCardio"/>
+				</property>
+
+		</append>		
+		
+<!-- perkLightArmor -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkLightArmor']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkLightArmor']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkLightArmor']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkLightArmor"/>
+				</property>
+
+		</append>		
+		
+<!-- perkChargingBull -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkChargingBull']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkChargingBull']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkChargingBull']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkChargingBull"/>
+				</property>
+
+		</append>		
+
+<!-- perkParkour -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkParkour']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkParkour']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkParkour']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkParkour"/>
+				</property>
+
+		</append>
+
+<!-- perkOlympicSwimmer -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkOlympicSwimmer']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkOlympicSwimmer']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkOlympicSwimmer']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkOlympicSwimmer"/>
+				</property>
+
+		</append>
+
+<!-- perkNinjaMovement -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkNinjaMovement']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkNinjaMovement']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkNinjaMovement']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkNinjaMovement"/>
+				</property>
+
+		</append>
+
+<!-- perkHiddenStrike -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkHiddenStrike']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkHiddenStrike']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkHiddenStrike']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkHiddenStrike"/>
+				</property>
+
+		</append>
+		
+<!-- perkFromTheShadows -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkFromTheShadows']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkFromTheShadows']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkFromTheShadows']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkFromTheShadows"/>
+				</property>
+
+		</append>		
+		
+<!-- perkBetterBarter -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkBetterBarter']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkBetterBarter']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkBetterBarter']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkBetterBarter"/>
+				</property>
+
+		</append>		
+		
+<!-- perkDaringAdventurer -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkDaringAdventurer']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkDaringAdventurer']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkDaringAdventurer']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkDaringAdventurer"/>
+				</property>
+
+		</append>
+
+<!-- perkCharismaticNature -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkCharismaticNature']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkCharismaticNature']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkCharismaticNature']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkCharismaticNature"/>
+				</property>
+
+		</append>
+
+<!-- perkHammerForge -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkHammerForge']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkHammerForge']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkHammerForge']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkHammerForge"/>
+				</property>
+		</append>
+		
+<!-- perkGreaseMonkey -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkGreaseMonkey']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkGreaseMonkey']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkGreaseMonkey']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkGreaseMonkey"/>
+				</property>
+					<level_requirements level="1,5"><requirement name="PlayerLevel" operation="GTE" value="1"/>
+					</level_requirements>
+		</append>
+
+<!-- perkAdvancedEngineering -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkAdvancedEngineering']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkAdvancedEngineering']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkAdvancedEngineering']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkAdvancedEngineering"/>
+				</property>
+					<level_requirements level="1,5"><requirement name="PlayerLevel" operation="GTE" value="1"/>
+					</level_requirements>
+		</append>		
+
+<!-- perkYeahScience -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkYeahScience']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkYeahScience']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkYeahScience']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkYeahScience"/>
+				</property>
+					<level_requirements level="1,5"><requirement name="PlayerLevel" operation="GTE" value="1"/>
+					</level_requirements>				
+		</append>
+
+<!-- perkPhysician -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkPhysician']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkPhysician']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkPhysician']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkPhysician"/>
+				</property>
+					<level_requirements level="1,5"><requirement name="PlayerLevel" operation="GTE" value="1"/>
+					</level_requirements>				
+		</append>
+		
+<!-- perkMasterChef -->
+
+	<!-- remove unnecessary nodes -->
+
+		<remove xpath="items/item[@name='magazinePerkMasterChef']/property[@class='Action0']"/>
+		<remove xpath="items/item[@name='magazinePerkMasterChef']/effect_group"/>
+
+	<!-- adds give perk point -->
+
+		<append xpath="items/item[@name='magazinePerkMasterChef']">
+
+				<property class="Action0">
+					<property name="Class" value="GainSkill"/>
+					<property name="Skills_to_gain" value="perkMasterChef"/>
+				</property>
+					<level_requirements level="1,5"><requirement name="PlayerLevel" operation="GTE" value="1"/>
+					</level_requirements>				
+		</append>		
+
+</configs>
+

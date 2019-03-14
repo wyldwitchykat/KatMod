@@ -1,0 +1,23 @@
+<configs>
+
+	
+	<append xpath="/blocks/block[@name='driftwood']">
+		<property name="Extends" value="woodWeakNoUpgradeMaster" />
+		<property name="AllowAllRotations" value="true"/>
+		<property name="CanPickup" value="true"/>
+		<property name="FuelValue" value="750"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cinderBlocks01']">
+		<property name="Extends" value="concreteNoUpgradeMaster"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='scrapMetalPile']">
+		<property name="Extends" value="scrapIronNoUpgradeMaster" />
+		<property name="AllowAllRotations" value="true"/>
+		<property name="CanPickup" value="true"/>
+	</append>
+	
+</configs>

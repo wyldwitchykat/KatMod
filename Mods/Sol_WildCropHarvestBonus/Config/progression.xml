@@ -1,0 +1,4 @@
+<configs>
+	<set xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@tags='wildCropsHarvest']/@value">0,0,1,3,4,5</set>
+	<set xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@tags='wildCropsHarvest']/@level">0,1,2,3,4,5</set>
+</configs>

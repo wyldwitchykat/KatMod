@@ -1,0 +1,14 @@
+<config>
+	<!-- This will log as a WRN for not able to remove -->
+	<!-- This is done on purpose to have a log entry showing this file was read -->
+	<remove xpath="/Successfully_Loaded[@modname='RELXIX_Quests_TraderAdvertisements'][@version='1.0.3'][@filename='\Config\items.xml']" />
+
+	<append xpath="/items" >
+		<item name="Trader_Advertisement">
+			<property name="Extends" value="questMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="quest_TraderAdvert"/>
+			</property>
+		</item>
+	</append>
+</config>

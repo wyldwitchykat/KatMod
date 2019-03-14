@@ -1,0 +1,56 @@
+<configs>
+    <append xpath="/recipes">
+
+        <recipe name="drinkJarBoiledWater" count="1" craft_area="waterfilter" craft_time="30">
+            <ingredient name="drinkJarRiverWater" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarBoiledWater" count="1" craft_area="waterfilter" craft_time="30">
+            <ingredient name="resourceSnowBall" count="1"/>
+            <ingredient name="drinkJarEmpty" count="1"/>
+        </recipe>
+
+        <recipe name="drinkCanBoiledWater" count="1" craft_area="waterfilter" craft_time="30">
+            <ingredient name="drinkCanRiverWater" count="1"/>
+        </recipe>
+
+        <recipe name="drinkCanBoiledWater" count="1" craft_area="waterfilter" craft_time="30">
+<ingredient name="resourceSnowBall" count="1"/>
+<ingredient name="drinkCanEmpty" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarBoiledWater" count="1" craft_area="waterfilter" craft_time="30" craft_tool="modArmorWaterPurifier">
+<ingredient name="resourceSnowBall" count="1"/>
+<ingredient name="drinkJarEmpty" count="1"/>
+        </recipe>
+
+        <recipe name="drinkJarBoiledWater" count="1" craft_area="waterfilter" craft_time="30" craft_tool="modArmorWaterPurifier">
+<ingredient name="drinkJarRiverWater" count="1"/>
+        </recipe>
+
+        <recipe name="drinkCanBoiledWater" count="1" craft_area="waterfilter" craft_time="30" craft_tool="modArmorWaterPurifier">
+<ingredient name="drinkCanRiverWater" count="1"/>
+        </recipe>
+
+        <recipe name="drinkCanBoiledWater" count="1" craft_area="waterfilter" craft_time="30" craft_tool="modArmorWaterPurifier">
+<ingredient name="resourceSnowBall" count="1"/>
+<ingredient name="drinkCanEmpty" count="1"/>
+        </recipe>
+
+        <recipe name="waterfilter" count="1" craft_area="workbench">
+		<ingredient name="bucketEmpty" count="1"/>
+        <ingredient name="resourceScrapPolymers" count="10"/>
+        <ingredient name="resourceDuctTape" count="5"/>
+        <ingredient name="resourceCloth" count="20"/>
+        <ingredient name="resourceCoal" count="10"/>
+        <ingredient name="resourceMetalPipe" count="5"/>
+        </recipe>
+		
+		<recipe name="cntWaterCoolerFull" count="1" craft_area="workbench">
+			<ingredient name="cntWaterCoolerBottle" count="1"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+			<ingredient name="resourceMetalPipe" count="5"/>
+		</recipe>
+    </append>
+</configs>

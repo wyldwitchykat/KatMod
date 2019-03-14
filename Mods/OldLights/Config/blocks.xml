@@ -1,0 +1,58 @@
+<configs>
+	<append xpath="/blocks">
+
+<!-- Old Lights Mod -->
+<block name="OldIndustrialLight">
+	<property name="Class" value="PoweredLight"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPOIGroupDesc"/>
+	<property name="Group" value="Science"/>
+	<property name="Material" value="Mmetal_thin"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="CustomIcon" value="industrialLight01"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Light" value="0.5"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<property name="Model" value="Entities/Lighting/industrialLight01Prefab"/>
+	<property name="HandleFace" value="South"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="1"/>
+		<property name="resourceElectricParts" value="3"/>
+		<property name="resourceElectricParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="5" prob="1"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="EconomicValue" value="175"/>
+	<property name="FilterTags" value="fdecor,felectrical"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+
+<block name="OldFluorescentLight">
+	<property name="Class" value="PoweredLight"/>
+	<property name="Extends" value="porchLight01"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+	<property name="CustomIcon" value="ceilingLight07"/>
+	<property name="RuntimeSwitch" value="true"/>
+	<property name="HandleFace" value="Top"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="1"/>
+		<property name="resourceElectricParts" value="3"/>
+		<property name="resourceElectricParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="1,2" tag="salvageHarvest"/>
+	<property name="Model" value="Entities/Lighting/player_ceilingLight07Prefab"/>
+	<property name="TakeDelay" value="5"/>
+</block>
+
+	</append>
+</configs>

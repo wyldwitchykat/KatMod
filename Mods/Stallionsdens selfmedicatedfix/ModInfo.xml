@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Stallionsdens selfmedicatedfix" />
+        <Description value="makes the self medicated perk work" />
+        <Author value="Stallionsden" />
+        <Version value="StableA17" />
+    </ModInfo>
+</xml>

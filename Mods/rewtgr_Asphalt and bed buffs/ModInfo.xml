@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Asphalt and bed buffs" />
+        <Description value="Change the player's speed only(with buff) on asphalt. Also adds a bed healing buff" />
+        <Author value="rewtgr" />
+        <Version value="0.1" />
+    </ModInfo>
+</xml>

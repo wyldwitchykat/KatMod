@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- Loot list for Car Respawn -->
+	<append xpath="/blockplaceholders">
+		<placeholder name="lootMyCarsHelper">
+			<block name="oilBarrel" prob="0.01"/>
+			<block name="cntCar03SedanDamage0" prob="1"/>
+			<block name="cntCar03SedanDamage1" prob="2"/>
+			<block name="cntCar03SedanDamage2" prob="2"/>
+			<block name="cntBusSchool" prob="0.1"/>
+			<block name="cntBusSchoolShort" prob="0.1"/>
+			<block name="cntBusShuttle" prob="0.1"/>
+			<block name="cntBusCity" prob="0.1"/>
+		</placeholder>
+	</append>
+		
+</config>

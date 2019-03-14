@@ -1,0 +1,16 @@
+<configs>
+	<append xpath="/recipes">
+
+		<recipe name="ammoGasCan" count="100" craft_area="campfire" craft_tool="toolBeaker" tags="learnable">
+			<ingredient name="resourceAnimalFat" count="3"/>
+			<ingredient name="drinkJarGrainAlcohol" count="1"/>
+		</recipe>
+
+		<recipe name="ammoGasCan" count="100" craft_area="chemistryStation" tags="learnable">
+			<ingredient name="resourceAnimalFat" count="2"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+
+	</append>
+</configs>

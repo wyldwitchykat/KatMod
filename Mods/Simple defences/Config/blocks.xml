@@ -1,0 +1,13 @@
+<configs>
+
+
+<!--Burning barrel -->
+<append xpath="/blocks/block[@name='burningBarrelPlayer']">
+		<property name="BuffsWhenWalkedOn" value="buffBurningMolotov"/>
+	</append>
+<!--Mines -->
+
+<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='CanPickup']/@value">true</set> 
+
+
+</configs>

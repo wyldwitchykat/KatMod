@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Wild Crop Harvest Bonus" />
+		<Description value="Expands living off the Land harvest bonust to effect wild spawned crops" />
+		<Author value="DrHardware - Credit to Sinz/Sol for review" />
+		<Version value="1" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

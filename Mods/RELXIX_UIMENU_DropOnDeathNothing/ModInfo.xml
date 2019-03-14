@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="RELXIX_UIMENU_DropOnDeathNothing" />
+		<Description value="This adds the option to select Drop On Death: 'Nothing' in addition to the default options of 'Everything, Backpack, Toolbelt, DeleteAll'.  This option is also added as available filter choice in the server browser. " />
+		<Author value="Red Eagle LXIX" />
+		<Version value="1.0.3" />
+		<!--
+		    v1.0.3 - 2018-12-11 - Added a purposeful WRN event to log when files load
+		    v1.0.1 - 2018-12-09 - Add Server Browser Support & Server Info Support
+		-->
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

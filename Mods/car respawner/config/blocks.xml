@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<!-- Downgrade block and loot helper. (Required) -->
+	<append xpath="/blocks">
+		
+			<block name="Nothing">
+				<property name="CustomIcon" value="steelMaster" />
+				<property name="CustomIconTint" value="ffa0ff"/>		
+				<property name="IsDeveloper" value="true" />
+				<property name="Class" value="PlantGrowing" />	
+				<property name="Material" value="Mtallgrass"/>
+				<property name="StabilitySupport" value="false"/>
+				<property name="Shape" value="Grass"/>
+				<property name="Mesh" value="grass"/>
+				<property name="Texture" value="350,368,369,370,350,368"/>		
+				<property name="Collide" value="melee"/>
+				<property name="CanMobsSpawnOn" value="false" />
+				<drop event="Destroy" count="0" />	
+				<property name="IsTerrainDecoration" value="true" />
+				<property name="PlantGrowing.Next" value="lootMyCarsHelper" />
+				<property name="PlantGrowing.GrowthRate" value="1800" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+				<property name="PlantGrowing.FertileLevel" value="0" />
+				<property name="PlantGrowing.IsRandom" value="false" />
+			</block>
+	
+			<block name="lootMyCarsHelper">
+				<property name="Extends" value="corrugatedMetalSheet" param1="DescriptionKey"/>
+				<property name="CreativeMode" value="Dev"/>
+				<property name="CustomIcon" value="corrugatedMetalSheet"/> <property name="CustomIconTint" value="ff8080"/>
+				<property name="Class" value="Loot"/>
+				<property name="LootList" value="16"/>
+				<property name="FilterTags" value="fdesign"/>
+				<drop event="Fall" count="0" prob="0"/>
+			</block>
+	</append>
+
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage2']"><property name="DowngradeBlock" value="Nothing"/></append> <!-- Car Downgrade code (Required) -->
+	
+	<append xpath="/blocks/block[@name='cntBusSchool']"><property name="DowngradeBlock" value="Nothing"/></append> <!-- Bus Downgrade code (Optional) -->
+	
+	<!-- Busses: Additional Resources from harverst (Optional) -->
+	<append xpath="/blocks/block[@name='cntBusSchool']">
+		<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
+		<drop event="Harvest" name="ammoGasCan" count="20,130" tag="salvageHarvest"/>
+		<drop event="Harvest" name="carBattery" count="1" prob="0.2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1,3" prob="0.5" tag="salvageHarvest"/>
+	</append>
+
+</config>

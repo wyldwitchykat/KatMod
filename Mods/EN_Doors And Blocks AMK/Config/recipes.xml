@@ -1,0 +1,47 @@
+<configs>
+	<append xpath="/recipes">
+
+<recipe name="Jail Prision" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="25"/>
+	<ingredient name="resourceSpring" count="7"/>
+	<ingredient name="resourceMechanicalParts" count="17"/></recipe>
+
+<recipe name="Folding Garage Door" count="1" craft_area="workbench">
+	<ingredient name="resourceWood" count="60"/>
+     	<ingredient name="resourceScrapIron" count="25"/>
+	<ingredient name="resourceSpring" count="7"/>
+	<ingredient name="resourceMechanicalParts" count="16"/>
+</recipe>
+
+<recipe name="Jails Bars" count="1" craft_area="workbench">
+     <ingredient name="resourceForgedIron" count="20"/>
+	<ingredient name="resourceSpring" count="5"/>
+</recipe>
+
+<recipe name="Barrier Concrete" count="1" craft_area="cementMixer">
+	<ingredient name="resourceConcreteMix" count="50"/>
+</recipe>
+
+<recipe name="Security Plate" count="1" craft_area="workbench">
+     <ingredient name="resourceForgedIron" count="15"/>
+		</recipe>
+<recipe name="commercialDoor1_v1" count="1" craft_area="workbench">
+     <ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+
+<recipe name="commercialDoor4_v1" count="1" craft_area="workbench">
+     <ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+
+<recipe name="houseFrontDoor1_v1" count="1" craft_area="workbench">
+     <ingredient name="resourceWood" count="50"/>
+		</recipe>
+
+<recipe name="houseFrontDoor2_v1" count="1" craft_area="workbench">
+     <ingredient name="resourceWood" count="50"/>
+		</recipe>
+
+
+	</append>
+</configs>
+

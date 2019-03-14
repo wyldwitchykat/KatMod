@@ -1,0 +1,9 @@
+<RemoveModSchematics>
+
+<!-- remove mod schematics from recipes -->
+	<remove xpath="/recipes/recipe[contains(@name, 'modGun')]/ingredient[contains(@name, 'Schematic')]" />
+	<remove xpath="/recipes/recipe[contains(@name, 'modShot')]/ingredient[contains(@name, 'Schematic')]" />
+	<remove xpath="/recipes/recipe[contains(@name, 'modMelee')]/ingredient[contains(@name, 'Schematic')]" />
+	<remove xpath="/recipes/recipe[contains(@name, 'modArmor')]/ingredient[contains(@name, 'Schematic')]" />
+
+</RemoveModSchematics>

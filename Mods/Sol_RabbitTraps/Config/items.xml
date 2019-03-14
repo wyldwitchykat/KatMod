@@ -1,0 +1,74 @@
+<configs>
+	<append xpath="/items">
+
+	<item name="Herbivore_Bait">
+		<!--<property name="DescriptionKey" value="Herbivore_Bait_Desc"/> -->
+		<property name="Degradation" value="1" param1="true" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="Mfarmland"/>
+		<property name="CustomIcon" value="ammoBlunderbuss" />
+		<property name="CustomIconTint" value="255,255,0" />
+		<property name="Weight" value="1" />
+		<property name="HoldType" value="45"/>
+		<property name="EconomicValue" value="8"/>
+	</item>
+	
+	<item name="Unbaited_Reusable_Rabbit_Trap">
+		<!--<property name="DescriptionKey" value="Unbaited_Reusable_Rabbit_Trap_Desc"/> -->
+		<property name="Degradation" value="1" param1="true" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="Mfarmland"/>
+		<property name="CustomIcon" value="woodFrameGableInvertedSteep" />
+		<property name="CustomIconTint" value="255,0,0" />
+		<property name="Weight" value="1" />
+		<property name="HoldType" value="45"/>
+		<property name="EconomicValue" value="8"/>
+	</item>
+
+	<item name="Unbaited_Primitive_Rabbit_Trap">
+		<!--<property name="DescriptionKey" value="Unbaited_Primitive_Rabbit_Trap_Desc"/> -->
+		<property name="Degradation" value="1" param1="true" />
+		<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+		<property name="Material" value="Mfarmland"/>
+		<property name="CustomIcon" value="woodFrameArch" />
+		<property name="CustomIconTint" value="0,255,0" />
+		<property name="Weight" value="1" />
+		<property name="HoldType" value="45"/>
+		<property name="EconomicValue" value="8"/>
+	</item>
+	
+	<item name="Huntsman_Rank_1">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CustomIcon" value="schematicMaster"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property class="Action0">
+			<requirement name="CVarCompare" cvar="Herbivore_Bait" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="Unbaited_Primitive_Rabbit_Trap" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="Baited_Primitive_Rabbit_Trap" operation="Equals" value="0"/>
+		</property>
+			<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Herbivore_Bait" operation="set" value="1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Unbaited_Primitive_Rabbit_Trap" operation="set" value="1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Baited_Primitive_Rabbit_Trap" operation="set" value="1"/>
+			</effect_group>
+	</item>
+	
+	<item name="Huntsman_Rank_4">
+		<property name="Extends" value="unlockBookMaster"/>
+		<property name="CustomIcon" value="schematicMaster"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property class="Action0">
+			<requirement name="CVarCompare" cvar="Unbaited_Reusable_Rabbit_Trap" operation="Equals" value="0"/>
+			<requirement name="CVarCompare" cvar="Baited_Reusable_Rabbit_Trap" operation="Equals" value="0"/>
+		</property>
+			<effect_group tiered="false">
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Unbaited_Reusable_Rabbit_Trap" operation="set" value="1"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Baited_Reusable_Rabbit_Trap" operation="set" value="1"/>
+			</effect_group>
+	</item>
+	
+	</append>
+</configs>

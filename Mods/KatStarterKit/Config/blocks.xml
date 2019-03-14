@@ -1,0 +1,27 @@
+<configs>
+	<append xpath="/blocks">
+
+		<block id="" name="Survivor's Pack (Locked)">
+    <property name="CustomIcon" value="cntBackpack01" />
+   <property name="Material" value="Mcloth"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Shape" value="ModelEntity"/>
+	<!--<property name="Mesh" value="models"/>-->
+	<property name="Model" value="Entities/LootContainers/backpack01Prefab" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="DowngradeBlock" value="Survivor's Pack" />
+    <property name="Place" value="TowardsPlacer" />
+    <drop event="Destroy" count="0" />
+ </block>
+ 
+<block id="" name="Survivor's Pack">
+    <property name="Extends" value="Survivor's Pack (Locked)" param1="DowngradeBlock" />
+    <property name="Class" value="Loot" />
+    <property name="LootList" value="180" />
+    <drop event="Destroy" count="0" />
+ </block>
+		
+	</append>
+</configs>

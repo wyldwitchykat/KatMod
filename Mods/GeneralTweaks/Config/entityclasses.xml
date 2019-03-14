@@ -1,0 +1,11 @@
+<TraditionalZombies_NotAthletes>
+
+<!-- Reduces zombie jump distance
+	(Don't jump gaps but they do jump obstacles, instances of gap jumping may be related to obstacles ie zombies, rail, etc.) -->
+	<set xpath="entity_classes/entity_class[contains(@name, 'zombie')]/property[@name='JumpMaxDistance']/@value">0, 0</set>
+	
+<!-- Remove zombie ability to use ladder
+	(they can barely coordinate) -->
+	<set xpath="entity_classes/entity_class[contains(@name, 'zombie')]/property[@name='CanClimbLadders']/@value">false</set>
+	
+</TraditionalZombies_NotAthletes>

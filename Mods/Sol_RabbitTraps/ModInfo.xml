@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Rabbit Traps" />
+		<Description value="Adds rabbit trap blocks (which require the huntsman perk to craft) whcih will catch imaginary rabbits (transform into a sprung trap over time). Must be placed on gound within sunlight. Generates map heat." />
+		<Author value="Sinz / Sol" />
+		<Version value="1" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>
