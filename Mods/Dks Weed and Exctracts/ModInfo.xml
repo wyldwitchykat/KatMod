@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+	<Name value="Dks_Weed" />
+	<Author value="dk" />
+	<Description value="Adds weed to the game." />
+	<DisplayName value="Dks Weed and Exctracts" />
+	<Website value="" />
+	<Version value="1.0.0" />
+	<GameVersion value="1.0.309" />
+</xml>

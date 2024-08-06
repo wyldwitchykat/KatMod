@@ -1,0 +1,574 @@
+<Dks_Weed_and_Exctracts>
+
+	<append xpath="/items">
+
+		<item name="Grams Of Ak47">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Ak47"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="resourceCropCannabisBudDesc"/>
+		</item>
+
+		<item name="Grams Of Blue Dream">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Blue Dream"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="resourceCropCannabisBudDesc"/>
+		</item>
+
+		<item name="Grams Of Wedding Cake">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Wedding Cake"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="resourceCropCannabisBudDesc"/>
+		</item>
+
+
+		<item name="Grams Of ChemDawg">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="ChemDawg"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="resourceCropCannabisBudDesc"/>
+		</item>
+
+
+		<item name="Grams Of Alaskan Thunderfuck">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Alaskan Thunderfuck"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="resourceCropCannabisBudDesc"/>
+		</item>
+
+		<item name="Grams Of Purple Haze">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Purple Haze"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="resourceCropCannabisBudDesc"/>
+		</item>
+
+		<item name="Joint Unrolled">
+			<property name="Tags" value="medical"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="drugCannabisJointUnrolled"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="EconomicValue" value="80"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="DescriptionKey" value="drugCannabisJointUnrolledDesc"/>
+		</item>
+
+		<item name="Joint Unrolled With Weed And Oil">
+			<property name="Tags" value="medical"/>
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="drugCannabisJointUnrolledWithWeedAndOil"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="EconomicValue" value="80"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property name="DescriptionKey" value="drugCannabisJointUnrolledDesc"/>
+		</item>
+
+		<item name="Grams Of Shatter">
+			<property name="HoldType" value="45"/>
+			<property name="UnlockedBy" value="craftingMedical,Grams Of Oil Schematic"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Shatter"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="GramsOfOilDesc"/>
+		</item>
+
+		<item name="Grams Of Diamonds">
+			<property name="HoldType" value="45"/>
+			<property name="UnlockedBy" value="craftingMedical,Grams Of Oil Schematic"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Diamonds"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="GramsOfOilDesc"/>
+		</item>
+
+
+		<item name="Grams Of Sugar Wax">
+			<property name="HoldType" value="45"/>
+			<property name="UnlockedBy" value="craftingMedical,Grams Of Oil Schematic"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Sugar Wax"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="GramsOfOilDesc"/>
+		</item>
+
+
+		<item name="Grams Of Wax">
+			<property name="HoldType" value="45"/>
+			<property name="UnlockedBy" value="craftingMedical,Grams Of Oil Schematic"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Wax"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="GramsOfOilDesc"/>
+		</item>
+
+
+		<item name="Grams Of Sauce">
+			<property name="HoldType" value="45"/>
+			<property name="UnlockedBy" value="craftingMedical,Grams Of Oil Schematic"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Sauce"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="GramsOfOilDesc"/>
+		</item>
+
+
+		<item name="Grams Of Crumble">
+			<property name="HoldType" value="45"/>
+			<property name="UnlockedBy" value="craftingMedical,Grams Of Oil Schematic"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Crumble"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+			<property name="DescriptionKey" value="GramsOfOilDesc"/>
+		</item>
+
+		<item name="Butane">
+			<property name="HoldType" value="45"/>
+			<property name="UnlockedBy" value="craftingMedical,Butane Schematic"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Butane"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="DescriptionKey" value="ButaneDesc"/>
+		</item>
+
+		<item name="Blasting Tube">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Blasting Tube"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="DescriptionKey" value="BlastingTubeDesc"/>
+		</item>
+
+		<item name="Extraction Kit">
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Extraction Kit"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="500"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="20"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property name="DescriptionKey" value="ExtractionKitDesc"/>
+		</item>
+
+		<item name="Box Of Butane">
+			<property name="Extends" value="resourceRockSmallBundle"/>
+			<property name="UnlockedBy" value="craftingMedical"/>
+			<property name="Meshfile" value="@Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="Box Of Butane"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="Stacknumber" value="5"/> 
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="CraftingIngredientTime" value="300"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+			<property class="Action0">
+				<property name="Create_item" value="Butane"/>
+				<property name="Create_item_count" value="12"/>
+			</property>
+
+			<property name="DescriptionKey" value="BoxOfButaneDesc"/>
+		</item>
+
+		<item name="Joint Rolled With Weed And Oil">
+			<property name="Tags" value="medical"/>
+			<property name="DisplayType" value="drugCannabis"/>
+			<property name="HoldType" value="23"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Joint.unity3d?Joint"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="JointRolledWithWeedAndOil"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="EconomicValue" value="80"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="torch_swoosh"/>
+				<requirement name="NotHasBuff" buff="buffDrugSmokedJoint"/>
+				<requirement name="NotHasBuff" buff="buffDrugRippedBong"/>
+			</property>
+			<effect_group tiered="false">
+				<display_value name="dInstantHealth" value="30"/>
+				<display_value name="$foodAmountAdd" value="-30"/>
+				<display_value name="dFortitude" value="2"/>
+				<display_value name="dPerception" value="2"/>
+				<display_value name="dPhysicalDamageResist" value="25"/>
+				<display_value name="dDuration" value="600"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="add" value="600"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="set" value="903">
+					<requirement name="CVarCompare" cvar="$buffDrugSmokedJointDuration" operation="GT" value="183"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugSmokedJoint"/>
+			</effect_group>
+			<property name="DescriptionKey" value="drugCannabisJointRolledDesc"/>
+		</item>
+
+		<item name="Joint Rolled">
+			<property name="Tags" value="medical"/>
+			<property name="DisplayType" value="drugCannabis"/>
+			<property name="HoldType" value="23"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Joint.unity3d?Joint"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="CustomIcon" value="drugCannabisJointRolled"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="EconomicValue" value="80"/>
+			<property name="Stacknumber" value="25"/>
+			<property name="Group" value="Science,CFChemicals,Medical"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="torch_swoosh"/>
+				<requirement name="NotHasBuff" buff="buffDrugSmokedJoint"/>
+				<requirement name="NotHasBuff" buff="buffDrugRippedBong"/>
+			</property>
+			<effect_group tiered="false">
+				<display_value name="dInstantHealth" value="20"/>
+				<display_value name="$foodAmountAdd" value="-20"/>
+				<display_value name="dFortitude" value="1"/>
+				<display_value name="dPerception" value="1"/>
+				<display_value name="dPhysicalDamageResist" value="15"/>
+				<display_value name="dDuration" value="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="add" value="240"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugSmokedJointDuration" operation="set" value="360">
+					<requirement name="CVarCompare" cvar="$buffDrugSmokedJointDuration" operation="GT" value="183"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugSmokedJoint"/>
+			</effect_group>
+			<property name="DescriptionKey" value="drugCannabisJointRolledDesc"/>
+		</item>
+
+		<item name="Bong">
+			<property name="HoldType" value="3"/>
+			<property name="Tags" value="junk"/>
+			<property name="UnlockedBy" value="Bong Schematic"/>
+			<property name="Meshfile" value="#@modfolder:Resources/bong.unity3d?bong"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal_hard"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="250"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="DescriptionKey" value="toolBongDesc"/>
+		</item>
+
+		<item name="Oil Rig">
+			<property name="HoldType" value="3"/>
+			<property name="Tags" value="junk"/>
+			<property name="UnlockedBy" value="Oil Rig Schematic,craftingMedical"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Oil Rig.unity3d?Oil Rig"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="250"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="DescriptionKey" value="OilRigDesc"/>
+		</item>
+
+		<item name="Bong Dirty">
+			<property name="HoldType" value="3"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#@modfolder:Resources/bong.unity3d?bong"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="250"/>
+			<property class="Action0">
+				<property name="Class" value="CollectWater"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Change_item_to" value="Bong"/>
+				<property name="Focused_blockname_1" value="water"/>
+				<property name="Focused_blockname_2" value="waterMoving"/>
+				<property name="Focused_blockname_3" value="waterStaticBucket"/>
+				<property name="Focused_blockname_4" value="waterMovingBucket"/>
+				<property name="Focused_blockname_5" value="terrWaterPOI"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="DescriptionKey" value="toolBongDirtyDesc"/>
+		</item>
+
+		<item name="Oil Rig Dirty">
+			<property name="HoldType" value="3"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Oil Rig.unity3d?Oil Rig"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="250"/>
+			<property class="Action0">
+				<property name="Class" value="CollectWater"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Change_item_to" value="Oil Rig"/>
+				<property name="Focused_blockname_1" value="water"/>
+				<property name="Focused_blockname_2" value="waterMoving"/>
+				<property name="Focused_blockname_3" value="waterStaticBucket"/>
+				<property name="Focused_blockname_4" value="waterMovingBucket"/>
+				<property name="Focused_blockname_5" value="terrWaterPOI"/>
+				<property name="Sound_start" value="swoosh"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="DescriptionKey" value="toolBongDirtyDesc"/>
+		</item>
+
+
+		<item name="Bong Filled">
+			<property name="Tags" value="medical"/>
+			<property name="DisplayType" value="drugCannabis"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="#@modfolder:Resources/bong.unity3d?bong"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="250"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="15"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="chem_station_mix_click"/>
+				<property name="Create_item" value="Bong Dirty"/>
+				<requirement name="NotHasBuff" buff="buffDrugSmokedJoint"/>
+				<requirement name="NotHasBuff" buff="buffDrugRippedBong"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<effect_group tiered="false">
+				<display_value name="dInstantHealth" value="30"/>
+				<display_value name="$foodAmountAdd" value="-30"/>
+				<display_value name="dFortitude" value="2"/>
+				<display_value name="dPerception" value="2"/>
+				<display_value name="dPhysicalDamageResist" value="25"/>
+				<display_value name="dDuration" value="600"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="add" value="600"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="set" value="903">
+					<requirement name="CVarCompare" cvar="$buffDrugRippedBongDuration" operation="GT" value="543"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugRippedBong"/>
+			</effect_group>
+			<property name="DescriptionKey" value="toolBongFilledDesc"/>
+		</item>
+
+		<item name="Oil Rig Filled">
+			<property name="Tags" value="medical"/>
+			<property name="DisplayType" value="drugCannabis"/>
+			<property name="HoldType" value="3"/>
+			<property name="Meshfile" value="#@modfolder:Resources/Oil Rig.unity3d?Oil Rig"/>
+			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="15"/>
+			<property name="EconomicValue" value="250"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="15"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="chem_station_mix_click"/>
+				<property name="Create_item" value="Oil Rig Dirty"/>
+				<requirement name="NotHasBuff" buff="buffDrugSmokedJoint"/>
+				<requirement name="NotHasBuff" buff="buffDrugRippedBong"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+			<effect_group tiered="false">
+				<display_value name="dInstantHealth" value="40"/>
+				<display_value name="$foodAmountAdd" value="-40"/>
+				<display_value name="dFortitude" value="3"/>
+				<display_value name="dPerception" value="3"/>
+				<display_value name="dPhysicalDamageResist" value="35"/>
+				<display_value name="dDuration" value="1200"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="add" value="1200"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugRippedBongDuration" operation="set" value="1806">
+					<requirement name="CVarCompare" cvar="$buffDrugRippedBongDuration" operation="GT" value="543"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugRippedBong"/>
+			</effect_group>
+			<property name="DescriptionKey" value="OilRigFilledDesc"/>
+		</item>
+
+
+		<item name="PlantedWeed1Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="Unlocks" value="PlantedAk471,PlantedChemDawg1,PlantedWeddingCake1,PlantedBlueDream1,PlantedPurpleHaze1,PlantedAlaskanThunderfuck1"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="PlantedAk471,PlantedChemDawg1,PlantedWeddingCake1,PlantedBlueDream1,PlantedPurpleHaze1,PlantedAlaskanThunderfuck1" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Bong Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Bong"/>
+			<property name="Unlocks" value="Bong"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Bong" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Oil Rig Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Oil Rig"/>
+			<property name="Unlocks" value="Oil Rig"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Oil Rig" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Grams Of Oil Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Grams Of Oil"/>
+			<property name="Unlocks" value="Grams Of Wax,Grams Of Sugar Wax,Grams Of Shatter,Grams Of Diamonds,Grams Of Crumble,Grams Of Sauce"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Grams Of Wax,Grams Of Sugar Wax,Grams Of Shatter,Grams Of Diamonds,Grams Of Crumble,Grams Of Sauce" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="Butane Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="EconomicValue" value="600"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="Butane"/>
+			<property name="Unlocks" value="Butane"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="Butane" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+
+
+
+	</append>
+
+</Dks_Weed_and_Exctracts>

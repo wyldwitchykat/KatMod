@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-    <ModInfo>
-        <Name value="EpicSPires_DriftWood_CinderBlocks_And_MetalPiles"/>
-        <Description value="Allows for Drift Wood, Cinder Blocks, and Metsl Piles to be picked up, scraped and used." />
-		<Author value="EpicSpire" />
-		<Version value="1.0" />
-    </ModInfo>
-</xml>

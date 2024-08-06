@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Add_Solar_Panel" />
+	<DisplayName value="Craft Solar Panels" />
+	<Description value="Add solar panel recipe to workbench." />
+	<Author value="Pahbi" />
+	<Version value="1.0" />
+	<Website value="" />
+</xml>

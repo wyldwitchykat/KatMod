@@ -1,0 +1,38 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+buffTamHealingName,buffs,buff,,,Healing Bedroll,,Heilende Bettrolle,,
+buffTamHealing1Name,buffs,buff,,,Healing Hospital Gurney,,Heilende Tragbahre,,
+buffTamHealing2Name,buffs,buff,,,Healing Hospital Bed,,Heilendes Krankenhausbett,,
+
+buffTamHealingDesc,buffs,buff,,,"Healing Bedroll.\nRefilling Health\nRefreshing Stamina.",,"Heilende Bettrolle.\nGesundheit auffüllen\nErfrischende Ausdauer.",,
+buffTamHealing1Desc,buffs,buff,,,"Healing Hospital Gurney.\nHealing Wounds\nRefilling Health\nRefreshing Stamina.\nRemoving Hunger.\nRestoring Hydration.",,"Krankenhausliege heilen.\nWunden heilen\nGesundheit auffüllen\nAusdauer auffrischen.\nHunger beseitigen.\nFlüssigkeitszufuhr wiederherstellen.",,
+buffTamHealing2Desc,buffs,buff,,,"Healing Hospital Bed.\nHealing Wounds\nRefilling Health\nRefreshing Stamina.\nRemoving Hunger.\nRestoring Hydration.\nCuring Infection.\nTreating Near Death Trauma.",,"Krankenhausbett heilen.\nWunden heilen\nGesundheit auffüllen\nAusdauer auffrischen.\nHunger beseitigen.\nFlüssigkeitszufuhr wiederherstellen.\nInfektion heilen.\nNahtodtraumata behandeln.",,
+
+ToolTipTamHealing,buffs,buff,,,Healing Bedroll,,Heilende Bettrolle,,
+ToolTipTamHealing1,buffs,buff,,,Healing Hospital Gurney,,Heilende Tragbahre,,
+ToolTipTamHealing2,buffs,buff,,,Healing Hospital Bed,,Heilendes Krankenhausbett,,
+
+DisplayValueTamHealing,buffs,buff,,,First Aid,,Erste Hilfe,,
+DisplayValueTamHealing1,buffs,buff,,,First Aid+,,Erste Hilfe+,,
+DisplayValueTamHealing2,buffs,buff,,,First Aid++,,Erste Hilfe++,,
+
+bedrollDesc,blocks,block,,,"Refills Health.\nRefreshes Stamina.",,"Füllt Gesundheit auf.\nFrischt Ausdauer auf.",,
+
+gurneyBed,blocks,block,,,Healing Hospital Gurney,,Heilende Tragbahre,,
+gurneyBedDesc,blocks,block,,,"Heals Wounds.\nRefills Health.\nRefreshes Stamina.\nRemoves Hunger.\nRestores Hydration.",,"Heilt Wunden.\nFüllt Gesundheit wieder auf.\nFrischt Ausdauer auf.\nBeseitigt den Hunger.\nStellt die Flüssigkeitszufuhr wieder her.",,
+
+hospitalBed,blocks,block,,,Hospital Bed,,Heilendes Krankenhausbett,,
+hospitalBedDesc,blocks,block,,,"Heals Wounds.\nRefills Health.\nRefreshes Stamina\nRemoves Hunger.\nRestores Hydration.\nCures Infection.\nTreats Near Death Trauma.",,"Heilt Wunden.\nFüllt die Gesundheit wieder auf.\nErfrischt die Ausdauer\nBeseitigt den Hunger.\nStellt die Flüssigkeitszufuhr wieder her.\nHeilt Infektionen.\nBehandelt Nahtodtraumata.",,
+
+gurneyBedSchematic,items,item,,,Hospital Gurney Schematic,,Heilende Tragbahre: Bauplan,,
+
+hospitalBedSchematic,items,item,,,Hospital Bed Schematic,,Heilendes Krankenhausbett: Bauplan,,
+
+resourceIronFragment,items,item,,,Raw Iron,,Roheisen,,
+resourceIronFragmentDesc,items,item,,,Smelt in the forge for iron.,,Schmelze in der Schmiede für Eisen.,,
+
+resourceIronFragmentBundle,items,item,,,Raw Iron Bundle (6000),,Roheisen-Bündel (6000),,
+resourceIronFragmentBundleDesc,items,item,,,This is a compact stack of Raw Iron. Use this item to open and unpack it.,,Dies ist ein kompakter Stapel Roheisen. Verwenden Sie diesen Gegenstand, um ihn zu öffnen und auszupacken.,,
+
+drinkJarEmpty,blocks,Block,,,Empty Glass Jar,,Leeres Glas,,
+drinkJarEmptyDesc,blocks,Block,,,"A empty jar that can be used in crafting many items!",,"Ein leeres Glas, das zur Herstellung vieler Gegenstände verwendet werden kann!",,

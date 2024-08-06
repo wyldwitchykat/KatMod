@@ -1,0 +1,77 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+perkPhysicianRank2LongDesc,progression,perk Int,,,"Medical healing items heal 40% more health over time. Gain 60% more XP using bandages, first aid bandages, first aid kits and splints. Craft items 20% faster at chemistry stations. Can craft bongs.",,"Heilmittel stellen 40 % mehr Gesundheit über Zeit wieder her. Erhalte 60 % mehr EP, wenn du Verbände, Erste-Hilfe-Verbände, Verbandskästen oder Schienen verwendest. Fertige Gegenstände an Chemiestationen 20 % schneller.","Los artículos de curación curan un 40 % más de salud con el tiempo. Obtienes un 60 % más de EXP usando vendas, vendas de primeros auxilios, botiquines de primeros auxilios y tablillas. Fabrica objetos un 20 % más rápido en las estaciones de química.","Les objets de guérison médicale soignent 40 % de santé supplémentaire sur la durée. Utiliser des bandages, des bandages médicaux, des trousses de premiers soins et des attelles vous octroie 60 % d'EXP supplémentaire. Vous fabriquez des objets 20 % plus rapidement aux ateliers de chimie.","Gli oggetti di cura guariscono il 40% di salute in più. Ottieni il 60% di PE in più usando bende, bende di pronto soccorso, cassette del pronto soccorso e stecche. Crea gli oggetti il 20% più velocemente nei laboratori chimici.",医療回復アイテムの回復量が時間の経過とともに40%増加します。包帯、救急包帯、応急処置キット、副木使用時の経験値が60%増加。化学実験ステーションでのアイテムのクラフトが20%速くなります。,"치료 아이템 사용 시 지속 체력 회복이 40% 증가합니다. 붕대, 응급 치료 붕대, 응급 치료 키트와 부목 사용 시 60% 더 많은 XP를 획득합니다. 화학 실험대에서 제작 시간이 20% 빨라집니다.","Medyczne przedmioty leczące przywracają stopniowo 40% więcej zdrowia. Zdobywaj 60% więcej PD za używanie bandaży, bandaży pierwszej pomocy, apteczek pierwszej pomocy i szyn. Wytwarzasz w laboratorium chemicznym 20% szybciej.","Os itens medicinais de cura restauram +40% de vida ao longo do tempo. Ganhe +60% de EXP usando curativos, curativos de primeiros socorros, kits de primeiros socorros e talas. Fabrica itens 20% mais rápido nas estações de química.","Медицинские предметы восстанавливают на 40% больше здоровья за то же время. Получайте на 60% больше опыта, используя бинты, бинты для оказания первой помощи, аптечки и шины. Изготовление предметов в химлаборатории проходит на 20% быстрее.","Medikal iyileştirme öğeleri %40 daha fazla sağlık verir. Bandajlar, ilk yardım bandajları, ilk yardım kitleri ve ateller kullandığında %60 daha fazla DP kazan. Kimya istasyonlarında öğeleri %20 daha hızlı üret.",医疗物品治疗的生命值增加 40%。使用绷带、急救绷带、急救包及夹板时，获得的经验值增加 60%。在化学工作站制作物品速度加快 20%。,療傷物品隨時間治療額外 40% 的生命值。使用繃帶、急救繃帶、急救箱和夾板增加 60% 的經驗值。在化學工作站製作物品的速度快 20%。,"Los artículos de curación curan un 40 % más de salud con el tiempo. Obtienes un 60 % más de EXP usando vendas, vendas de primeros auxilios, botiquines de primeros auxilios y tablillas. Fabrica objetos un 20 % más rápido en las estaciones de química."
+PlantedAk471,blocks,Farming,,,Ak47 (Seed),,Ak47 (Semilla)
+PlantedAk471Desc,blocks,Farming,,,"Plant Ak47 seeds in fertilized dirt to grow Ak47 plants.",,"Planta semillas de Canabis en tierra fertilizada para que crezca una planta de canabis."
+PlantedAk471Schematic,blocks,Farming,,,Ak47 (Seed) Recipe,,Recipe de Ak47 (Semilla)
+PlantedAk472,blocks,Farming,,,Ak47 (Growing),,Ak47 (Creciendo)
+PlantedAk473Harvest,blocks,Farming,,,Ak47 Plant 3 (POI),,Planta de Ak47 3 (POI)
+PlantedAk473HarvestDesc,blocks,Farming,,,"Ak47 Plant",,"Planta de Ak47"
+PlantedAk473HarvestPlayerDesc,blocks,Farming,,,"Ak47 Plant",,"Planta de Ak47"
+PlantedAk47HarvestRandomHelper,blocks,Farming,,,= Ak47 = Random Helper,
+PlantedChemDawg1,blocks,Farming,,,ChemDawg (Seed),,ChemDawg (Semilla)
+PlantedChemDawg1Desc,blocks,Farming,,,"Plant ChemDawg seeds in fertilized dirt to grow ChemDawg plants.",,"Planta semillas de Canabis en tierra fertilizada para que crezca una planta de canabis."
+PlantedChemDawg1Schematic,blocks,Farming,,,ChemDawg (Seed) Recipe,,Recipe de ChemDawg (Semilla)
+PlantedChemDawg2,blocks,Farming,,,ChemDawg (Growing),,ChemDawg (Creciendo)
+PlantedChemDawg3Harvest,blocks,Farming,,,ChemDawg Plant 3 (POI),,Planta de ChemDawg 3 (POI)
+PlantedChemDawg3HarvestDesc,blocks,Farming,,,"ChemDawg Plant",,"Planta de ChemDawg"
+PlantedChemDawg3HarvestPlayerDesc,blocks,Farming,,,"ChemDawg Plant",,"Planta de ChemDawg"
+PlantedChemDawgHarvestRandomHelper,blocks,Farming,,,= ChemDawg = Random Helper,
+PlantedWeddingCake1,blocks,Farming,,,WeddingCake (Seed),,WeddingCake (Semilla)
+PlantedWeddingCake1Desc,blocks,Farming,,,"Plant WeddingCake seeds in fertilized dirt to grow WeddingCake plants.",,"Planta semillas de Canabis en tierra fertilizada para que crezca una planta de canabis."
+PlantedWeddingCake1Schematic,blocks,Farming,,,WeddingCake (Seed) Recipe,,Recipe de WeddingCake (Semilla)
+PlantedWeddingCake2,blocks,Farming,,,WeddingCake (Growing),,WeddingCake (Creciendo)
+PlantedWeddingCake3Harvest,blocks,Farming,,,WeddingCake Plant 3 (POI),,Planta de WeddingCake 3 (POI)
+PlantedWeddingCake3HarvestDesc,blocks,Farming,,,"WeddingCake Plant",,"Planta de WeddingCake"
+PlantedWeddingCake3HarvestPlayerDesc,blocks,Farming,,,"WeddingCake Plant",,"Planta de WeddingCake"
+PlantedWeddingCakeHarvestRandomHelper,blocks,Farming,,,= WeddingCake = Random Helper,
+PlantedBlueDream1,blocks,Farming,,,BlueDream (Seed),,BlueDream (Semilla)
+PlantedBlueDream1Desc,blocks,Farming,,,"Plant BlueDream seeds in fertilized dirt to grow BlueDream plants.",,"Planta semillas de Canabis en tierra fertilizada para que crezca una planta de canabis."
+PlantedBlueDream1Schematic,blocks,Farming,,,BlueDream (Seed) Recipe,,Recipe de BlueDream (Semilla)
+PlantedBlueDream2,blocks,Farming,,,BlueDream (Growing),,BlueDream (Creciendo)
+PlantedBlueDream3Harvest,blocks,Farming,,,BlueDream Plant 3 (POI),,Planta de BlueDream 3 (POI)
+PlantedBlueDream3HarvestDesc,blocks,Farming,,,"Blue Dream Plant",,"Planta de Blue Dream"
+PlantedBlueDream3HarvestPlayerDesc,blocks,Farming,,,"Blue Dream Plant",,"Planta de Blue Dream"
+PlantedBlueDreamHarvestRandomHelper,blocks,Farming,,,= BlueDream = Random Helper,
+PlantedPurpleHaze1,blocks,Farming,,,PurpleHaze (Seed),,PurpleHaze (Semilla)
+PlantedPurpleHaze1Desc,blocks,Farming,,,"Plant PurpleHaze seeds in fertilized dirt to grow PurpleHaze plants.",,"Planta semillas de Canabis en tierra fertilizada para que crezca una planta de canabis."
+PlantedPurpleHaze1Schematic,blocks,Farming,,,PurpleHaze (Seed) Recipe,,Recipe de PurpleHaze (Semilla)
+PlantedPurpleHaze2,blocks,Farming,,,PurpleHaze (Growing),,PurpleHaze (Creciendo)
+PlantedPurpleHaze3Harvest,blocks,Farming,,,PurpleHaze Plant 3 (POI),,Planta de PurpleHaze 3 (POI)
+PlantedPurpleHaze3HarvestDesc,blocks,Farming,,,"Purple Haze Plant",,"Planta de Purple Haze"
+PlantedPurpleHaze3HarvestPlayerDesc,blocks,Farming,,,"Purple Haze Plant",,"Planta de Purple Haze"
+PlantedPurpleHazeHarvestRandomHelper,blocks,Farming,,,= PurpleHaze = Random Helper,
+PlantedAlaskanThunderfuck1,blocks,Farming,,,AlaskanThunderfuck (Seed),,AlaskanThunderfuck (Semilla)
+PlantedAlaskanThunderfuck1Desc,blocks,Farming,,,"Plant AlaskanThunderfuck seeds in fertilized dirt to grow AlaskanThunderfuck plants.",,"Planta semillas de Canabis en tierra fertilizada para que crezca una planta de canabis."
+PlantedAlaskanThunderfuck1Schematic,blocks,Farming,,,AlaskanThunderfuck (Seed) Recipe,,Recipe de AlaskanThunderfuck (Semilla)
+PlantedAlaskanThunderfuck2,blocks,Farming,,,AlaskanThunderfuck (Growing),,AlaskanThunderfuck (Creciendo)
+PlantedAlaskanThunderfuck3Harvest,blocks,Farming,,,AlaskanThunderfuck Plant 3 (POI),,Planta de AlaskanThunderfuck 3 (POI)
+PlantedAlaskanThunderfuck3HarvestDesc,blocks,Farming,,,"Alaskan Thunderfuck Plant",,"Planta de Alaskan Thunderfuck"
+PlantedAlaskanThunderfuck3HarvestPlayerDesc,blocks,Farming,,,"Alaskan Thunderfuck Plant",,"Planta de Alaskan Thunderfuck"
+PlantedAlaskanThunderfuckHarvestRandomHelper,blocks,Farming,,,= AlaskanThunderfuck = Random Helper,
+buffDrugSmokedJointDesc,buffs,Buff,,x,"You got high on Cannabis and it made you feel better and also pretty hungry. Gained 15% damage reduction, +1 to Fortitude, and -1 to Perception.",,"Te has drogado, te sientes mejor y muy ambriento. Obtienes un 15% de reducción de daño, +1 de Fortaleza y -1 de Percepción."
+buffDrugSmokedJointName,buffs,Buff,,x,"[9acc8b]Smoked Joint[-]",,"[9acc8b]Porro Fumado[-]"
+buffDrugSmokedJointTooltip,buffs,Buff,,x,You got high.,,Te has drogado.
+buffDrugRippedBongDesc,buffs,Buff,,x,"You got really high on Cannabis and it made you feel better and also really hungry. Gained 25% damage reduction, +2 to Fortitude, and -2 to Perception.",,"Te has drogado mucho con el Cannabis y te sientes mejor y mucho más hambriento. Obtienes un 25% de reducción de daño, +2 de Fortaleza y -2 en Percepción"
+buffDrugRippedBongName,buffs,Buff,,x,"[9acc8b]Ripped Bong[-]",,"[9acc8b]Cachimba Rasgada[-]"
+buffDrugRippedBongTooltip,buffs,Buff,,x,You got really high.,,Estás muy drogado.
+resourceCropCannabisBud,items,Farming,,,Cannabis Bud,,Brote de Cannabis
+resourceCropCannabisBudDesc,items,Farming,,,"Useful in a variety of 'medicinal' applications from rolling joints to filling bongs.",,"Útil en una variedad de aplicaciones 'medicinales', desde liar porros hasta llenar cachimbas."
+GramsOfOilDesc,items,Farming,,,"Take a moment to kick back for a dab break with Dks Concentrates."
+ButaneDesc,items,Farming,,,"Useful for making Grams Of oil by combining with a Blasting Tube."
+BlastingTubeDesc,items,Farming,,,"Useful for making Grams Of Oil by combining with 4 cans of Butane."
+ExtractionKitDesc,items,Farming,,,"Useful for making 7 Grams Of Oil from 28 Grams Of Weed."
+BoxOfButaneDesc,items,Farming,,,"Useful for bundle crafting butane for a little less supplies."
+OilRigDesc,items,Farming,,,"Take a moment to kick back for a dab break with Dks Concentrates from your very own Oil Rig."
+OilRigFilledDesc,items,Farming,,,"Taking a fat dab will immediately improve your health and allow you to ignore a lot of pain, but you'll become really unfocused and super hungry."
+drugCannabisJointUnrolled,items,Medical,,,"Cannabis Joint [ccba8b](Unrolled)[-]",,"Porro de Cannabis [ccba8b](Sin liar)[-]"
+drugCannabisJointUnrolledDesc,items,Medical,,,"You'll need to spend some time rolling this into a smokable joint. Until then, it's going to take up some space so you don't ruin it.",,"Tendrás que pasar un tiempo liandote esto en un porro fumable. Hasta entonces, ocupará algo de espacio para que no lo arruines."
+drugCannabisJointRolled,items,Medical,,,"Cannabis Joint [9acc8b](Rolled)[-]",,"Porro de Cannabis [9acc8b](Liado)[-]"
+drugCannabisJointRolledDesc,items,Medical,,,"Smoking this Cannabis joint will immediately improve your health and allow you to ignore some pain, but you'll become unfocused and a hungry hungry.",,"Fumarte el porro de Cannabis mejorará inmediatamente tu salud y te permitirá ignorar un poco el dolor, pero perderás la concentración y tendrás hambre."
+toolBong,items,Medical,,,Bong,,Cachimba
+toolBongDesc,items,Medical,,,"You can combine this with some Cannabis buds to fill it up.",,"Puedes combinar esto con algunos cogollos de Cannabis para llenarlo."
+toolBongDirty,items,Medical,,,"Bong [ccba8b](Dirty)[-]",,"Cachimba [ccba8b](Sucia)[-]"
+toolBongDirtyDesc,items,Medical,,,"Gross! This needs to be cleaned out before you can use it. Take it to a river or lake?",,"¡Qué puto asco! Esto necesita ser limpiado antes de que puedas usarlo. ¿Podría ser en un río o lago?"
+toolBongFilled,items,Medical,,,"Bong [9acc8b](Filled)[-]",,"Cachimba [9acc8b](Llena)[-]"
+toolBongFilledDesc,items,Medical,,,"Ripping this bong will immediately improve your health and allow you to ignore a lot of pain, but you'll become quite unfocused and really hungry.",,"Romper esta Cachimba mejorará inmediatamente tu salud y te permitirá ignorar mucho dolor, pero perderás la concentración y tendrás mucha hambre."
+toolBongSchematic,items,Medical,,,Bong Schematic,,Esquema de Cachimba
+toolBongSchematicDesc,items,Medical,,,"Learn how to craft bongs from existing glassware.",,"Aprende cómo elaborar cachimbas con cristales."

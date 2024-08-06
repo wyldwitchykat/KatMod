@@ -1,3 +1,0 @@
-<configs>
-	<append xpath="/blocks/block[@name='autoTurret']/property[@name='AmmoItem']/@value">,ammo9mmBulletSteel</append>
-</configs>

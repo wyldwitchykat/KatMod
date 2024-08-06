@@ -1,0 +1,12 @@
+<configs>
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[3]/unlock_entry/@item">carBattery,solarCell</set>
+	<set xpath="/progression/crafting_skills[1]/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[4]/@tags">carBattery,solarCell</set>
+	<set xpath="/progression/crafting_skills[1]/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[5]/@tags">carBattery,solarCell</set>
+
+	<!--
+	<append xpath="/progression/crafting_skills[1]/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[4]">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,100" value="1" tags="solarCell"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="65,75,85,95,100" value="1,2,3,4,5" tags="solarCell"/>
+	</append>
+	-->
+</configs>

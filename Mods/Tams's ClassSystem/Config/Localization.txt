@@ -1,0 +1,135 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+itemTooltipFocusedOne,UI,Use Prompt,,,[EEEE22]{0}[-] Collect: {1},,[EEEE22]{0}[-] Sammle: {1},[EEEE22]{0}[-] Recoger: {1},[EEEE22]{0}[-] pour récupérer: {1},[EEEE22]{0}[-] Ottieni: {1},<[EEEE22]{0}[-]>で{1}を回収します,[EEEE22]{0}[-] 수집: {1},[EEEE22]{0}[-] Zdobądź: {1},[EEEE22]{0}[-] coletar: {1},[EEEE22]{0}[-] Собрать: {1},[EEEE22]{0}[-] Topla: {1},[EEEE22]{0}[-] 收集：{1},[EEEE22]{0}[-] 收集：{1}
+itemTooltipFocusedSeveral,UI,Use Prompt,,,[EEEE22]{0}[-] Collect: {2} of {1},,[EEEE22]{0}[-] Sammle: {2} von {1},[EEEE22]{0}[-] Coger: {2} de {1},[EEEE22]{0}[-] pour récupérer: {2} sur {1},[EEEE22]{0}[-] Ottieni: {2} di {1},<[EEEE22]{0}[-]>で{1}({2})を回収します,[EEEE22]{0}[-] 수집: {1}의 {2},[EEEE22]{0}[-] Zdobądź: {2} z {1},[EEEE22]{0}[-] coletar: {2} de {1},[EEEE22]{0}[-] Собрать: {2} из {1},[EEEE22]{0}[-] Topla: {2}/{1},[EEEE22]{0}[-] 收集：{2} /{1},[EEEE22]{0}[-] 收集：{2}的{1}
+lootEntity,UI,Use Prompt,,,[EEEE22]{0}[-] Search {1} [AAFF88](Untouched)[-],,[EEEE22]{0}[-] {1} durchsuchen [AAFF88](Unberührt)[-],[EEEE22]{0}[-] Registrar {1} [AAFF88](Intacto)[-],[EEEE22]{0}[-] Fouiller {1} [AAFF88](intact)[-],[EEEE22]{0}[-] Esamina {1} [AAFF88](Nuovo)[-],<[EEEE22]{0}[-]>で{1}を調べる,[EEEE22]{0}[-] {1}[AAFF88](손대지 않은)[-] 검색,[EEEE22]{0}[-] Przeszukaj: {1} [AAFF88](nienaruszone)[-],[EEEE22]{0}[-] Buscar {1} [AAFF88](intocado)[-],[EEEE22]{0}[-]: обыскать тело ({1}) [AAFF88](нетронуто)[-],[EEEE22]{0}[-] Ara: {1} [AAFF88](Dokunulmamış)[-],[EEEE22]{0}[-] 搜索 {1}（未触碰过）,[EEEE22]{0}[-] 搜索{1}（未觸及）
+lootItem,,Pick up prompt,,,Press [EEEE22]{0}[-] to pick up {1},,"Drücke [EEEE22]{0}[-], um {1} aufzuheben",Pulsa [EEEE22]{0}[-] para coger {1},Appuyer sur [EEEE22]{0}[-] pour ramasser: {1},Premi [EEEE22]{0}[-] per raccogliere {1},<[EEEE22]{0}[-]>で{1}を拾う,[EEEE22]{0}[-]을(를) 눌러 {1} 집어들기,"Przyciśnij [EEEE22]{0}[-], aby podnieść {1}",Aperte [EEEE22]{0}[-] para pegar {1},"Нажмите [EEEE22]{0}[-], чтобы подобрать предмет {1}",{1} Almak için [EEEE22]{0}[-] tuşuna bas,按下[EEEE22]{0}[-]拾取{1},按下 [EEEE22]{0}[-] 撿起 {1}
+lootTooltipEmpty,UI,Use Prompt,,,[FFBB44]Empty[-] {1},,{1} [FFBB44](Leer)[-],[FFBB44]Vacío[-] {1},[FFBB44]Vider[-] {1},{1} [FFBB44]Vuoto[-],{1}[FFBB44](空)[-],[FFBB44]빈[-] {1},[FFBB44]Puste[-] {1},[FFBB44]Esvaziar[-] {1},{1}[FFBB44]: пусто[-],[FFBB44]Boş[-] {1},{1}[FFBB44] - 空[-],[FFBB44]空的[-] {1}
+lootTooltipNew,UI,Use Prompt,,,[EEEE22]{0}[-] Search {1} [AAFF88](Untouched)[-],,[EEEE22]{0}[-] Durchsuche {1} [AAFF88](Unberührt)[-],[EEEE22]{0}[-] Buscar {1} [AAFF88](intacto)[-],[EEEE22]{0}[-] Fouiller {1} [AAFF88](intact)[-],[EEEE22]{0}[-] esamina {1} [AAFF88](intatto)[-],<[EEEE22]{0}[-]>で{1}を調べる[AAFF88](未確認)[-],[EEEE22]{0}[-] {1} 수색[AAFF88](손대지 않음)[-],[EEEE22]{0}[-] Przeszukaj: {1} [AAFF88](nienaruszone)[-],[EEEE22]{0}[-] Vasculhar {1} [AAFF88](intocado)[-],[EEEE22]{0}[-]: обыскать ({1}) [AAFF88](нетронуто)[-],[EEEE22]{0}[-] Ara: {1} [AAFF88](Dokunulmamış)[-],[EEEE22]{0}[-] 搜索 {1} （未触碰过）,[EEEE22]{0}[-]搜索{1}（未觸碰）
+lootTooltipTouched,UI,Use Prompt,,,[EEEE22]{0}[-] Search {1} [DDBB99](Known)[-],,[EEEE22]{0}[-] Durchsuche {1} [DDBB99](Bekannt)[-],[EEEE22]{0}[-] Buscar {1},[EEEE22]{0}[-] Fouiller {1},[EEEE22]{0}[-] esamina {1},<[EEEE22]{0}[-]>で{1}を調べる,[EEEE22]{0}[-] {1} 수색,[EEEE22]{0}[-] Przeszukaj: {1},[EEEE22]{0}[-] Vasculhar {1},[EEEE22]{0}[-]: обыскать ({1}),[EEEE22]{0}[-] Ara: {1},[EEEE22]{0}[-] 搜索 {1},[EEEE22]{0}[-]搜索{1}
+npcTooltipTalk,UI,Tooltip,,,Press [EEEE22]{0}[-] to talk to {1},,"[EEEE22]{0}[-]-Taste drücken, um mit {1} zu reden",Pulsa [EEEE22]{0}[-] para hablar con {1},Appuyer sur [EEEE22]{0}[-] pour parler à {1},Premi [EEEE22]{0}[-] per parlare con {1},<[EEEE22]{0}[-]>を押して{1}と話す,[EEEE22]{0}[-]을(를) 눌러 {1} 에게 말걸기,"Przyciśnij [EEEE22]{0}[-], aby rozmawiać: {1}",Aperte [EEEE22]{0}[-] para falar com {1},"Нажмите [EEEE22]{0}[-], чтобы поговорить с персонажем {1}",{1} ile konuşmak için [EEEE22]{0}[-] tuşuna bas,按下[EEEE22]{0}[-]与{1}对话,按下 [EEEE22]{0}[-] 進行交談{1}
+tooltipInteract,UI,Use Prompt,,,Hold [EEEE22]{0}[-] to interact with {1},,"Halte [EEEE22]{0}[-] gedrückt, um mit {1} zu interagieren",Mantén presionado [EEEE22]{0}[-] para interactuar con {1},Maintenir [EEEE22]{0}[-] pour interagir avec {1},Tieni premuto [EEEE22]{0}[-] per interagire con {1},<[EEEE22]{0}[-]>長押しで{1}にアクセスします,[EEEE22]{0}[-]을(를) 꾹 눌러 {1}과(와) 상호작용,"Przytrzymaj [EEEE22]{0}[-], aby wejść w interakcję z: {1}",Segure [EEEE22]{0}[-] para interagir com {1},{1}: Для взаимодействия удерживайте [EEEE22]{0}[-],{1} ile etkileşim kurmak için [EEEE22]{0}[-] tuşunu basılı tut,按住[EEEE22]{0}[-]与{1}互动,長按 [EEEE22]{0}[-] 與{1}互動
+tooltipJammed,UI,Menu,,,[EEEE22]{0}[-] Use {1} ([DECEA3]Jammed[-]),,[EEEE22]{0}[-] Verwende {1} ([DECEA3]Blockiert[-]),[EEEE22]{0}[-] Usa {1} ([DECEA3]Atascado[-]),[EEEE22]{0}[-] pour utiliser {1} ([DECEA3]coincé(e)[-]),[EEEE22]{0}[-] Usa {1} ([DECEA3]Inceppato[-]),<[EEEE22]{0}[-]> 使用 {1} ([DECEA3]施錠済み[-]),[EEEE22]{0}[-] {1} 사용 ([DECEA3]혼잡[-]),[EEEE22]{0}[-] Użyj {1} ([DECEA3]zacięte[-]),[EEEE22]{0}[-] Usa {1} ([DECEA3]Emperrado[-]),[EEEE22]{0}[-] Использовать {1} ([DECEA3]заклинило[-]),[EEEE22]{0}[-] {1} Kullan ([DECEA3]Sıkışmış[-]),[EEEE22]{0}[-]使用{1} （[DECEA3]挤满[-]）,[EEEE22]{0}[-]用法{1}（[DECEA3]已堵塞[-])
+tooltipLocked,UI,Menu,,,[EEEE22]{0}[-] Use {1} ([EE9988]Locked[-]),,[EEEE22]{0}[-] Verwende {1} ([EE9988]Verschlossen[-]),[EEEE22]{0}[-] Usa {1} ([EE9988]Bloqueado[-]),[EEEE22]{0}[-] pour utiliser {1} ([EE9988]verrouillé(e)[-]),[EEEE22]{0}[-] Usa {1} ([EE9988]Bloccato[-]),<[EEEE22]{0}[-]> 使用 {1} ([EE9988]施錠済み[-]),[EEEE22]{0}[-] {1} 사용 ([EE9988]잠김[-]),[EEEE22]{0}[-] Użyj {1} ([EE9988]zablokowane[-]),[EEEE22]{0}[-] Usa {1} ([EE9988]Trancado[-]),[EEEE22]{0}[-] Использовать {1} ([EE9988]заперто[-]),[EEEE22]{0}[-] {1} Kullan ([EE9988]Kilitli[-]),[EEEE22]{0}[-] 使用{1}（[EE9988]锁定[-]）,[EEEE22]{0}[-]用法{1}（[EE9988]已鎖定[-])
+tooltipUnlocked,UI,Menu,,,[EEEE22]{0}[-] Use {1} ([AAFF88]Unlocked[-]),,[EEEE22]{0}[-] Verwende {1} ([AAFF88]Aufgeschlossen[-]),[EEEE22]{0}[-] Usa {1} ([AAFF88]Desbloqueado[-]),[EEEE22]{0}[-] pour utiliser {1} ([AAFF88]déverrouillé(e)[-]),[EEEE22]{0}[-] Usa {1} ([AAFF88]Sbloccato[-]),<[EEEE22]{0}[-]> 使用 {1} ([AAFF88]解錠済み[-]),[EEEE22]{0}[-] {1} 사용 ([AAFF88]열림[-]),[EEEE22]{0}[-] Użyj {1} ([AAFF88]odblokowane[-]),[EEEE22]{0}[-] Usa {1} ([AAFF88]Destrancado[-]),[EEEE22]{0}[-] Использовать {1} ([AAFF88]открыто[-]),[EEEE22]{0}[-] {1} Kullan ([AAFF88]Kilidi Açık[-]),[EEEE22]{0}[-]使用{1} （[AAFF88]已解锁[-]）,[EEEE22]{0}[-]用法{1}（[AAFF88]已解鎖[-])
+ttLevelUp,UI,Tooltip,,,Level Up! You are now level [EEEE22]{0}[-] and have [AAFF88]{1}[-] skill points to spend.,,"Level Up! Du bist jetzt Level [EEEE22]{0}[-] und hast [AAFF88]{1}[-] Fertigkeitspunkte, die du verwenden kannst.",¡Subiste de nivel! ahora eres nivel [EEEE22]{0}[-] y tienes [AAFF88]{1}[-] puntos de habilidad para gastar.,Niveau supérieur! Vous êtes à présent au niveau [EEEE22]{0}[-] et avez [AAFF88]{1}[-] points de compétence à dépenser.,Livello aumentato! Ora sei di livello [EEEE22]{0}[-] e hai [AAFF88]{1}[-] punti abilità da usare.,レベルアップ！レベル[EEEE22]{0}[-]になり、[AAFF88]{1}[-]スキルポイントを使えるようになりました。,레벨 업! 이제 레벨 [EEEE22]{0}[-]가 되어 [AAFF88]{1}[-] 스킬 포인트를 사용할 수 있습니다.,Wyższy poziom! Udało ci się awansować na poziom [EEEE22]{0}[-] i możesz wydać następującą liczbę punktów umiejętności: [AAFF88]{1}[-].,Novo nível! Agora você está no nível [EEEE22]{0}[-] e tem [AAFF88]{1}[-] pontos de habilidade para distribuir.,"Повышение уровня! Теперь у вас уровень [EEEE22]{0}[-], и есть очков навыков для распределения: [AAFF88]{1}[-].",Seviye Atladın! Artık [EEEE22]{0}[-]. seviye oldun ve harcayabileceğin [AAFF88]{1}[-] beceri puanın var.,升级！你当前的等级为[EEEE22]{0}[-]，有[AAFF88]{1}[-]个可分配的技能点。,升級！你現在的等級是[EEEE22]{0}[-]，可使用的技能點為[AAFF88]{1}[-]。
+ttCanOnlySellAmount,UI,Tooltip,,,I can only buy [EEEE22]{0}[-] of that item.,,Von diesem Gegenstand kann ich nur [EEEE22]{0}[-] kaufen.,Solo puedo comprar [EEEE22]{0}[-] de ese artículo.,Je ne peux acheter que [EEEE22]{0}[-]exemplaire(s) de cet objet.,Posso comprarne solo [EEEE22]{0}[-] di quell'oggetto.,そのアイテムは[EEEE22]{0}[-]のみ購入できます。,그 아이템 중 [EEEE22]{0}[-]만 살 수 있어.,Kupię maksymalnie [EEEE22]{0}[-].,Só posso comprar [EEEE22]{0}[-] desse item.,Я могу приобрести только [EEEE22]{0}[-] шт. этого предмета.,Bu öğeden sadece [EEEE22]{0}[-] tane alabilirim.,我只能买[EEEE22]{0}[-]个。,我只能買[EEEE22]{0}[-]件該物品。
+ttCraftingSkillUnlock,UI,Tooltip,,,You have unlocked [EEEE22]{0}[-] - {1},,Du hast [EEEE22]{0}[-] - {1} freigeschaltet,Desbloqueaste [EEEE22]{0}[-] de {1},Vous avez déverrouillé [EEEE22]{0}[-] - {1},Hai sbloccato [EEEE22]{0}[-] - {1},[EEEE22]{0}[-] - {1}をアンロックしました。,[EEEE22]{0}[-]'-'{1}을(를) 잠금 해금했습니다.,Odblokowano: [EEEE22]{0}[-] – {1},Você desbloqueou [EEEE22]{0}[-] - {1},Вы разблокировали: [EEEE22]{0}[-] — {1},[EEEE22]{0}[-] - {1} kilidini açtın,你已解锁[EEEE22]{0}[-]-{1},你已解鎖[EEEE22]{0}[-] - {1}。
+ttCraftingSkillUnlockQuality,UI,Tooltip,,,You have unlocked [EEEE22]{0}[-] - {1} Quality {2},,"Du hast [EEEE22]{0}[-] - {1} freigeschaltet, Qualität: {2}",Desbloqueaste [EEEE22]{0}[-] de {1} de calidad {2},Vous avez déverrouillé [EEEE22]{0}[-] - {1} de qualité {2},Hai sbloccato [EEEE22]{0}[-] - {1} di qualità {2},[EEEE22]{0}[-] - {1}（クオリティー{2}）をアンロックしました。,[EEEE22]{0}[-]'-'{1} 품질 {2}을 잠금 해금했습니다.,Odblokowano: [EEEE22]{0}[-] – {1} jakości {2},Você desbloqueou [EEEE22]{0}[-] - {1} Qualidade {2},Вы разблокировали: [EEEE22]{0}[-] — {1}. Качество: {2},{2} Kalite [EEEE22]{0}[-] - {1} kilidini açtın,你已解锁[EEEE22]{0}[-]-{1} 品质{2},你已解鎖[EEEE22]{0}[-] - {1}，品質{2}。
+useBlock,UI,Menu,,,[EEEE22]{0}[-] Use {1},,[EEEE22]{0}[-] Verwende {1},[EEEE22]{0}[-] Usa {1},[EEEE22]{0}[-] pour utiliser {1},[EEEE22]{0}[-] Usa {1},<[EEEE22]{0}[-]> 使用する {1},[EEEE22]{0}[-] {1} 사용,[EEEE22]{0}[-] Użyj {1},[EEEE22]{0}[-] Usa {1},[EEEE22]{0}[-] Использовать {1},[EEEE22]{0}[-] {1} Kullan,[EEEE22]{0}[-]使用{1},[EEEE22]{0}[-]用法{1}
+useCampfire,UI,HUD,,,Press [EEEE22]{0}[-] to use,,Zum Benutzen [EEEE22]{0}[-] drücken,Pulsa [EEEE22]{0}[-] para usar,Appuyer sur [EEEE22]{0}[-] pour utiliser,Premi [EEEE22]{0}[-] per usare,<[EEEE22]{0}[-]>を押して使用,[EEEE22]{0}[-]을(를) 눌러 사용,"Przyciśnij [EEEE22]{0}[-], aby użyć",Aperte [EEEE22]{0}[-] para usar,"Нажмите [EEEE22]{0}[-], чтобы использовать",Kullanmak için bas: [EEEE22]{0}[-],按下[EEEE22]{0}[-]使用,按下 [EEEE22]{0}[-] 使用
+useForge,UI,HUD,,,Press [EEEE22]{0}[-] to use,,Zum Benutzen [EEEE22]{0}[-] drücken,Pulsa [EEEE22]{0}[-] para usar,Appuyer sur [EEEE22]{0}[-] pour utiliser,Premi [EEEE22]{0}[-] per usare,<[EEEE22]{0}[-]>を押して使用,[EEEE22]{0}[-]을(를) 눌러 사용,"Przyciśnij [EEEE22]{0}[-], aby użyć",Aperte [EEEE22]{0}[-] para usar,"Нажмите [EEEE22]{0}[-], чтобы использовать",Kullanmak için bas: [EEEE22]{0}[-],按下[EEEE22]{0}[-]使用,按下 [EEEE22]{0}[-] 使用
+useSecureDoor,UI,HUD,,,Press [EEEE22]{0}[-] to open,,Zum Öffnen [EEEE22]{0}[-] drücken,Pulsa [EEEE22]{0}[-] para abrir,Appuyer sur [EEEE22]{0}[-] pour ouvrir,Premi [EEEE22]{0}[-] per aprire,<[EEEE22]{0}[-]>を押して開く,[EEEE22]{0}[-]을(를) 눌러 열기,"Przyciśnij [EEEE22]{0}[-], aby otworzyć",Aperte [EEEE22]{0}[-] para abrir,"Нажмите [EEEE22]{0}[-], чтобы открыть",Açmak için bas: [EEEE22]{0}[-],按下[EEEE22]{0}[-]打开,按下 [EEEE22]{0}[-] 打開
+useWorkstation,UI,HUD,,,Press [EEEE22]{0}[-] to use,,Zum Benutzen [EEEE22]{0}[-] drücken,Pulsa [EEEE22]{0}[-] para usar,Appuyer sur [EEEE22]{0}[-] pour utiliser,Premi [EEEE22]{0}[-] per usare,<[EEEE22]{0}[-]>を押して使用する,[EEEE22]{0}[-]을(를) 눌러 사용,"Przyciśnij [EEEE22]{0}[-], aby użyć",Aperte [EEEE22]{0}[-] para usar,"Нажмите [EEEE22]{0}[-], чтобы использовать",Kullanmak için bas: [EEEE22]{0}[-],按下[EEEE22]{0}[-]使用,按下 [EEEE22]{0}[-] 使用
+useSwitchLightOff,UI,Menu,,,[EEEE22]{0}[-] Switch light off,,[EEEE22]{0}[-] Licht ausschalten,[EEEE22]{0}[-] Apagar la luz,[EEEE22]{0}[-] Éteindre la lumière,[EEEE22]{0}[-] spegne le luci,<[EEEE22]{0}[-]> 電気を消す,[EEEE22]{0}[-] 조명 스위치 끄기,[EEEE22]{0}[-] Wył. światło,[EEEE22]{0}[-] Desligar luz,[EEEE22]{0}[-] Выключить свет,[EEEE22]{0}[-] Işığı kapat,[EEEE22]{0}[-]关灯,[EEEE22]{0}[-]關掉燈
+useSwitchLightOn,UI,Menu,,,[EEEE22]{0}[-] Switch light on,,[EEEE22]{0}[-] Licht einschalten,[EEEE22]{0}[-] Encender la luz,[EEEE22]{0}[-] Allumer la lumière,[EEEE22]{0}[-] accende le luci,<[EEEE22]{0}[-]> 電気をつける,[EEEE22]{0}[-] 조명 스위치 켜기,[EEEE22]{0}[-] Wł. światło,[EEEE22]{0}[-] Ligar luz,[EEEE22]{0}[-] Включить свет,[EEEE22]{0}[-] Işığı aç,[EEEE22]{0}[-]开灯,[EEEE22]{0}[-]打開燈
+ttPressTo,UI,HUD,,,Press [EEEE22]{0}[-] to {1},,Zum {1} [EEEE22]{0}[-] drücken,Pulsa [EEEE22]{0}[-] para {1},Appuyer sur [EEEE22]{0}[-] pour {1},Premi [EEEE22]{0}[-] per {1},[EEEE22]{0}[-]を押して{1},[EEEE22]{0}[-]을(를) 눌러 {1} 사용,"{1}, naciskając [EEEE22]{0}[-]",Aperte [EEEE22]{0}[-] para {1},"Нажмите [EEEE22]{0}[-], чтобы {1}",{1} için [EEEE22]{0}[-] tuşuna bas,按下[EEEE22]{0}[-]以{1},按下 [EEEE22]{0}[-] 以 {1}
+vendingMachineActivate,UI,Use Prompt,,,[EEEE22]{0}[-] to interact with {1},,"Drücke [EEEE22]{0}[-], um mit {1} zu interagieren",[EEEE22]{0}[-] para interactuar con {1},[EEEE22]{0}[-] pour interagir avec {1},[EEEE22]{0}[-] per interagire con {1},<[EEEE22]{0}[-]>で{1}にアクセスします,[EEEE22]{0}[-](으)로 {1}과(와) 상호작용,"[EEEE22]{0}[-], aby wejść w interakcję z: {1}",Aperte [EEEE22]{0}[-] para interagir com {1},{1}: [EEEE22]{0}[-] для взаимодействия,{1} ile etkileşim kurmak için [EEEE22]{0}[-],[EEEE22]{0}[-]与{1}互动,[EEEE22]{0}[-] 與{1}互動
+
+pickupCrops,UI,HUD,,,Press [EEEE22]{{0}}[-] to pick up: {0} {1},,"Drücke [EEEE22]{{0}}[-], um {0} {1} aufzuheben",Pulsa [EEEE22]{{0}}[-] para coger: {0}{1},Appuyer sur [EEEE22]{{0}}[-] pour ramasser: {0} {1},Premi [EEEE22]{{0}}[-] per raccogliere: {0} {1},<[EEEE22]{{0}}[-]>で 拾います: {0} {1},[EEEE22]{{0}}[-]을(를) 눌러 집어들기:{0} {1},"Przyciśnij [EEEE22]{{0}}[-], aby podnieść: {0} {1}",Aperte [EEEE22]{{0}}[-] para pegar: {0} {1},"Нажмите [EEEE22]{{0}}[-], чтобы подобрать: {0}{1}",[EEEE22]{{0}}[-] tuşuna basarak al: {0} {1},按下[EEEE22]{{0}}[-]拾取：{0}{1},按 [EEEE22]{{0}}[-] 撿起{0}{1}
+pickupPrompt,UI,HUD,,,Press [EEEE22]{{0}}[-] to pick up: {0},,"Drücke [EEEE22]{{0}}[-], um {0}  aufzuheben",Pulsa [EEEE22]{{0}}[-] para coger: {0},Appuyer sur [EEEE22]{{0}}[-] pour ramasser: {0},Premi [EEEE22]{{0}}[-] per raccogliere: {0},<[EEEE22]{{0}}[-]>で {0}を拾います,[EEEE22]{{0}}[-]을(를) 눌러 집어들기:{0},"Przyciśnij [EEEE22]{{0}}[-], aby podnieść: {0}",Aperte [EEEE22]{{0}}[-] para pegar: {0},"Нажмите [EEEE22]{{0}}[-], чтобы подобрать: {0}",[EEEE22]{{0}}[-] tuşuna basarak al: {0},按下[EEEE22]{{0}}[-]拾取：{0},按 [EEEE22]{{0}}[-] 撿起{0}
+sleepingBagOwnership,UI,HUD,,,[EEEE22]{0}[-] is owned by [AAFF88]{1}[-],,[EEEE22]{0}[-] gehört [AAFF88]{1}[-],[EEEE22]{0}[-] pertenece a [AAFF88]{1}[-],[EEEE22]{0}[-] appartient à [AAFF88]{1}[-],[EEEE22]{0}[-] è di [AAFF88]{1}[-],[EEEE22]{0}[-] は [AAFF88]{1}[-] が所有しています,[EEEE22]{0}[-] 님이 [AAFF88]{1}[-]을(를) 소유했습니다,[EEEE22]{0}[-] jest własnością: [AAFF88]{1}[-],[EEEE22]{0}[-] é de [AAFF88]{1}[-],[EEEE22]{0}[-] принадлежит игроку [AAFF88]{1}[-],"[EEEE22]{0}[-], [AAFF88]{1}[-] adlı oyuncuya ait",[EEEE22]{0}[-]为[AAFF88]{1}[-]所有。,[EEEE22]{0}[-]屬於[AAFF88]{1}[-]
+
+mmGoMaxZombies,,,Main Menu Game Options,KgNone,Max Zombies Alive,,Max Zombies Alive,Max. Zombieanzahl,Zombies vivants max.,Máximo de zombis vivos,,,,,,,,,,,
+goMaxZombies,,UI,Menu,KgNone,Max Zombies Alive,,Max Zombies Alive,Max. Zombieanzahl,Zombies vivants max.,Máximo de zombis vivos,,,,,,,,,,,
+goMaxZombiesDesc,,UI,Menu,KgNone,Maximum amount of zombies that can spawn in the world.,,"Maximale Anzahl von Zombies, die auf der Welt erscheinen können.","Die maximale Anzahl an Spielern, die sich gleichzeitig mit deinem Spiel verbinden können.",Le nombre maximal de joueurs qui peuvent rejoindre simultanément votre partie.,Indica la cantidad máxima de jugadores simultáneos que se pueden unir a una partida.,,,,,,,,,,,
+goZombies,,UI,Menu,New,{0} Zombies,,{0} Zombies,{0} Zombies,{0} Des morts-vivants,{0} Zombies,,,,,,,,,,,
+mmGoMaxAnimals,,,Main Menu Game Options,KgNone,Max Animals Alive,,Max Animals Alive,max tiere am leben,max animaux vivants,max animales vivos,,,,,,,,,,,
+goMaxAnimals,,UI,Menu,KgNone,Max Animals Alive,,Max Animals Alive,Max. Zombieanzahl,Zombies vivants max.,Máximo de zombis vivos,,,,,,,,,,,
+goMaxAnimalsDesc,,UI,Menu,KgNone,Maximum amount of animals that can spawn in the world.,,"Maximale Anzahl von Tieren, die auf der Welt laichen können.","Maximale Anzahl von Tieren, die auf der Welt laichen können.",Nombre maximum d'animaux pouvant se reproduire dans le monde.,Cantidad máxima de animales que pueden desovar en el mundo.,,,,,,,,,,,
+goAnimals,,UI,Menu,New,{0} Animals,,{0} Tiere,{0} Tiere,{0} Animaux,{0} Los animales,,,,,,,,,,,
+mmGoLandClaimCount,,,Main Menu Game Options,KgNone,Land Claim Amount,,Landanspruchsbetrag,Landanspruchsbetrag,Montant de la revendication territoriale,Cantidad de reclamo de tierra,,,,,,,,,,,
+goLandClaimCount,,UI,Menu,KgNone,Claim Amount,,Anspruchsbetrag,Anspruchsbetrag,Montant de la réclamation,Reclamar cantidad,,,,,,,,,,,
+goLandClaimCountDesc,,UI,Menu,KgNone,The amount of land claim blocks a player can have active.,,"Die Menge der Landanspruchsblöcke, die ein Spieler aktiv haben kann.","Die Anzahl der Landanspruchsblöcke, die ein Spieler aktiv haben kann.",Le nombre de revendications territoriales qu'un joueur peut avoir actives.,La cantidad de bloques de reclamo de tierra que un jugador puede tener activo.,,,,,,,,,,,
+goLandClaimCountValue,,UI,Menu,KgNone,{0} block,,{0} blockieren,{0} Block,{0} bloc,Bloques: {0},,,,,,,,,,,
+goLandClaimCountValues,,UI,Menu,KgNone,{0} blocks,,{0} Blöcke,{0} Blöcke,{0} blocs,Bloques: {0},,,,,,,,,,,
+
+
+
+
+dewCollectorEmpty,UI,Use Prompt,,,[EEEE22]{0}[-] Open {1} ([DECEA3]Empty[-]),,[EEEE22]{0}[-] Öffne {1} ([DECEA3]Leer[-]),[EEEE22]{0}[-] Abrir {1} ([DECEA3]Vacío[-]),,,[EEEE22]{0}[-]で{1}を開く([DECEA3]空[-]),,,,,,,
+dewCollectorHasDirtyWater,UI,Use Prompt,,,[EEEE22]{0}[-] Open {1} ([CABE21]Water[-]),,[EEEE22]{0}[-] Öffne {1} ([CABE21]Wasser[-]),[EEEE22]{0}[-] Abrir {1} ([CABE21]Agua[-]),,,[EEEE22]{0}[-]で{1}を開く([CABE21]水[-]),,,,,,,
+dewCollectorHasWater,UI,Use Prompt,,,[EEEE22]{0}[-] Open {1} ([00ADD8]Water[-]),,[EEEE22]{0}[-] Öffne {1} ([00ADD8]Wasser[-]),[EEEE22]{0}[-] Abrir {1} ([00ADD8]Agua[-]),,,[EEEE22]{0}で{1}を開く ([00ADD8]水[-]),,,,,,,
+
+journalComplete,UI,Journal,,,Redeem [EEEE22]{0}[-],,Einlösen [EEEE22]{0}[-],,,,受け取り [EEEE22]{0}[-],,,,,,,
+journalTrack,UI,Journal,,,Track [EEEE22]{0}[-],,Folge [EEEE22]{0}[-],,,,追跡 [EEEE22]{0}[-],,,,,,,
+
+packetW1,items,item,,,Toolbox,,Job Buch (Waffen),,
+packetW1Desc,items,item,,,Job Token,,Job Token,,
+
+classPacketW1,items,item,,,Jobfinder,,"Jobsucher",,
+classPacketW1Desc,items,item,,,"Find your Job,,Wähle deinen Job",,
+
+classLumberjack,items,item,,,Lumberjack (Brawler),,"Holzfäller (Raufbold)",,
+classLumberjackDesc,items,item,,,"Lumberjack,,Holzfäller: Der Wald ist Mein!.",,
+
+classPreacher,items,item,,,Preacher,,"Priester (Arzt)",,
+classPreacherDesc,items,item,,,Preacher / Doc,,"Priester: Flicke alles zusammen!.",,
+
+classRogue,items,item,,,Rogue,,Schurke (Dieb),,
+classRogueDesc,items,item,,,Rogue / Thief,,"Schurke: Nagelt eure Türen zu, er kommt bei Nacht!.",,
+
+classAthletic,items,item,,,Athletic,,"Sportler (Runner)",,
+classAthleticDesc,items,item,,,Athletic,,"Sportler: Rennen kann er am besten!.",,
+
+classEnforcer,items,item,,,Enforcer,,"Vollstrecker (Scharfschütze)",,
+classEnforcerDesc,items,item,,,Enforcer,,"Vollstrecker: Spiel mir das Lied vom Tod!.",,
+
+classFarmer,items,item,,,Farmer,,"Bauer",,
+classFarmerDesc,items,item,,,Farmer,,"Bauer: Hat die dicksten Kartoffeln!."
+
+classBiker,items,item,,,Biker,,"Biker (Horst)",,
+classBikerDesc,items,item,,,Biker,,"Biker: Schnellster Raufbold, auf 2 Rädern!.",,
+
+classScavenger,items,item,,,Scavenger,,"Aasfresser (Lootgeier)",,
+classScavengerDesc,items,item,,,Scavenger,,"Aasfresser: Findet Nur den besten Loot!.",,
+
+classRanger,items,item,,,Ranger,,"Ranger (Polizist)",,
+classRangerDesc,items,item,,,Ranger,,"Ranger: Bekomme sie alle!.",,
+
+classCommando,items,item,,,Commando,,Commando (Soldat),,
+classCommandoDesc,items,item,,,Commando,,"Commando: Der Aufräumer mit dem großen Wumms!.",,
+
+classAssassin,items,item,,,Assassin,,"Attentäter",,
+classAssassinDesc,items,item,,,Assassin,,"Attentäter: Du kannst ihm nicht entkommen!.",,
+
+classMiner,items,item,,,Miner,,Minenarbeiter (Bob),,
+classMinerDesc,items,item,,,Miner,,"Minenarbeiter: Mutter der Mann mit dem Koks ist da.",,
+
+classNomad,items,item,,,Nomad,,"Nomade (Wanderer)",,
+classNomadDesc,items,item,,,Nomad,,"Nomade: Wanderer der Wüste.",,
+
+classNerd,items,item,,,Nerd,,"Nerd (Conputerfreak)",,
+classNerdDesc,items,item,,,Nerd,,"Nerd: Weiß, und kann fast alles.",,
+
+classRaider,items,item,,,Raider,,"Angreifer (Schläger)",,
+classRaiderDesc,items,item,,,Raider,,"Angreifer: Ich hau sie Weg.",,
+
+modArmorBandana,item_modifiers,mod,,,Bandana,,Kopftuch (+),,,
+modArmorBandanaDesc,item_modifiers,mod,,,"Ward off that sunburn with a folded head scarf. Also muffles your voice.",,"Wehren Sie den Sonnenbrand mit einem gefalteten Kopftuch ab. Dämpft auch deine Stimme.",,
+
+modArmorFacialPiercings,item_modifiers,mod,,,Facial Piercings,,Gesichtspiercings (+),,
+modArmorFacialPiercingsDesc,item_modifiers,mod,,,"The risk of infection is not enough of a challenge? Try putting piercings of questionable origin into your skin so you can get a better deal selling to traders.",,"Die Ansteckungsgefahr ist nicht Herausforderung genug? Versuchen Sie, Piercings fragwürdiger Herkunft in Ihre Haut zu stecken, damit Sie beim Verkauf an Händler ein besseres Geschäft machen können.",,
+statBarteringSelling,ui_display,Item stat,,,[00cccc]Bartering (selling)[-],,[00cccc] Tauschhandel (Verkauf)[-],,
+statShowPlayerExpGain,ui_display,Item stat,,,[ced900]Player XP Gain[-],,[ced900] Spieler-EP-Gewinn[-],,
+
+modArmorCigarDesc,item_modifiers,mod,,,"Look intimidating and get a better deal buying from traders. Also boosts strength!",,"Sehen Sie einschüchternd aus und erhalten Sie ein besseres Angebot, wenn Sie von Händlern kaufen. Steigert auch die Kraft!",,
+statBarteringBuying,ui_display,Item stat,,,[00cccc]Bartering (buying)[-],,[00cccc] Tauschen (Kaufen)[-],,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

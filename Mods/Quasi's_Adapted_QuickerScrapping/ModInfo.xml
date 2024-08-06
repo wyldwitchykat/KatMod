@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-    <ModInfo>
-        <Name value="Quasi's Quicker Scrapping" />
-        <Description value="Halves the time it takes to scrap items, without cutting the amount of resources you get in half."/>
-        <Author value="Quasimiyao" />
-        <Version value="1.0.0" />
-    </ModInfo>
-</xml>

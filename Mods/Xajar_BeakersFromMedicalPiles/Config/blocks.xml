@@ -1,7 +1,0 @@
-<configs>
-
-	<!-- Drops a beaker when breaking Medical Piles. -->
-	<set xpath="/blocks/block[@name='medicalPileSmall']/drop[@event='Destroy' and @count='0']/@count">1</set>
-	<setattribute xpath="/blocks/block[@name='medicalPileSmall']/drop[@event='Destroy']" name="name">toolBeaker</setattribute>
-
-</configs>

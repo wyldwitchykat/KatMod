@@ -1,9 +1,0 @@
-<configs>
-	<!-- This will log as a WRN for not able to remove -->
-	<!-- This is done on purpose to have a log entry showing this file was read -->
-	<remove xpath="/Successfully_Loaded[@modname='RELXIX_UIMENU_DropOnDeathNothing'][@version='1.0.3'][@filename='\Config\XUi_Menu\windows.xml']" />
-
-	<set xpath="/windows/window[@name='newContinueGame']/rect[@name='tabs']/rect[@name='tabsContents']/rect[@tab_key='Advanced']/grid/gameoption[@name='DropOnDeath']/@display_names">goAll,goToolbelt,goBackpack,goDeleteAll,goNone</set>
-	<set xpath="/windows/window[@name='serverBrowser']/panel[@name='serverfilters']/panel[@controller='TabSelector']/rect[@name='tabsContents']/rect[@tab_key='Advanced']/grid/browsergameoptioncombined[@name='DropOnDeath']/@display_names">goAll,goToolbelt,goBackpack,goDeleteAll,goNone</set>
-	<set xpath="/windows/window[@name='serverBrowser']/rect[@name='serverinfo']/panel[@controller='TabSelector']/rect[@name='tabsContents']/rect[@tab_key='Advanced']/grid/browsergameoptioninfo[@name='DropOnDeath']/@display_names">goAll,goToolbelt,goBackpack,goDeleteAll,goNone</set>
-</configs>

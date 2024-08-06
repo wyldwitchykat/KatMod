@@ -1,0 +1,1 @@
+Sets parameters in recipies.xml to add beaker to workbench recipies

@@ -1,5 +1,0 @@
-<config>
-
-	<set xpath="/entity_classes/entity_class/property[@name='AITarget-4' and @param1='EntityPlayer,0,EntityNPC,0']/@param1">EntityPlayer,30,EntityNPC,0</set>
-
-</config>

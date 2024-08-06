@@ -1,0 +1,1 @@
+This modlet allows for rendering meats into animal fat. Cooked meats, and raw meat can be used with varying requirements.

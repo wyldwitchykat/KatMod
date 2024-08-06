@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Make_Water" />
+	<DisplayName value="Craft water from river" />
+	<Description value="Craft water from full water bucket at campfire." />
+	<Author value="Pahbi" />
+	<Version value="1.0" />
+	<Website value="" />
+</xml>

@@ -1,7 +1,0 @@
-<configs>
-	<append xpath="/traders">
-	
-		<trader_info id="11" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" rentable="true" rent_cost="1" rent_time="30" />
-	
-	</append>
-</configs>

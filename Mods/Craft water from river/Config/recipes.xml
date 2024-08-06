@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="Boiled Water" count="1" craft_time="5" craft_area="campfire">
+			<ingredient name="bucketRiverWater" count="1"/>
+		</recipe>
+	</append>
+</configs>

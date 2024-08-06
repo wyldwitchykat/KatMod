@@ -1,0 +1,1 @@
+Sets parameters in recipies.xml to add painkillers to chemistry recipies

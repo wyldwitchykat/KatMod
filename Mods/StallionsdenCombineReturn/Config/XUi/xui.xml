@@ -1,7 +1,0 @@
-<stallionsden>
-<!-- Read the xui.xml, add the new window and disable the old one -->
-
-	<append xpath="/xui/ruleset/window_group[@name='backpack']" >
-		<window name="windowCombine" />
-	</append>
-</stallionsden>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="ResetQuestsMod" />
+    <Description value="Adds trader dialog option for resetting quests without admin access." />
+	<DisplayName value="Bean's Reset Quests Mod" />
+    <Author value="EB" />
+    <Version value="1.1.0.0" />
+    <Website value="" />
+	<SkipWithAntiCheat value="false" />
+</xml>

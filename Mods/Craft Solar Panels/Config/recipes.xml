@@ -1,0 +1,14 @@
+<configs>
+	<!-- Append acid recipe to end of recipes -->
+	<append xpath="/recipes">
+		<recipe name="solarCell" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourceCoal" count="15"/>
+			<ingredient name="resourceSilverNugget" count="2"/>
+			<ingredient name="resourceForgedIron" count="30"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="1,5" tags="resourceScrapPolymers,resourceForgedIron"/>
+			</effect_group>
+		</recipe>
+	</append>
+</configs>

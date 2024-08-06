@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <append xpath="/recipes">
+    <recipe name="gurneyBed" count="1" craft_time="120" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceScrapIron" count="50" />
+      <ingredient name="medicalBloodBag" count="10" />
+      <ingredient name="resourceScrapPolymers" count="100" />
+      <ingredient name="resourceCropCottonPlant" count="50" />
+      <ingredient name="resourceMetalPipe" count="10" />
+    </recipe>
+    <recipe name="hospitalBed" count="1" craft_time="300" craft_area="workbench" tags="learnable,workbenchCrafting">
+      <ingredient name="resourceForgedIron" count="50" />
+      <ingredient name="medicalFirstAidKit" count="10" />
+      <ingredient name="resourceScrapPolymers" count="100" />
+      <ingredient name="resourceCropCottonPlant" count="50" />
+      <ingredient name="resourceMetalPipe" count="10" />
+    </recipe>
+  </append>
+  
+  <append xpath="/recipes">
+    <recipe name="resourceIronFragmentBundle" count="1" craft_time="10" craft_exp_gain="0">
+      <ingredient name="resourceIronFragment" count="6000" />
+    </recipe>
+	
+    <recipe name="resourceIronFragment" count="1" material_based="true" craft_area="forge" craft_time="3" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+      <ingredient name="unit_iron" count="5" />
+    </recipe>
+  </append>
+  
+  <remove xpath="/recipes/recipe[@name='drinkJarYuccaJuice']"></remove>
+  
+  <append xpath="/recipes">
+    <recipe name="drinkJarEmpty" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+      <ingredient name="unit_glass" count="10" />
+      <ingredient name="unit_clay" count="1" />
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_glass" />
+      </effect_group>
+    </recipe>
+	
+    <recipe name="drinkJarYuccaJuice" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCropYuccaFruit" count="4" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+	
+    <recipe name="drinkJarBoiledWater" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="resourceSnowBall" count="1" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+	
+	<recipe name="drinkJarBoiledWater" count="1" craft_area="campfire">
+      <ingredient name="resourceSnowBall" count="5" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+	
+	<recipe name="cntWoodDecoBlockVariantHelper" count="1">
+	  <ingredient name="resourceNail" count="5"/>
+	  <ingredient name="resourceWood" count="5"/>
+	  <ingredient name="resourceGlue" count="5"/>
+	  <ingredient name="resourceMechanicalParts" count="5" />
+	  <!-- <ingredient name="resourceSpring" count="5" /> -->
+    </recipe>
+</append>
+
+</configs>

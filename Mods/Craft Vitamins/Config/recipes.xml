@@ -1,0 +1,12 @@
+<configs>
+	<!-- Append acid recipe to end of recipes -->
+	<append xpath="/recipes">
+		<recipe name="drugVitamins" count="1" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourceScrapPolymers" count="2"/>
+			<ingredient name="resourceCoal" count="2"/>
+			<ingredient name="foodCropGraceCorn" count="1"/>
+			<ingredient name="foodCropBlueberries" count="1"/>
+			<ingredient name="foodCropYuccaFruit" count="1"/>
+		</recipe>
+	</append>
+</configs>

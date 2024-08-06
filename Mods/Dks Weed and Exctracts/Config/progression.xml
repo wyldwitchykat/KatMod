@@ -1,0 +1,28 @@
+<configs>
+
+	<insertAfter xpath="//crafting_skill[@name='craftingMedical']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='medicalFirstAidBandage']">	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Grams Of Wax"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Grams Of Shatter"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Grams Of Sugar Wax"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Grams Of Crumble"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Grams Of Diamonds"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Grams Of Sauce"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Butane"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Blasting Tube"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Extraction Kit"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="Box Of Butane"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Bong"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="Oil Rig"/>
+	</insertAfter>
+	<insertAfter xpath="//crafting_skill[@name='craftingSeeds']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='plantedCotton1']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,20" value="1" tags="PlantedChemDawg1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,20" value="1" tags="PlantedWeddingCake1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,20" value="1" tags="PlantedBlueDream1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,20" value="1" tags="PlantedPurpleHaze1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,20" value="1" tags="PlantedAlaskanThunderfuck1"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,20" value="1" tags="PlantedAk471"/>
+	</insertAfter>
+
+	
+	
+</configs>	

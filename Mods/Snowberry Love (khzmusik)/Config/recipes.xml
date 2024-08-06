@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!-- Add a recipe for snowberry seeds (the seeds already exist in vanilla) -->
+    <insertAfter xpath="//recipe[@name='plantedBlueberry1']">
+        <recipe name="plantedSnowberry1" count="1" craft_time="1" tags="learnable">
+            <ingredient name="resourceCropSnowberryPlant" count="5" />
+        </recipe>
+    </insertAfter>
+
+    <!-- Add a recipe for snowberry tea -->
+    <insertAfter xpath="//recipe[@name='drinkJarRedTea']">
+        <recipe name="drinkJarSnowberryTea" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+            <ingredient name="resourceCropSnowberryPlant" count="1" />
+            <ingredient name="drinkJarBoiledWater" count="1" />
+        </recipe>
+    </insertAfter>
+
+    <!-- Add a new recipes for herbal antibiotics that use snowberries -->
+    <insertAfter xpath="//recipe[@name='drugHerbalAntibiotics'][last()]">
+        <recipe name="drugHerbalAntibiotics" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
+            <ingredient name="resourceCropSnowberryPlant" count="5" />
+            <ingredient name="foodCropMushrooms" count="3" />
+            <ingredient name="resourceCropChrysanthemumPlant" count="3" />
+            <ingredient name="resourcePotassiumNitratePowder" count="3" />
+            <ingredient name="drinkJarBoiledWater" count="1" />
+        </recipe>
+
+        <recipe name="drugHerbalAntibiotics" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+            <ingredient name="resourceCropSnowberryPlant" count="2" />
+            <ingredient name="foodCropMushrooms" count="1" />
+            <ingredient name="resourceCropChrysanthemumPlant" count="1" />
+            <ingredient name="resourcePotassiumNitratePowder" count="1" />
+            <ingredient name="drinkJarBoiledWater" count="1" />
+        </recipe>
+    </insertAfter>
+
+    <!-- Add a recipe for snowberry paste, and medical bandages that use it -->
+    <insertAfter xpath="//recipe[@name='medicalAloeCream']">
+        <recipe name="medicalSnowberryPaste" count="1">
+            <ingredient name="resourceCropSnowberryPlant" count="4" />
+        </recipe>
+    </insertAfter>
+    <insertAfter xpath="//recipe[@name='medicalFirstAidBandage']">
+        <recipe name="medicalFirstAidBandage" count="1" tags="learnable">
+            <ingredient name="medicalSnowberryPaste" count="1" />
+            <ingredient name="medicalBandage" count="1" />
+        </recipe>
+    </insertAfter>
+
+    <!-- Add a recipe for Grandma's Gin -->
+    <insertAfter xpath="//recipe[@name='drinkJarGrandpasMoonshine']">
+        <recipe name="drinkJarGrandmasGin" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+            <ingredient name="drinkJarBeer" count="1" />
+            <ingredient name="resourceCropSnowberryPlant" count="10" />
+            <ingredient name="resourceYuccaFibers" count="10" />
+            <ingredient name="foodCropGraceCorn" count="1" />
+            <effect_group>
+                <passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-2,-5" tags="resourceCropSnowberryPlant,resourceYuccaFibers" />
+            </effect_group>
+        </recipe>
+    </insertAfter>
+</configs>

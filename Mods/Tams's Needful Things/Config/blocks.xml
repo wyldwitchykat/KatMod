@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <append xpath="/blocks/block[@name='bedroll']">
+    <property name="BuffsWhenWalkedOn" value="buffTamHealing" />
+  </append>
+  <append xpath="/blocks/block[@name='bedrollBlockVariantHelper']">
+    <property name="DescriptionKey" value="bedrollDesc" />
+  </append>
+  
+  <append xpath="blocks/block[@name='bedrollPOI']">
+		<property name="BuffsWhenWalkedOn" value="buffTamHealing"/>
+	</append>
+  
+  <append xpath="/blocks/block[@name='gurneyBed']">
+    <property name="BuffsWhenWalkedOn" value="buffTamHealing1" />
+    <property name="CanPickup" value="false" />
+  </append>
+  
+  <append xpath="/blocks/block[@name='hospitalBed']">
+    <property name="BuffsWhenWalkedOn" value="buffTamHealing2" />
+    <property name="CanPickup" value="false" />
+  </append>
+  
+  <append xpath="blocks/block[@name='bed02']">
+		<property name="BuffsWhenWalkedOn" value="buffTamHealing2"/>
+  </append>
+	
+  <append xpath="/blocks/block[@name='terrStone']">
+    <drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"></drop>
+    <drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest" />
+    <drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest" />
+    <drop event="Harvest" name="resourceScrapLead" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourcePotassiumNitratePowder" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourceCoal" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourceIronFragment" count="8" prob="0.33" tag="oreWoodHarvest" />
+	<drop event="Harvest" name="resourceScrapBrass" count="8" prob="0.33" tag="oreWoodHarvest" />
+  </append>
+  <append xpath="/blocks/block[@name='resourceRock01']">
+    <drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"></drop>
+    <drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest" />
+    <drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest" />
+    <drop event="Harvest" name="resourceScrapLead" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourcePotassiumNitratePowder" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourceCoal" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourceIronFragment" count="8" prob="0.33" tag="oreWoodHarvest" />
+	<drop event="Harvest" name="resourceScrapBrass" count="8" prob="0.33" tag="oreWoodHarvest" />
+  </append>
+  <append xpath="/blocks/block[@name='resourceRock02']">
+    <drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"></drop>
+    <drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest" />
+    <drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest" />
+    <drop event="Harvest" name="resourceScrapLead" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourcePotassiumNitratePowder" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourceCoal" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourceIronFragment" count="8" prob="0.33" tag="oreWoodHarvest" />
+	<drop event="Harvest" name="resourceScrapBrass" count="8" prob="0.33" tag="oreWoodHarvest" />
+  </append>
+  <append xpath="/blocks/block[@name='resourceRock03']">
+    <drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"></drop>
+    <drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest" />
+    <drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest" />
+    <drop event="Harvest" name="resourceScrapLead" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourcePotassiumNitratePowder" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourceCoal" count="8" prob="0.33" tag="oreWoodHarvest" />
+    <drop event="Harvest" name="resourceIronFragment" count="8" prob="0.33" tag="oreWoodHarvest" />
+	<drop event="Harvest" name="resourceScrapBrass" count="8" prob="0.33" tag="oreWoodHarvest" />
+  </append>
+  <remove xpath="/blocks/block[@name='terrOreIron']"></remove>
+  <remove xpath="/blocks/block[@name='oreIronBoulder']"></remove>
+  <append xpath="/blocks">
+    <block name="terrOreIron">
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+	<property name="DisplayType" value="blockTerrain"/>
+	<property name="Map.Color" value="120,70,0"/>
+	<property name="Material" value="MoreMetal"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="33"/>
+	<property name="ImposterExclude" value="true"/>
+	<drop event="Harvest" name="resourceScrapIron" count="105" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceRockSmall" count="14" tag="oreWoodHarvest"/>
+	 <drop event="Harvest" name="resourceIronFragment" count="22" tag="artOfMiningLuckyStrikeHarvest" />
+	<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	<drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	<drop event="Harvest" name="resourceScrapBrass" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="resourceScrapIron" count="150" prob="0.4" stick_chance="0"/>
+	<property name="SortOrder1" value="0000"/>
+	<property name="SortOrder2" value="0950"/>
+	<property name="Tags" value="ore,deepOre"/>
+	<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+</block>
+   <block name="oreIronBoulder">
+	<property name="Extends" value="oreBoulderMaster"/>
+	<property name="Map.Color" value="120,70,0"/>
+	<property name="Material" value="MoreMetal"/>
+	<drop event="Harvest" name="resourceScrapIron" count="105" tag="oreWoodHarvest"/>
+	 <drop event="Harvest" name="resourceIronFragment" count="22" tag="artOfMiningLuckyStrikeHarvest" />
+	<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	<drop event="Harvest" name="resourceSilverNugget" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	<drop event="Harvest" name="resourceGoldNugget" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	<drop event="Harvest" name="resourceScrapBrass" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	<property name="SortOrder2" value="0101"/>
+</block>
+ 
+  <block name="cntWoodDecoBlockVariantHelper">
+	<property name="Extends" value="cntNightstandClosed" param1="Place"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="cntNightstandClosed"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelperDesc"/>
+	<!-- Can not use Place as all blocks in list will not place the same way -->
+	<!-- <property name="Place" value="TowardsPlacerInverted"/> -->
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="decoWildWestWagon,decoWildWestWagonWheelBack,decoWildWestWagonWheelFront,decoWildWestWagonWheelFrontOffsetTrader,decoCowSkull,chairWood01,woodChair1,decoMannequinMale,decoMannequinFemale,decoMannequinMilitaryCommando,woodenBear,rugBear,chandelierLight,chandelierLight2x2,candelabraLight,candelabraLightSmall,decoClawFootBathTub,decoTableRound,decoPoolTable,decoReptileTerrarium,decoHoistChain,decoHoistChainSingleCenter,decoHoistChainSingleCorner,decoHoistSpreader,decoHoistHook,decoHoistMagnet,decoHoistTopMount"/>
+	<property name="EconomicValue" value="8"/>
+	<property name="SortOrder1" value="U200"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+  </block>
+</append>
+</configs>

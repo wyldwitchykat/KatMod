@@ -1,0 +1,10 @@
+<configs>
+	<!-- Append acid recipe to end of recipes -->
+	<append xpath="/recipes">
+		<recipe name="drugPainkillers" count="1" craft_time="10" craft_area="chemistryStation" tags="chemStationCrafting">
+			<ingredient name="resourcePotassiumNitratePowder" count="2"/>
+			<ingredient name="resourceCropCoffeeBeans" count="2"/>
+			<ingredient name="foodCropMushrooms" count="2"/>
+		</recipe>
+	</append>
+</configs>

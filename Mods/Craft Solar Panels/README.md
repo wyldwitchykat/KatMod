@@ -1,0 +1,1 @@
+This modlet will set parameters in recipies.xml to add tier 6 solar panel to recipies

@@ -1,5 +1,0 @@
-<Configs>
-<!-- Reduces Fat Cop explosion damage to 1 -->
-	<set xpath="entity_classes/entity_class[@name='zombieFatCop']/property[@name='Explosion.BlockDamage']/@value">75</set>
-	<set xpath="entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='Explosion.BlockDamage']/@value">100</set>
-</Configs>

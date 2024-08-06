@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="UntamedWolf_JunctionBox" />
-		<Description value="Adds a junction box panel, a fusebox, and a concrete block that hide wires." />
-		<Author value="Untamedwolf/originally by zilizgarcia1122" />
-		<Version value="1.0.0" />
-	</ModInfo>
-</xml>

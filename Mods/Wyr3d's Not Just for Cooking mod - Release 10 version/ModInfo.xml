@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xml>
+
+	<Name value="Wyr3d-NotJustForCooking"/>
+	<DisplayName value="Wyr3d's Not Just for Cooking mod - Release 1.0 version" />		
+	<Description value="Render various meats into animal fat."/>
+	<Author value="Wyr3d"/>
+	<Version value="1.0.0.1"/>
+	<Website value="https://www.curseforge.com/members/wyr3d/projects"/>
+	<SkipWithAntiCheat value="false" />	
+
+</xml>

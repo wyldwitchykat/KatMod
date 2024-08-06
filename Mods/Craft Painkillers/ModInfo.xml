@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Add_Painkillers" />
+	<DisplayName value="Craft Painkillers." />
+	<Description value="Add painkillers recipe to chemistry station." />
+	<Author value="Pahbi" />
+	<Version value="1.0" />
+	<Website value="" />
+</xml>

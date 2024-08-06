@@ -1,0 +1,11 @@
+<configs>
+	<!-- Append acid recipe to end of recipes -->
+	<append xpath="/recipes">
+		<recipe name="solarbank" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceCoal" count="15"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceForgedSteel" count="15"/>
+		</recipe>
+	</append>
+</configs>

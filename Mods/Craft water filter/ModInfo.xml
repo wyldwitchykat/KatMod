@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Add_Waterfilter" />
+	<DisplayName value="Craft water filter." />
+	<Description value="Add water filter recipe to workbench." />
+	<Author value="Pahbi" />
+	<Version value="1.0" />
+	<Website value="" />
+</xml>

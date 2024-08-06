@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <insertAfter xpath="//item[@name='plantedBlueberry1']">
+        <item name="plantedSnowberry1" />
+    </insertAfter>
+    <insertAfter xpath="//item[@name='drinkJarGoldenRodTea']">
+        <item name="drinkJarSnowberryTea" count="1,2" />
+    </insertAfter>
+    <insertAfter xpath="//item[@name='medicalAloeCream']">
+        <item name="medicalSnowberryPaste" count="2,5" />
+    </insertAfter>
+    <append xpath="//trader_item_group[@name='rareMedicine']">
+        <item name="drinkJarGrandmasGin" />
+    </append>
+    <append xpath="//trader_item_group[@name='groupDrinksSpecial']">
+        <item name="drinkJarGrandmasGin" count="1,2" />
+    </append>
+</config>

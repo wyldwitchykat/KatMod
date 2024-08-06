@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<configs>
-
-<!-- loot probability -->
-<set xpath="/lootcontainers/lootgroup[@name='books']/item[@group='perkMagazines']/@prob">0.06</set>
-
-</configs>

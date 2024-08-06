@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-    <ModInfo>
-        <Name value="Burning Barrels and pick up mines" />
-        <Description value="Set fire to zombies that walk on your barrel. Pickup mines." />
-        <Author value="Jolly" />
-        <Version value="1" />
-    </ModInfo>
-</xml>

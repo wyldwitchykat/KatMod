@@ -1,0 +1,468 @@
+<Dks_Weed_and_Exctracts>
+
+	<append xpath="/blocks">
+
+		<block name="PlantedAk471">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="PlantedWeed1Schematic"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,-0.25,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/Ak47WeedPlants.unity3d?Ak47Prefab_plant1.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedAk472"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedAk471" count="1"/>
+		</block>
+
+		<block name="PlantedAk472">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/Ak47WeedPlants.unity3d?Ak47Prefab_plant2.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedAk473HarvestPlayer"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedAk471" count="1"/>
+		</block>
+
+		<block name="PlantedAk473Harvest">
+			<property name="Extends" value="cropsHarvestableMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/Ak47WeedPlants.unity3d?Ak47Prefab_plant3.prefab"/>
+			<drop event="Harvest" name="Grams Of Ak47" count="3" tag="wildCropsHarvest"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+		<block name="PlantedAk47HarvestRandomHelper">
+			<property name="Extends" value="PlantedAk473Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+
+		<block name="PlantedAk473HarvestPlayer">
+			<property name="Extends" value="PlantedAk473Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<drop event="Harvest" name="Grams Of Ak47" count="3" tag="cropHarvest"/>
+			<property name="DowngradeBlock" value="PlantedAk471"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/Ak47WeedPlants.unity3d?Ak47Prefab_plant3.prefab"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+		<block name="PlantedChemDawg1">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="PlantedWeed1Schematic"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,-0.25,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/ChemDawgWeedPlants.unity3d?ChemDawgPrefab_plant1.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedChemDawg2"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedChemDawg1" count="1"/>
+		</block>
+
+		<block name="PlantedChemDawg2">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/ChemDawgWeedPlants.unity3d?ChemDawgPrefab_plant2.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedChemDawg3HarvestPlayer"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedChemDawg1" count="1"/>
+		</block>
+
+		<block name="PlantedChemDawg3Harvest">
+			<property name="Extends" value="cropsHarvestableMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/ChemDawgWeedPlants.unity3d?ChemDawgPrefab_plant3.prefab"/>
+			<drop event="Harvest" name="Grams Of ChemDawg" count="3" tag="wildCropsHarvest"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+		<block name="PlantedChemDawgHarvestRandomHelper">
+			<property name="Extends" value="PlantedChemDawg3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+
+		<block name="PlantedChemDawg3HarvestPlayer">
+			<property name="Extends" value="PlantedChemDawg3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<drop event="Harvest" name="Grams Of ChemDawg" count="3" tag="cropHarvest"/>
+			<property name="DowngradeBlock" value="PlantedChemDawg1"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/ChemDawgWeedPlants.unity3d?ChemDawgPrefab_plant3.prefab"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+		<block name="PlantedWeddingCake1">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="PlantedWeed1Schematic"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,-0.25,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/WeddingCakeWeedPlants.unity3d?WeddingCakePrefab_plant1.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedWeddingCake2"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedWeddingCake1" count="1"/>
+		</block>
+
+		<block name="PlantedWeddingCake2">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/WeddingCakeWeedPlants.unity3d?WeddingCakePrefab_plant2.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedWeddingCake3HarvestPlayer"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedWeddingCake1" count="1"/>
+		</block>
+
+		<block name="PlantedWeddingCake3Harvest">
+			<property name="Extends" value="cropsHarvestableMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/WeddingCakeWeedPlants.unity3d?WeddingCakePrefab_plant3.prefab"/>
+			<drop event="Harvest" name="Grams Of Wedding Cake" count="3" tag="wildCropsHarvest"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+		<block name="PlantedWeddingCakeHarvestRandomHelper">
+			<property name="Extends" value="PlantedWeddingCake3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+
+		<block name="PlantedWeddingCake3HarvestPlayer">
+			<property name="Extends" value="PlantedWeddingCake3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<drop event="Harvest" name="Grams Of Wedding Cake" count="3" tag="cropHarvest"/>
+			<property name="DowngradeBlock" value="PlantedWeddingCake1"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/WeddingCakeWeedPlants.unity3d?WeddingCakePrefab_plant3.prefab"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+		<block name="PlantedPurpleHaze1">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="PlantedWeed1Schematic"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,-0.25,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/PurpleHazeWeedPlants.unity3d?PurpleHazePrefab_plant1.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedPurpleHaze2"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedPurpleHaze1" count="1"/>
+		</block>
+
+		<block name="PlantedPurpleHaze2">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/PurpleHazeWeedPlants.unity3d?PurpleHazePrefab_plant2.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedPurpleHaze3HarvestPlayer"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedPurpleHaze1" count="1"/>
+		</block>
+
+		<block name="PlantedPurpleHaze3Harvest">
+			<property name="Extends" value="cropsHarvestableMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/PurpleHazeWeedPlants.unity3d?PurpleHazePrefab_plant3.prefab"/>
+			<drop event="Harvest" name="Grams Of Purple Haze" count="3" tag="wildCropsHarvest"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+		<block name="PlantedPurpleHazeHarvestRandomHelper">
+			<property name="Extends" value="PlantedPurpleHaze3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+
+		<block name="PlantedPurpleHaze3HarvestPlayer">
+			<property name="Extends" value="PlantedPurpleHaze3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<drop event="Harvest" name="Grams Of Purple Haze" count="3" tag="cropHarvest"/>
+			<property name="DowngradeBlock" value="PlantedPurpleHaze1"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/PurpleHazeWeedPlants.unity3d?PurpleHazePrefab_plant3.prefab"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+
+		<block name="PlantedBlueDream1">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="PlantedWeed1Schematic"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,-0.25,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/BlueDreamWeedPlants.unity3d?BlueDreamPrefab_plant1.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedBlueDream2"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedBlueDream1" count="1"/>
+		</block>
+
+		<block name="PlantedBlueDream2">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/BlueDreamWeedPlants.unity3d?BlueDreamPrefab_plant2.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedBlueDream3HarvestPlayer"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedBlueDream1" count="1"/>
+		</block>
+
+		<block name="PlantedBlueDream3Harvest">
+			<property name="Extends" value="cropsHarvestableMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/BlueDreamWeedPlants.unity3d?BlueDreamPrefab_plant3.prefab"/>
+			<drop event="Harvest" name="Grams Of Blue Dream" count="3" tag="wildCropsHarvest"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+		<block name="PlantedBlueDreamHarvestRandomHelper">
+			<property name="Extends" value="PlantedBlueDream3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+
+		<block name="PlantedBlueDream3HarvestPlayer">
+			<property name="Extends" value="PlantedBlueDream3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<drop event="Harvest" name="Grams Of Blue Dream" count="3" tag="cropHarvest"/>
+			<property name="DowngradeBlock" value="PlantedBlueDream1"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/BlueDreamWeedPlants.unity3d?BlueDreamPrefab_plant3.prefab"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+
+		<block name="PlantedAlaskanThunderfuck1">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="PlantedWeed1Schematic"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,-0.25,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/AlaskanThunderfuckWeedPlants.unity3d?AlaskanThunderfuckPrefab_plant1.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedAlaskanThunderfuck2"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedAlaskanThunderfuck1" count="1"/>
+		</block>
+
+		<block name="PlantedAlaskanThunderfuck2">
+			<property name="Extends" value="cropsGrowingMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk471"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Model" value="#@modfolder:Resources/AlaskanThunderfuckWeedPlants.unity3d?AlaskanThunderfuckPrefab_plant2.prefab"/>
+			<property name="PlantGrowing.Next" value="PlantedAlaskanThunderfuck3HarvestPlayer"/>
+			<property name="PlantGrowing.GrowthRate" value="32"/>
+			<property name="PlantGrowing.LightLevelGrow" value="4"/>
+			<drop event="Destroy" name="PlantedAlaskanThunderfuck1" count="1"/>
+		</block>
+
+		<block name="PlantedAlaskanThunderfuck3Harvest">
+			<property name="Extends" value="cropsHarvestableMaster" param1="Texture,CustomIcon,Mesh"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/AlaskanThunderfuckWeedPlants.unity3d?AlaskanThunderfuckPrefab_plant3.prefab"/>
+			<drop event="Harvest" name="Grams Of Alaskan Thunderfuck" count="3" tag="wildCropsHarvest"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+		<block name="PlantedAlaskanThunderfuckHarvestRandomHelper">
+			<property name="Extends" value="PlantedAlaskanThunderfuck3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+
+		<block name="PlantedAlaskanThunderfuck3HarvestPlayer">
+			<property name="Extends" value="PlantedAlaskanThunderfuck3Harvest"/>
+			<property name="CreativeMode" value="Dev"/>
+			<drop event="Harvest" name="Grams Of  Alaskan Thunderfuck" count="3" tag="cropHarvest"/>
+			<property name="DowngradeBlock" value="PlantedAlaskanThunderfuck1"/>
+			<property name="CustomIcon" value="PlantedAk473Harvest"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Model" value="#@modfolder:Resources/AlaskanThunderfuckWeedPlants.unity3d?AlaskanThunderfuckPrefab_plant3.prefab"/>
+			<property name="ParticleOnDeath" value="treeGib_small_dust"/>
+		</block>
+
+<block name="Rolling Tray">
+	<property name="CustomIcon" value="Rolling Tray"/>
+	<property name="DescriptionKey" value="cntWoodFurnitureBlockVariantHelper2Desc"/>
+	<property name="Class" value="Workstation"/>
+	<property class="Workstation">
+	<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="Rolling Tray"/>
+	</property>
+	<!-- UI  -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="workbenchDesc"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/Rolling Tray.unity3d?Rolling Tray"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="Texture" value="269,269,67,269,269,269"/>
+	<property name="UseGlobalUV" value="Local"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="Weight" value="0"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="800"/>
+	<property name="OpenSound" value="open_workbench"/>
+	<property name="CloseSound" value="close_workbench"/>
+	<property name="TakeDelay" value="15"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="10"/>
+	</property>
+	<drop event="Harvest" name="resourceWood" count="20" tag="allHarvest,lumberjackHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="20" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0303"/>
+	<property name="Group" value="Building,TCScience,advBuilding"/>
+	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+</block>
+
+
+	</append>
+
+</Dks_Weed_and_Exctracts>

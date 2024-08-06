@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <!-- Add snowberries to lootgroups -->
+    <append xpath="//lootgroup[@name='groupFoodTrashUncommon']">
+        <item name="resourceCropSnowberryPlant" count="2,4" loot_prob_template="veryLow" />
+    </append>
+    <append xpath="//lootgroup[@name='groupIngredientsUncommon']">
+        <item name="resourceCropSnowberryPlant" count="3,6" />
+    </append>
+
+    <!-- Add seeds to lootgroups -->
+    <append xpath="//lootgroup[@name='seeds']">
+        <item name="plantedSnowberry1" />
+    </append>
+    <append xpath="//lootgroup[@name='seedsNoFlowers']">
+        <item name="plantedSnowberry1" count="3,5" />
+    </append>
+
+    <!-- Add tea to lootgroups -->
+    <insertAfter xpath="//lootgroup/item[@name='drinkJarGoldenRodTea']">
+        <item name="drinkJarSnowberryTea" />
+    </insertAfter>
+
+    <!-- Add paste to lootgroups -->
+    <append xpath="//lootgroup[@name='survivalMedical']">
+        <item name="medicalSnowberryPaste" count="1,2" />
+    </append>
+    <append xpath="//lootgroup[@name='groupMedicalCommon']">
+        <item name="medicalSnowberryPaste" loot_prob_template="med" />
+    </append>
+    <append xpath="//lootgroup[@name='twitch_med1']">
+        <item name="medicalSnowberryPaste" count="1,2" />
+    </append>
+
+    <!-- Add gin to lootgroups -->
+    <append xpath="//lootgroup[@name='rareFoodDrink']">
+        <item name="drinkJarGrandmasGin" />
+    </append>
+    <append xpath="//lootgroup[@name='groupDrinksRare']">
+        <item name="drinkJarGrandmasGin" />
+    </append>
+    <append xpath="//lootgroup[@name='groupLiquorBonus']">
+        <item name="drinkJarGrandmasGin" count="1" loot_prob_template="low" />
+    </append>
+    <append xpath="//lootgroup[@name='twitch_drinkspecial2']">
+        <item name="drinkJarGrandmasGin" count="1,2" />
+    </append>
+</config>

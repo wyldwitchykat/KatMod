@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!-- Snowberry seeds are unlocked with blueberry seeds -->
+    <csv xpath="//crafting_skill[@name='craftingSeeds']//unlock_entry[contains(@item, 'plantedBlueberry1')]/@item" op="add">plantedSnowberry1</csv>
+    <csv xpath="//crafting_skill[@name='craftingSeeds']//passive_effect[@name='RecipeTagUnlocked' and contains(@tags, 'plantedBlueberry1')]/@tags" op="add">plantedSnowberry1</csv>
+    
+    <!-- Snowberry tea is unlocked with goldenrod tea -->
+    <csv xpath="//crafting_skill[@name='craftingFood']//unlock_entry[contains(@item, 'drinkJarGoldenRodTea')]/@item" op="add">drinkJarSnowberryTea</csv>
+    <csv xpath="//crafting_skill[@name='craftingFood']//passive_effect[@name='RecipeTagUnlocked' and contains(@tags, 'drinkJarGoldenRodTea')]/@tags" op="add">drinkJarSnowberryTea</csv>
+    
+    <!-- Grandma's Gin is unlocked with Grandpa's Moonshine -->
+    <csv xpath="//crafting_skill[@name='craftingFood']//unlock_entry[contains(@item, 'drinkJarGrandpasMoonshine')]/@item" op="add">drinkJarGrandmasGin</csv>
+    <csv xpath="//crafting_skill[@name='craftingFood']//passive_effect[@name='RecipeTagUnlocked' and contains(@tags, 'drinkJarGrandpasMoonshine')]/@tags" op="add">drinkJarGrandmasGin</csv>
+</configs>
