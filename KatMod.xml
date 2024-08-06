@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Servers>
-	<ServerGroup Name="My Mods" Logo="" Description="">
+	<ServerGroup Name="Modlets" Logo="" Description="">
 	
-		<Server Name="KatMod a17.2" Logo="">
+		<Server Name="KatMod V1" Logo="">
 			<Description>
 Just a collection of mods for my friends and myself to play.
 			</Description>
