@@ -1,0 +1,21 @@
+Plumbed In Water Solutions standard version mod 7D2D 1.0 -- by LittleRedSonja
+
+Changelog:
+
+1.0.0 - Added several plumbed in water fixtures. Unlike the dew collector these fixtures provide fresh water without waiting, just open the tap and get as much fresh water as you want, in the same way you would do with any modern sink.       Craftable in the workbench, you need to learn "Plumbing", which unlocks at Workstations level 15 (There is an alternative version of the mod with the recipe already unlocked).
+      - Fixed the vanilla faucets so now they will look good when placed on top of any other block. They are also plumbed in water fixtures. 
+1.1.0 - Added an alternative version of the mod (UNLOCKED version) with no skill requirement to unlock the recipe.
+1.1.1 - Small fix so that recipe will unlock even when the mod installs after the player reaches the right level in workstations crafting skill. Someday I will learn how to type properly and will stop making these mistakes :)
+1.1.2 - Code optimization to improve compatibility of the standard version with other mods. Now this version should be compatible with any other mod except mods that "nuke" the workstations progression skill tree. It should be                 compatible though with any mod that adds or edit it in a less "explosive" way :). 
+        Thank you Genavimex for the help to improve the code.
+      - The recipe to craft the plumbed in water fixtures unlocks now earlier in workstations crafting skill (standard version only).           
+        The UNLOCKED version is untouched, since these improvements are not required in that version.  
+      - Improve a little bit more the Ui. Still some more work to do though. 
+1.2.0 - Added more progression to the mod: 
+		-The Plumbed In Water Fixtures are unlocked at level 15 in workstations skill. This basic version can provide unlimited Murky Water, but nothing else. It does not require a water filter to work. 
+		- At level 25 workstations skill you will unlock the recipe for an "Industrial Water Filter". This is a mod or add-on for your Plumbed In Water Fixtures to also provide Fresh Clean Water. It requires a standard water                   filter to craft, which you can buy from the trader.
+		- If you want to go one step further into fanciness, at level 50 workstations skill you unlock a recipe for a "Water Ionizer". This is a mod or add-on for your Plumbed In Water Fixtures to also provide Pure Mineral                   Water. You still need to learn first how mineral water is made, like you would in vanilla game (Wasteland Treasures volume 4).
+	In the UNLOCKED version you do not need any levels in workstations skill to unlock the recipes, everything is unlocked from the beginning. 
+      - Improved the Ui a little more. I still want to remove the "ingredients" button from the Ui since it is unnecessary, and play a bit more with more colored Ui (right now I have only added some subtle dark blue tones to some of         the panels, nothing too fancy).
+      - Fix: The water fixtures, pump and filters can only be crafted in the workbench now, and not in your backpack.
+1.2.1 - Updated the Ui, so that inventory window will open now when interacting with the water fixtures. It was disabled before, since I considered it unnecesary, but not having it open seems to be a bit annoying when you want to install the mods on the water fixtures. 

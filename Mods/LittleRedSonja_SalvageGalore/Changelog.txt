@@ -1,0 +1,6 @@
+Salvage Galore mod 7D2D v 1.0 -- by LittleRedSonja
+
+Changelog:
+
+1.0 - You can now salvage security cameras in POI to get 1 motion sensor, and POI spotlights to get a spotligt instead for raw materials.
+    - The mod should work both server side for multiplayer and player side for solo play. That means that if the mod is installed in the server you are playing in you do not need to install the mod yourself. If you play solo, then         install the mod as usual. 

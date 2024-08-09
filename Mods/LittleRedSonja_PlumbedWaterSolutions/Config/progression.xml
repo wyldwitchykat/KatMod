@@ -1,0 +1,15 @@
+<configs>	
+	
+	<csv xpath="//crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[starts-with(@item,'resourceLockPick')]/@item" op="Add">plumbedWaterSolutionsSonjaVariantHelper</csv>
+
+	<csv xpath="//crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[starts-with(@tags,'resourceLockPick')]/@tags" op="Add">plumbedWaterSolutionsSonjaVariantHelper</csv>
+	
+	<csv xpath="//crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[starts-with(@item,'toolAnvil')]/@item" op="Add">modIndustrialWaterFilterSonja</csv>
+
+	<csv xpath="//crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[starts-with(@tags,'toolAnvil')]/@tags" op="Add">modIndustrialWaterFilterSonja</csv>
+	
+	<csv xpath="//crafting_skill[@name='craftingWorkstations']/display_entry/unlock_entry[starts-with(@item,'chemistryStation')]/@item" op="Add">modWaterIonizerSonja</csv>
+
+	<csv xpath="//crafting_skill[@name='craftingWorkstations']/effect_group/passive_effect[starts-with(@tags,'chemistryStation')]/@tags" op="Add">modWaterIonizerSonja</csv>
+	
+</configs>

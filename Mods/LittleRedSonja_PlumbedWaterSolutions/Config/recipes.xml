@@ -1,0 +1,48 @@
+<configs>
+	
+	<append xpath="/recipes">	
+		
+		<recipe name="drinkJarRiverWater" count="10" craft_area="plumbedWaterSolutionsSonja" craft_time="10" is_trackable="false">
+			<ingredient name="cobweb" count="0"/>
+		</recipe>
+		<recipe name="drinkJarBoiledWater" count="10" craft_area="plumbedWaterSolutionsSonja" craft_tool="modIndustrialWaterFilterSonja" craft_time="10" is_trackable="false" tags="boiledWater">
+			<ingredient name="cobweb" count="0"/>
+		</recipe>
+		<recipe name="drinkJarPureMineralWater" count="10" craft_area="plumbedWaterSolutionsSonja" craft_tool="modWaterIonizerSonja" craft_time="10" is_trackable="false" tags="learnable">
+			<ingredient name="cobweb" count="0"/>
+		</recipe>
+		
+		<recipe name="waterPumpSonja" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="15"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="15"/>
+			<ingredient name="resourceElectricParts" count="5"/>
+		</recipe>
+		
+		<recipe name="modIndustrialWaterFilterSonja" count="1" craft_area="workbench" tags="workbenchCrafting,learnable">
+			<ingredient name="resourceForgedIron" count="5"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="toolDewFilter" count="1"/>
+			<ingredient name="resourceCloth" count="15"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		
+		<recipe name="modWaterIonizerSonja" count="1" craft_area="workbench" tags="workbenchCrafting,learnable">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceCoal" count="15"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="15"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe>
+		
+		<recipe name="plumbedWaterSolutionsSonjaVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting,learnable">
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="waterPumpSonja" count="1"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceMetalPipe" count="30"/>
+		</recipe>
+
+	</append>
+	
+</configs>

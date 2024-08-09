@@ -1,0 +1,9 @@
+<styles>
+
+	<append xpath="/styles/global">
+		<style_entry name="waterSonjaBlueLight"			value="204,229,255" />
+		<style_entry name="waterSonjaBlueMedium"		value="0,51,102" />
+		<style_entry name="waterSonjaBlueDark"			value="0,25,51" />
+	</append>
+
+</styles>

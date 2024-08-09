@@ -1,0 +1,27 @@
+<configs>
+	
+<!--======== Removes harvested materials from POI motion sensors =========-->
+
+	<remove xpath="/blocks/block[@name='motionsensorPOI']/drop[@event='Harvest']"/>	
+	<remove xpath="/blocks/block[@name='motionsensorPOI']/drop[@event='Destroy']"/>
+	
+	<!--======== Removes harvested materials from POI spotlights =========-->
+	
+	<remove xpath="/blocks/block[@name='spotlightDownLeft_POI']/drop[@event='Harvest']"/>	
+	<remove xpath="/blocks/block[@name='spotlightDownLeft_POI']/drop[@event='Destroy']"/>
+	
+<!--======== Makes POI motion sensors salvageable =========-->
+
+	<append xpath="/blocks/block[@name='motionsensorPOI']" >
+      	<drop event="Destroy" name="motionsensor" count="1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+    </append>
+	
+<!--======== Makes POI spotlights salvageable =========-->
+
+<append xpath="/blocks/block[@name='spotlightDownLeft_POI']" >
+      	<drop event="Destroy" name="spotlightPlayer" count="1" tag="salvageHarvest"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+    </append>
+	
+</configs>

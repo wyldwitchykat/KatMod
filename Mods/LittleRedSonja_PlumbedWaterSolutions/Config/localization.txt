@@ -1,0 +1,28 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+waterPumpSonja,items,Item,,,Water Pump
+waterPumpSonjaDesc,items,Item,,,"A Water Pump is required to craft any Plumbed In Water Fixtures.\n\nCrafted in the Workbench."
+modIndustrialWaterFilterSonja,items,Item,,,Industrial Water Filter
+modIndustrialWaterFilterSonjaDesc,items,Item,,,"An Industrial Water Filter, a mod required for the Plumbed In Water Fixtures to provide Clean Fresh Water.\n\nCrafted in the Workbench."
+modWaterIonizerSonja,items,Item,,,Water Ionizer
+modWaterIonizerSonjaDesc,items,Item,,,"A Water Ionizer, a mod required for the Plumbed In Water Fixtures to provide Pure Mineral Water.\n\nCrafted in the Workbench."
+plumbedWaterDispenserSonja,blocks,Workstation,,,Plumbed In Water Dispenser
+plumbedWaterFountainSingleSonja,blocks,Workstation,,,Plumbed In Water Fountain
+plumbedWaterFountainDoubleSonja,blocks,Workstation,,,Plumbed In Water Fountain
+plumbedUtilitySinkSonja,blocks,Workstation,,,Plumbed In Sink
+plumbedsinkKitchenSonja,blocks,Workstation,,,Plumbed In Sink
+plumbedpedestalSinkSonja,blocks,Workstation,,,Plumbed In Sink
+plumbedwallMountSinkSonja,blocks,Workstation,,,Plumbed In Sink
+plumbedcounterMountedSinkSonja,blocks,Workstation,,,Plumbed In Sink
+plumbedfaucet02Sonja,blocks,Workstation,,,Plumbed In Faucet
+plumbedfaucet04Sonja,blocks,Workstation,,,Plumbed In Faucet
+plumbedfaucetBrass02Sonja,blocks,Workstation,,,Plumbed In Faucet
+plumbedfaucetBrass04Sonja,blocks,Workstation,,,Plumbed In Faucet
+plumbedWaterDispenserSonjaDesc,blocks,Workstation,,,"A plumbed in water fixture, the best solution to provide water whenever you want. Simply open the tap and get as much as you want"
+plumbedWaterSolutionsSonjaVariantHelper,blocks,Workstation,,,Sonjas Plumbed In Water Solutions
+plumbedWaterSolutionsSonjaVariantHelperDesc,blocks,Workstation,,,Several plumbed in water fixture variants to decorate your base and provide you with all the fresh water you need.\n\nOnce placed hold E to pick up the existing fixture. Use a Salvage tool to get a variant helper instead.
+lblCategoryFreshTapWater,UI,Tooltip,,,Tap Water
+lblContextActionWaterSonjaCraft,UI,Item Context Menu,,,Tap
+xuiOutputWaterSonja,UI,XUI,,,Water
+xuiWaterSonjaMods,UI,XUI,,,Mods
+

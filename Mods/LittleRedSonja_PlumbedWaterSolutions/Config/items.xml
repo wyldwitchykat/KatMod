@@ -1,0 +1,59 @@
+<configs>
+
+	<append xpath="/items">
+
+		<item name="waterPumpSonja">
+			<property name="CustomIcon" value="waterHeaterWhite"/>
+			<property name="CustomIconTint" value="667477"/>
+			<property name="TintColor" value="667477"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MsmallEngine"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Material" value="MmechanicalParts"/>
+			<property name="Weight" value="200"/>
+			<property name="Group" value="Resources"/>
+			<property name="SoundPickup" value="engine_grab"/>
+			<property name="SoundPlace" value="engine_place"/>
+			<property name="EconomicValue" value="10"/>
+		</item>
+		
+		<item name="modIndustrialWaterFilterSonja">
+			<property name="CustomIcon" value="breakerBoxOpen"/>
+			<property name="CustomIconTint" value="667477"/>
+			<property name="TintColor" value="667477"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="Tags" value="workstationSkill"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="EconomicValue" value="300"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="ItemTypeIcon" value="forge"/>
+		</item>
+		
+		<item name="modWaterIonizerSonja">
+			<property name="CustomIcon" value="cashRegisterScanner"/>
+			<property name="CustomIconTint" value="667477"/>
+			<property name="TintColor" value="667477"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="Tags" value="workstationSkill"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Morganic"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="ItemTypeIcon" value="forge"/>
+		</item>
+
+	</append>
+
+</configs>

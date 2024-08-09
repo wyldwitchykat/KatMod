@@ -1,0 +1,60 @@
+<ui_display_info>
+
+	<append xpath="/ui_display_info/crafting_category_display">
+		
+		<crafting_category_list display_type="plumbedWaterDispenserSonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedWaterFountainSingleSonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedWaterFountainDoubleSonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedUtilitySinkSonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedsinkKitchenSonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedpedestalSinkSonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedwallMountSinkSonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedcounterMountedSinkSonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedcounterMountedSinkOffsetSonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedfaucet02Sonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedfaucet04Sonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedfaucetBrass02Sonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+		<crafting_category_list display_type="plumbedfaucetBrass04Sonja">
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryFreshTapWater" />
+		</crafting_category_list>
+		
+	</append>
+
+
+</ui_display_info>
