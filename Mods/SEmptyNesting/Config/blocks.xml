@@ -1,0 +1,38 @@
+<!--
+Sam's Empty Nesting
+v21.0.0
+by saminal
+
+blocks.xml
+-->
+
+<configs>
+    <append xpath="/blocks">
+        <block name="cntBirdnestEmpty">
+            <property name="Material" value="Mwood_weak"/>
+            <property name="Shape" value="GrassShort"/>
+            <property name="Mesh" value="grass"/>
+            <property name="Texture" value="573,573,573,573,573,573"/>
+            <property name="WaterFlow" value="permitted"/>
+            <property name="OnlySimpleRotations" value="true"/>
+            <property name="Collide" value="melee"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="CanDecorateOnSlopes" value="true"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Class" value="PlantGrowing"/>
+            <property name="PlantGrowing.FertileLevel" value="0"/>
+            <property name="PlantGrowing.Next" value="cntBirdnest"/>
+            <property name="PlantGrowing.GrowthRate" value="123.0"/> <!-- SJ: According to the doco this is in minutes - make it longer if you have longer days or want more days between respawns. -->
+            <property name="PlantGrowing.IsRandom" value="false"/>
+            <drop event="Destroy" name="resourceYuccaFibers" count="2,8"/>
+            <property name="SortOrder1" value="B267"/>
+            <property name="SortOrder2" value="0000"/>
+            <property name="FilterTags" value="MC_building,SC_loot"/>
+        </block>
+    </append>
+
+    <insertAfter xpath="/blocks/block[@name='cntBirdnest']/property[@name='StabilitySupport']">
+	    <property name="DowngradeBlock" value="cntBirdnestEmpty"/>
+    </insertAfter>
+
+</configs>

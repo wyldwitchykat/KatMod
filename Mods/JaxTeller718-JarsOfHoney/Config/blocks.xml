@@ -1,0 +1,6 @@
+<JaxTeller718>
+
+	<set xpath="/blocks/block[@name='treeStump']/drop[@event='Destroy' and @name='foodHoney']/@prob">.50</set>
+	<set xpath="/blocks/block[@name='treeStumpPOI']/drop[@event='Destroy' and @name='foodHoney']/@prob">.50</set>
+
+</JaxTeller718>

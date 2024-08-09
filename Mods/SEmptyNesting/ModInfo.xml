@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+		<Name value="Sams_Empty_Nesting" />
+		<DisplayName value="Sam's Empty Nesting" />
+		<Description value="Makes birds nests downgrade to an empty nest, which grows back into a lootable nest after a few days" />
+		<Author value="Saminal" />
+		<Version value="1.0.1" />
+		<Website value="https://discord.gg/mBJwEw4kj8" />
+</xml>
