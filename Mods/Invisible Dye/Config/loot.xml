@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<lootcontainers>
+<append xpath="//lootgroup[@name='dyes']">
+<item name="modInvisible" prob="0.5"/>
+</append>
+</lootcontainers>

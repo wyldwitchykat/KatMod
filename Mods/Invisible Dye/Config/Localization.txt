@@ -1,0 +1,3 @@
+﻿Key,English
+modInvisible,Invisible Dye
+modInvisibleDesc,"Makes a piece of armor or clothing invisible on your person. Goes into the cosmetic slot."
