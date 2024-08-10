@@ -1,8 +1,0 @@
-<configs>
-	<!-- Append beaker recipe to end of recipes -->
-	<append xpath="/recipes">
-		<recipe name="modInvisible" count="1">
-			<ingredient name="resourceYuccaFibers" count="10"/>
-		</recipe>
-	</append>
-</configs>
