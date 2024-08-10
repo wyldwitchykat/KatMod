@@ -13,9 +13,6 @@
 	<recipe name="foodHoney" count="1" craft_area="workbench" tags="workbenchCrafting">
 	<ingredient name="foodHoneyComb" count="5"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
-	<ingredient name="resourceGunPowder" count="3"/>
-	<ingredient name="resourcePaper" count="1"/>
-	<ingredient name="resourceGlue" count="1"/>
 	</recipe>
 
 	<recipe name="foodHoneyBread" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot">
