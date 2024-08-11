@@ -38,7 +38,7 @@
 	<property name="ItemTypeIcon" value="bundle"/>
 	<!-- <property name="CustomIconTint" value="D1E71A"/> -->
 	<property class="Action0">
-		<property name="Create_item" value="giveXP_T2_admin,meleeToolRepairT0StoneAxe,medicalBandage,medicalFirstAidBandage,drugPainkillers,drugVitamins,resourceRepairKit,resourceRockSmall"/>
+		<property name="Create_item" value="meleeToolRepairT0StoneAxe,medicalBandage,medicalFirstAidBandage,drugPainkillers,drugVitamins,resourceRepairKit,resourceRockSmall"/>
 		<property name="Create_item_count" value="1,1,2-3,5,2,1,1,1,50"/>
 		<!-- <property name="Random_item" value="tier02Perception,tier02Strength,tier02Fortitude,tier02Agility,tier02Intellect"/> -->
 		<!-- <property name="Random_item_count" value="1,1,1,1,1"/> -->
