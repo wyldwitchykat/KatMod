@@ -1,0 +1,6 @@
+<configs>
+	<set xpath="/entity_classes/entity_class[@name= 'zombieFatCop']/property[contains(@name ,'Explosion.BlockDamage')]/@value">250</set> <!-- Default 500 -->
+	<set xpath="/entity_classes/entity_class[@name= 'zombieFatCopFeral']/property[contains(@name ,'Explosion.BlockDamage')]/@value">325</set> <!-- Default 650 -->
+	<set xpath="/entity_classes/entity_class[@name= 'zombieFatCopRadiated']/property[contains(@name ,'Explosion.BlockDamage')]/@value">375</set> <!-- Default 750 -->
+	<set xpath="/entity_classes/entity_class[@name= 'zombieDemolition']/property[contains(@name ,'Explosion.BlockDamage')]/@value">2500</set> <!-- Default 5000 -->
+</configs>

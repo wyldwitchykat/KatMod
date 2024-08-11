@@ -1,0 +1,32 @@
+<config>
+<set xpath="//item[@name='thrownAmmoMolotovCocktail']/effect_group/triggered_effect[1]/@value">20</set>
+<set xpath="//item[@name='thrownAmmoMolotovCocktail']/effect_group/triggered_effect[2]/@value">25</set>
+
+
+<set xpath="//item[@name='ammoArrowFlaming']/effect_group/triggered_effect[1]/@value">16</set>
+<set xpath="//item[@name='ammoArrowFlaming']/effect_group/triggered_effect[2]/@value">21</set>
+
+<set xpath="//item[@name='ammoCrossbowBoltFlaming']/effect_group/triggered_effect[1]/@value">16</set>
+<set xpath="//item[@name='ammoCrossbowBoltFlaming']/effect_group/triggered_effect[2]/@value">21</set>
+
+<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Explosion.DamageBonus.stone']/@value">0</set>
+<set xpath="/items/item[@name='thrownAmmoMolotovCocktail']/property[@name='Explosion.DamageBonus.wood']/@value">0</set>
+
+<set xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='Explosion.BlockDamage']/@value">0</set>
+<set xpath="/items/item[@name='thrownGrenadeContact']/property[@name='Explosion.BlockDamage']/@value">0</set>
+<set xpath="/items/item[@name='thrownGrenade']/property[@name='Explosion.BlockDamage']/@value">0</set>
+<set xpath="/items/item[@name='ammoRocketFrag']/effect_group/passive_effect[@name='BlockDamage']/@value">0</set>
+<set xpath="/items/item[@name='ammoArrowExploding']/property[@class='Action1']/property[@name='Explosion.BlockDamage']/@value">0</set>
+<set xpath="/items/item[@name='ammoCrossbowBoltExploding']/property[@class='Action1']/property[@name='Explosion.BlockDamage']/@value">0</set>
+
+<append xpath="/items/item[@name='ammoArrowFlaming']/property[@class='Action1']">
+	<effect_group name="ammoArrowFlaming" tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="0" tags="perkArchery"/>
+	</effect_group>
+</append>
+<append xpath="/items/item[@name='ammoCrossbowBoltFlaming']/property[@class='Action1']">
+	<effect_group name="ammoArrowFlaming" tiered="false">
+		<passive_effect name="BlockDamage" operation="base_set" value="0" tags="perkArchery"/>
+	</effect_group>
+</append>
+</config>

@@ -1,0 +1,8 @@
+<configs>
+<!--<append xpath="//entity_class[@name='vehicleMinibike']/property[@name='Tags']/@value">,bwnoroof</append>
+<append xpath="//entity_class[@name='vehicleBicycle']/property[@name='Tags']/@value">,bwnoroof</append>
+<append xpath="//entity_class[@name='vehicleMotorcycle']/property[@name='Tags']/@value">,bwnoroof</append>
+<append xpath="//entity_class[@name='vehicleGyrocopter']/property[@name='Tags']/@value">,bwnoroof</append>
+<append xpath="//entity_class[@name='vehicleTruck4x4']/property[@name='Tags' and @value]/@value">,bwhasroof</append>
+<append xpath="//entity_class[@name='vehicleMotorcycle']/property[@name='Tags' and @value]/@value">,bwnoroof</append>-->
+</configs>

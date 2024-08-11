@@ -1,0 +1,20 @@
+<configs>
+	
+<append xpath="/recipes">
+<recipe name="toolDewGatherer" count="1" craft_time = "15" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceSnowBall" count="2"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+	<ingredient name="resourceScrapIron" count="25"/>
+</recipe>
+<recipe name="toolDewTarp" count="1" craft_time = "15" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceCloth" count="4"/>
+	<ingredient name="resourceDuctTape" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="25"/>
+</recipe>
+<recipe name="toolDewFilter" count="1" craft_time = "30" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceCloth" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="50"/>
+	<ingredient name="resourceForgedSteel" count="5"/>
+</recipe>
+</append>
+</configs>

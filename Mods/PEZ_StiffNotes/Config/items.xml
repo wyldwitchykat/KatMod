@@ -1,0 +1,20 @@
+<configs>
+
+    <append xpath="/items">
+        <item name="noteSkillPEZ">
+            <property name="Extends" value="blankNoteMaster" />
+            <property name="DescriptionKey" value="noteSkillPEZDesc" />
+            <property name="CustomIcon" value="cntBookPile05" />
+            <property name="CustomIconTint" value="d4af79" />
+            <property class="Action0">
+                <property name="Class" value="Eat" />
+                <property name="Delay" value="1.0" />
+                <property name="Sound_start" value="read_skillbook" />
+            </property>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffGiveSkillPointPEZ" />
+            </effect_group>
+        </item>
+    </append>
+
+</configs>

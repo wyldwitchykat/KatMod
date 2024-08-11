@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="Betterloot"/> 
+    <DisplayName value="Better loot"/> 
+    <Version value="1.1" />
+    <Description value="Significantly improve most of the vanilla loot spawns" /> 
+    <Author value="Black Wolf" /> 
+    <Website value="" /> 
+</xml>

@@ -1,0 +1,23 @@
+<configs>
+    <append xpath="/items">
+        <item name="drinkJarEmptyStandalone" >
+            <property name="HoldType" value="3" />
+            <property name="Meshfile" value="@:Other/Items/Food/emptyJarPrefab.prefab"/>
+            <property name="DescriptionKey" value="EmptyJarDesc" />
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+            <property name="Material" value="Mglass"/>
+            <property name="CustomIcon" value="drinkJarEmpty"/>
+            <property name="Stacknumber" value="125"/>
+            <property name="Weight" value="10"/>
+            <property name="EconomicValue" value="1"/>
+            <property name="CraftingIngredientTime" value="9"/>
+            <property class="Action1">
+                <property name="Class" value="CollectWater"/>
+                <property name="Delay" value="1.0"/>
+                <property name="Change_item_to" value="drinkJarRiverWater"/>
+                <property name="Sound_start" value="bucketfill_water"/>
+            </property>
+            <property name="Group" value="Resources"/>
+        </item>
+    </append>
+</configs>

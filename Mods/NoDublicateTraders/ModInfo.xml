@@ -1,0 +1,7 @@
+<xml>
+    <Name value="No_dublicates_traders" />
+    <DisplayName value="No Dublicates Trader in World" />
+    <Version value="1" />
+    <Description value="Эта модификация сиключает появление в сгенерированном мире игры дубликатов трейдеров. У вас всегда будет только один Рект, одна Джен и так далее." />
+    <Author value="Survager" />
+</xml>

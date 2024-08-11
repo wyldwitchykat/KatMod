@@ -1,0 +1,10 @@
+Key,Source,Context,Changes,English
+
+barbedWireSpindle,blocks,,,Barbed wire roll (3 blocks wide)
+barbedWireSpindleDesc,blocks,,New,A barbed wire roll 3 blocks wide,
+
+barbedWireSpindle1m,blocks,,,Barbed wire roll (1 block wide)
+barbedWireSpindle1mDesc,blocks,,New,A barbed wire roll 1 block wide,
+
+barbedWireSpindleDiagonal1m,blocks,,,Barbed wire roll diagonal (1 blocks)
+barbedWireSpindleDiagonal1mDesc,blocks,,New,A barbed wire roll diagonal 1 block wide,

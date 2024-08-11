@@ -1,0 +1,91 @@
+<Phys1csGamez>
+
+<append xpath="/shapes">
+
+<shape name="6mMBRamp6m01Corner">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m01Corner.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m01Corner" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+
+<shape name="6mMBRamp6m02Corner">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m02Corner.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m02Corner" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+
+<shape name="6mMBRamp6m03Corner">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m03Corner.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m03Corner" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+
+<shape name="6mMBRamp6m04Corner">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m04Corner.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m04Corner" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+
+<shape name="6mMBRamp6m05Corner">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m05Corner.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m05Corner" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+
+<shape name="6mMBRamp6m06Corner">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m06Corner.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m06Corner" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+
+<shape name="6mMBRamp6m01Filler">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m01Filler.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m01Filler" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+		
+<shape name="6mMBRamp6m02Filler">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m02Filler.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m02Filler" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+		
+<shape name="6mMBRamp6m03Filler">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m03Filler.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m03Filler" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+
+<shape name="6mMBRamp6m04Filler">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m04Filler.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m04Filler" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+
+<shape name="6mMBRamp6m05Filler">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m05Filler.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m05Filler" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+		
+<shape name="6mMBRamp6m06Filler">
+		<property name="Path" value="solid" />
+		<property name="Model" value="#@modfolder:Resources/PGz6mMBblocks.unity3d?6mMBRamp6m06Filler.prefab" />
+		<property name="CustomIcon" value="6mMBRamp6m06Filler" />
+		<property name="ShapeCategories" value="PGz" />
+</shape>
+
+</append>	
+
+</Phys1csGamez>

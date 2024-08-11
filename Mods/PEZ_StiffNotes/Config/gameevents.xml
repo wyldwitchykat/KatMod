@@ -1,0 +1,11 @@
+<configs>
+
+    <insertBefore xpath="/gameevents/action_sequence[@name='action_give_points']">
+        <action_sequence name="action_give_skill_point_pez">
+            <action class="AddSkillPoints">
+                <property name="skill_points" value="1" />
+            </action>
+        </action_sequence>
+    </insertBefore>
+
+</configs>

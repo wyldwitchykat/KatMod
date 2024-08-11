@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="PEZ_StiffNotes" />
+    <DisplayName value="PEZ StiffNotes" />
+    <Description value="Occasionally (but rarely) find a note with insightful tips and gain a skill point." />
+    <Author value="Pax Et Zelus" />
+    <Version value="0.3.0" />
+    <Website value="www.7daystodie.com" />
+</xml>

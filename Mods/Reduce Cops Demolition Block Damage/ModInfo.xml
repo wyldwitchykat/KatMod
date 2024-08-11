@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="EntitiesBlockDamage"/>
+    <DisplayName value="EntitiesBlockDamage"/>
+    <Version value="1.0"/>
+    <Description value="Reduces block damage from zombies that explode."/>
+    <Author value="Jessica"/>
+    <Website value="https://www.nexusmods.com/users/5421958"/>
+</xml>

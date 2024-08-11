@@ -1,0 +1,8 @@
+<configs>
+    <append xpath="/recipes">
+        <recipe name="drinkJarEmptyStandalone" count="1" material_based="true" craft_area="forge" is_trackable="false">
+            <ingredient name="unit_glass" count="20" />
+            <ingredient name="unit_iron" count="5" />
+        </recipe>
+    </append>
+</configs>

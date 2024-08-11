@@ -1,0 +1,13 @@
+<configs>
+    <!-- 1st line doesnt need a / at the beginning of the xpath apparently. 
+    Dont ask me why, this is way too much black magic for me to deal with.
+    Somehow, both work. 
+    
+    1st line is the bundle size to sell single items instead of increments of 5. -->
+    
+    <set xpath="items/item/property[@name='EconomicBundleSize']/@value">1</set>
+
+    <!-- This line is to fix the gas can, when you increase the economic bundle size, it doesnt change the price,
+    it just means the price of 5 is now the price of 1. just a little more expensive on arrows, but gas needed to be fixed. -->
+    <set xpath="/items/item[starts-with(@name, 'ammoGasCan')]/property[@name='EconomicValue']/@value">1</set>
+</configs>

@@ -1,0 +1,14 @@
+<configs>
+
+    <insertBefore xpath="/buffs/buff[@name='buffGiveFourPoints']">
+        <buff name="buffGiveSkillPointPEZ" description="Gives a skill point" icon="ui_game_symbol_lightbulb" icon_color="255,175,175" hidden="true">
+            <stack_type value="ignore" />
+            <duration value="1" />
+
+            <effect_group>
+                <triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" event="action_give_skill_point_pez" />
+            </effect_group>
+        </buff>
+    </insertBefore>
+
+</configs>
