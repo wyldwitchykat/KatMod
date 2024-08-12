@@ -21,7 +21,7 @@
   <!-- You should be able to make lockpics with scrap iron -->
   <set xpath="//recipe[starts-with(@name, 'resourceLockPick')]/ingredient[@name='resourceForgedIron']/@name">resourceScrapIron</set>
   <set xpath="//recipe[starts-with(@name, 'resourceLockPick')]/ingredient[@name='resourceScrapIron']/@count">10</set>
-  <set xpath="//recipe[starts-with(@name, 'resourceLockPick')]/ingredient[@name='resourceMechanicalParts']/@count">1</set>
+  <set xpath="//recipe[starts-with(@name, 'resourceLockPick')]/ingredient[@name='resourceMechanicalParts']/@count">0</set>
 
   <!-- Reduce the material requirements to craft seeds -->
   <set xpath="//recipe[starts-with(@name, 'planted')]/ingredient[not (@count='5')]/@count">1</set>
