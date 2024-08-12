@@ -1,0 +1,81 @@
+<config>
+<append xpath="//item_modifier[@name='modGunSoundSuppressorSilencer']/effect_group[2]">
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".5" tags="kill">
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="6"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="DamageBonus" operation="base_add" value="1.2">
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="6"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".4" tags="kill">
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="5"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="DamageBonus" operation="base_add" value="1.1">
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="5"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".3" tags="kill">
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="4"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="DamageBonus" operation="base_add" value=".9">
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="4"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".2" tags="kill">
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="3"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="DamageBonus" operation="base_add" value=".8">
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="3"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".1" tags="kill">
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="2"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="DamageBonus" operation="base_add" value=".7">
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="2"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".05" tags="kill">
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="1"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+				
+				<passive_effect name="DamageBonus" operation="base_add" value=".6">
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="1"/>
+				<requirement name="!ItemHasTags" tags="perkTurrets"/>
+				</passive_effect>
+</append>
+</config>

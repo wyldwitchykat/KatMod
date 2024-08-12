@@ -1,0 +1,4 @@
+<xSteel>
+	<set xpath="//buff[@name='god']//passive_effect[@name='CarryCapacity']/@value">80</set>
+	<set xpath="//buff[@name='buffDrugSteroids']//passive_effect[@name='CarryCapacity']/@value">80</set>
+</xSteel>

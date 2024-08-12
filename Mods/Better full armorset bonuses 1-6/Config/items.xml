@@ -1,0 +1,355 @@
+<config>
+<set xpath="//item[contains(@name, 'ammo44')]/effect_group[2]">
+			<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="2"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="3"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="4"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="5"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupEnforcer" operation="Equals" value="6"/>
+				</passive_effect>
+</set>
+
+<set xpath="//item[contains(@name, 'ammo44')]/effect_group[2]">
+			<requirement name="HasBuff" buff="buffRangerSetBonus"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="2"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="3"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="4"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="5"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="6"/>
+				</passive_effect>
+</set>
+
+<append xpath="//item[contains(@name, 'ammo9mm')]/effect_group[1]">		
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+</append>
+
+<append xpath="//item[contains(@name, 'ammo762')]/effect_group[1]">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffRangerSetBonus"/>
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffRangerSetBonus"/>
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffRangerSetBonus"/>
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffRangerSetBonus"/>
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffRangerSetBonus"/>
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffRangerSetBonus"/>
+					<requirement name="HoldingItemHasTags" tags="rangerDamage"/>
+				</passive_effect>
+</append>
+
+<append xpath="//item[contains(@name, 'ammo762')]/effect_group[1]">
+
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+
+</append>
+
+<append xpath="//item[contains(@name, 'ammoShotgunSh')]/effect_group[1]">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+
+</append>
+
+<append xpath="//item[contains(@name, 'ammoShotgunSl')]/effect_group[1]">
+
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+
+</append>
+
+<append xpath="//item[contains(@name, 'ammoShotgunBr')]/effect_group[1]">
+
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupFarmer" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+
+</append>
+
+<append xpath="//item[contains(@name, 'ammoShotgunSh')]/effect_group[1]">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+</append>
+
+<append xpath="//item[contains(@name, 'ammoShotgunSl')]/effect_group[1]">
+
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+
+</append>
+
+<append xpath="//item[contains(@name, 'ammoShotgunBr')]/effect_group[1]">
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupBiker" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+				</passive_effect>
+</append>
+<append xpath="//item[@name='meleeToolAxeT3Chainsaw']/property[@name='Tags']/@value">,chainzaw</append>
+<append xpath="//item[@name='meleeToolPickT3Auger']/property[@name='Tags']/@value">,shrek</append>
+<append xpath="//item[contains(@name, 'gunHandgunT0')]/property[@name='Tags']/@value">,enforcerReload</append>
+<append xpath="//item[contains(@name, 'gunHandgunT1')]/property[@name='Tags']/@value">,enforcerReload</append>
+<append xpath="//item[@name='gunHandgunT3SMG5']/property[@name='Tags']/@value">,rangerDamage</append>
+<append xpath="//item[@name='gunHandgunT3DesertVulture']/property[@name='Tags']/@value">,rangerDamage</append>
+</config>

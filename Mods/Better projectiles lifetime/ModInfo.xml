@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="BetterProjectiles"/>
+    <DisplayName value="Better Projectile lifetime"/>
+    <Version value="1.0"/>
+    <Description value="Improves lifetime of projectiles fired by the player so they don't despawn as soon as they do in vanilla."/> 
+    <Author value="Black Wolf"/>
+    <Website value=""/>
+</xml>

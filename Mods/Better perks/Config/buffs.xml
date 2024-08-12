@@ -1,0 +1,753 @@
+<configs>
+<set xpath="/buffs/buff[@name='buffStatusCheck02']">
+	<stack_type value="ignore"/>
+		<update_rate value="2.217"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar=".ArmorMediumWorn,.ArmorHeavyWorn"/>
+		</effect_group>
+
+		<effect_group> <!-- medium armor, determine how many pieces are worn -->
+			<requirements compare_type="or">
+				<requirement name="ProgressionLevel" progression_name="perkMediumArmor" operation="GT" value="0"/>
+				<requirement name="HasBuff" buff="buffUrbanCombatAdrenalineRush"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumWorn" operation="set" value="1">
+					<requirement name="WornItems" tags="mediumArmorPenalty" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumWorn" operation="set" value="2">
+					<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="Equals" value="0"/>
+					<requirement name="WornItems" tags="mediumArmorPenalty" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumWorn" operation="set" value="3">
+					<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="Equals" value="0"/>
+					<requirement name="WornItems" tags="mediumArmorPenalty" operation="Equals" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumWorn" operation="set" value="4">
+					<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="Equals" value="0"/>
+					<requirement name="WornItems" tags="mediumArmorPenalty" operation="Equals" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumWorn" operation="set" value="5">
+					<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="Equals" value="0"/>
+					<requirement name="WornItems" tags="mediumArmorPenalty" operation="Equals" value="5"/>
+				</triggered_effect>
+		</effect_group>
+
+		<effect_group> <!-- medium armor, determine how much of the armor-internal passives is discounted / added back in -->
+			<requirements compare_type="or">
+				<requirement name="ProgressionLevel" progression_name="perkMediumArmor" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="Equals" value="0"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar=".ArmorMediumStaminaWalk,.ArmorMediumStaminaRun,.ArmorMediumMobility"/>
+		</effect_group>
+
+		<effect_group> <!-- medium armor, determine which % the armor perk restores -->
+			<requirement name="ProgressionLevel" progression_name="perkMediumArmor" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumStaminaWalk" operation="set" value=".1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumMobility" operation="set" value=".15"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkMediumArmor" operation="Equals" value="2"/>
+			<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumStaminaWalk" operation="set" value=".2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumMobility" operation="set" value=".3"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkMediumArmor" operation="Equals" value="3"/>
+			<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumStaminaWalk" operation="set" value=".35"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumMobility" operation="set" value=".5"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkMediumArmor" operation="Equals" value="4"/>
+			<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumStaminaWalk" operation="set" value=".5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumMobility" operation="set" value=".75"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="HasBuff" buff="buffUrbanCombatAdrenalineRush"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumMobility" operation="set" value="1"/>
+		</effect_group>
+
+		<effect_group> <!-- medium armor, add penalties back in -->
+			<requirement name="CVarCompare" cvar=".ArmorMediumWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumStaminaRun" operation="set" value="@.ArmorMediumStaminaWalk"/>
+				<!-- the full penalty that 1 piece of medium armor adds -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumStaminaRun" operation="multiply" value="0.0562"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumStaminaWalk" operation="multiply" value="0.0281"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumMobility" operation="multiply" value="0.04"/>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumStaminaRun" operation="multiply" value="@.ArmorMediumWorn"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumStaminaWalk" operation="multiply" value="@.ArmorMediumWorn"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorMediumMobility" operation="multiply" value="@.ArmorMediumWorn"/>
+				
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="@.ArmorMediumStaminaWalk" tags="walking"/> <!-- ARMOR_MEDIUM_WALKING -->
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="@.ArmorMediumStaminaRun" tags="running"/> <!-- ARMOR_MEDIUM_RUNNING -->
+				<passive_effect name="Mobility" operation="perc_add" value="@.ArmorMediumMobility"/>
+		</effect_group>
+
+		<effect_group> <!-- heavy armor, determine how many pieces are worn -->
+			<requirements compare_type="or">
+				<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="GT" value="0"/>
+				<requirement name="HasBuff" buff="buffUrbanCombatAdrenalineRush"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="1">
+					<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="2">
+					<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+					<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="3">
+					<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+					<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="3"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="4">
+					<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+					<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="4"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyWorn" operation="set" value="5">
+					<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+					<requirement name="WornItems" tags="heavyArmorPenalty" operation="Equals" value="5"/>
+				</triggered_effect>
+		</effect_group>
+
+		<effect_group> <!-- heavy armor, determine how much of the armor-internal passives is discounted / added back in -->
+			<requirements compare_type="or">
+				<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="Equals" value="0"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar=".ArmorHeavyStaminaWalk,.ArmorHeavyStaminaRun,.ArmorHeavyMobility"/>
+		</effect_group>
+
+		<effect_group> <!-- heavy armor, determine which % the armor perk restores -->
+			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".15"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="2"/>
+			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".25"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="3"/>
+			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".36"/>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkHeavyArmor" operation="Equals" value="4"/>
+			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="set" value=".5"/>
+		</effect_group>
+
+		<effect_group> <!-- heavy armor, add penalties back in -->
+			<requirement name="CVarCompare" cvar=".ArmorHeavyWorn" operation="GT" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="set" value="@.ArmorHeavyStaminaWalk"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="set" value="@.ArmorHeavyStaminaWalk"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="set" value="1">
+					<requirement name="HasBuff" buff="buffUrbanCombatAdrenalineRush"/>
+				</triggered_effect>
+
+				<!-- the full penalty that 1 piece of heavy armor adds -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="multiply" value="0.09"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="multiply" value="0.045"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="multiply" value="0.06"/>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaRun" operation="multiply" value="@.ArmorHeavyWorn"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyStaminaWalk" operation="multiply" value="@.ArmorHeavyWorn"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ArmorHeavyMobility" operation="multiply" value="@.ArmorHeavyWorn"/>
+
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="@.ArmorHeavyStaminaWalk" tags="walking"/> <!-- ARMOR_HEAVY_WALKING -->
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="@.ArmorHeavyStaminaRun" tags="running"/> <!-- ARMOR_HEAVY_RUNNING -->
+				<passive_effect name="Mobility" operation="perc_add" value="@.ArmorHeavyMobility"/>
+		</effect_group>
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="1.5">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="2.5">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="set" value="3.5">
+				<requirement name="ProgressionLevel" progression_name="perkHealingFactor" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="multiply" value="4.7">
+				<requirement name="HasBuff" buff="buffDrugHealthBar"/>
+			</triggered_effect>
+		</effect_group>
+		
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="LT" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.15">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.25">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.5">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.75">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.9">
+				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/></triggered_effect>
+		</effect_group>
+		<effect_group name="corpseRemoval">
+			<requirement name="IsCorpse" target="other"/>
+			<requirement name="HoldingItemHasTags" tags="melee"/>
+			<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="1000"/>
+		</effect_group>
+		
+		<!-- *** LUMBERJACK_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffLumberjackSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupLumberjack" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffLumberjackSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffLumberjackSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupLumberjack" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffLumberjackSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** PREACHER_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPreacherSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupPreacher" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffPreacherSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffPreacherSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupPreacher" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffPreacherSetBonus"/>
+			</triggered_effect>
+
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPreacherFullSetBonusCheck">
+				<requirement name="ArmorGroupCount" group_name="groupPreacher" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffPreacherFullSetBonusCheck"/>
+			</triggered_effect>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffPreacherFullSetBonusCheck">
+				<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="LTE" value="5"/>
+				<requirement name="HasBuff" buff="buffPreacherFullSetBonusCheck"/>
+			</triggered_effect>
+			<!-- If armor set complete AND Q6, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffPreacherFullSetBonusCheck">
+				<requirement name="ArmorGroupCount" group_name="groupPreacher" operation="Equals" value="4" />
+				<requirement name="ArmorGroupLowestQuality" group_name="groupPreacher" operation="Equals" value="6"/>
+				<requirement name="!HasBuff" buff="buffPreacherFullSetBonusCheck"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** ROGUE_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRogueSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRogue" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffRogueSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRogueSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRogue" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffRogueSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** ATHLETIC_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAthleticSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAthletic" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffAthleticSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffAthleticSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAthletic" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffAthleticSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** ENFORCER_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffEnforcerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupEnforcer" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffEnforcerSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffEnforcerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupEnforcer" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffEnforcerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** FARMER_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffFarmerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupFarmer" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffFarmerSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFarmerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupFarmer" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffFarmerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** BIKER_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBikerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupBiker" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffBikerSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBikerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupBiker" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffBikerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** SCAVENGER_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffScavengerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupScavenger" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffScavengerSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffScavengerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupScavenger" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffScavengerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** RANGER_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRangerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRanger" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffRangerSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRangerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRanger" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffRangerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** COMMANDO_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffCommandoSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupCommando" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffCommandoSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupCommando" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffCommandoSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** ASSASSIN_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffAssassinSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAssassin" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffAssassinSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffAssassinSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupAssassin" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffAssassinSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** MINER_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffMinerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupMiner" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffMinerSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMinerSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupMiner" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffMinerSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** NOMAD_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNomadSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNomad" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffNomadSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffNomadSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNomad" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffNomadSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** NERD_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffNerdSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNerd" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffNerdSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffNerdSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupNerd" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffNerdSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- *** Raider_FULL_SET_BONUS -->
+		<effect_group>
+			<!-- If armor set NOT complete, remove bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRaiderSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRaider" operation="LTE" value="3" />
+				<requirement name="HasBuff" buff="buffRaiderSetBonus"/>
+			</triggered_effect>
+			<!-- If armor set complete, add bonus buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRaiderSetBonus">
+				<requirement name="ArmorGroupCount" group_name="groupRaider" operation="Equals" value="4" />
+				<requirement name="!HasBuff" buff="buffRaiderSetBonus"/>
+			</triggered_effect>
+		</effect_group>
+
+		<!-- Reduce chance of critical injuries with the Enforcer Outfit -->
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_add" value="@$enforcerBuffResistance" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffAbrasionCatch,buffLaceration,buffInfectionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+		</effect_group>
+
+			<!-- $critHitNaturalHealingRate: Set the speed at which critical buffs heal naturally with the Commando Outfit -->
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="add" value="@$commandoCritNaturalHealing"/>
+			</effect_group>
+
+			<!-- $critHitNaturalHealingRate: Set the speed at which critical buffs heal naturally with the Raider Outfit -->
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="add" value="@$raiderCritNaturalHealing"/>
+			</effect_group>
+
+		<effect_group>
+			<!-- $critHitNaturalHealingRate: Health Bar candy speeds up Natural Healing Rate -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$critHitNaturalHealingRate" operation="multiply" value="2">
+				<requirement name="HasBuff" buff="buffDrugHealthBar"/>
+			</triggered_effect>
+		</effect_group>
+
+			<!-- $treatedCritHealing: adds $treatedPreacher set on armorPreacherBoots -->
+		<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="add" value="@$treatedPreacher"/>
+		</effect_group>
+
+			<!-- $treatedCritHealing: adds $treatedCommando set in buffCommandoSetBonus -->
+		<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="add" value="@$treatedCommando"/>
+		</effect_group>
+
+			<!-- If holding an item with the corpseRemoval tag, boost the damage to remove the corpse faster. -->
+		<effect_group name="corpseRemoval">
+			<requirement name="IsCorpse" target="other"/>
+			<requirement name="HoldingItemHasTags" tags="melee"/>
+			<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="1000" tags="corpseRemoval"/>
+		</effect_group>
+</set>
+
+<append xpath="/buffs">
+<buff name="buffElementalRezist" hidden="true" remove_on_death="false">
+<stack_type value="ignore"/>
+<effect_group>
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="10.0" tags="heat,cold,toxic,radiation,electrical">
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="1"/>
+		</passive_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBurningMolotov,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffRadiation01,buffRadiation03,buffShocked">
+		<requirement name="RandomRoll" seed_type="Random" min_max="1,150" operation="LTE" value="10"/>
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="1"/>
+		</triggered_effect>
+		
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="30.0" tags="heat,cold,toxic,radiation,electrical">
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="2"/>
+		</passive_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBurningMolotov,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffRadiation01,buffRadiation03,buffShocked">
+		<requirement name="RandomRoll" seed_type="Random" min_max="1,150" operation="LTE" value="20"/>
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="2"/>
+		</triggered_effect>
+		
+		<passive_effect name="ElementalDamageResist" operation="base_add" value="50.0" tags="heat,cold,toxic,radiation,electrical">
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="3"/>
+		</passive_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffBurningMolotov,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack,buffBurningFlamingArrow,buffRadiation01,buffRadiation03,buffShocked">
+		<requirement name="RandomRoll" seed_type="Random" min_max="1,150" operation="LTE" value="30"/>
+		<requirement name="ProgressionLevel" progression_name="perkWellInsulated" operation="Equals" value="3"/>
+		</triggered_effect>
+</effect_group>
+</buff>
+
+<buff name="buffExplosionRezist" hidden="true" remove_on_death="false">
+<stack_type value="ignore"/>
+<effect_group>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.05">
+			<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="1"/>
+			</passive_effect>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.1">
+			<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="2"/>
+			</passive_effect>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.15">
+			<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="3"/>
+			</passive_effect>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.2">
+			<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="4"/>
+			</passive_effect>
+		<passive_effect name="ExplosionIncomingDamage" operation="perc_add" value="-.25">
+		<requirement name="ProgressionLevel" progression_name="perkDemolitionsExpert" operation="Equals" value="5"/>
+		</passive_effect>
+</effect_group>
+</buff>
+</append>
+
+	<!-- credits to "DONTGIVEA" for this part -->
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='0']/../@value">10</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='1']/../@value">50</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='2']/../@value">100</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='3']/../@value">300</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='4']/../@value">600</set>
+    <set xpath="/buffs/buff/*/triggered_effect[@cvar='$maxBleedCounter']/requirement[@progression_name='perkDeepCuts'][@value='5']/../@value">1000</set>
+	
+	<!-- credits to "Hoodlumdan" for this part -->
+	<append xpath="//buff[@name='buffBeer']//triggered_effect[@trigger='onSelfBuffStart' and @effect_name='Drunk']">
+		<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="0"/>
+	</append>
+	
+	<insertAfter xpath="//buff[@name='buffBeer']//triggered_effect[@trigger='onSelfBuffStart' and @effect_name='Drunk']">
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.15" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="1"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="GTE" value="2"/>
+		</triggered_effect>
+	</insertAfter>
+	
+
+<remove xpath="//buff[@name='buffDrunkGrandpasMoonshine']//triggered_effect[@trigger='onSelfBuffStart' and @effect_name='Drunk']" />
+
+	<insertBefore xpath="//buff[@name='buffDrunkGrandpasMoonshine']//triggered_effect[@trigger='onSelfBuffRemove' and @effect_name='Drunk']">
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="0"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.86" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="1"/>
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.72" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="2"/>
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.58" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="3"/>	
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.44" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="4"/>
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.3" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="5"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.7" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="0"/>
+		</triggered_effect>	
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.56" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="1"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.42" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="2"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.28" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="3"/>
+		</triggered_effect>
+	
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.14" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="4"/>
+		</triggered_effect>
+
+		<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0" fade="4" effect_name="Drunk">
+			<requirement name="ProgressionLevel" progression_name="perkBarBrawling7BoozedUp" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkSlowMetabolism" operation="Equals" value="5"/>
+		</triggered_effect>
+	</insertBefore>
+
+<append xpath="//buff[@name='buffDrugSugarButts']/effect_group[3]">
+		<passive_effect name="BarteringBuying" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+</append>
+
+<append xpath="//buff[@name='buffPumpkinCheesecake']/effect_group[1]">
+		<passive_effect name="BarteringBuying" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+</append>
+
+<append xpath="//buff[@name='buffDrunkGrandpasAwesomeSauce']/effect_group[3]">
+		<passive_effect name="BarteringBuying" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".01">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="1"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".02">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="2"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".03">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="3"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".04">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="4"/>
+		</passive_effect>
+		<passive_effect name="BarteringBuying" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+		<passive_effect name="BarteringSelling" operation="base_add" value=".05">
+		<requirement name="ProgressionLevel" progression_name="perkBetterBarter" operation="Equals" value="5"/>
+		</passive_effect>
+</append>
+
+<append xpath="/buffs">
+<buff name="buffMasterChef" hidden="true" remove_on_death="false">
+	<effect_group>
+		<requirements>
+			<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="1"/>
+		</requirements>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.2">
+				<requirement name="ItemHasTags" tags="food,drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="multiply" value="1.2">
+				<requirement name="ItemHasTags" tags="food,drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="multiply" value="1.2">
+				<requirement name="ItemHasTags" tags="food,drinks"/>
+			</triggered_effect>
+	</effect_group>
+	<effect_group>
+		<requirements>
+			<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="2"/>
+		</requirements>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="1.6">
+				<requirement name="ItemHasTags" tags="food,drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="multiply" value="1.6">
+				<requirement name="ItemHasTags" tags="food,drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="multiply" value="1.6">
+				<requirement name="ItemHasTags" tags="food,drinks"/>
+			</triggered_effect>
+	</effect_group>
+	<effect_group>
+		<requirements>
+			<requirement name="ProgressionLevel" progression_name="perkMasterChef" operation="Equals" value="3"/>
+		</requirements>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="multiply" value="2">
+				<requirement name="ItemHasTags" tags="food,drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="multiply" value="2">
+				<requirement name="ItemHasTags" tags="food,drinks"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="multiply" value="2">
+				<requirement name="ItemHasTags" tags="food,drinks"/>
+			</triggered_effect>
+	</effect_group>
+</buff>
+</append>
+</configs>

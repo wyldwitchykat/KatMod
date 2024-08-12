@@ -1,0 +1,49 @@
+Key,English
+vehicleWillyJeep,Willy Jeep
+vehicleWillyJeepplaceable,Willy Jeep
+vehicleWillyJeepplaceableDesc,If it survived WW2 surely it can handle this!
+vehicleWillyJeepTopless,Willy Jeep
+vehicleWillyJeepToplessplaceable,Willy Jeep
+vehicleWillyJeepToplessplaceableDesc,Now with even more wind-in-hair action!
+
+vehicleWillyJeepBlack,Willy Jeep (Black)
+vehicleWillyJeepBlackplaceable,Willy Jeep (Black)
+vehicleWillyJeepBlackplaceableDesc,If it survived WW2 surely it can handle this!
+vehicleWillyJeepToplessBlack,Willy Jeep (Black)
+vehicleWillyJeepToplessBlackplaceable,Willy Jeep (Black)
+vehicleWillyJeepToplessBlackplaceableDesc,Now with even more wind-in-hair action!
+
+vehicleWillyJeepBlue,Willy Jeep (Blue)
+vehicleWillyJeepBlueplaceable,Willy Jeep (Blue)
+vehicleWillyJeepBlueplaceableDesc,If it survived WW2 surely it can handle this!
+vehicleWillyJeepToplessBlue,Willy Jeep (Blue)
+vehicleWillyJeepToplessBlueplaceable,Willy Jeep (Blue)
+vehicleWillyJeepToplessBlueplaceableDesc,Now with even more wind-in-hair action!
+
+vehicleWillyJeepGreen,Willy Jeep (Blue)
+vehicleWillyJeepGreenplaceable,Willy Jeep (Blue)
+vehicleWillyJeepGreenplaceableDesc,If it survived WW2 surely it can handle this!
+vehicleWillyJeepToplessGreen,Willy Jeep (Topless)
+vehicleWillyJeepToplessGreenplaceable,Willy Jeep (Topless)
+vehicleWillyJeepToplessGreenplaceableDesc,Now with even more wind-in-hair action!
+
+vehicleWillyJeepOrange,Willy Jeep (Orange)
+vehicleWillyJeepOrangeplaceable,Willy Jeep (Orange)
+vehicleWillyJeepOrangeplaceableDesc,If it survived WW2 surely it can handle this!
+vehicleWillyJeepToplessOrange,Willy Jeep (Orange)
+vehicleWillyJeepToplessOrangeplaceable,Willy Jeep (Orange)
+vehicleWillyJeepToplessOrangeplaceableDesc,Now with even more wind-in-hair action!
+
+vehicleWillyJeepPurple,Willy Jeep (Purple)
+vehicleWillyJeepPurpleplaceable,Willy Jeep (Purple)
+vehicleWillyJeepPurpleplaceableDesc,If it survived WW2 surely it can handle this!
+vehicleWillyJeepToplessPurple,Willy Jeep (Purple)
+vehicleWillyJeepToplessPurpleplaceable,Willy Jeep (Purple)
+vehicleWillyJeepToplessPurpleplaceableDesc,Now with even more wind-in-hair action!
+
+vehicleWillyJeepRed,Willy Jeep (Red)
+vehicleWillyJeepRedplaceable,Willy Jeep (Red)
+vehicleWillyJeepRedplaceableDesc,If it survived WW2 surely it can handle this!
+vehicleWillyJeepToplessRed,Willy Jeep (Red)
+vehicleWillyJeepToplessRedplaceable,Willy Jeep (Red)
+vehicleWillyJeepToplessRedplaceableDesc,Now with even more wind-in-hair action!

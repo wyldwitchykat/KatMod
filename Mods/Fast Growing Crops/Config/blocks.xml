@@ -1,4 +1,0 @@
-<configs>
-	<!-- Set crop growth rate.  Default value is 63 -->
-	<set xpath="blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">5</set>
-</configs>

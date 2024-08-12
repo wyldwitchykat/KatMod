@@ -1,0 +1,20 @@
+<config>
+<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">90</set>
+<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Delay']/@value">.55</set>
+<set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">60</set>
+<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">65</set>
+<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">65</set>
+<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">60</set>
+<set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">55</set>
+<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">55</set>
+<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">60</set>
+<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">75</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">45</set>
+<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">45</set>
+<set xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">60</set>
+<set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">65</set>
+<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">55</set>
+<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">60</set>
+<set xpath="/items/item[@name='meleeToolTorch']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">60</set>
+</config>

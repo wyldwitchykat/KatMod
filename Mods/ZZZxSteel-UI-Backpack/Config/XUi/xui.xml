@@ -1,0 +1,9 @@
+<xSteel>
+		<set xpath="//ruleset/@stackpanel_scale">1.035</set>
+
+		<remove xpath="//window[@name='windowQuestTracker']"></remove>
+		<append xpath="//window_group[@name='compass']">
+			<window name="windowQuestTracker" anchor="RightTop" />
+		</append>
+
+</xSteel>

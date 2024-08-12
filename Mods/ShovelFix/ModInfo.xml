@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="ShovelFix" />
+    <DisplayName value="Shovel Fix" />
+    <Description value="Shovel Fix, tag shovel as mining tools" />
+    <Author value="OgNevi4" />
+    <Version value="1.0" />
+	  <Website value="https://www.twitch.tv/ognevi4" />
+</xml>

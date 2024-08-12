@@ -1,0 +1,31 @@
+<config>
+<set xpath="//item[contains(@name, 'ammoRocket')]/property[@class='Action1']/property[@name='LifeTime']/@value">100</set>
+<set xpath="//item[@name='ammoArrowStone']/property[@class='Action1']/property[@name='LifeTime']/@value">100</set>
+<set xpath="//item[@name='ammoCrossbowBoltStone']/property[@class='Action1']/property[@name='LifeTime']/@value">100</set>
+<set xpath="//item[@name='resourceNail']/property[@class='Action1']/property[@name='LifeTime']/@value">100</set>
+
+<set xpath="//item[@name='gunBowT0PrimitiveBow']/effect_group[1]/passive_effect[3]">
+<passive_effect name="MaxRange" operation="base_set" value="500" tags="perkArchery"/>
+</set>
+
+<set xpath="//item[contains(@name, 'gunBowT1')]/effect_group[1]/passive_effect[3]">
+<passive_effect name="MaxRange" operation="base_set" value="500" tags="perkArchery"/>
+</set>
+
+<set xpath="//item[@name='gunBowT3CompoundCrossbow']/effect_group[1]/passive_effect[3]">
+<passive_effect name="MaxRange" operation="base_set" value="500" tags="perkArchery"/>
+</set>
+
+<set xpath="//item[@name='gunBowT3CompoundBow']/effect_group[1]/passive_effect[4]">
+<passive_effect name="MaxRange" operation="base_set" value="500" tags="perkArchery"/>
+</set>
+
+<set xpath="//item[@name='meleeToolRepairT3Nailgun']/effect_group[1]/passive_effect[3]">
+<passive_effect name="MaxRange" operation="base_set" value="500" tags="perkMiner69er"/>
+</set>
+
+<set xpath="//item[@name='gunExplosivesT3RocketLauncher']/effect_group[1]/passive_effect[1]">
+<passive_effect name="MaxRange" operation="base_set" value="500" tags="perkDemolitionsExpert"/>
+</set>
+</config>
+

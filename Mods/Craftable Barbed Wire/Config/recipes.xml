@@ -1,0 +1,84 @@
+<config>
+<append xpath="/recipes">
+
+<recipe name="barbedWireSheet" count="1" craft_time="10" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="2"/>
+	<ingredient name="resourceForgedIron" count="10"/>
+</recipe>
+<recipe name="barbedWireSpindle" count="1" craft_time="10" craft_area="workbench">
+	<ingredient name="resourceScrapIron" count="20"/>
+	<ingredient name="resourceWood" count="10"/>
+</recipe>
+
+<recipe name="barbedWireSpindle1m" count="1" craft_time="7"> 
+	<ingredient name="resourceForgedIron" count="3"/>
+    <ingredient name="resourceScrapIron" count="20"/>
+</recipe>
+
+<recipe name="barbedWireSpindleDiagonal1m" count="1" craft_time="7"> 
+	<ingredient name="resourceScrapIron" count="20"/>
+	<ingredient name="resourceWood" count="10"/>
+</recipe>
+
+<recipe name="barbedWireSpindle2" count="1" craft_time="6">
+	<ingredient name="resourceForgedIron" count="3"/>
+    <ingredient name="resourceScrapIron" count="20"/>
+</recipe>
+
+<recipe name="barbedWireSpindle3" count="1" craft_time="8"> 
+	<ingredient name="resourceForgedIron" count="10"/>
+</recipe>
+
+<recipe name="barbedWireSpindle4" count="1" craft_time="8"> 
+	<ingredient name="resourceForgedIron" count="10"/>
+</recipe>
+
+ <!-- Chailoink -->
+
+<recipe name="ReinforcedChainlinkFenceVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceNail" count="5"/>
+</recipe>
+
+<recipe name="ReinforcedbarbedWireVariantHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceNail" count="5"/>
+</recipe>
+
+<recipe name="ReinforcedchainlinkFenceDoor" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceNail" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+</recipe>
+
+<recipe name="ReinforcedchainlinkFenceDoorDouble" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="20"/>
+	<ingredient name="resourceNail" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="10"/>
+</recipe>
+
+<recipe name="ReinforcedchainlinkGateSmall" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceMetalPipe" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="25"/>
+</recipe>
+
+<recipe name="ReinforcedchainlinkGateWide" count="1" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="75"/>
+	<ingredient name="resourceMetalPipe" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+</recipe>
+
+<recipe name="jailDoorGrey" count="1" craft_time="30" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="5"/>
+    <ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceSpring" count="2"/>
+</recipe>
+
+<recipe name="Angry Alfred" craft_time="10" craft_area="workbench">
+<ingredient name="ammoGasCan" count="100"/>
+<ingredient name="resourceForgedIron" count="3"/>
+</recipe>
+
+</append>
+</config>

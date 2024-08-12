@@ -1,0 +1,647 @@
+<xSteel>
+
+
+<setattribute xpath="//sprite[@color='[darkestGrey]']" name="color">[black]</setattribute>
+<setattribute xpath="//sprite[@sprite='ui_game_panel_header']" name="color">[black]</setattribute>
+<setattribute xpath="//sprite[@sprite='ui_game_panel_header']" name="type">sliced</setattribute>
+<!-- <removeattribute xpath="//sprite[@sprite='ui_game_panel_header']/@sprite"></removeattribute> -->
+<setattribute xpath="//sprite[@name='fillerBackground']" name="globalopacitymod">0.01</setattribute>
+
+<setattribute xpath="//window[@name='emptyInfoPanel']//label[@text_key='xuiEmptyInfoPanelText']" name="color">0,0,0,0</setattribute>
+<setattribute xpath="//window[@name='emptyInfoPanel']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='emptyInfoPanel']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1">      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowSkillList']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowSkillList']//panel[@name='content']" name="pos">0,-46</setattribute>
+<append xpath="//window[@name='windowSkillList']//panel[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  height="740" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowSkillAttributeInfo']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowSkillAttributeInfo']//rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  height="740" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowSkillSkillInfo']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowSkillSkillInfo']//rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  height="740" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowSkillPerkInfo']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowSkillPerkInfo']//rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  height="740" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowSkillBookInfo']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowSkillBookInfo']//rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  height="740" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowSkillCraftingInfo']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowSkillCraftingInfo']//rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  height="740" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowVehicle']//button[@defaultcolor]" name="defaultcolor">0,0,0,200</setattribute>
+<setattribute xpath="//window[@name='windowVehicle']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowVehicle']//panel[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1" pos="3,-3" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowAssemble']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowAssemble']//grid[@name='parts']" name="cell_height">55</setattribute>
+<append xpath="//window[@name='windowAssemble']//panel[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  height="740" pos="3,-3"  >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='itemInfoPanel']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='itemInfoPanel']//rect[@name='contentInfo']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1">      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='buffInfoPanel']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='buffInfoPanel']//rect[@name='contentBuffInfo']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1">      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowCraftingList']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowCraftingList']//panel[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1" pos="0,-3" >      </sprite>
+</append>
+
+
+<setattribute xpath="//window[@name='mapTracking']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='mapTracking']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1" pos="3,-3" >      </sprite>
+</append>
+
+
+<setattribute xpath="//window[@name='mapInvites']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='mapInvites']//rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1" pos="3,-3" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='craftingInfoPanel']//sprite[@color='[black]']" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='craftingInfoPanel']//sprite[@color='[darkGrey]']" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='craftingInfoPanel']//sprite[@color='[mediumGrey]']" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='craftingInfoPanel']//rect[@name='contentCraftingInfo']" name="height">346</setattribute>
+<append xpath="//window[@name='craftingInfoPanel']//rect[@name='contentCraftingInfo']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1" >      </sprite>
+</append>
+
+
+<setattribute xpath="//window[@name='CharacterFrameWindow']//player_stats_entry" name="backgroundcolor">[transparent]</setattribute>
+<setattribute xpath="//window[@name='CharacterFrameWindow']//player_stats_generic_entry" name="backgroundcolor">[transparent]</setattribute>
+<setattribute xpath="//window[@name='CharacterFrameWindow']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='CharacterFrameWindow']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  pos="0,-46" height="740" >      </sprite>
+</append>
+
+
+<setattribute xpath="//window[@name='ActiveBuffsWindow']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='ActiveBuffsWindow']//panel[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1" height="740" >      </sprite>
+</append>
+
+
+<setattribute xpath="//window[@name='windowTrader']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowTrader']//grid[@controller='TraderItemList']" name="rows">14</setattribute>
+<setattribute xpath="//window[@name='windowTrader']//grid[@controller='TraderItemList']" name="cell_height">43</setattribute>
+<append xpath="//window[@name='windowTrader']//panel[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  pos="0,-3"  height="740" >      </sprite>
+</append>
+
+
+<setattribute xpath="//window[@name='windowQuestList']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowQuestList']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  pos="3,-3" height="{# questsautoaccept ? 723 : 464}" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowQuestSharedList']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowQuestSharedList']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  pos="3,-3" height="208" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowQuestDescription']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowQuestDescription']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1">      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowQuestObjectives']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowQuestObjectives']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1">      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowQuestRewards']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowQuestRewards']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1">      </sprite>
+</append>
+
+
+<setattribute xpath="//window[@name='windowChallengeList']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowChallengeList']//rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  pos="3,-3" height="711" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowChallengeEntryDescription']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowChallengeEntryDescription']//rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowQuestTurnInDescription']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowQuestTurnInDescription']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  pos="0,-46"  height="266" >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowQuestTurnInRewards']//button[@defaultcolor]" name="defaultcolor">40,40,40,200</setattribute>
+<setattribute xpath="//window[@name='windowQuestTurnInRewards']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowQuestTurnInRewards']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1" pos="0,-46" height="412" >      </sprite>
+</append>
+
+
+<setattribute xpath="//window[@name='windowQuestOffer']//sprite[@name='backgroundMain']" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//sprite[@name='background']" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//panel[@name='content']" name="backgroundcolor">1,1,1,1</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//button[@defaultcolor='[mediumGrey]']" name="defaultcolor">0,0,0,240</setattribute>
+<append xpath="//window[@name='windowQuestOffer']//panel[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='messageBox']//sprite[@name='backgroundMain']" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='messageBox']//panel[@name='header']" name="bordercolor">1,1,1,1</setattribute>
+<setattribute xpath="//window[@name='messageBox']//panel[@name='content']" name="backgroundcolor">1,1,1,1</setattribute>
+<setattribute xpath="//window[@name='messageBox']//button[@defaultcolor='[mediumGrey]']" name="defaultcolor">0,0,0,240</setattribute>
+<append xpath="//window[@name='messageBox']//panel[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  height="240"   >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowTip']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowTip']//button[@defaultcolor='[mediumGrey]']" name="defaultcolor">0,0,0,240</setattribute>
+<append xpath="//window[@name='windowTip']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowFuel']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowFuel']//button[@defaultcolor]" name="defaultcolor">40,40,40,200</setattribute>
+<setattribute xpath="//window[@name='windowForgeInput']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowForgeInput']//rect[@name='content2']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  >      </sprite>
+</append>
+<setattribute xpath="//window[@name='windowOutput']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+
+<setattribute xpath="//window[@name='windowCreative2']//sprite[@color='[darkGrey]']" name="color">[black]</setattribute>
+<setattribute xpath="//window[@name='windowCreative2']//sprite[@sprite='menu_empty3px']" name="globalopacitymod">0.9</setattribute>
+<setattribute xpath="//window[@name='windowCreative2']//sprite[@sprite='menu_empty3px']" name="sprite">menu_empty2px</setattribute>
+
+<setattribute xpath="//window[@name='windowShapeBlocks']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowShapeBlocks']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  height="705"  >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowShapeInfo']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowShapeInfo']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowShapeMaterial']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<append xpath="//window[@name='windowShapeMaterial']/rect">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowSignEdit']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowSignEdit']//button[@defaultcolor]" name="defaultcolor">0,0,0,250</setattribute>
+<append xpath="//window[@name='windowSignEdit']/rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1"  >      </sprite>
+</append>
+
+<setattribute xpath="//window[@name='windowPowerSourceSlots']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowPowerSourceStats']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowPowerSourceStats']//button[@defaultcolor]" name="defaultcolor">40,40,40,220</setattribute>
+<append xpath="//window[@name='windowPowerSourceStats']/rect[@name='content']">
+          <sprite color="[black]" type="sliced" globalopacitymod="1" height="{# showfuel ? 270 : 236}" >      </sprite>
+</append>
+
+
+<setattribute xpath="//window[@name='players']//sprite[@color]" name="color">[black]</setattribute>
+<setattribute xpath="//window[@name='players']//sprite[@sprite='menu_empty3px']" name="globalopacitymod">0.9</setattribute>
+
+<setattribute xpath="//window[@name='chat']//sprite[@sprite='menu_empty2px']" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='chat']//sprite[@color='[darkGrey]']" name="width">800</setattribute>
+<setattribute xpath="//window[@name='chat']//sprite[@color='[darkGrey]']" name="sprite">ui_game_popup</setattribute>
+<setattribute xpath="//window[@name='chat']//sprite[@color='[darkGrey]']" name="flip">Horizontally</setattribute>
+<setattribute xpath="//window[@name='chat']//sprite[@color='[darkGrey]']" name="globalopacitymod">1.2</setattribute>
+<setattribute xpath="//window[@name='chat']//sprite[@color='[darkGrey]']" name="color">[black]</setattribute>
+
+<setattribute xpath="//textlist[@name='txtOutput']" name="style">style_chat_outline</setattribute>
+
+<remove xpath="//window[@name='windowPagingHeader']"/>
+<remove xpath="//window[@name='windowNonPagingHeader']"/>
+<append xpath="/windows">
+	  <window name="windowNonPagingHeader" depth="99" pos="-300,1" width="600" height="50" anchor="CenterTop" controller="WindowNonPagingHeader">
+		<sprite name="header_background" depth="0" pos="0,0" width="1844" anchor_left="#cam,0,-5" anchor_right="#cam,1,5" color="[black]" type="sliced" globalopacitymod="1" />
+		<sprite name="button_background" depth="1" pos="200,0" width="200" color="[color_element_accent]" globalopacitymod="1" />
+		<sprite name="button_separator" depth="2" pos="197,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+		<sprite name="button_separator" depth="2" pos="400,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+		<label name="lblWindowName" depth="5" pos="300,-25" size="150,40" style="style_label_normal" font_size="32" pivot="center" justify="center" upper_case="true" overflow="ShrinkContent" />
+		
+		<label name="date_display" depth="5" pos="50,-25" size="250,40" style="style_label_normal, style_label_header_date" text="{currentday}   |   {currenttime}" pivot="center" justify="right" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location" ></label>
+		<label name="location_display" depth="5" pos="600,-25" size="350,40" style="style_label_normal" text="{locationname}   |   GS {gamestage}   |   LS {lootstage}" pivot="center" justify="left" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location">		</label>
+	  </window>
+	  
+	  <window name="windowPagingHeader" depth="99" pos="{#is_creative ? '-301,1' : '-226,1'}" width="600" height="50" anchor="CenterTop" cursor_area="true" normal_color="[black]" select_color="[color_element_accent]" hover_color="[white]" blink_color="[white]" controller="WindowSelector" >
+			<label name="lblWindowName" depth="5" pos="99999,99999" style="style_label_normal" font_size="40" pivot="center" justify="center" upper_case="true" overflow="ShrinkContent" />
+			
+			<sprite name="header_background" depth="0" pos="0,0" width="1844" anchor_left="#cam,0,-5" anchor_right="#cam,1,5" color="[black]" type="sliced" globalopacitymod="1" />
+			
+			<sprite name="header_button_separator" depth="2" pos="-303,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Crafting" pos="-300,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiCrafting" />
+			<label name="Crafting" depth="3" pos="-300,-13" style="style_label_normal, style_label_header" text_key="xuiCrafting" />
+			
+			<sprite name="header_button_separator" depth="2" pos="-153,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Character" pos="-150,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiCharacter" />
+			<label name="Character" depth="3" pos="-150,-13" style="style_label_normal, style_label_header" text_key="xuiCharacter" />
+			
+			<sprite name="header_button_separator" depth="2" pos="-3,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Map" pos="0,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiMap" />
+			<label name="Map" depth="3" pos="0,-13"  style="style_label_normal, style_label_header" text_key="xuiMap" />
+			
+			<sprite name="header_button_separator" depth="2" pos="147,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Skills" pos="150,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiSkills" />
+			<label name="Skills" depth="3" pos="150,-13"  style="style_label_normal, style_label_header" text_key="xuiSkills" />
+			
+			<sprite name="header_button_separator" depth="2" pos="297,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Quests" pos="300,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiQuests" />
+			<label name="Quests" depth="3" pos="300,-13"  style="style_label_normal, style_label_header" text_key="xuiQuests" />
+			
+			<sprite name="header_button_separator" depth="2" pos="447,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Challenges" depth="3" pos="450,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiChallenges" />
+			<label name="Challenges" depth="3" pos="450,-13"  style="style_label_normal, style_label_header" text_key="xuiChallenges" />
+			
+			<sprite name="header_button_separator" depth="2" pos="597,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Players" pos="600,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiPlayers" />
+			<label name="Players" depth="3" pos="600,-13"  style="style_label_normal, style_label_header" text_key="xuiPlayers" />
+			
+			<sprite name="header_button_separator" depth="2" pos="747,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1"  />
+			<button name="Creative" pos="750,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiCreative" visible="{is_creative}" />
+			<label name="Creative" depth="3" pos="750,-13"  style="style_label_normal, style_label_header" text_key="xuiCreative" visible="{is_creative}" />
+			<sprite name="header_button_separator" depth="2" pos="897,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1"  visible="{is_creative}" />
+			
+			<label name="date_display2" depth="5" pos="-675,-14" size="350,40" style="style_label_normal, style_label_header_date" text="{currentday}   |   {currenttime}" justify="right" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location" >		</label>
+			<label name="location_display2" depth="5" pos="{#is_creative ? '925,-14' : '775,-14'}" size="350,40" style="style_label_normal" text="{locationname}   |   GS {gamestage}   |   LS {lootstage}" justify="left" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location"></label>
+	  </window>
+</append>
+
+
+<set xpath="//window[@name='craftingInfoPanel']//rect[@name='preview']">
+        <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="153" height="153" color="[black]" type="sliced" fillcenter="false" globalopacitymod="0.01">        </sprite>
+        <sprite depth="1" color="[black]" type="sliced" globalopacity="true" globalopacitymod="0.01">        </sprite>
+        <sprite depth="12" name="itemPreview" width="110" height="110" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="74,-58" pivot="center" foregroundlayer="true" />
+        <sprite depth="8" name="itemtypeicon" width="32" height="32" sprite="ui_game_symbol_{itemtypeicon}" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+		<sprite name="itemBackgroundDurability" depth="9" pos="74,-58" width="130" height="130" sprite="quality_background" pivot="center" color="{durabilitycolor}" globalopacitymod="0.9" visible="{hasdurability}" />
+		<label depth="13" name="durabilityValue" pos="74,-96" width="110" height="32" text="{durabilitytext}" font_size="30" justify="center" pivot="center"  style="style_label_outline" visible="{hasdurability}" />
+        <sprite depth="3" name="clockIcon" size="24,24" sprite="ui_game_symbol_clock" pos="25, -121" type="sliced" color="[iconColor]" foregroundlayer="true" />
+        <label depth="3" name="craftingTime" width="100" height="32" pos="55, -120" text="{craftingtime}" font_size="26" color="[beige]" />
+        <button depth="12" name="addQualityButton" style="icon22px, press" pos="132,-96" sprite="ui_game_symbol_arrow_menu" flip="Horizontally" pivot="center" sound="[paging_click]" visible="{hasdurability}" disabledcolor="[lightGrey]" enabled="{enableaddquality}" />
+        <button depth="12" name="subtractQualityButton" style="icon22px, press" pos="14,-96" sprite="ui_game_symbol_arrow_menu" pivot="center" sound="[paging_click]" visible="{hasdurability}" disabledcolor="[lightGrey]" enabled="{enablesubtractquality}" />
+</set>
+
+<set xpath="//window[@name='itemInfoPanel']//rect[@name='preview']">
+        <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="153" height="133" color="[black]" type="sliced" fillcenter="false" globalopacitymod="0.01">        </sprite>
+        <sprite depth="1" color="[black]" pos="0,0" type="sliced" globalopacity="true" globalopacitymod="0.01">        </sprite>
+        <sprite depth="7" name="itemPreview" width="110" height="110" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="74,-58" pivot="center" foregroundlayer="true">        </sprite>
+		<sprite depth="5" name="itemBackgroundDurability" pos="74,-58" width="110" height="110" sprite="quality_background" pivot="center" color="{durabilitycolor}" globalopacitymod="0.9" visible="{hasdurability}" />
+        <sprite depth="12" name="itemtypeicon" width="32" height="32" sprite="ui_game_symbol_{itemtypeicon}" pos="4,-8" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+		<sprite depth="5" name="durabilityBackground" pos="1, -107" height="20" width="145" sprite="durability_bar" color="96,96,96" foregroundlayer="true" visible="{hasdurability}" />
+		<sprite depth="6" name="durability" pos="1, -107" height="20" width="145" sprite="durability_bar" type="filled" fill="{durabilityfill}" color="{durabilitycolor}" foregroundlayer="true" visible="{hasdurability}" />
+        <label depth="12" name="durabilityValue" pos="0,-98" width="145" height="32" text="{durabilitytext}" font_size="30" justify="{durabilityjustify}"  style="style_label_outline" visible="false" />
+</set>
+
+
+<remove xpath="//window[@name='windowCompass']"/>
+<append xpath="/windows">
+		<window name="windowCompass" anchor="CenterTop" pos="-250,-5" width="500" height="50" controller="CompassWindow">
+			<rect pos="250,0" >
+				<sprite name="compass_indicator" depth="10" pos="0,-1" width="10" height="10" sprite="ui_game_symbol_compass_indicator" color="[white]" globalopacitymod="0.8" pivot="center" />
+				<texture depth="12" texture="Textures/UI/Compass/overlay-{compass_language}" pos="-250, -12" width="500" height="20" color="[iconColor]" name="compassTexture3" rect_size="0.5,1" rect_offset="{#compass_rotation / 360 + -0.185},0" />
+				<sprite name="background" sprite="ui_statbar_bg2" depth="0" pos="-8,-11" width="670" height="54" color="[black]" globalopacitymod="0.6" pivot="center" />
+				
+				<label depth="2" width="100" pos="-350,-5" text="{daytitle} [{daycolor}]{day}[-]" style="style_label_normal, style_label_compass1" upper_case="true" justify="center" />
+				<label depth="2" width="100" pos="240,-5" text="{time}" style="style_label_normal, style_label_compass1" upper_case="true" justify="center" />
+			</rect>
+	    </window>
+</append>
+
+<remove xpath="//window[@name='windowLocation']"/>
+<append xpath="/windows">
+	<window name="windowLocation" depth="100" pos="0,0" width="600" height="60" anchor="CenterTop" tooltip_key="xuiLocationWindowHUD" controller="HUDStatBar" visible="{statvisible}">
+		
+		<label name="location" depth="3" pos="-410,-57" width="600" height="30" style="style_label_outline" text="{locationname}" font_size="18" justify="right" upper_case="true" pivot="center" controller="Location" />
+		<rect name="compasslocation" visible="{#cvar('BloodMoonActive') == 0 ? true : false}">
+		  <label name="gamestage" depth="3" pos="210,-57" width="200" height="30" style="style_label_outline" text="{gamestagetitle}: {playergamestage}" font_size="18" justify="left" upper_case="true" pivot="center" />
+		  <grid name="compasslocation_difficulty" depth="3" pos="0,-60" width="120" height="30" rows="1" cols="8" cell_width="20" cell_height="30" pivot="center" controller="Location">
+			<sprite name="windowicon" depth="4" size="22,22" sprite="ui_game_symbol_poi_skull" color="{difficultycolor1}" visible="{visible1}" globalopacitymod="0.95" />
+			<sprite name="windowicon" depth="4" size="22,22" sprite="ui_game_symbol_poi_skull" color="{difficultycolor2}" visible="{visible2}" globalopacitymod="0.95" />
+			<sprite name="windowicon" depth="4" size="22,22" sprite="ui_game_symbol_poi_skull" color="{difficultycolor3}" visible="{visible3}" globalopacitymod="0.95" />
+			<sprite name="windowicon" depth="4" size="22,22" sprite="ui_game_symbol_poi_skull" color="{difficultycolor4}" visible="{visible4}" globalopacitymod="0.95" />
+			<sprite name="windowicon" depth="4" size="22,22" sprite="ui_game_symbol_poi_skull" color="{difficultycolor5}" visible="{visible5}" globalopacitymod="0.95" />
+			<sprite name="windowicon" depth="4" size="22,22" sprite="ui_game_symbol_poi_skull" color="{difficultycolor6}" visible="{visible6}" globalopacitymod="0.95" />
+			<sprite name="windowicon" depth="4" size="22,22" sprite="ui_game_symbol_poi_skull" color="{difficultycolor7}" visible="{visible7}" globalopacitymod="0.95" />
+			<rect width="16" height="16" visible="{visible_half}">
+			  <sprite name="windowicon" depth="4" size="22,22" sprite="ui_game_symbol_poi_skull" type="filled" fill="0.5" color="255,128,0" globalopacitymod="0.95" />
+			  <sprite name="windowicon" depth="4" size="22,22" sprite="ui_game_symbol_poi_skull" type="filled" fill="0.5" fillinvert="true" color="[black]" globalopacitymod="0.8">			  </sprite>
+			</rect>
+		  </grid>
+		</rect>
+		<rect name="compass_bloodmoon" visible="{#cvar('BloodMoonActive') == 1 ? true : false}">
+		  <label name="bm_label" depth="3" pos="0,-56" width="200" height="30" style="style_label_normal" text="HORDE NIGHT" font_size="24" upper_case="true" justify="Center" pivot="center" color="235,0,0" />
+		  <label name="bm_kills" depth="3" pos="210,-57" width="200" height="30" style="style_label_outline" text="KILLS: {cvar(BloodMoon_KillCount)}" font_size="18" justify="left" upper_case="true" pivot="center" />
+		</rect>
+	  </window>
+</append>
+
+
+<setattribute xpath="//window[@name='windowToolbelt']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+<setattribute xpath="//window[@name='windowBackpack']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
+
+<setattribute xpath="//backpack_item_stack" name="cell_size">67</setattribute>
+<setattribute xpath="//backpack_item_stack" name="cell_half">33</setattribute>
+
+
+<remove xpath="//window[@name='windowToolbelt']"/>
+<append xpath="/windows">
+	<window name="windowToolbelt" width="1" height="1" depth="5" anchor="CenterBottom" pos="0,84" backgroundcolor="[black]" controller="ToolbeltWindow" cursor_area="true" xp_fill_speed="2.5">
+		<rect pos="-400,0" controller="Toolbelt" >
+			<grid depth="10" name="inventory" rows="1" cols="10" cell_width="80" cell_height="75" repeat_content="true">
+			  <toolbelt_item_stack name="0" cell_size="75" cell_half="37" />
+			</grid>
+			<grid depth="10" name="inventory2" rows="1" cols="10" pos="0,82" cell_width="80" cell_height="75" repeat_content="true" visible="{secondrow}">
+			  <toolbelt_item_stack name="0" cell_size="75" cell_half="37" />
+			</grid>
+		</rect>
+  </window>
+</append>
+
+<remove xpath="//window[@name='HUDLeftStatBars']"/>
+<append xpath="/windows">
+<window name="HUDLeftStatBars" pos="0,-27" >
+    <rect name="hud" pos="10,180" width="170" side="right" >
+	
+	  <!-- Vehicle Stats -->
+	  <grid pos="0,-17" rows="1" cols="2" cell_width="180" cell_height="32" arrangement="horizontal" >	
+	  
+		<!-- Vehicle Health -->
+		<rect height="30" controller="HUDStatBar" stat_type="VehicleHealth" visible="{statvisible}">
+			<sprite depth="5" name="BarBg" style="style_statbar_bg1" sprite="ui_statbar_bg"  />
+			<filledsprite depth="5" name="BarContent" color="180,50,50,230" sprite="ui_statbar_bg"  type="filled" fill="0" />
+			<sprite depth="6" name="BarBgShadow" style="style_statbar_shadow"   />
+			<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="22,22" pos="20,-15" pivot="center" globalopacity="true" globalopacitymod="1" />
+			<label depth="7" name="TextContent" style="style_label_normal, style_label_statbar1" font_size="18"  pivot="left" text="{statcurrent}"  />
+		  </rect>
+		  
+		  <!-- Vehicle Fuel -->
+          <rect height="30" controller="HUDStatBar" stat_type="VehicleFuel" visible="{statvisible}">
+			<sprite depth="5" name="BarBg" style="style_statbar_bg1" sprite="ui_statbar_bg"  />
+			<filledsprite depth="5" name="BarContent" color="200,180,100,230" sprite="ui_statbar_bg"  type="filled" fill="0" />
+			<sprite depth="6" name="BarBgShadow" style="style_statbar_shadow"   />
+			<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="22,22" pos="20,-15" pivot="center" globalopacity="true" globalopacitymod="1" />
+			<sprite depth="6" name="Icon" sprite="ui_game_symbol_turbo1" size="22,22" pos="150,-15" pivot="center" globalopacity="true" globalopacitymod="1" visible="{sprintactive}"  />
+			<label depth="7" name="TextContent" style="style_label_normal, style_label_statbar1" font_size="18"  pivot="left" text="{# statcurrent == '' ? '' : floor(statcurrent * 25) }"  />
+		  </rect> 
+      </grid>
+	  
+	  <!-- Player Stats -->
+	  <!-- Stealth -->
+	  <rect name="{stealthbar}"  height="30" pos="0,-18" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}">
+			<sprite depth="5" name="BarBg" style="style_statbar_bg1" sprite="ui_statbar_bg"  />
+			<filledsprite depth="5" name="BarContent" color="{stealthcolor}" sprite="ui_statbar_bg"  type="filled" fill="0" />
+			<sprite depth="6" name="BarBgShadow" style="style_statbar_shadow"   />
+			<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="22,22" pos="20,-14" pivot="center" globalopacity="true" globalopacitymod="1" />
+			<label depth="7" name="TextContent" style="style_label_normal, style_label_statbar1" pivot="left" text="{statcurrent}"  />
+		  </rect>
+		  
+	  <grid pos="0,-50" rows="3" cols="2" cell_width="180" cell_height="32" arrangement="horizontal" controller="HUDStatBar" visible="{statvisible}" >
+
+		<!-- Health -->
+		<rect height="30" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+			<sprite depth="5" name="BarBg" style="style_statbar_bg1" sprite="ui_statbar_bg"  />
+			<filledsprite depth="5" name="BarContent" color="180,50,50,230" sprite="ui_statbar_bg"  type="filled" fill="0" />
+			<sprite depth="6" name="BarBgShadow" style="style_statbar_shadow"   />
+			<sprite depth="6" name="Icon" sprite="ui_game_symbol_add" size="22,22" pos="20,-14" pivot="center" globalopacity="true" globalopacitymod="1.5" />
+			<label depth="7" name="TextContent" style="style_label_normal, style_label_statbar1" pivot="left" text="{statcurrent}"  />
+			<label depth="7" name="TextContent" style="style_label_outline, style_label_statbar2" pivot="left" text="{stathealthchange}" />
+		  </rect>
+		  
+		  <!-- Stamina -->
+          <rect height="30" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+			<sprite depth="5" name="BarBg" style="style_statbar_bg1" sprite="ui_statbar_bg"  />
+			<filledsprite depth="5" name="BarContent" color="200,180,100,230" sprite="ui_statbar_bg"  type="filled" fill="0" />
+			<sprite depth="6" name="BarBgShadow" style="style_statbar_shadow"   />
+			<sprite depth="6" name="Icon" sprite="{# sprintactive ? 'ui_game_symbol_agility' : 'ui_game_symbol_cardio'}" size="22,22" pos="20,-15" pivot="center" globalopacity="true" globalopacitymod="1.5" />
+			<label depth="7" name="TextContent" style="style_label_normal, style_label_statbar1" pivot="left" text="{# statcurrent == '' ? '' : floor(statcurrent) }"  />
+			<label depth="7" name="TextContent" style="style_label_outline, style_label_statbar2" pivot="left" text="{statstaminachange}" />
+		  </rect>
+		 
+		  <!-- Food -->
+		  <rect height="30" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+			<sprite depth="5" name="BarBg" style="style_statbar_bg1" sprite="ui_statbar_bg"  />
+			<filledsprite depth="5" name="BarContent" color="60,120,50,230" sprite="ui_statbar_bg"  type="filled" fill="0" />
+			<sprite depth="6" name="BarBgShadow" style="style_statbar_shadow"   />
+			<sprite depth="6" name="Icon" sprite="ui_game_symbol_fork" size="22,22" pos="20,-14" pivot="center" foregroundlayer="true" />
+			<label depth="7" name="TextContent" style="style_label_normal, style_label_statbar1" pivot="left" text="{statcurrent}"  />
+			<label depth="7" name="TextContent" style="style_label_outline, style_label_statbar2" pivot="left" text="{statfoodchange}" />
+		  </rect>	
+		  
+		  <!-- Water -->
+		  <rect height="30" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+			<sprite depth="5" name="BarBg" style="style_statbar_bg1" sprite="ui_statbar_bg"  />
+			<filledsprite depth="5" name="BarContent" color="40,90,110,230" sprite="ui_statbar_bg"  type="filled" fill="0" />
+			<sprite depth="6" name="BarBgShadow" style="style_statbar_shadow"   />
+			<sprite depth="6" name="Icon" sprite="ui_game_symbol_water" size="22,22" pos="20,-14" pivot="center" foregroundlayer="true" />
+			<label depth="7" name="TextContent" style="style_label_normal, style_label_statbar1" pivot="left" text="{statcurrent}"  />
+			<label depth="7" name="TextContent" style="style_label_outline, style_label_statbar2" pivot="left" text="{statwaterchange}" />
+		  </rect> 
+		  
+		  <!-- XP -->
+		  <rect height="28" width="350" >
+		    <rect pos="0,-3" >
+				<sprite depth="5" name="BarBg" style="style_statbar_bg1" sprite="ui_statbar_bg2"  />
+				<sprite depth="6" name="BarBg2" color="60,60,60,200" sprite="ui_statbar_bg2" type="filled" fill="{playerxppercent}"  />
+				<sprite depth="6" name="Bar" color="{playerxpcolor}" sprite="ui_statbar_bg2" type="filled" fill="{playerxppercent}" globalopacity="true" globalopacitymod="0.6"  />
+				<sprite depth="6" name="BarBg2" color="60,60,60,200" sprite="ui_statbar_bg2" type="filled" fill="{xp}" controller="ToolbeltWindow" visible="{dllnotloaded}"  />
+				<sprite depth="6" name="Bar" color="128,4,128" sprite="ui_statbar_bg2" type="filled" fill="{xp}" globalopacity="true" globalopacitymod="0.6" controller="ToolbeltWindow" visible="{dllnotloaded}"  />
+				<sprite depth="7" name="BarBgShadow" color="0,0,0" sprite="ui_statbar_bg_shadow2" height="33" width="354" pos="-2,4" />
+				<sprite depth="7" name="Icon" sprite="ui_game_symbol_skills" size="22,22" pos="20,-13" pivot="center" foregroundlayer="true" />
+				<label depth="7" name="TextContent" pos="41,-15" font_size="18" style="style_label_statbar2" justify="left" pivot="left" text=".dll code is not initialized" visible="{dllnotloaded}"  />
+				<label depth="7" name="TextContent" pos="41,-15" font_size="19" style="style_label_normal" justify="left" pivot="left" text="LVL  {playerlevel}"  />
+				<label depth="7" name="TextContent" pos="2,-14" font_size="16" style="style_label_outline" color="230,230,230" justify="center" pivot="left" text="{playerxp}/{playerxptonextlevel}"  />
+			</rect>
+		  </rect>
+      </grid>
+    </rect>
+	
+    <rect name="hud" pos="90,157" side="left" controller="BuffPopoutList" pivot="BottomLeft">
+      <panel width="168" height="46" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" style="press" sound="[recipe_click]" on_hover="true">
+        <sprite depth="3" pos="0,0" name="Background" sprite="ui_game_popup" height="46" width="162" pivot="center" flip="Horizontally" />
+        <sprite depth="4" name="Icon" size="40,40" pos="-54,0" pivot="center" color="[transparent]" />
+        <label depth="6" name="TextContent" pos="-37,0" style="style_label_outline" font_size="28" color="[white]" justify="center" width="118" height="40" pivot="left" />
+      </panel>
+    </rect>
+  </window>
+</append>
+
+<remove xpath="//window[@name='HUDRightStatBars']//rect[2]"/>
+
+
+
+<setattribute xpath="//window[@name='toolTip']//sprite[@color='[lightGrey]']" name="color">0,0,0,80</setattribute>
+<setattribute xpath="//window[@name='windowTimer']//sprite[@color='128,128,128,192']" name="color">0,0,0,245</setattribute>
+
+
+
+<remove xpath="//window[@name='interactionPrompt']"/>
+<append xpath="/windows">
+	<window name="interactionPrompt" pos="0,60" width="480" height="60" anchor="CenterCenter" controller="InteractionPrompt" fade_delay="0.02">
+		<sprite name="background" depth="1" pivot="center"  color="[black]" globalopacitymod="0.8" />
+		<label name="lblText" depth="100" style="style_label_normal" text="{text}" font_size="26" pivot="center" justify="center" parse_actions="true" actions_default_format="([AF1E19]###[-])" foregroundlayer="true"></label>
+  </window>
+</append>
+
+
+<remove xpath="//window[@name='windowCraftingQueue']"/>
+<append xpath="/windows">
+	<window name="windowCraftingQueue" width="397" height="78" panel="Left" cursor_area="true">
+		<rect controller="CraftingQueue">
+		  <grid name="queue" rows="1" cols="5" pos="1,-12" cell_width="80" cell_height="75" repeat_content="true">
+			<recipe_stack name="0" />
+		  </grid>
+		</rect>
+  </window>
+</append>
+
+<remove xpath="//window[@name='windowRespondentName']"/>
+<remove xpath="//window[@name='windowStatement']"/>
+<remove xpath="//window[@name='windowResponses']"/>
+<append xpath="/windows">
+	<window name="windowRespondentName" pos="-175,120" width="500" height="20" anchor="CenterBottom" controller="DialogRespondentName">
+    <rect name="content" depth="1">
+      <label style="style_label_normal, header.name" text="{respondentname}" color="[selectedColor]" justify="center" />
+    </rect>
+  </window>
+	<window name="windowStatement" pos="0,85" width="1000" height="60" anchor="CenterBottom" controller="DialogStatementWindow">
+    <rect name="content" depth="1" pivot="center">
+      <sprite depth="1" name="backgroundSprite" pos="-500,-5" color="25,25,25,210" />
+      <label depth="3" name="statementLabel" pos="-500,-20" text="{statement}" font_size="30" overflow="resizeheight" justify="center" />
+    </rect>
+  </window>
+  <window name="windowResponses" pos="-650,0" width="600" height="340" anchor="RightCenter" cursor_area="true">
+    <sprite depth="1" name="background" sprite="ui_game_text_body_back" globalopacitymod="0.95">    </sprite>
+    <sprite depth="1" name="background2" sprite="ui_game_text_body_back" globalopacitymod="0.95" flip="Vertically" >    </sprite>
+    <grid name="items" pos="3,-6" rows="8" cols="1" width="590" height="200" cell_width="590" cell_height="40" repeat_content="true" arrangement="vertical" controller="DialogResponseList">
+      <response_entry id="0" />
+    </grid>
+  </window>
+</append>
+
+
+<remove xpath="//window[@name='windowQuestTracker']"/>
+<append xpath="/windows">
+	<window name="windowQuestTracker" depth="-20" pos="-255,-90" width="400" height="400" controller="QuestTrackerWindow" visible="{showquest}">
+		<sprite name="background" depth="0" pos="-105,12" width="380" height="54" sprite="questtracker_background" color="[black]" globalopacitymod="0.8" >    </sprite>
+		<label name="title" depth="1" pos="105,-15" width="280" height="28" style="style_label_normal" text="{questtitle}" font_size="26" pivot="center" justify="center" upper_case="true" overflow="ShrinkContent" color="[white]" />
+		<sprite name="windowIcon" depth="1" pos="-75,1" style="icon32px" sprite="{questicon}" justify="left" color="[white]" />
+		<grid name="objectiveList" depth="1" pos="-65,-50" rows="12" cols="1" cell_width="300" cell_height="30" repeat_content="true" arrangement="vertical" controller="QuestTrackerObjectiveList" complete_icon="ui_game_symbol_check" incomplete_icon="ui_game_symbol_minus1" complete_color="[green]" incomplete_color="[red]" >
+		  <questtracker_objective_entry />
+		</grid>
+		<rect pos="-160,{#trackerheight * -1 - 50}" width="400" height="86" visible="{questhintavailable}">
+		  <label name="questtracker_hints" depth="3" style="style_label_outline" text="{questhint}" font_size="20" justify="right" parse_actions="true" actions_default_format="( [e61a16]###[-] )" spacing_y="5" />
+		</rect>
+  </window>
+</append>
+
+<setattribute xpath="//label[@text='{skillpointsavailable}']" name="visible">true</setattribute>
+
+<set xpath="//grid[@controller='PartList']">
+        <item_stack_part name="0" />
+</set>
+
+<setattribute xpath="//panel[@name='equipment']" name="pos">3, -706</setattribute>
+<set xpath="//grid[@controller='EquipmentStackGrid']">
+        <equipment_item_stack_sdcs name="0" cell_size="70" cell_half="35" />
+</set>
+
+<setattribute xpath="//grid[@controller='VehiclePartStackGrid']" name="cell_height">55</setattribute>
+
+<remove xpath="//window[@name='windowGroupBars']"/>
+<append xpath="/windows">
+	<window name="windowGroupBars" controller="PartyWindow" depth="-20">
+		<rect controller="HUDStatBar" visible="{statvisible}" >
+			<sprite depth="8" name="voiceStatus" style="icon32px" width="26" height="26" pos="34,-96" sprite="ui_game_symbol_mic" visible="{# partyvisible and voicevisible}" pivot="center" color="{# voiceactive ? '255,255,255,255' : '128,128,128,255' }" />
+			<grid name="hud" pos="20,-110" rows="7" cols="1" cell_width="180" cell_height="32" side="left" repeat_content="true" controller="PartyEntryList">
+			  <party_entry />
+			</grid>
+			<grid name="hud" pos="20,-110" rows="7" cols="1" cell_width="180" cell_height="32" side="left" repeat_content="true" controller="CompanionEntryList">
+			  <companion_entry />
+			</grid>
+		</rect>
+  </window>
+</append>
+
+<set xpath="//window[@name='windowTargetBar']">
+		<rect pos="-175,-90" width="350" height="28" controller="HUDStatBar" stat_type="VehicleHealth" visible="{#!statvisible}" >
+		<rect visible="{isnotboss}" >
+		  <sprite depth="5" name="BarBg" style="style_statbar_bg1" sprite="ui_statbar_bg2"  />
+		  <filledsprite depth="6" name="BarContent" sprite="ui_statbar_bg2" type="filled" color="180,50,50,230" fill="{fill}" />
+		  <sprite depth="7" name="BarBgShadow" color="[black]" sprite="ui_statbar_bg_shadow2" height="33" width="354" pos="-2,4" />
+		  <label depth="8" name="TextContent" pos="8,-14" font_size="22" style="style_label_normal" justify="left" pivot="left" text="{name}" />
+		  <label depth="8" name="TextContent" pos="-7,-14" font_size="22" style="style_label_normal" justify="right" pivot="left" text="{currentwithmax}" />
+		</rect>
+		</rect>
+		<rect pos="-267,-85" width="725" height="25" visible="{isboss}" >
+			<sprite pos="60,-45" width="448" depth="1" name="border" color="0,0,0,255" type="sliced"  globalopacity="false"/>
+			<filledsprite pos="60,-45" width="448" depth="2" name="BarContent" type="filled" fill="{fill}" globalopacity="false" sprite="ui_game_symbol_twitch_boss_bar_HP" />
+			<sprite depth="3" name="Icon" size="84,84" pos="45,-42" pivot="center" sprite="{boss_sprite}" globalopacity="false" />
+			<sprite depth="4" name="overlay" width="517" height="84" type="sliced" globalopacity="false" sprite="ui_game_symbol_twitch_boss_bar" />
+			
+			<label depth="5" name="TextContent" pos="100,-13" font_size="30" color="[white]" justify="left" pivot="topleft" text="{name}" height="30" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2"/>
+			<label depth="5" name="MinionCount" pos="482,-13" font_size="30" color="[white]" justify="left" pivot="topleft" text="x{minioncount}" height="30" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
+		</rect>
+</set>
+
+<setattribute xpath="//window[@name='windowRadial']//label" name="style">style_label_normal</setattribute>
+
+<append xpath="/windows">
+		<rect name="placeholder0" >
+			<simplebutton/>
+		</rect>
+</append>
+
+<setattribute xpath="//rect[@name='PaginatedBackpack' or @name='placeholder0']//simplebutton" name="bordercolor">0,0,0,0</setattribute>
+<setattribute xpath="//rect[@name='PaginatedBackpack' or @name='placeholder0']//simplebutton" name="hovercolor">200,200,200,220</setattribute>
+<setattribute xpath="//rect[@name='PaginatedBackpack' or @name='placeholder0']//simplebutton" name="selectedcolor">200,200,200,220</setattribute>
+<setattribute xpath="//rect[@name='PaginatedBackpack' or @name='placeholder0']//simplebutton" name="hoversprite">ui_stack_background</setattribute>
+<setattribute xpath="//rect[@name='PaginatedBackpack' or @name='placeholder0']//simplebutton" name="selectedsprite">ui_stack_background</setattribute>
+<setattribute xpath="//rect[@name='PaginatedBackpack' or @name='placeholder0']//simplebutton" name="defaultsprite">ui_stack_background</setattribute>
+<setattribute xpath="//rect[@name='PaginatedBackpack' or @name='placeholder0']//simplebutton" name="defaultcolor">0,0,0,240</setattribute>
+<setattribute xpath="//rect[@name='PaginatedBackpack' or @name='placeholder0']//simplebutton" name="height">30</setattribute>
+
+<setattribute xpath="//window[@name='windowSkillList']//grid[@name='categories']" name="cols">15</setattribute>
+<setattribute xpath="//window[@name='windowSkillList']//grid[@name='skills']" name="pos">1,-89</setattribute>
+<remove xpath="//window[@name='windowSkillList']//panel[@console_enabled='false']"></remove>
+
+<setattribute xpath="//textfield[@name='searchInput']" name="clear_button">true</setattribute>
+
+
+
+
+<!-- <append xpath="/windows/window[@name='windowVehicleStorage']//rect[@controller='ContainerStandardControls']"> -->
+		<!-- <combobox depth="3" name="cbxLockedSlots" pos="74,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1" /> -->
+<!-- </append> -->
+
+
+
+
+
+</xSteel>
