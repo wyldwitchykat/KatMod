@@ -19,9 +19,12 @@
   <set xpath="//recipe[@name='meleeWpnBladeT0BoneKnife']/ingredient[@name='resourceBone']/@count">1</set>
 
   <!-- You should be able to make lockpics with scrap iron -->
-  <set xpath="//recipe[starts-with(@name, 'resourceLockPick')]/ingredient[@name='resourceForgedIron']/@name">resourceScrapIron</set>
-  <set xpath="//recipe[starts-with(@name, 'resourceLockPick')]/ingredient[@name='resourceScrapIron']/@count">10</set>
-  <set xpath="//recipe[starts-with(@name, 'resourceLockPick')]/ingredient[@name='resourceMechanicalParts']/@count">0</set>
+  <set xpath="//recipe[@name='resourceLockPick']/ingredient[@name='resourceForgedIron']/@name">resourceScrapIron</set>
+  <set xpath="//recipe[@name='resourceLockPick']/ingredient[@name='resourceScrapIron']/@count">1</set>
+  <set xpath="//recipe[@name='resourceLockPick']/ingredient[@name='resourceMechanicalParts']/@count">0</set>
+  <set xpath="//recipe[@name='resourceLockPickBundle']/ingredient[@name='resourceForgedIron']/@name">resourceScrapIron</set>
+  <set xpath="//recipe[@name='resourceLockPickBundle']/ingredient[@name='resourceScrapIron']/@count">40</set>
+  <set xpath="//recipe[@name='resourceLockPickBundle']/ingredient[@name='resourceMechanicalParts']/@count">0</set>
 
   <!-- Reduce the material requirements to craft seeds -->
   <set xpath="//recipe[starts-with(@name, 'planted')]/ingredient[not (@count='5')]/@count">1</set>
