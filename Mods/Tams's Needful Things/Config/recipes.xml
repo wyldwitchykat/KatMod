@@ -53,6 +53,15 @@
       <ingredient name="drinkJarEmpty" count="1" />
     </recipe>
 	
+	<recipe name="drinkCanBoiledWater" count="1" craft_area="campfire">
+      <ingredient name="drinkCanRiverWater" count="5" />
+    </recipe>
+	
+	<recipe name="drinkCanBoiledWater" count="1" craft_area="campfire">
+      <ingredient name="resourceSnowBall" count="5" />
+      <ingredient name="drinkCanEmpty" count="1" />
+    </recipe>
+	
 	<recipe name="cntWoodDecoBlockVariantHelper" count="1">
 	  <ingredient name="resourceNail" count="5"/>
 	  <ingredient name="resourceWood" count="5"/>
