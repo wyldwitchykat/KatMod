@@ -54,7 +54,7 @@
     </recipe>
 	
 	<recipe name="drinkCanBoiledWater" count="1" craft_area="campfire">
-      <ingredient name="drinkCanRiverWater" count="5" />
+      <ingredient name="drinkCanRiverWater" count="1" />
     </recipe>
 	
 	<recipe name="drinkCanBoiledWater" count="1" craft_area="campfire">
