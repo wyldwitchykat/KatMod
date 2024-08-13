@@ -9,6 +9,6 @@
   "isDebug": false,
   "onlyStorageCrates": false,
   "pullFromVehicleStorage": false,
-  "range": -1.0,
+  "range": 20,
   "serverSyncConfig": true
 }
