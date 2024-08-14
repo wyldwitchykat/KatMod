@@ -15,7 +15,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="carsRandomHelper" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -35,7 +35,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntBusSchool" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -55,7 +55,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntBusSchoolShort" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -75,7 +75,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntBusShuttle" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -95,7 +95,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntBusCity" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -115,7 +115,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntArmyTruckRandomLootHelper" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -135,7 +135,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntFarmTruckRandomLootHelper" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>		
@@ -155,7 +155,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntAmbulanceTruck01" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -175,7 +175,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntServiceTruckMoPower" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -195,7 +195,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntServiceTruckWorkingStiffTools" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -215,7 +215,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntSemiTruck01RandomHelper" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -235,7 +235,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntSemiTruck01ModularFrontRandomHelper" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -255,7 +255,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntPoliceCar01" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>		
@@ -275,7 +275,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="cntFireTruck01RandomHelper" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>		
@@ -296,7 +296,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="tractorWhite" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -316,7 +316,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="tractorRed" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -336,7 +336,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="tractorGreen" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -356,7 +356,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="tractorBlue" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -376,7 +376,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorWhite" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -396,7 +396,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorRed" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -416,7 +416,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorOrange" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -436,7 +436,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorYellow" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -456,7 +456,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorGreen" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -476,7 +476,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorBlue" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -496,7 +496,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorGrey" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -516,7 +516,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorClawWhite" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -536,7 +536,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorClawRed" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -556,7 +556,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorClawOrange" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -576,7 +576,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorClawYellow" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -596,7 +596,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorClawGreen" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -616,7 +616,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorClawBlue" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -636,7 +636,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="excavatorClawGrey" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -656,7 +656,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="backhoeWhite" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -676,7 +676,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="backhoeRed" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -696,7 +696,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="backhoeOrange" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -716,7 +716,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="backhoeYellow" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -736,7 +736,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="backhoeGreen" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -756,7 +756,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="backhoeBlue" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -776,7 +776,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="backhoeGrey" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -796,7 +796,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forkliftWhite" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -816,7 +816,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forkliftRed" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -836,7 +836,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forkliftOrange" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -856,7 +856,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forkliftYellow" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -876,7 +876,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forkliftGreen" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -896,7 +896,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forkliftBlue" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -916,7 +916,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forklift2White" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -936,7 +936,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forklift2Red" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -956,7 +956,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forklift2Orange" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -976,7 +976,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forklift2Yellow" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -996,7 +996,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forklift2Green" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
@@ -1016,7 +1016,7 @@
 			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
 			<property name="IsTerrainDecoration" value="true" />
 			<property name="PlantGrowing.Next" value="forklift2Blue" />
-			<property name="PlantGrowing.GrowthRate" value="300" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.GrowthRate" value="1200" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
 			<property name="PlantGrowing.FertileLevel" value="0" />
 			<property name="PlantGrowing.IsRandom" value="false" />
 		</block>
