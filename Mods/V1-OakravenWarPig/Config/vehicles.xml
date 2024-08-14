@@ -1,0 +1,175 @@
+<configs>
+	<append xpath="/vehicles">
+		
+		<vehicle name="vehicleWarPigCar">
+		<property name="cameraDistance" value="5.5, 7"/>
+		<property name="cameraTurnRate" value=".2, .35"/>
+		<property name="upAngleMax" value="70"/>
+		<property name="upForce" value="1"/>
+		<property name="hopForce" value="5, .01"/>
+		<property name="steerAngleMax" value="32"/>
+		<property name="steerRate" value="130"/>
+		<property name="steerCenteringRate" value="90"/>
+		<property name="tiltAngleMax" value="80"/>
+		<property name="tiltThreshold" value="3"/>
+		<property name="tiltDampening" value=".22"/>
+		<property name="tiltDampenThreshold" value="8"/>
+		<property name="tiltUpForce" value="0"/>
+
+		<property name="motorTorque_turbo" value="3500, 1500, 4500, 2000"/>
+		<property name="velocityMax_turbo" value="11, 8, 15, 10"/>
+		<property name="brakeTorque" value="6000"/>
+		<property name="unstickForce" value="1"/>
+		<property name="waterDrag_y_velScale_velMaxScale" value="1.0, 0.5, .3"/>
+		<property name="wheelPtlScale" value="1"/>
+
+		<property name="hornSound" value="WarPigTruck_horn"/>
+
+        <property name="recipeName" value="vehicleWarPigCarPlaceable"/>
+
+		<property class="chassis">
+			<property name="class" value="Chassis"/>
+			<property name="display_name" value="chassis"/>
+			<property name="slot_type" value="chassis"/>
+			<property name="mesh" value="chassis"/>
+			<property name="transform" value="Origin"/>
+			<property name="paint" value="car_mesh/Body/oakbar"/>
+		</property>
+
+		<property class="engine">
+			<property name="class" value="Engine"/>
+			<property name="slot_type" value="engine"/>
+			<property name="mesh" value="engine_small"/>
+			<property name="transform" value="engine_small"/>
+			<property name="particleOn" value="p_on"/>
+			<property name="particleDamaged" value="p_damaged"/>
+			<property name="particleBroken" value="p_broken"/>
+			<property name="fuelKmPerL" value=".1"/>
+			<property name="foodDrain" value=".002,.00811"/><!-- driving/turbo, truck -->
+			<property name="gear1" value="
+								500,2500, -1400,800,0, 700,2200,900,
+								WarPigTruck_max_speed_lp,
+								WarPigTruck_max_speed_lp,
+								0, .7, 1, .1, -9, .12, .1, WarPigTruck_idle_lp,
+								-.4, -.02, .7, .7, -.2, 9, .2, WarPigTruck_max_speed_lp
+								"/>
+			<property name="gear2" value="
+								500,2500, -2000,1000,2000, 600,2200,800,
+								WarPigTruck_max_speed_lp,
+								WarPigTruck_max_speed_lp,
+								-.25, -.05, .2, .4, -1, 1, .1, WarPigTruck_max_speed_lp
+								"/>
+			<property name="gear3" value="
+								500,2500, -2000,1000,2000, 500,2200,1000,
+								WarPigTruck_max_speed_lp,
+								WarPigTruck_max_speed_lp,
+								-.28, -.07, .3, .6, -1, 1, .1, WarPigTruck_max_speed_lp
+								"/>
+			<property name="gear4" value="
+								500,2500, -2000,1000,2000, 500,9999,9999,
+								,
+								WarPigTruck_max_speed_lp,
+								-.31, -.08, .6, .9, -1, 1, .1, WarPigTruck_max_speed_lp
+								"/>
+			<property name="sound_start" value="WarPigTruck_startup"/>
+			<property name="sound_shut_off" value="WarPigTruck_shutoff"/>
+			<property name="sound_no_fuel_shut_off" value="Vehicles/Motorbike/motorbike_empty"/>			
+			<property name="mod" value="speed"/>
+            <property name="modT" value="car_mesh/Turbo"/>
+            <property name="modHideT" value="car_mesh/oakbar"/>
+		</property>
+
+		<property class="fuelTank">
+            <property name="class" value="FuelTank"/>
+            <property name="capacity" value="400"/>
+            <property name="mod" value="fueltank"/>
+            <property name="modT" value="car_mesh/Fuel"/>
+        </property>
+
+		<property class="handlebars">
+			<property name="class" value="Steering"/>
+			<property name="transform" value="Origin/handlebar_joint"/>
+			<property name="steerAngle" value="0, 30, 0"/>
+			<property name="IKHandLPosition" value="-.35, .375, -.158"/>
+			<property name="IKHandLRotation" value="27.30321, 40, 10"/>
+			<property name="IKHandRPosition" value=".375, .375, -.158"/>
+			<property name="IKHandRRotation" value="27, 150.6533, -158.7339"/>
+		</property>
+
+		<property class="seat0">
+			<property name="class" value="Seat"/>
+			<property name="pose" value="30"/>
+			<property name="position" value="0, 0.20, 0.2"/>       
+			<property name="rotation" value="0, 0, 0"/>
+			<property name="exit" value="-.9,0,0 ~ .9,0,0 ~ 0,0,-1.5 ~ 0,0,1.6 ~ 0,1.5,0"/>
+			<property name="IKFootLPosition" value="-.30, .18, -.30"/>
+			<property name="IKFootLRotation" value="-30, 0, 0"/>
+			<property name="IKFootRPosition" value=".30, .18, -.30"/>
+			<property name="IKFootRRotation" value="-30, 0, 0"/>
+		</property>
+		
+		<property class="seat1">
+			<property name="class" value="Seat"/>
+			<property name="pose" value="31"/>
+			<property name="position" value="0, 0.25, -0.2"/>
+			<property name="rotation" value="0, 0, 0"/>
+			<property name="exit" value="-.9,0,-.7 ~ .9,0,-.7 ~ -.6,0,-1.5 ~ -.6,0,1.6 ~ 0,1.5,-.6"/>
+			<property name="mod" value="seat"/>
+			<property name="modT" value="car_mesh/Seat"/>
+		</property>
+
+		<property class="wheel0">
+			<property name="steerTransform" value="Origin/frontLeftWheelStear_joint"/>
+			<property name="tireTransform" value="Origin/frontLeftWheelStear_joint/frontLeftWheel_joint"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, .8"/>
+		</property>
+
+		<property class="wheel1">
+			<property name="steerTransform" value="Origin/frontRightWheelStear_joint"/>
+			<property name="tireTransform" value="Origin/frontRightWheelStear_joint/frontRightWheel_joint"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, .8"/>
+		</property>
+
+		<property class="wheel2">
+			<property name="tireTransform" value="Origin/backLeftWheelJoint"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, 1"/>
+		</property>
+
+		<property class="wheel3">
+			<property name="tireTransform" value="Origin/backRightWheelJoint"/>
+			<property name="tireSuspensionPercent" value="1"/>
+			<property name="torqueScale_motor_brake" value="1, 1"/>
+		</property>
+
+
+		<property class="headlight">
+			<property name="class" value="Headlight"/>
+			<property name="transform" value="Origin/headlight"/>
+			<property name="bright" value=".75"/>
+			
+			<property name="mod" value="light"/>
+			<property name="modT" value="car_mesh/LightBar"/>
+			<property name="modOnT" value="car_mesh/LightBar/Lights"/>
+			
+		</property>
+		
+		<property class="plow">
+			<property name="class" value="VehiclePart"/>
+			<property name="mod" value="plow"/>
+			<property name="modT" value="car_mesh/Plow"/>
+			<property name="modRBT" value="Plow"/>
+		</property>
+
+		<property class="storage">
+			<property name="class" value="Storage"/>
+			<property name="mesh" value="car_mesh/Storage"/>
+		</property>
+
+	</vehicle>
+	
+	</append>
+</configs>
+

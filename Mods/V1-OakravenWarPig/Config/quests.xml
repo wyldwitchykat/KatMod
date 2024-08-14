@@ -1,0 +1,9 @@
+<configs>
+
+<!-- Vehicles -->
+
+	<append xpath="/quests/quest[@id='quest_tier3complete']">
+		<reward type="LootItem" id="groupQuestWarPigCarParts" ischosen="true" value="4"/>
+	</append>
+
+</configs>

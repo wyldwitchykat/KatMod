@@ -1,0 +1,25 @@
+<configs>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']">
+		<display_entry unlock_level="75,80,85,90,95,100" item="steelKatana"/>
+	</append>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set"  level="75,100" value="1" tags="steelKatana"/>
+			
+		<passive_effect name="CraftingTier" operation="base_add" level="80,85,90,95,100" value="1,2,3,4,5" tags="steelKatana"/>
+	</append>
+
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/@max_level">100</set>
+
+<!-- RecipeTagUnlocked -->
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group/passive_effect[@tags='meleeWpnBladeT0BoneKnife' and @name='RecipeTagUnlocked']/@level">1,100</set>
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group/passive_effect[@tags='meleeWpnBladeT1HuntingKnife' and @name='RecipeTagUnlocked']/@level">11,100</set>
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group/passive_effect[@tags='meleeWpnBladeT3Machete' and @name='RecipeTagUnlocked']/@level">36,100</set>
+
+<!-- CraftingTier -->
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group/passive_effect[@tags='meleeWpnBladeT0BoneKnife' and @name='CraftingTier']/@level">2,4,6,8,10,100</set>
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group/passive_effect[@tags='meleeWpnBladeT1HuntingKnife' and @name='CraftingTier']/@level">15,20,25,30,35,100</set>
+<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group/passive_effect[@tags='meleeWpnBladeT3Machete' and @name='CraftingTier']/@level">43,51,59,67,100</set>
+
+</configs>

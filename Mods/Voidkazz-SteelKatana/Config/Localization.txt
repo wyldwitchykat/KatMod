@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+steelKatana,items,Melee,,,Steel Katana,,,,,,,,,Katana de Aço,
+steelKatanaDesc,items,Melee,,,A sharp and elegant blade made of tempered steel.\nThis katana is known for its durability and precise cutting ability. A reliable choice for warriors who value speed and accuracy.\n\nRepair with a Repair Kit.\nScrap to Steel Spear and Steel Machete parts.,,,,,,,,,Uma lâmina afiada e elegante feita de aço temperado.\nEsta katana é conhecida por sua durabilidade e capacidade de corte preciso. Uma escolha confiável para guerreiros que valorizam velocidade e precisão.\n\nRepare com um Kit de Reparos.\nRecicle para obter peças de lança de aço e peças de facão.,
