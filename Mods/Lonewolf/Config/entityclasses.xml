@@ -1,0 +1,40 @@
+<configs>
+
+<!--NPC CORE, PLAYERS CAN DAMAGE FRIENDLY NPC'S-->
+<append xpath="//entity_class[@name='playerMale']">
+<effect_group name="Damage All NPCs">
+	<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="1001" />
+	<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="1001" />
+	<triggered_effect trigger="onSelfRespawn" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="1001" />
+</effect_group>
+</append>
+
+<append xpath="/entity_classes">
+<!--ENTITY 4 NPC AND TRANSFORM-->
+<entity_class name="npcwestern4" extends="npcAdvancedPShotgunTemplate"> 
+	<property name="UserSpawnType" value="Menu"/> 
+ 	<property name="Tags" value="entity,male,npc,walker,melee,DRMid,PShotgun"/>
+	<property name="Faction" value="whiteriver"/>
+	<property name="Names" value="Lonewolf" />				
+	<property name="Mesh" value="#@modfolder:Resources/EndZ4cowboy1.unity3d?EndZ4cowboy"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Buffs" value=""/>
+	
+<effect_group name="HasBackpack">
+	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="HasBackpack"/>		
+</effect_group>	
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="2500"/>
+	<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="30" />
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+</effect_group>
+</entity_class>
+<!--ENTITY 4 NPC AND TRANSFORM-->
+
+
+<!--ENTITY 10 NPC AND TRANSFORM-->
+</append>
+
+</configs>
