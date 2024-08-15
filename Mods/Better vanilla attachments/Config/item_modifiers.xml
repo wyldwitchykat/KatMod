@@ -479,7 +479,17 @@
 <append xpath="//item_modifier[@name='modArmorStealthBoots']/effect_group[1]">
 <passive_effect name="WalkSpeed" operation="perc_add" value=".2"/>
 <passive_effect name="RunSpeed" operation="perc_add" value=".1"/>
+</append>
+
+<append xpath="//item_modifier[@name='modArmorStealthBoots']/effect_group[2]">
+<passive_effect name="WalkSpeed" operation="perc_add" value=".1"/>
+<passive_effect name="RunSpeed" operation="perc_add" value=".05"/>
+</append>
+
+<append xpath="//item_modifier[@name='modArmorStealthBoots']">
+<effect_group name="BWagility">
 <passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+</effect_group>
 </append>
 
 <set xpath="//item_modifier[@name='modArmorCigar']/effect_group[1]">
@@ -488,12 +498,6 @@
 <passive_effect name="BarteringBuying" operation="base_add" value=".15"/>
 <passive_effect name="BarteringSelling" operation="base_add" value=".15"/>
 </set>
-
-<append xpath="//item_modifier[@name='modArmorStealthBoots']/effect_group[2]">
-<passive_effect name="WalkSpeed" operation="perc_add" value=".1"/>
-<passive_effect name="RunSpeed" operation="perc_add" value=".05"/>
-<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
-</append>
 
 <set xpath="//item_modifier[@name='modArmorPerception']/effect_group[1]">
 <passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="2"/>
