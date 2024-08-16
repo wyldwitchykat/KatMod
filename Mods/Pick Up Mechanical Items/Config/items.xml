@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+	<append xpath="//item[@name='resourceForgedSteel']">
+		<property name="Weight" value="1"/>
+	</append>
+</configs>
