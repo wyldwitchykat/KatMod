@@ -22,7 +22,7 @@ sectionalLeatherChair,Sectional Leather Chair
 sectionalPlaidChair,Sectional Plaid Chair
 parkBenchSonjaVariantHelper,Classic Bench Variants
 secretStorageSonjaVariantHelper,Secret Storage behind a Picture!
-secretStorageSonjaVariantHelperDesc,"It looks like a common picture but...wait, what is this!? A Secret Storage!\nKeep thieves away from your goodies with this all-in-one lockable secure storage behind your favorite picture.\n\nPut it in your hotbar and hold R to choose the Variant you want."
+secretStorageSonjaVariantHelperDesc,"It looks like a common picture but...wait, what is this!? A Secret Storage!\nKeep thieves away from your goodies with this all-in-one lockable secure storage behind your favorite picture.\n\nPut it in your toolbar and hold R to choose the Variant you want."
 secretStorageIronSonja_01t,Secret Storage behind a Picture!
 secretStorageIronSonja_01a,Secret Storage behind a Picture!
 secretStorageIronSonja_01b,Secret Storage behind a Picture!
@@ -151,3 +151,34 @@ rollingToolBoxYellowStorageSonja,Rolling Tool Box Secure Storage
 rollingToolBoxGreenStorageSonja,Rolling Tool Box Secure Storage
 rollingToolBoxBlueStorageSonja,Rolling Tool Box Secure Storage
 rollingToolBoxGreyStorageSonja,Rolling Tool Box Secure Storage
+trophySonjaVariantHelper,Brass Trophy Variants
+umbrellaSonjaVariantHelper,Cute Umbrella Variants
+extHouseDoorSonjaVariantHelper,Exterior Door Variants
+extHouseDoorDoubleSonjaVariantHelper,Exterior Double Door Variants
+frenchDoorSonjaVariantHelper,French Door Variants
+frenchDoorDoubleSonjaVariantHelper,French Double Door Variants
+intHouseDoorSonjaVariantHelper,Interior Door Variants
+intHouseDoorDoubleSonjaVariantHelper,Interior Double Door Variants
+tallCabinetDoorSonjaVariantHelper,Tall Cabinet Door Variant
+closetDoorSonjaVariantHelper,Closet Door Variants
+closetDoorDoubleSonjaVariantHelper,Closet Double Door Variants
+pantryDoorSonjaVariantHelper,Pantry Door Variants
+glassDoorSonjaVariantHelper,Glass Door Variants
+extDoorSideLightSonjaVariantHelper,Exterior Side Glass Door Variants
+curtainDrapesSonjaVariantHelper,Curtain Variants
+projectorSonjaVariantHelper,Projector & Camera Variants
+projectorSonjaTableTop,Table Top Projector
+projectorSonjaCeiling,Ceiling Mounted Projector
+projectorSonjaDesc,A Powered-light projector to watch your favorite zombie movies or plan your next POI raid.\n\nConnect to to a power grid to turn it on and off. Power needed 1w.
+decoPoolTableSonjaVariantHelper,Pool Table Color Variants
+theaterSeatSonjaVariantHelper,Theater Seats Variants
+barrierPlasticSonjaVariantHelper,Plastic Barrier Variants
+miniCoolerStorageSonjaVariantHelper,Mini Cooler Secure Storage Variants
+medicineStorageSonjaVariantHelper,Medicin Secure Storage Variants
+hoodRangeSonjaVariantHelper,Powered Hood Range Variants
+restaurantBoothSonjaVariantHelper,Restaurant Booth Variants
+bulletproofGlassDoorsSonjaVariantHelper,Bulletproof Door Variants
+woodenFenceDoorSonjaVariantHelper,Wooden Fence Door Variants
+commercialDoorV2SonjaVariantHelper,Iron Commercial Door Variants
+decoVehicleVanillaSonjaVariantHelper,Decorative Vehicle Variants
+decoVehicleVanillaSonjaDesc,"Decorative Vehicle, you cannot drive it, but it looks cool and it does not explode"

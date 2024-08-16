@@ -51,4 +51,28 @@ Changelog:
       - Added a few more decorative items as pickupable, to decorate your garage or your own automotive repair shop: Tires as a Variant Helper so you can choose what variant to place, and a car motor. Yes, perhaps I have watched too       much "Sons of Anarchy" lately, and this is what happens :) . 
       - Added a craftable Bunk Bed as a Variant Helper, with 2 different alternatives. Cheaper than the king size bed, and better suited for smaller rooms or barracks. It works as a bedroll.  
       - Added some of the new items and blocks into "Decoration" and/or "Building" category to make it easier to find the recipe.
-      - Added more entries in the localization file.   	   
+      - Added more entries in the localization file.  
+
+1.0.9 - Doors, doors and EVEN MORE doors. A nice door makes all the difference when building a nice base, so here you have a ton of different doors, including sliding doors and bulletproof glass doors for maximum security, as craftable Variant Helpers and in many different colors and shapes to fit any style you are looking for. Say "goodbye" to the ugly vanilla doors. 
+      - You can now craft curtains to decorate your windows, in many different shapes and colors.
+      - Added some really cute Umbrellas as pickupable and craftable in workbench, both open and closed variants, in many different colors. Prevent sunburn with these cozy parasols.
+      - Movie time! You can now pick up the projectors and the video camera in POI, and also craft them in your workbench as a variant helper. Become the new John Romero and project your creations in your own home theater, or equip your operations room and plan your next POI raid, Briefing time!
+      - You want Dolby Surround sound in addition to image? Now the bookshelf Speakers are pickupable. Grab them and decorate your home theater!
+      - Grab a cold one! Added beverage coolers as secure lockable storage, with big storage capacity, both standard and under the counter, full and empty variants, to keep safe all your favorite foods and drinks. Enjoy a sweet snack while you watch a movie in your home theater. 
+      - Ugly chairs are for plebs. You should instead enjoy these new craftable theater seats in different colors.
+      - Added a nice brass trophy as pickupable and craftable, so you can tell your friends that you won it for killing lots of zombies or making a great movie. It is not an Oscar, but it is the closest you will find in the apocalypse.
+      - After movie, a good dinner. Craft comfy colorful restaurant booths and matching tables, many shapes and different colors as a variant helper. 
+      - Sad boring kitchen? Add some nice cozy light with the Hood Range variants, a powerable light in different colors. Standard and off-set variants. I do not know you, but I LOVE soft relaxing light in kitchens.
+      - More stuff for your home clinic, probably needed if you eat too much popcorn in your new home theater: Added 2 medicine cabinets variants as secure storage, craftable in workbench and with lots of room to storage your medicin supplies.
+      - Added more decorative vehicles for your garage, 3 different models in many different colors. Craftable as a variant helper in workbench.
+      - Added plastic traffic barriers as pickupable (you will get a variant helper block) and craftable in different colors.
+      - Added a strong concrete barrier as craftable, for more nice variety in base defence. 
+      - Picking up the "Pool Table" will now give you a Variant Helper, so you can place back home and choose what color you want (right now green and blue variants, more colors coming in future updates). It is also craftable now.
+      - Added support to all my secure storage to be pickupable with my other mod "Grab Your Storage". That way you can grab your secure storage in one go without spending time, stamina and resorces to destroy and rebuild.
+      - Most items that before required using a salvage tool to grab them can now be picked up right away, such as bar stools, park benches, some lights and signs. When appropriate this will give you a variant helper so you can choose what variant you want to place back in your base. This change is intended to make the mod easier to use and more accessible for everybody, so it is easier to see what can be picked up and what not without having to read all the documentation in the mod. I hope you like this change.
+      - Having a high level in salvaging operations no longer gives you 2 items when salvaging some of my decorative stuff. I guess it did not make much sense, did it? :)
+      - You can now repair your "Steve the Zombie" if he suffers damage, and I have increased his HP so it will be more difficult to "kill him" by accident. Say "Thank you", Steve! :)
+      - You can now repair your Park Benches, your Rolling Tool Box secure storage and your Tool Box secure storage. 
+      - Adjusted the selling price of the gurney beds and hospital beds, so they are actually used to decorate your base instead for being sold to traders for quite a lot of money. I hope I am not breaking your "easy money scheme" here folks, but it was a bit too much :) 
+      - The "NO POWER" Add-On will also remove the required skill level in electrician to craft some of the lights. Again, an optional feature intended to make the mod enjoyable for everybody :).
+      	   

@@ -181,6 +181,157 @@
 			<ingredient name="resourceMetalPipe" count="5"/>
 		</recipe>
 		
+		<recipe name="trophySonjaVariantHelper" count="1" craft_area="workbench" craft_time="40" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="2"/>
+			<ingredient name="resourceScrapBrass" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="2"/>
+		</recipe>
+		
+		<recipe name="umbrellaSonjaVariantHelper" count="1" craft_area="workbench" craft_time="40" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="2"/>
+			<ingredient name="resourceCloth" count="10"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceScrapIron" count="4"/>
+		</recipe>
+		
+		<recipe name="extHouseDoorSonjaVariantHelper" count="1" craft_area="workbench" craft_time="90" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="15"/>
+		</recipe>
+		
+		<recipe name="extHouseDoorDoubleSonjaVariantHelper" count="1" craft_area="workbench" craft_time="90" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="25"/>
+		</recipe>
+		
+		<recipe name="frenchDoorSonjaVariantHelper" count="1" craft_area="workbench" craft_time="90" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="15"/>
+			<ingredient name="glassBlockVariantHelper" count="1"/>
+		</recipe>
+		
+		<recipe name="frenchDoorDoubleSonjaVariantHelper" count="1" craft_area="workbench" craft_time="90" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="25"/>
+			<ingredient name="glassBlockVariantHelper" count="2"/>
+		</recipe>
+		
+		<recipe name="intHouseDoorSonjaVariantHelper" count="1" craft_area="workbench" craft_time="90" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="15"/>
+		</recipe>
+		
+		<recipe name="intHouseDoorDoubleSonjaVariantHelper" count="1" craft_area="workbench" craft_time="90" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="25"/>
+		</recipe>
+		
+		<recipe name="tallCabinetDoorSonjaVariantHelper" count="1" craft_area="workbench" craft_time="70" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		
+		<recipe name="closetDoorSonjaVariantHelper" count="1" craft_area="workbench" craft_time="70" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		
+		<recipe name="closetDoorDoubleSonjaVariantHelper" count="1" craft_area="workbench" craft_time="70" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+		
+		<recipe name="pantryDoorSonjaVariantHelper" count="1" craft_area="workbench" craft_time="70" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		
+		<recipe name="glassDoorSonjaVariantHelper" count="1" craft_area="workbench" craft_time="100" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="glassBlockVariantHelper" count="1"/>
+		</recipe>
+		
+		<recipe name="extDoorSideLightSonjaVariantHelper" count="1" craft_area="workbench" craft_time="90" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="15"/>
+			<ingredient name="glassBlockVariantHelper" count="1"/>
+		</recipe>
+		
+		<recipe name="curtainDrapesSonjaVariantHelper" count="1" craft_area="workbench" craft_time="15" tags="workbenchCrafting">
+			<ingredient name="resourceCloth" count="3"/>
+		</recipe>
+		
+		<recipe name="decoPoolTableSonjaVariantHelper" count="1" craft_area="workbench" craft_time="90" tags="workbenchCrafting">
+			<ingredient name="resourceCloth" count="3"/>
+			<ingredient name="resourceWood" count="15"/>
+			<ingredient name="resourcePaint" count="2"/>
+		</recipe>
+		
+		<recipe name="projectorSonjaVariantHelper" count="1" craft_area="workbench" craft_time="40" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+		</recipe>
+		
+		<recipe name="theaterSeatSonjaVariantHelper" count="1" craft_area="workbench" craft_time="15" tags="workbenchCrafting">
+			<ingredient name="resourceCloth" count="3"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceLeather" count="3"/>
+		</recipe>
+		
+		<recipe name="barrierPlasticSonjaVariantHelper" count="1" craft_area="workbench" craft_time="40" tags="workbenchCrafting">
+			<ingredient name="resourceScrapPolymers" count="25"/>
+			<ingredient name="resourcePaint" count="2"/>
+		</recipe>
+		
+		<recipe name="barrierConcrete" count="1" craft_area="workbench" craft_time="50" tags="workbenchCrafting">
+			<ingredient name="resourceConcreteMix" count="20"/>
+		</recipe>
+		
+		<recipe name="miniCoolerStorageSonjaVariantHelper" count="1" craft_area="workbench" craft_time="70" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceElectricParts" count="3"/>
+		</recipe>
+		
+		<recipe name="medicineStorageSonjaVariantHelper" count="1" craft_area="workbench" craft_time="70" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceSpring" count="2"/>
+		</recipe>
+		
+		<recipe name="hoodRangeSonjaVariantHelper" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="2"/>
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="2"/>
+			<ingredient name="resourcePaint" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="3"/>	
+		</recipe>
+		
+		<recipe name="restaurantBoothSonjaVariantHelper" count="1" craft_area="workbench" craft_time="60" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="15"/>
+			<ingredient name="resourceLeather" count="5"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourcePaint" count="2"/>
+		</recipe>
+		
+		<recipe name="bulletproofGlassDoorsSonjaVariantHelper" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="glassBulletproofBlockVariantHelper" count="2"/>
+			<ingredient name="resourceSpring" count="2"/>
+		</recipe>
+		
+		<recipe name="woodenFenceDoorSonjaVariantHelper" count="1" craft_area="workbench" craft_time="70" tags="workbenchCrafting">
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+		
+		<recipe name="commercialDoorV2SonjaVariantHelper" count="1" craft_area="workbench" craft_time="70" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="15"/>
+		</recipe>
+		
+		<recipe name="decoVehicleVanillaSonjaVariantHelper" count="1" craft_area="workbench" craft_time="120" tags="workbenchCrafting">
+			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceHeadlight" count="2"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+		</recipe>
+		
 	</append>
 		
 </configs>

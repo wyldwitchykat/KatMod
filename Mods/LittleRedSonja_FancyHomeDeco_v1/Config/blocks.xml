@@ -3,19 +3,24 @@
 
 <!--======== Makes crafted EndTableLamp a powerable light source, nice and warm lightning for your bedroom =========-->
 
+	<append xpath="/blocks/block[@name='endTableLamp']">
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+		<property name="CanPickup" value="true" param1="endtableLampSonja"/>
+	</append>
 
     <append xpath="/blocks">
 		<block name="endtableLampSonja">
 			<property name="Extends" value="endTableLamp"/>		
 			<property name="CreativeMode" value="Player"/>
-			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
-			<property name="UnlockedBy" value="craftingElectrician"/>
 			<property name="CustomIcon" value="endTableLamp"/>
 			<property name="Class" value="PoweredLight"/>
 			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="UnlockedBy" value="craftingElectrician"/>
 			<property name="Material" value="Mglass"/>
 			<property name="StabilitySupport" value="false"/>
-			<property name="TakeDelay" value="3"/>
 			<property class="RepairItems">
 				<property name="resourceElectricParts" value="1"/>
 			</property>
@@ -23,12 +28,17 @@
 		</block>
     </append>
 	
-	<!--======== Makes all the color variants of the table lamp craftable and a powerable light source, nice and warm lightning for your home =========-->
+	<!--======== Makes all the color variants of the table lamp pickupable, craftable and a powerable light source, nice and warm lightning for your home =========-->
+	
+	<append xpath="/blocks/block[@name='tableLampLight01White']">
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="4"/>
+		<property name="CanPickup" value="true" param1="tableLampSonjaVariantHelper"/>
+	</append>
 	
 	 <append xpath="/blocks">
 	    <block name="tableLampSonjaWhite">
 			<property name="Extends" value="tableLampLight01CenteredWhite"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="DescriptionKey" value="lightPOIGroupDesc"/>
 			<property name="CustomIcon" value="tableLampLight01White"/>
 			<property name="Class" value="PoweredLight"/>
@@ -244,7 +254,6 @@
 	
 	<append xpath="/blocks/block[@name='decoReptileTerrarium']" >
       	<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="2"/>
 		<property class="RepairItems">
 			<property name="resourceScrapIron" value="1"/>
 		</property>
@@ -274,28 +283,24 @@
 	
 	<append xpath="/blocks/block[@name='decoStationaryBike']" >
 		<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="5"/>
 		<property class="RepairItems">
 			<property name="resourceScrapIron" value="1"/>
 		</property>
     </append>
 	<append xpath="/blocks/block[@name='decoTreadmill']" >
 		<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="5"/>
 		<property class="RepairItems">
 			<property name="resourceScrapIron" value="1"/>
 		</property>
     </append>
 	<append xpath="/blocks/block[@name='decoWeightBar']" >
 		<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="5"/>
 		<property class="RepairItems">
 			<property name="resourceScrapIron" value="1"/>
 		</property>
     </append>
 	<append xpath="/blocks/block[@name='decoBenchPress']" >
 		<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="5"/>
 		<property class="RepairItems">
 			<property name="resourceScrapIron" value="1"/>
 		</property>
@@ -305,15 +310,14 @@
 	
 	<append xpath="/blocks/block[@name='gurneyBed']" >
       	<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="4"/>
 		<property class="RepairItems">
 			<property name="resourceScrapPolymers" value="1"/>
 		</property>
     </append>
+	<set xpath="/blocks/block[@name='gurneyBed']/property[@name='EconomicValue']/@value">10</set>
 	
 	<append xpath="/blocks/block[@name='hospitalBed']" >
 		<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="4"/>
 		<property class="RepairItems">
 			<property name="resourceScrapPolymers" value="1"/>
 		</property>
@@ -321,7 +325,6 @@
 	
 	<append xpath="/blocks/block[@name='screenCurtainDividerWhite']" >
 		<property name="CanPickup" value="true" param1="screenCurtainDividerVariantHelper"/>
-		<property name="TakeDelay" value="4"/>
 		<property class="RepairItems">
 			<property name="resourceScrapPolymers" value="1"/>
 		</property>
@@ -347,7 +350,6 @@
 	
 	<append xpath="/blocks/block[@name='standIV']" >
 		<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="4"/>
 		<property class="RepairItems">
 			<property name="resourceScrapPolymers" value="1"/>
 		</property>
@@ -355,7 +357,6 @@
 	
 	<append xpath="/blocks/block[@name='wheelchairWhite']" >
       	<property name="CanPickup" value="true" param1="wheelchairVariantHelper"/>
-		<property name="TakeDelay" value="3"/>
 		<property class="RepairItems">
 			<property name="resourceScrapIron" value="1"/>
 		</property>
@@ -378,13 +379,11 @@
 	</append>
 	
 	<!--======== Makes x-ray lights salvageable and powerable, to light your home clinic =========-->
-		
-	<remove xpath="/blocks/block[@name='lightDisplayXRayFull']/drop[@event='Harvest']"/>	
-	<remove xpath="/blocks/block[@name='lightDisplayXRayFull']/drop[@event='Destroy']"/>
 	
 	<append xpath="/blocks/block[@name='lightDisplayXRayFull']" >
-      	<drop event="Destroy" name="xrayLightVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="4"/>
+      	<property name="CanPickup" value="true" param1="xrayLightVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks">
@@ -395,13 +394,13 @@
 			<property name="Material" value="Mmetal_thin"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Electrical/lightDisplayXRayFullPrefab"/>
-			<drop event="Destroy" name="xrayLightVariantHelper" count="1" tag="salvageHarvest"/>
 			<property name="Class" value="PoweredLight"/>
 			<property name="RuntimeSwitch" value="true"/>
 			<property name="TakeDelay" value="4"/>
 			<property class="RepairItems">
 				<property name="resourceElectricParts" value="1"/>
 			</property>
+			<drop event="Destroy" name="xrayLightVariantHelper" count="1"/>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<property name="SortOrder1" value="U200"/>
 			<property name="SortOrder2" value="0000"/>
@@ -417,7 +416,7 @@
 			<property name="Material" value="Mmetal_thin"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Electrical/lightDisplayXRayEmptyPrefab"/>
-			<drop event="Destroy" name="xrayLightVariantHelper" count="1" tag="salvageHarvest"/>
+			<drop event="Destroy" name="xrayLightVariantHelper" count="1"/>
 			<property name="SortOrder1" value="U200"/>
 			<property name="SortOrder2" value="0000"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
@@ -444,12 +443,10 @@
 	
 <!--======== Pop-N-Pills Logo big and small for your home clinic =========-->
 
-	<remove xpath="/blocks/block[@name='signPillsLogo']/drop[@event='Harvest']"/>	
-	<remove xpath="/blocks/block[@name='signPillsLogo']/drop[@event='Destroy']"/>
-
 	<append xpath="/blocks/block[@name='signPillsLogo']" >
-      	<drop event="Destroy" name="popNpillsLightsignSonjaVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="4"/>
+		<property name="CanPickup" value="true" param1="popNpillsLightsignSonjaVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks">
@@ -460,13 +457,13 @@
 			<property name="Material" value="Mmetal_thin"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Lighting/sign_pills_logoPrefab"/>
-			<drop event="Destroy" name="popNpillsLightsignSonjaVariantHelper" count="1" tag="salvageHarvest"/>
 			<property name="Class" value="PoweredLight"/>
 			<property name="RuntimeSwitch" value="true"/>
 			<property name="TakeDelay" value="4"/>
 			<property class="RepairItems">
 				<property name="resourceElectricParts" value="1"/>
 			</property>
+			<drop event="Destroy" name="popNpillsLightsignSonjaVariantHelper" count="1"/>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<property name="SortOrder1" value="B703"/>
 			<property name="SortOrder2" value="0000"/>
@@ -480,7 +477,6 @@
 			<property name="Material" value="Mmetal_thin"/>
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="Entities/Lighting/sign_pills_logo_smallPrefab"/>
-			<drop event="Destroy" name="popNpillsLightsignSonjaVariantHelper" count="1" tag="salvageHarvest"/>
 			<property name="SortOrder1" value="B703"/>
 			<property name="SortOrder2" value="0001"/>
 			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
@@ -509,18 +505,35 @@
 	
 	<append xpath="/blocks/block[@name='microphoneWithStand']" >
       	<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="4"/>
 		<property class="RepairItems">
 			<property name="resourceScrapIron" value="1"/>
 		</property>
     </append>
 	<append xpath="/blocks/block[@name='decoPoolTable']" >
-		<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="4"/>
+		<property name="CanPickup" value="true" param1="decoPoolTableSonjaVariantHelper"/>
 		<property class="RepairItems">
 			<property name="resourceWood" value="1"/>
 		</property>
     </append>
+	<append xpath="/blocks">
+		<block name="decoPoolTableSonjaVariantHelper">
+			<property name="Extends" value="decoPoolTable"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="signPillsLogoSmall"/>
+			<property name="CustomIcon" value="decoPoolTable"/>
+			<property name="CustomIconTint" value="3C4B52"/>
+			<property name="TintColor" value="3C4B52"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="decoPoolTableBlue,decoPoolTable"/>
+			<property name="PickupJournalEntry" value="shapeMenuTip"/>
+			<property name="Group" value="Building,Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="B703"/>
+			<property name="SortOrder2" value="0002"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+	</append>
 
 	<!--======== The Radio =========-->
 		
@@ -621,7 +634,7 @@
 			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="PoweredLight"/>
 			<property name="RuntimeSwitch" value="true"/>
-			<property name="TakeDelay" value="2"/>
+			<property name="TakeDelay" value="3"/>
 			<drop event="Destroy" name="roadBarricadeLightSonja" count="1" tag="salvageHarvest"/>
 			<property name="DisplayType" value="blockMulti"/>
 			<property name="Material" value="Mmetal"/>
@@ -643,62 +656,70 @@
 	</append>
 	
 	<append xpath="/blocks/block[@name='roadBarricadeLight']" >
-      	<drop event="Destroy" name="roadBarricadeLightSonja" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+		<property name="CanPickup" value="true" param1="roadBarricadeLightSonja"/>
     </append>
 	
 	<!--======== Never miss your EXIT again =========-->
 			
 	<append xpath="/blocks/block[@name='signExitLight']" >
-      	<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+		<property name="CanPickup" value="true" param1="signExitLightVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks/block[@name='signExitLightOffset']" >
-      	<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+      	<property name="CanPickup" value="true" param1="signExitLightVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks/block[@name='signExitFrameMount']" >
-      	<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+      	<property name="CanPickup" value="true" param1="signExitLightVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks/block[@name='signExitFrameMountHigh']" >
-      	<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+      	<property name="CanPickup" value="true" param1="signExitLightVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks/block[@name='signExitFrameMount2mCentered']" >
-      	<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+      	<property name="CanPickup" value="true" param1="signExitLightVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks/block[@name='signExitFrameMountHigh2mCentered']" >
-      	<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+      	<property name="CanPickup" value="true" param1="signExitLightVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks/block[@name='signExitWallMount']" >
-      	<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+      	<property name="CanPickup" value="true" param1="signExitLightVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks/block[@name='signExitWallMountHigh']" >
-      	<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+      	<property name="CanPickup" value="true" param1="signExitLightVariantHelper"/>
     </append>
 	
 	<append xpath="/blocks">
 	
 		<block name="signExitLightSonja">
 			<property name="Extends" value="lightPorchWhite" param1="HandleFace"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="PoweredLight"/>
 			<property name="CustomIcon" value="signExitLight"/>
 			<property name="RuntimeSwitch" value="true"/>
-			<property name="TakeDelay" value="2"/>
-			<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
+			<property name="TakeDelay" value="3"/>
+			<drop event="Destroy" name="signExitLightVariantHelper" count="1"/>
 		    <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<property class="RepairItems">
 				<property name="resourceElectricParts" value="1"/>
@@ -709,64 +730,32 @@
 		</block>
 		
 		<block name="signExitLightOffsetSonja">
-			<property name="Extends" value="lightPorchWhite" param1="HandleFace"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Class" value="PoweredLight"/>
+			<property name="Extends" value="signExitLightSonja" param1="HandleFace"/>
 			<property name="CustomIcon" value="signExitLightOffset"/>
-			<property name="RuntimeSwitch" value="true"/>
-			<property name="TakeDelay" value="2"/>
-			<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-			<property class="RepairItems">
-				<property name="resourceElectricParts" value="1"/>
-			</property>
 			<property name="Model" value="Entities/Lighting/signExitOffsetPrefab"/>
 			<property name="SortOrder1" value="B202"/>
 			<property name="SortOrder2" value="1801"/>
 		</block>
 		
 		<block name="signExitFrameMountSonja">
-			<property name="Extends" value="lightPorchWhite" param1="HandleFace"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Class" value="PoweredLight"/>
+			<property name="Extends" value="signExitLightSonja" param1="HandleFace"/>
 			<property name="CustomIcon" value="signExitFrameMount"/>
-			<property name="RuntimeSwitch" value="true"/>
-			<property name="TakeDelay" value="2"/>
-			<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-			<property class="RepairItems">
-				<property name="resourceElectricParts" value="1"/>
-			</property>
 			<property name="Model" value="Entities/Lighting/signExitFrameMountPrefab"/>
 			<property name="SortOrder1" value="B202"/>
 			<property name="SortOrder2" value="1802"/>
 		</block>
 		
 		<block name="signExitFrameMountHighSonja">
-			<property name="Extends" value="lightPorchWhite" param1="HandleFace"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Class" value="PoweredLight"/>
+			<property name="Extends" value="signExitLightSonja" param1="HandleFace"/>
 			<property name="CustomIcon" value="signExitFrameMountHigh"/>
-			<property name="RuntimeSwitch" value="true"/>
-			<property name="TakeDelay" value="2"/>
-			<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-			<property class="RepairItems">
-				<property name="resourceElectricParts" value="1"/>
-			</property>
 			<property name="Model" value="Entities/Lighting/signExitFrameMountHighPrefab"/>
 			<property name="SortOrder1" value="B202"/>
 			<property name="SortOrder2" value="1803"/>
 		</block>
 		
 		<block name="signExitFrameMount2mCenteredSonja">
-			<property name="Extends" value="lightPorchWhite" param1="HandleFace"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Class" value="PoweredLight"/>
+			<property name="Extends" value="signExitLightSonja" param1="HandleFace"/>
 			<property name="CustomIcon" value="signExitFrameMount"/>
-			<property name="RuntimeSwitch" value="true"/>
-			<property name="TakeDelay" value="2"/>
-			<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-			<property class="RepairItems">
-				<property name="resourceElectricParts" value="1"/>
-			</property>
 			<property name="Model" value="Entities/Lighting/signExitFrameMountPrefab"/>
 			<property name="MultiBlockDim" value="2,1,1"/>
 			<property name="SortOrder1" value="B202"/>
@@ -774,16 +763,8 @@
 		</block>
 		
 		<block name="signExitFrameMountHigh2mCenteredSonja">
-			<property name="Extends" value="lightPorchWhite" param1="HandleFace"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Class" value="PoweredLight"/>
+			<property name="Extends" value="signExitLightSonja" param1="HandleFace"/>
 			<property name="CustomIcon" value="signExitFrameMountHigh"/>
-			<property name="RuntimeSwitch" value="true"/>
-			<property name="TakeDelay" value="2"/>
-			<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-			<property class="RepairItems">
-				<property name="resourceElectricParts" value="1"/>
-			</property>
 			<property name="Model" value="Entities/Lighting/signExitFrameMountHighPrefab"/>
 			<property name="MultiBlockDim" value="2,1,1"/>
 			<property name="SortOrder1" value="B202"/>
@@ -791,39 +772,23 @@
 		</block>
 		
 		<block name="signExitWallMountSonja">
-			<property name="Extends" value="lightPorchWhite" param1="HandleFace"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Class" value="PoweredLight"/>
+			<property name="Extends" value="signExitLightSonja" param1="HandleFace"/>
 			<property name="CustomIcon" value="signExitWallMount"/>
-			<property name="RuntimeSwitch" value="true"/>
-			<property name="TakeDelay" value="2"/>
-			<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-			<property class="RepairItems">
-				<property name="resourceElectricParts" value="1"/>
-			</property>
 			<property name="Model" value="Entities/Lighting/signExitWallMountPrefab"/>
 			<property name="SortOrder1" value="B202"/>
 			<property name="SortOrder2" value="1806"/>
 		</block>
 		
 		<block name="signExitWallMountHighSonja">
-			<property name="Extends" value="lightPorchWhite" param1="HandleFace"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Class" value="PoweredLight"/>
+			<property name="Extends" value="signExitLightSonja" param1="HandleFace"/>
 			<property name="CustomIcon" value="signExitWallMount"/>
-			<property name="RuntimeSwitch" value="true"/>
-			<property name="TakeDelay" value="2"/>
-			<drop event="Destroy" name="signExitLightVariantHelper" count="1" tag="salvageHarvest"/>
-			<property class="RepairItems">
-				<property name="resourceElectricParts" value="1"/>
-			</property>
 			<property name="Model" value="Entities/Lighting/signExitWallMountHighPrefab"/>
 			<property name="SortOrder1" value="B202"/>
 			<property name="SortOrder2" value="1807"/>
 		</block>
 	
 		<block name="signExitLightVariantHelper">
-			<property name="Extends" value="lightPorchWhite"/>
+			<property name="Extends" value="signExitLightSonja"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="signExitLight"/>
 			<property name="UnlockedBy" value="craftingElectrician"/>
@@ -957,6 +922,10 @@
 			<property name="Model" value="@:Entities/Zombies/Zombies/SleeperPoses/idleSleepPrefab.prefab"/>
 			<property name="CustomIcon" value="sleeperIdle"/> 
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="MaxDamage" value="750"/>
+			<property class="RepairItems">
+				<property name="foodRottingFlesh" value="1"/>
+			</property>
 			<drop event="Destroy" name="resourceLeather" count="2,5"/>
 			<drop event="Destroy" name="resourceAnimalFat" count="2,5"/>
 			<drop event="Destroy" name="foodRottingFlesh" count="2,5"/>
@@ -1014,7 +983,6 @@
 			<property name="Place" value="TowardsPlacer"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
 			<property name="Material" value="Mcloth"/>
-			<property name="DisplayType" value="blockMulti" />
 			<property name="IsTerrainDecoration" value="true"/>
 			<property name="Path" value="solid"/>
 			<property name="WaterFlow" value="permitted"/>
@@ -1056,12 +1024,10 @@
 	
 	<!--======== An electric stove for a cozy and warm home =========-->
 	
-	<remove xpath="/blocks/block[@name='cntWoodBurningStove']/drop[@event='Harvest']"/>	
-	<remove xpath="/blocks/block[@name='cntWoodBurningStove']/drop[@event='Destroy']"/>
-	
 	<append xpath="/blocks/block[@name='cntWoodBurningStove']" >
-      	<drop event="Destroy" name="electricStoveSonja" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="5"/>
+		<property name="CanPickup" value="true" param1="electricStoveSonja"/> 
     </append>
 	
 	<append xpath="/blocks">
@@ -1084,7 +1050,7 @@
 			<property class="RepairItems">
 				<property name="resourceForgedIron" value="5"/>
 			</property>
-			<drop event="Destroy" name="electricStoveSonja" count="1" tag="salvageHarvest"/>
+			<drop event="Destroy" name="electricStoveSonja" count="1"/>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<property name="Group" value="Building,Decor/Miscellaneous"/>
 			<property name="SortOrder1" value="B158"/>
@@ -1096,8 +1062,7 @@
 	<!--======== Pickupable and craftable bar stools as variant helper =========-->
 	
 	<append xpath="/blocks/block[@name='barStool']">
-      	<drop event="Destroy" name="barStoolVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+      	<property name="CanPickup" value="true" param1="barStoolVariantHelper"/> 
     </append>
 	
 	<!--======== Sectional leather chair and Sectional Plaid chair included in the sectional variant helper =========-->
@@ -1108,8 +1073,10 @@
 	<!--======== Classic Benches Variant Helper =========-->
 	
 	<append xpath="/blocks/block[@name='parkBenchA']">
-		<drop event="Destroy" name="parkBenchSonjaVariantHelper" count="1" tag="salvageHarvest"/>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="CanPickup" value="true" param1="parkBenchSonjaVariantHelper"/> 
+		<property class="RepairItems">
+			<property name="resourceWood" value="1"/>
+		</property>
 	</append>
 	
 	<append xpath="/blocks">
@@ -1190,7 +1157,6 @@
 	<append xpath="/blocks">
 	
 		<block name="secretStorageIronSonja_01t">
-			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="SecureLoot"/>
 			<property name="LootList" value="secretStorageIronSonjaLoot"/>
 			<property name="DescriptionKey" value="secretStorageIronSonjaDesc"/>
@@ -1215,12 +1181,12 @@
 			<property name="SortOrder1" value="B106"/>
 			<property name="SortOrder2" value="0001"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="Tags" value="sonja3000"/>
 			<property name="FilterTags" value="MC_playerBlocks,MC_building,SC_decor"/>
 		</block>
 		
 		<block name="secretStorageIronSonja_01a">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01a"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01aPrefab"/>
 			<property name="SortOrder2" value="0002"/>
@@ -1228,7 +1194,6 @@
 		
 		<block name="secretStorageIronSonja_01b">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01b"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01bPrefab"/>
 			<property name="SortOrder2" value="0003"/>
@@ -1236,7 +1201,6 @@
 		
 		<block name="secretStorageIronSonja_01c">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01c"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01cPrefab"/>
 			<property name="SortOrder2" value="0004"/>
@@ -1244,7 +1208,6 @@
 		
 		<block name="secretStorageIronSonja_01d">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01d"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01dPrefab"/>
 			<property name="SortOrder2" value="0005"/>
@@ -1252,7 +1215,6 @@
 		
 		<block name="secretStorageIronSonja_01e">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01e"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01ePrefab"/>
 			<property name="SortOrder2" value="0006"/>
@@ -1260,7 +1222,6 @@
 		
 		<block name="secretStorageIronSonja_01f">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01f"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01fPrefab"/>
 			<property name="SortOrder2" value="0007"/>
@@ -1268,7 +1229,6 @@
 		
 		<block name="secretStorageIronSonja_01g">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01g"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01gPrefab"/>
 			<property name="SortOrder2" value="0008"/>
@@ -1276,7 +1236,6 @@
 		
 		<block name="secretStorageIronSonja_01h">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01h"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01hPrefab"/>
 			<property name="SortOrder2" value="0009"/>
@@ -1284,7 +1243,6 @@
 		
 		<block name="secretStorageIronSonja_01i">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01i"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01iPrefab"/>
 			<property name="SortOrder2" value="0010"/>
@@ -1292,7 +1250,6 @@
 		
 		<block name="secretStorageIronSonja_01j">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01j"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01jPrefab"/>
 			<property name="SortOrder2" value="0011"/>
@@ -1300,7 +1257,6 @@
 		
 		<block name="secretStorageIronSonja_01k">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01k"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01kPrefab"/>
 			<property name="SortOrder2" value="0012"/>
@@ -1308,7 +1264,6 @@
 		
 		<block name="secretStorageIronSonja_01l">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01l"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01lPrefab"/>
 			<property name="SortOrder2" value="0013"/>
@@ -1316,7 +1271,6 @@
 		
 		<block name="secretStorageIronSonja_01m">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01m"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01mPrefab"/>
 			<property name="SortOrder2" value="0014"/>
@@ -1324,7 +1278,6 @@
 		
 		<block name="secretStorageIronSonja_01n">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01n"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01nPrefab"/>
 			<property name="SortOrder2" value="0015"/>
@@ -1332,7 +1285,6 @@
 		
 		<block name="secretStorageIronSonja_01o">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01o"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01oPrefab"/>
 			<property name="SortOrder2" value="0016"/>
@@ -1340,7 +1292,6 @@
 		
 		<block name="secretStorageIronSonja_01p">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01p"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01pPrefab"/>
 			<property name="SortOrder2" value="0017"/>
@@ -1348,7 +1299,6 @@
 		
 		<block name="secretStorageIronSonja_01q">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01q"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01qPrefab"/>
 			<property name="SortOrder2" value="0018"/>
@@ -1356,7 +1306,6 @@
 		
 		<block name="secretStorageIronSonja_01r">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01r"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01rPrefab"/>
 			<property name="SortOrder2" value="0019"/>
@@ -1364,7 +1313,6 @@
 		
 		<block name="secretStorageIronSonja_01s">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01s"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01sPrefab"/>
 			<property name="SortOrder2" value="0020"/>
@@ -1372,7 +1320,6 @@
 		
 		<block name="secretStorageIronSonja_01u">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01u"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01uPrefab"/>
 			<property name="SortOrder2" value="0021"/>
@@ -1380,7 +1327,6 @@
 		
 		<block name="secretStorageIronSonja_01v">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01v"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01vPrefab"/>
 			<property name="SortOrder2" value="0022"/>
@@ -1388,7 +1334,6 @@
 		
 		<block name="secretStorageIronSonja_01w">
 			<property name="Extends" value="secretStorageIronSonja_01t"/>
-			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="pictureFrame_01w"/>
 			<property name="Model" value="Entities/Furniture/pictureFrame_01wPrefab"/>
 			<property name="SortOrder2" value="0023"/>
@@ -1559,7 +1504,6 @@
 	<append xpath="/blocks">
 	
 		<block name="bicycleDecoSonja">
-			<property name="CreativeMode" value="Player"/>
 			<property name="CanPickup" value="true" param1="bicycleDecoSonjaVariantHelper"/>
 			<property name="Stacknumber" value="5"/>
 			<property name="CustomIcon" value="vehicleBicyclePlaceable"/>
@@ -1689,7 +1633,6 @@
 		</block>
 
 		<block name="motorcycleDecoSonja">
-			<property name="CreativeMode" value="Player"/>
 			<property name="CanPickup" value="true" param1="motorcycleDecoSonjaVariantHelper"/>
 			<property name="Stacknumber" value="5"/>
 			<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
@@ -1820,7 +1763,6 @@
 		</block>
 
 		<block name="4x4DecoSonja">
-			<property name="CreativeMode" value="Player"/>
 			<property name="CanPickup" value="true" param1="4x4DecoSonjaVariantHelper"/>
 			<property name="Stacknumber" value="5"/>
 			<property name="CustomIcon" value="4x4Static"/>
@@ -1949,7 +1891,6 @@
 		</block>
 
 		<block name="gyrocopterDecoSonja">
-			<property name="CreativeMode" value="Player"/>
 			<property name="CanPickup" value="true" param1="gyrocopterDecoSonjaVariantHelper"/>
 			<property name="Stacknumber" value="5"/>
 			<property name="CustomIcon" value="gyrocopterStatic"/>
@@ -2133,7 +2074,7 @@
 			<property name="AllowedRotations" value="All"/>
 			<property name="StabilitySupport" value="false"/>
 			<property class="RepairItems">
-				<property name="resourceForgedIron" value="10"/>
+				<property name="resourceForgedIron" value="2"/>
 			</property>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Destroy" name="gasPumpStorageSonja" count="1"/>
@@ -2142,11 +2083,11 @@
 			<property name="SortOrder1" value="B106"/>
 			<property name="SortOrder2" value="0001"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="Tags" value="sonja3000"/>
 			<property name="FilterTags" value="MC_playerBlocks,MC_building,SC_decor"/>
 		</block>
 		
 		<block name="propaneTankWhiteStorageSonja">
-			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="SecureLoot"/>
 			<property name="LootList" value="secretStorageIronSonjaLoot"/>
 			<property name="CustomIcon" value="tankPropaneWhite"/>
@@ -2162,7 +2103,7 @@
 			<property name="AllowedRotations" value="All"/>
 			<property name="StabilitySupport" value="false"/>
 			<property class="RepairItems">
-				<property name="resourceForgedIron" value="10"/>
+				<property name="resourceForgedIron" value="2"/>
 			</property>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Destroy" name="propaneTankStorageSonjaVariantHelper" count="1"/>
@@ -2171,6 +2112,7 @@
 			<property name="SortOrder1" value="B106"/>
 			<property name="SortOrder2" value="0001"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="Tags" value="sonja3000"/>
 			<property name="FilterTags" value="MC_playerBlocks,MC_building,SC_decor"/>
 		</block>
 		
@@ -2270,12 +2212,16 @@
 			<property name="ImposterExclude" value="true"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="AllowAllRotations" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="2"/>
+			</property>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Destroy" name="toolBoxStorageSonjaVariantHelper" count="1"/>
 			<drop event="Destroy" count="0"/>
 			<property name="SortOrder1" value="B106"/>
 			<property name="SortOrder2" value="0001"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="Tags" value="sonja3000"/>
 			<property name="FilterTags" value="MC_playerBlocks,MC_building,SC_decor"/>
 		</block>
 		
@@ -2322,8 +2268,6 @@
 		<block name="toolBoxStorageSonjaVariantHelper">
 			<property name="Extends" value="toolBoxWhiteStorageSonja"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="Class" value="SecureLoot"/>
-			<property name="LootList" value="secureStorageToolBoxSonjaLoot"/>
 			<property name="CustomIcon" value="cntToolBoxClosedWhite"/>
 			<property name="CustomIconTint" value="F4CA8B"/>
 			<property name="TintColor" value="F4CA8B"/>
@@ -2353,12 +2297,16 @@
 			<property name="ImposterExclude" value="true"/>
 			<property name="WaterFlow" value="permitted"/>
 			<property name="AllowAllRotations" value="true"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="2"/>
+			</property>
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Destroy" name="rollingToolBoxStorageSonjaVariantHelper" count="1"/>
 			<drop event="Destroy" count="0"/>
 			<property name="SortOrder1" value="B106"/>
 			<property name="SortOrder2" value="0001"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="Tags" value="sonja3000"/>
 			<property name="FilterTags" value="MC_playerBlocks,MC_building,SC_decor"/>
 		</block>
 		
@@ -2405,8 +2353,6 @@
 		<block name="rollingToolBoxStorageSonjaVariantHelper">
 			<property name="Extends" value="rollingToolBoxWhiteStorageSonja"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="Class" value="SecureLoot"/>
-			<property name="LootList" value="secureStorageToolBoxSonjaLoot"/>
 			<property name="CustomIcon" value="cntRollingToolBoxClosedWhite"/>
 			<property name="CustomIconTint" value="F4CA8B"/>
 			<property name="TintColor" value="F4CA8B"/>
@@ -2475,7 +2421,6 @@
 	<append xpath="/blocks">
 	
 		<block name="officeShelvFullSecureStorageSonja">
-			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="SecureLoot"/>
 			<property name="LootList" value="secureStorageShelvesSonjaLoot"/>
 			<property name="CustomIcon" value="cntshelfSupplyOfficeFullWhite"/>
@@ -2500,6 +2445,7 @@
 			<property name="SortOrder1" value="B106"/>
 			<property name="SortOrder2" value="0001"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="Tags" value="sonja3000"/>
 			<property name="FilterTags" value="MC_playerBlocks,MC_building,SC_decor"/>
 		</block>
 		
@@ -2683,5 +2629,1029 @@
 		</block>
 		
 	</append>
+	
+	<!--Brass Trophy-->
+	
+	<append xpath="/blocks/block[starts-with(@name, 'trophy')]">
+		<property name="CanPickup" value="true" param1="trophySonjaVariantHelper"/>
+		<property class="RepairItems">
+				<property name="resourceScrapBrass" value="1"/>
+		</property>
+	</append>
+	
+	<append xpath="/blocks">
+	
+		<block name="trophySonjaVariantHelper">
+			<property name="Extends" value="trophy"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="trophy"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="trophy,trophyOffset"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	</append>
+	
+	<!--Umbrellas-->
+		
+	<append xpath="/blocks/block[@name='umbrellaTableDownWhite']">
+		<property name="CanPickup" value="true" param1="umbrellaSonjaVariantHelper"/>
+		<property class="RepairItems">
+				<property name="resourceCloth" value="1"/>
+		</property>
+	</append>
+	
+	<append xpath="/blocks">
+		
+		<block name="umbrellaSonjaVariantHelper">
+			<property name="Extends" value="umbrellaTableUpWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="umbrellaTableUpWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="umbrellaTableDownWhite,umbrellaTableDownBrown,umbrellaTableDownRed,umbrellaTableDownOrange,umbrellaTableDownYellow,umbrellaTableDownGreen,umbrellaTableDownBlue,umbrellaTableDownPurple,umbrellaTableDownGrey,umbrellaTableDownBlack,umbrellaTableDownPink,umbrellaTableUpWhite,umbrellaTableUpBrown,umbrellaTableUpRed,umbrellaTableUpOrange,umbrellaTableUpYellow,umbrellaTableUpGreen,umbrellaTableUpBlue,umbrellaTableUpPurple,umbrellaTableUpGrey,umbrellaTableUpBlack,umbrellaTableUpPink"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	<!--Doors, doors and even more doors-->	
+		
+		<block name="extHouseDoorSonjaVariantHelper">
+			<property name="Extends" value="exteriorHouseDoorWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="exteriorHouseDoorWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="exteriorHouseDoorWhite,exteriorHouseDoorBrown,exteriorHouseDoorRed,exteriorHouseDoorOrange,exteriorHouseDoorYellow,exteriorHouseDoorGreen,exteriorHouseDoorBlue,exteriorHouseDoorPurple,exteriorHouseDoorGrey,exteriorHouseDoorPink,exteriorHouseDoorOak"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="extHouseDoorDoubleSonjaVariantHelper">
+			<property name="Extends" value="exteriorHouseDoorDoubleWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="exteriorHouseDoorDoubleWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="exteriorHouseDoorDoubleWhite,exteriorHouseDoorDoubleBrown,exteriorHouseDoorDoubleRed,exteriorHouseDoorDoubleOrange,exteriorHouseDoorDoubleYellow,exteriorHouseDoorDoubleGreen,exteriorHouseDoorDoubleBlue,exteriorHouseDoorDoublePurple,exteriorHouseDoorDoubleGrey,exteriorHouseDoorDoublePink,exteriorHouseDoorDoubleOak"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="frenchDoorSonjaVariantHelper">
+			<property name="Extends" value="frenchDoorWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="frenchDoorWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="frenchDoorWhite,frenchDoorBrown,frenchDoorRed,frenchDoorOrange,frenchDoorYellow,frenchDoorGreen,frenchDoorBlue,frenchDoorPurple,frenchDoorGrey,frenchDoorPink,frenchDoorOak"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="frenchDoorDoubleSonjaVariantHelper">
+			<property name="Extends" value="frenchDoorDoubleWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="frenchDoorDoubleWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="frenchDoorDoubleWhite,frenchDoorDoubleBrown,frenchDoorDoubleRed,frenchDoorDoubleOrange,frenchDoorDoubleYellow,frenchDoorDoubleGreen,frenchDoorDoubleBlue,frenchDoorDoublePurple,frenchDoorDoubleGrey,frenchDoorDoublePink,frenchDoorDoubleOak"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="intHouseDoorSonjaVariantHelper">
+			<property name="Extends" value="interiorHouseDoorWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="interiorHouseDoorWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="interiorHouseDoorWhite,interiorHouseDoorBrown,interiorHouseDoorRed,interiorHouseDoorOrange,interiorHouseDoorYellow,interiorHouseDoorGreen,interiorHouseDoorBlue,interiorHouseDoorPurple,interiorHouseDoorGrey,interiorHouseDoorPink,interiorHouseDoorOak"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="intHouseDoorDoubleSonjaVariantHelper">
+			<property name="Extends" value="interiorHouseDoorDoubleWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="interiorHouseDoorDoubleWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="interiorHouseDoorDoubleWhite,interiorHouseDoorDoubleBrown,interiorHouseDoorDoubleRed,interiorHouseDoorDoubleOrange,interiorHouseDoorDoubleYellow,interiorHouseDoorDoubleGreen,interiorHouseDoorDoubleBlue,interiorHouseDoorDoublePurple,interiorHouseDoorDoubleGrey,interiorHouseDoorDoublePink,interiorHouseDoorDoubleOak"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="tallCabinetDoorSonjaVariantHelper">
+			<property name="Extends" value="tallCabinetDoorWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="tallCabinetDoorWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="tallCabinetDoorWhite,tallCabinetDoorBrown,tallCabinetDoorRed,tallCabinetDoorOrange,tallCabinetDoorYellow,tallCabinetDoorGreen,tallCabinetDoorBlue,tallCabinetDoorPurple,tallCabinetDoorGrey,tallCabinetDoorBlack,tallCabinetDoorPink"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="closetDoorSonjaVariantHelper">
+			<property name="Extends" value="closetDoorWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="closetDoorWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="closetDoorWhite,closetDoorBrown,closetDoorRed,closetDoorOrange,closetDoorYellow,closetDoorGreen,closetDoorBlue,closetDoorPurple,closetDoorGrey,closetDoorPink"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="closetDoorDoubleSonjaVariantHelper">
+			<property name="Extends" value="closetDoorDoubleWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="closetDoorDoubleWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="closetDoorDoubleWhite,closetDoorDoubleBrown,closetDoorDoubleRed,closetDoorDoubleOrange,closetDoorDoubleYellow,closetDoorDoubleGreen,closetDoorDoubleBlue,closetDoorDoublePurple,closetDoorDoubleGrey,closetDoorDoublePink"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="pantryDoorSonjaVariantHelper">
+			<property name="Extends" value="pantryDoorWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="pantryDoorWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="pantryDoorWhite,pantryDoorBrown,pantryDoorRed,pantryDoorOrange,pantryDoorYellow,pantryDoorGreen,pantryDoorBlue,pantryDoorPurple,pantryDoorGrey,pantryDoorPink"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="glassDoorSonjaVariantHelper">
+			<property name="Extends" value="commercialGlassDoor"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="commercialGlassDoor"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="commercialGlassDoor,commercialGlassDoorDouble,houseSlidingDoorWhite,houseSlidingDoorBlack,commercialSlidingDoor"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="extDoorSideLightSonjaVariantHelper">
+			<property name="Extends" value="exteriorHouseDoorSideLightSingleWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="exteriorHouseDoorSideLightWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="exteriorHouseDoorSideLightSingleWhite,exteriorHouseDoorSideLightSingleBrown,exteriorHouseDoorSideLightSingleRed,exteriorHouseDoorSideLightSingleOrange,exteriorHouseDoorSideLightSingleYellow,exteriorHouseDoorSideLightSingleGreen,exteriorHouseDoorSideLightSingleBlue,exteriorHouseDoorSideLightSinglePurple,exteriorHouseDoorSideLightSingleGrey,exteriorHouseDoorSideLightSinglePink,exteriorHouseDoorSideLightSingleOak,exteriorHouseDoorSideLightWhite,exteriorHouseDoorSideLightBrown,exteriorHouseDoorSideLightRed,exteriorHouseDoorSideLightOrange,exteriorHouseDoorSideLightYellow,exteriorHouseDoorSideLightGreen,exteriorHouseDoorSideLightBlue,exteriorHouseDoorSideLightPurple,exteriorHouseDoorSideLightGrey,exteriorHouseDoorSideLightPink,exteriorHouseDoorSideLightOak"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="bulletproofGlassDoorsSonjaVariantHelper">
+			<property name="Extends" value="commercialBulletproofSlidingDoor"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="commercialBulletproofSlidingDoor"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="commercialBulletproofSlidingDoor,commercialBulletproofGlassDoor,commercialBulletproofGlassDoorDouble"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="woodenFenceDoorSonjaVariantHelper">
+			<property name="Extends" value="woodenFenceDoorWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="woodenFenceDoorWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="woodenFenceDoorWhite,woodenFenceDoorBrown,woodenFenceDoorRed,woodenFenceDoorOrange,woodenFenceDoorYellow,woodenFenceDoorGreen,woodenFenceDoorBlue,woodenFenceDoorPurple,woodenFenceDoorGrey,woodenFenceDoorPink"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		<block name="commercialDoorV2SonjaVariantHelper">
+			<property name="Extends" value="commercialDoorV2White"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="commercialDoorV2White"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="commercialDoorV2White,commercialDoorV2Brown,commercialDoorV2Red,commercialDoorV2Orange,commercialDoorV2Yellow,commercialDoorV2Green,commercialDoorV2Blue,commercialDoorV2Purple,commercialDoorV2Grey,commercialDoorV2Pink,commercialDoorV2Oak,commercialDoorDoubleV2White,commercialDoorDoubleV2Brown,commercialDoorDoubleV2Red,commercialDoorDoubleV2Orange,commercialDoorDoubleV2Yellow,commercialDoorDoubleV2Green,commercialDoorDoubleV2Blue,commercialDoorDoubleV2Purple,commercialDoorDoubleV2Grey,commercialDoorDoubleV2Pink,commercialDoorDoubleV2Oak"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	<!--Curtains-->	
+		
+		<block name="curtainDrapesSonjaVariantHelper">
+			<property name="Extends" value="curtainDrapesFullTopWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="curtainDrapesFullTopWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="TintColor" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="curtainDrapesFullTopWhite,curtainDrapesFullTopBrown,curtainDrapesFullTopRed,curtainDrapesFullTopOrange,curtainDrapesFullTopYellow,curtainDrapesFullTopGreen,curtainDrapesFullTopBlue,curtainDrapesFullTopPurple,curtainDrapesFullTopGrey,curtainDrapesFullTopBlack,curtainDrapesFullTopPink,curtainDrapesFullTileWhite,curtainDrapesFullTileBrown,curtainDrapesFullTileRed,curtainDrapesFullTileOrange,curtainDrapesFullTileYellow,curtainDrapesFullTileGreen,curtainDrapesFullTileBlue,curtainDrapesFullTilePurple,curtainDrapesFullTileGrey,curtainDrapesFullTileBlack,curtainDrapesFullTilePink,curtainDrapesFullBottomWhite,curtainDrapesFullBottomBrown,curtainDrapesFullBottomRed,curtainDrapesFullBottomOrange,curtainDrapesFullBottomYellow,curtainDrapesFullBottomGreen,curtainDrapesFullBottomBlue,curtainDrapesFullBottomPurple,curtainDrapesFullBottomGrey,curtainDrapesFullBottomBlack,curtainDrapesFullBottomPink,curtainDrapesLeftHalfTopWhite,curtainDrapesLeftHalfTopBrown,curtainDrapesLeftHalfTopRed,curtainDrapesLeftHalfTopOrange,curtainDrapesLeftHalfTopYellow,curtainDrapesLeftHalfTopGreen,curtainDrapesLeftHalfTopBlue,curtainDrapesLeftHalfTopPurple,curtainDrapesLeftHalfTopGrey,curtainDrapesLeftHalfTopBlack,curtainDrapesLeftHalfTopPink,curtainDrapesLeftHalfTileWhite,curtainDrapesLeftHalfTileBrown,curtainDrapesLeftHalfTileRed,curtainDrapesLeftHalfTileOrange,curtainDrapesLeftHalfTileYellow,curtainDrapesLeftHalfTileGreen,curtainDrapesLeftHalfTileBlue,curtainDrapesLeftHalfTilePurple,curtainDrapesLeftHalfTileGrey,curtainDrapesLeftHalfTileBlack,curtainDrapesLeftHalfTilePink,curtainDrapesLeftHalfBottomWhite,curtainDrapesLeftHalfBottomBrown,curtainDrapesLeftHalfBottomRed,curtainDrapesLeftHalfBottomOrange,curtainDrapesLeftHalfBottomYellow,curtainDrapesLeftHalfBottomGreen,curtainDrapesLeftHalfBottomBlue,curtainDrapesLeftHalfBottomPurple,curtainDrapesLeftHalfBottomGrey,curtainDrapesLeftHalfBottomBlack,curtainDrapesLeftHalfBottomPink,curtainDrapesRightHalfTopWhite,curtainDrapesRightHalfTopBrown,curtainDrapesRightHalfTopRed,curtainDrapesRightHalfTopOrange,curtainDrapesRightHalfTopYellow,curtainDrapesRightHalfTopGreen,curtainDrapesRightHalfTopBlue,curtainDrapesRightHalfTopPurple,curtainDrapesRightHalfTopGrey,curtainDrapesRightHalfTopBlack,curtainDrapesRightHalfTopPink,curtainDrapesRightHalfTileWhite,curtainDrapesRightHalfTileBrown,curtainDrapesRightHalfTileRed,curtainDrapesRightHalfTileOrange,curtainDrapesRightHalfTileYellow,curtainDrapesRightHalfTileGreen,curtainDrapesRightHalfTileBlue,curtainDrapesRightHalfTilePurple,curtainDrapesRightHalfTileGrey,curtainDrapesRightHalfTileBlack,curtainDrapesRightHalfTilePink,curtainDrapesRightHalfBottomWhite,curtainDrapesRightHalfBottomBrown,curtainDrapesRightHalfBottomRed,curtainDrapesRightHalfBottomOrange,curtainDrapesRightHalfBottomYellow,curtainDrapesRightHalfBottomGreen,curtainDrapesRightHalfBottomBlue,curtainDrapesRightHalfBottomPurple,curtainDrapesRightHalfBottomGrey,curtainDrapesRightHalfBottomBlack,curtainDrapesRightHalfBottomPink"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	</append>
+	<!--Movie Time-->
+	
+	<append xpath="/blocks/block[@name='projectorCeiling']" >
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+		<property name="CanPickup" value="true" param1="projectorSonjaVariantHelper"/> 
+		<drop event="Destroy" name="spotlightPlayer" count="0"/>
+      	<drop event="Destroy" name="projectorSonjaVariantHelper" count="1"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+    </append>
+	<append xpath="/blocks/block[@name='projectorTableTop']" >
+		<property name="Class" value=""/>
+		<property name="TakeDelay" value="3"/>
+		<property name="CanPickup" value="true" param1="projectorSonjaVariantHelper"/> 
+		<drop event="Destroy" name="spotlightPlayer" count="0"/>
+      	<drop event="Destroy" name="projectorSonjaVariantHelper" count="1"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+    </append>
+	<append xpath="/blocks/block[@name='decoStudioCamera']" >
+		<property name="CanPickup" value="true"/> 
+    </append>
+	<append xpath="/blocks/block[@name='cntStoreElectronicsBookShelfSpeaker']">
+		<property name="CanPickup" value="true"/> 
+    </append>
+	
+	<append xpath="/blocks">
+		
+		<block name="projectorSonjaTableTop">
+			<property name="Extends" value="projectorCeiling" param1="ModelOffset"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="RequiredPower" value="2"/>
+			<property name="CustomIcon" value="projectorTableTop"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="Model" value="Entities/Electrical/projectorTableTopPrefab"/>
+			<property name="DescriptionKey" value="projectorSonjaDesc"/>
+			<property class="RepairItems">
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+			<drop event="Destroy" name="projectorSonjaVariantHelper" count="1"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		<block name="projectorSonjaCeiling">
+			<property name="Extends" value="projectorSonjaTableTop" param1="ModelOffset"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="CustomIcon" value="projectorCeiling"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="Model" value="Entities/Electrical/projectorCeilingPrefab"/>
+			<property name="DescriptionKey" value="projectorSonjaDesc"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+	
+		<block name="projectorSonjaVariantHelper">
+			<property name="Extends" value="projectorSonjaTableTop"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="projectorTableTop"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="projectorSonjaTableTop,projectorSonjaCeiling,decoStudioCamera"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+		<block name="theaterSeatSonjaVariantHelper">
+			<property name="Extends" value="theaterSeatDownFullWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="theaterSeatDownFullWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="theaterSeatDownFullBlue,theaterSeatDownFullWhite,theaterSeatDownFullRed,theaterSeatDownFullBlack"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	</append>
+		
+	<!-- Traffic Barriers -->
+	
+	<append xpath="/blocks/block[@name='barrierPlasticWhite']" >
+		<property name="CanPickup" value="true" param1="barrierPlasticSonjaVariantHelper"/> 
+    </append>
+	
+	<append xpath="/blocks">
+	
+		<block name="barrierPlasticSonjaVariantHelper">
+			<property name="Extends" value="barrierPlasticWhite"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="barrierPlasticWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="barrierPlasticWhite,barrierPlasticRed,barrierPlasticOrange,barrierPlasticYellow,barrierPlasticBlue"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	<!-- Mini Cooler Storage -->
+		
+		<block name="miniCoolerFullStorageSonja">
+			<property name="Class" value="SecureLoot"/>
+			<property name="LootList" value="secureStorageCoolerSonjaLoot"/>
+			<property name="CustomIcon" value="cntMiniBeverageCooler"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="2500"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/miniBeverageCoolerPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="AllowedRotations" value="All"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="EconomicValue" value="20"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" name="miniCoolerStorageSonjaVariantHelper" count="1"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B106"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="Tags" value="sonja3000"/>
+			<property name="FilterTags" value="MC_playerBlocks,MC_building,SC_decor"/>
+		</block>
+		
+		<block name="miniCoolerEmptyStorageSonja">
+			<property name="Extends" value="miniCoolerFullStorageSonja"/>
+			<property name="CustomIcon" value="cntMiniBeverageCoolerEmpty"/>
+			<property name="Model" value="Entities/Commercial/miniBeverageCoolerEmptyPrefab"/>
+			<property name="SortOrder2" value="0103"/>
+		</block>
+		
+		<block name="miniCoolerOffsetFullStorageSonja">
+			<property name="Extends" value="miniCoolerFullStorageSonja"/>
+			<property name="CustomIcon" value="cntMiniBeverageCooler"/>
+			<property name="ModelOffset" value="0,0,-1"/>
+			<property name="Model" value="Entities/Commercial/miniBeverageCoolerUnderCounterPrefab"/>
+			<property name="SortOrder2" value="0102"/>
+		</block>
+
+		<block name="miniCoolerOffsetEmptyStorageSonja">
+			<property name="Extends" value="miniCoolerOffsetFullStorageSonja"/>
+			<property name="CustomIcon" value="cntMiniBeverageCoolerEmpty"/>
+			<property name="Model" value="Entities/Commercial/miniBeverageCoolerUnderCounterEmptyPrefab"/>
+			<property name="SortOrder2" value="0103"/>
+		</block>
+		
+		<block name="miniCoolerStorageSonjaVariantHelper">
+			<property name="Extends" value="cntMiniBeverageCooler"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntMiniBeverageCooler"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="miniCoolerFullStorageSonja,miniCoolerEmptyStorageSonja,miniCoolerOffsetFullStorageSonja,miniCoolerOffsetEmptyStorageSonja"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	<!-- Medicine Cabinet secure storage -->
+
+		<block name="pillCaseStorageSonja">
+			<property name="Class" value="SecureLoot"/>
+			<property name="LootList" value="secureStorageCoolerSonjaLoot"/>
+			<property name="CustomIcon" value="cntPillCaseClosed"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="2500"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/pill_case_closedPrefab.prefab"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="AllowedRotations" value="All"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<property name="Path" value="solid"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="EconomicValue" value="20"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" name="medicineStorageSonjaVariantHelper" count="1"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B106"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="Tags" value="sonja3000"/>
+			<property name="FilterTags" value="MC_playerBlocks,MC_building,SC_decor"/>
+		</block>
+		
+		<block name="medsCabinetStorageSonja">
+			<property name="Extends" value="pillCaseStorageSonja"/>
+			<property name="CustomIcon" value="cntMedicineCabinetClosed"/>
+			<property name="Model" value="@:Entities/LootContainers/medicine_cabinet_closedPrefab.prefab"/>
+			<property name="SortOrder2" value="0103"/>
+		</block>
+		
+		<block name="medicineStorageSonjaVariantHelper">
+			<property name="Extends" value="pillCaseStorageSonja"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntPillCaseClosed"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="pillCaseStorageSonja,medsCabinetStorageSonja"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+			
+	<!-- Hood Range as powerable light -->
+	
+		<block name="hoodRangeWhiteSonja">
+			<property name="CustomIcon" value="hoodRangeWhite"/>
+			<property name="CustomIconTint" value="C3B0A3"/>
+			<property name="TintColor" value="C3B0A3"/>
+			<property name="Class" value="PoweredLight"/>
+			<property name="RuntimeSwitch" value="true"/>
+			<property name="TakeDelay" value="3"/>
+			<property name="RequiredPower" value="2"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Appliances/hoodRangePrefab"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="EconomicValue" value="50"/>
+			<property class="RepairItems">
+				<property name="resourceElectricParts" value="1"/>
+			</property>
+			<property name="Group" value="Building,Decor/Miscellaneous"/>
+			<drop event="Destroy" name="hoodRangeSonjaVariableHelper" count="1"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="SortOrder1" value="B157"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_building,SC_lighting,SC_decor"/>
+		</block>
+		
+		<block name="hoodRangeYellowSonja">
+			<property name="Extends" value="hoodRangeWhiteSonja"/>
+			<property name="CustomIcon" value="hoodRangeWhite"/>
+			<property name="CustomIconTint" value="B78C56"/>
+			<property name="TintColor" value="B78C56"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<block name="hoodRangeGreenSonja">
+			<property name="Extends" value="hoodRangeWhiteSonja"/>
+			<property name="CustomIcon" value="hoodRangeWhite"/>
+			<property name="CustomIconTint" value="666F66"/>
+			<property name="TintColor" value="666F66"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<block name="hoodRangeGreySonja">
+			<property name="Extends" value="hoodRangeWhiteSonja"/>
+			<property name="CustomIcon" value="hoodRangeWhite"/>
+			<property name="CustomIconTint" value="7C7974"/>
+			<property name="TintColor" value="7C7974"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<block name="hoodRangeBlackSonja">
+			<property name="Extends" value="hoodRangeWhiteSonja"/>
+			<property name="CustomIcon" value="hoodRangeWhite"/>
+			<property name="CustomIconTint" value="504D4B"/>
+			<property name="TintColor" value="504D4B"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+
+		<block name="hoodRangeWhiteOffsetSonja">
+			<property name="Extends" value="hoodRangeWhiteSonja"/>
+			<property name="CustomIcon" value="hoodRangeWhite"/>
+			<property name="ModelOffset" value="0,0.5,-1"/>
+			<property name="SortOrder1" value="B156"/>
+			<property name="SortOrder2" value="0100"/>
+		</block>
+
+		<block name="hoodRangeYellowOffsetSonja">
+			<property name="Extends" value="hoodRangeWhiteOffsetSonja"/>
+			<property name="CustomIconTint" value="B78C56"/>
+			<property name="TintColor" value="B78C56"/>
+			<property name="SortOrder2" value="0104"/>
+		</block>
+
+		<block name="hoodRangeGreenOffsetSonja">
+			<property name="Extends" value="hoodRangeWhiteOffsetSonja"/>
+			<property name="CustomIconTint" value="666F66"/>
+			<property name="TintColor" value="666F66"/>
+			<property name="SortOrder2" value="0105"/>
+		</block>
+
+		<block name="hoodRangeGreyOffsetSonja">
+			<property name="Extends" value="hoodRangeWhiteOffsetSonja"/>
+			<property name="CustomIconTint" value="7C7974"/>
+			<property name="TintColor" value="7C7974"/>
+			<property name="SortOrder2" value="0108"/>
+		</block>
+
+		<block name="hoodRangeBlackOffsetSonja">
+			<property name="Extends" value="hoodRangeWhiteOffsetSonja"/>
+			<property name="CustomIconTint" value="504D4B"/>
+			<property name="TintColor" value="504D4B"/>
+			<property name="SortOrder2" value="0109"/>
+		</block>
+		
+		<block name="hoodRangeSonjaVariantHelper">
+			<property name="Extends" value="hoodRangeWhiteSonja"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="hoodRangeWhite"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="hoodRangeWhiteSonja,hoodRangeYellowSonja,hoodRangeGreenSonja,hoodRangeGreySonja,hoodRangeBlackSonja,hoodRangeWhiteOffsetSonja,hoodRangeYellowOffsetSonja,hoodRangeGreenOffsetSonja,hoodRangeGreyOffsetSonja,hoodRangeBlackOffsetSonja"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	<!-- Nice comfy restaurant booths --> 
+		
+		<block name="restaurantBoothSonjaVariantHelper">
+			<property name="Extends" value="restaurantBooth"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="restaurantBooth"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="restaurantBooth,restaurantBoothCorner,restaurantBoothBrown,restaurantBoothCornerBrown,restaurantBoothRed,restaurantBoothCornerRed,restaurantBoothOrange,restaurantBoothCornerOrange,restaurantBoothYellow,restaurantBoothCornerYellow,restaurantBoothGreen,restaurantBoothCornerGreen,restaurantBoothBlue,restaurantBoothCornerBlue,restaurantBoothPurple,restaurantBoothCornerPurple,restaurantBoothWhite,restaurantBoothCornerWhite,restaurantBoothBlack,restaurantBoothCornerBlack,restaurantBoothPink,restaurantBoothCornerPink,restaurantTableEnd,restaurantTableMiddle"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	<!-- More decorative vehicles -->	
+		
+		<block name="decoVehicleSedanWhiteSonja">
+			<property name="CanPickup" value="true" param1="decoVehicleVanillaSonjaVariantHelper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="CustomIcon" value="cntSedan01White"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="TerrainAlignment" value="Vehicle"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Vehicles/Sedan/sedanPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="OversizedBounds" value="(0,0.5,0),(3,2,5)"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="PlacementDistance" value="6"/>
+			<property name="BigDecorationRadius" value="5"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="2"/>
+			</property>
+			<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="SortOrder1" value="LD04"/>
+			<property name="SortOrder2" value="0702"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="decoVehicleSedanBrownSonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CustomIconTint" value="6E554A"/>
+			<property name="TintColor" value="6E554A"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+
+		<block name="decoVehicleSedanRedSonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CustomIconTint" value="8A4346"/>
+			<property name="TintColor" value="8A4346"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<block name="decoVehicleSedanOrangeSonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CustomIconTint" value="896042"/>
+			<property name="TintColor" value="896042"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<block name="decoVehicleSedanYellowSonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CustomIconTint" value="9E985B"/>
+			<property name="TintColor" value="9E985B"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+		
+		<block name="decoVehicleSedanGreenSonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CustomIconTint" value="3B5A35"/>
+			<property name="TintColor" value="3B5A35"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<block name="decoVehicleSedanBlueSonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CustomIconTint" value="335C73"/>
+			<property name="TintColor" value="335C73"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<block name="decoVehicleSedanPurpleSonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="673843"/>
+			<property name="TintColor" value="673843"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<block name="decoVehicleSedanGreySonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="4F4F4F"/>
+			<property name="TintColor" value="4F4F4F"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<block name="decoVehicleSedanBlackSonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="323232"/>
+			<property name="TintColor" value="323232"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0009"/>
+		</block>
+
+		<block name="decoVehicleSedanPinkSonja">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="855C84"/>
+			<property name="TintColor" value="855C84"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+		
+		<block name="decoVehicleSuvWhiteSonja">
+			<property name="CanPickup" value="true" param1="decoVehicleVanillaSonjaVariantHelper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="CustomIcon" value="cntSUV01White"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="TerrainAlignment" value="Vehicle"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Vehicles/SUV/suvPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,-0.5"/>
+			<property name="OversizedBounds" value="(0,0.5,-0.5),(3,2,6)"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="PlacementDistance" value="6"/>
+			<property name="BigDecorationRadius" value="5"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="2"/>
+			</property>
+			<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="SortOrder1" value="LD04"/>
+			<property name="SortOrder2" value="0702"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="decoVehicleSuvBrownSonja">
+			<property name="Extends" value="decoVehicleSuvWhiteSonja"/>
+			<property name="CustomIconTint" value="746954"/>
+			<property name="TintColor" value="746954"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<block name="decoVehicleSuvRedSonja">
+			<property name="Extends" value="decoVehicleSuvWhiteSonja"/>
+			<property name="CustomIconTint" value="814139"/>
+			<property name="TintColor" value="814139"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<block name="decoVehicleSuvOrangeSonja">
+			<property name="Extends" value="decoVehicleSuvWhiteSonja"/>
+			<property name="CustomIconTint" value="976439"/>
+			<property name="TintColor" value="976439"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<block name="decoVehicleSuvYellowSonja">
+			<property name="Extends" value="decoVehicleSuvWhiteSonja"/>
+			<property name="CustomIconTint" value="AE9D58"/>
+			<property name="TintColor" value="AE9D58"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<block name="decoVehicleSuvGreenSonja">
+			<property name="Extends" value="decoVehicleSuvWhiteSonja"/>
+			<property name="CustomIconTint" value="4F7E55"/>
+			<property name="TintColor" value="4F7E55"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<block name="decoVehicleSuvBlueSonja">
+			<property name="Extends" value="decoVehicleSuvWhiteSonja"/>
+			<property name="CustomIconTint" value="4E6C7D"/>
+			<property name="TintColor" value="4E6C7D"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<block name="decoVehicleSuvPurpleSonja">
+			<property name="Extends" value="decoVehicleSuvWhiteSonja"/>
+			<property name="CustomIconTint" value="5E3A47"/>
+			<property name="TintColor" value="5E3A47"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<block name="decoVehicleSuvGreySonja">
+			<property name="Extends" value="decoVehicleSuvWhiteSonja"/>
+			<property name="CustomIconTint" value="5B5B5B"/>
+			<property name="TintColor" value="5B5B5B"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<block name="decoVehicleSuvPinkSonja">
+			<property name="Extends" value="decoVehicleSuvWhiteSonja"/>
+			<property name="CustomIconTint" value="6C476C"/>
+			<property name="TintColor" value="6C476C"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+		
+		<block name="decoVehiclePickUpWhiteSonja">
+			<property name="CanPickup" value="true" param1="decoVehicleVanillaSonjaVariantHelper"/>
+			<property name="Stacknumber" value="5"/>
+			<property name="CustomIcon" value="cntPickupTruck01White"/>
+			<property name="CustomIconTint" value="CCCCCC"/>
+			<property name="TintColor" value="A0A0A0"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="TerrainAlignment" value="Vehicle"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/Vehicles/PickupTruck/pickupTruckPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,-0.5"/>
+			<property name="OversizedBounds" value="(0,0.5,-0.5),(3,2,6)"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="PlacementDistance" value="6"/>
+			<property name="BigDecorationRadius" value="5"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="CanDecorateOnSlopes" value="false"/>
+			<property name="MaxDamage" value="1000"/>
+			<property name="OnlySimpleRotations" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="2"/>
+			</property>
+			<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="allHarvest"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<property name="ShowModelOnFall" value="false"/>
+			<property name="SortOrder1" value="LD04"/>
+			<property name="SortOrder2" value="0702"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+		
+		<block name="decoVehiclePickUpBrownSonja">
+			<property name="Extends" value="decoVehiclePickUpWhiteSonja"/>
+			<property name="CustomIconTint" value="5C4D3E"/>
+			<property name="TintColor" value="5C4D3E"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0001"/>
+		</block>
+
+		<block name="decoVehiclePickUpRedSonja">
+			<property name="Extends" value="decoVehiclePickUpWhiteSonja"/>
+			<property name="CustomIconTint" value="7A4043"/>
+			<property name="TintColor" value="7A4043"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<block name="decoVehiclePickUpOrangeSonja">
+			<property name="Extends" value="decoVehiclePickUpWhiteSonja"/>
+			<property name="CustomIconTint" value="814B27"/>
+			<property name="TintColor" value="814B27"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0003"/>
+		</block>
+
+		<block name="decoVehiclePickUpYellowSonja">
+			<property name="Extends" value="decoVehiclePickUpWhiteSonja"/>
+			<property name="CustomIconTint" value="817927"/>
+			<property name="TintColor" value="817927"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0004"/>
+		</block>
+
+		<block name="decoVehiclePickUpGreenSonja">
+			<property name="Extends" value="decoVehiclePickUpWhiteSonja"/>
+			<property name="CustomIconTint" value="446644"/>
+			<property name="TintColor" value="446644"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0005"/>
+		</block>
+
+		<block name="decoVehiclePickUpBlueSonja">
+			<property name="Extends" value="decoVehiclePickUpWhiteSonja"/>
+			<property name="CustomIconTint" value="41617B"/>
+			<property name="TintColor" value="41617B"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0006"/>
+		</block>
+
+		<block name="decoVehiclePickUpPurpleSonja">
+			<property name="Extends" value="decoVehiclePickUpWhiteSonja"/>
+			<property name="CustomIconTint" value="583A41"/>
+			<property name="TintColor" value="583A41"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0007"/>
+		</block>
+
+		<block name="decoVehiclePickUpGreySonja">
+			<property name="Extends" value="decoVehiclePickUpWhiteSonja"/>
+			<property name="CustomIconTint" value="5D5D5D"/>
+			<property name="TintColor" value="5D5D5D"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0008"/>
+		</block>
+
+		<block name="decoVehiclePickUpPinkSonja">
+			<property name="Extends" value="decoVehiclePickUpWhiteSonja"/>
+			<property name="CustomIconTint" value="7F5D7A"/>
+			<property name="TintColor" value="7F5D7A"/>
+			<property name="DescriptionKey" value="decoVehicleVanillaSonjaDesc"/>
+			<property name="SortOrder2" value="0010"/>
+		</block>
+		
+		<block name="decoVehicleVanillaSonjaVariantHelper">
+			<property name="Extends" value="decoVehicleSedanWhiteSonja"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntSedan01White"/>
+			<property name="CustomIconTint" value="255,166,77"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="decoVehicleSedanWhiteSonja,decoVehicleSedanBrownSonja,decoVehicleSedanRedSonja,decoVehicleSedanOrangeSonja,decoVehicleSedanYellowSonja,decoVehicleSedanGreenSonja,decoVehicleSedanBlueSonja,decoVehicleSedanPurpleSonja,decoVehicleSedanGreySonja,decoVehicleSedanBlackSonja,decoVehicleSedanPinkSonja,decoVehicleSuvWhiteSonja,decoVehicleSuvBrownSonja,decoVehicleSuvRedSonja,decoVehicleSuvOrangeSonja,decoVehicleSuvYellowSonja,decoVehicleSuvGreenSonja,decoVehicleSuvBlueSonja,decoVehicleSuvPurpleSonja,decoVehicleSuvGreySonja,decoVehicleSuvPinkSonja,decoVehiclePickUpWhiteSonja,decoVehiclePickUpBrownSonja,decoVehiclePickUpRedSonja,decoVehiclePickUpOrangeSonja,decoVehiclePickUpYellowSonja,decoVehiclePickUpGreenSonja,decoVehiclePickUpBlueSonja,decoVehiclePickUpPurpleSonja,decoVehiclePickUpGreySonja,decoVehiclePickUpPinkSonja"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="SortOrder1" value="U200"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers,SC_decor"/>
+		</block>
+		
+	</append>
+		
 	
 </configs>
