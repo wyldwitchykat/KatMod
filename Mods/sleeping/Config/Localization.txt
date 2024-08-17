@@ -1,4 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english
-usesleepingblock,UI,HUD,,,Press {0} to sleep
-sleepingblock,,,,,alarm clock
-clockDesc,,,,,a block to pass through the night except on blood moon
