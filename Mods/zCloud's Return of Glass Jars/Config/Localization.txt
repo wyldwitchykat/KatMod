@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+drinkJarEmpty,items,Food,,,Empty Water Jar
+drinkJarEmptyDesc,items,Food,,,An empty glass jar can be filled at water sources using the secondary action or used in other recipes.

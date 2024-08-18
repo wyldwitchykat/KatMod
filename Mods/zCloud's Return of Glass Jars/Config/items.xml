@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <append xpath="/items">
+    <item name="drinkJarEmpty">
+      <property name="HoldType" value="3" />
+      <property name="DisplayType" value="waterDysentery" />
+      <property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab" />
+      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+      <property name="Material" value="Mglass" />
+      <property name="Stacknumber" value="125" />
+      <!-- STK resource -->
+      <!-- <property name="Weight" value="10"/> -->
+      <property name="EconomicValue" value="20" />
+      <property name="EconomicBundleSize" value="1" />
+      <property name="SellableToTrader" value="false" />
+      <property name="CraftingIngredientTime" value="10" />
+      <property class="Action0">
+        <property name="Class" value="CollectWater" />
+        <property name="Delay" value=".35" />
+        <property name="Change_item_to" value="drinkJarRiverWater" />
+        <property name="Sound_start" value="bucketfill_water" />
+      </property>
+      <property class="Action1">
+        <property name="Class" value="ExchangeItem" />
+        <property name="Delay" value=".35" />
+        <property name="Change_item_to" value="drinkJarRiverWater"></property>
+        <property name="Do_block_action" value="deplete1" />
+        <property name="Focused_blockname_1" value="utilitySink" />
+        <property name="Focused_blockname_2" value="sinkKitchen" />
+        <property name="Focused_blockname_3" value="pedestalSink" />
+        <property name="Focused_blockname_4" value="wallMountSinkCommercial" />
+        <property name="Focused_blockname_5" value="counterMountedSinkCommercial" />
+        <property name="Focused_blockname_6" value="counterMountedSinkCommercialOffset" />
+        <property name="Focused_blockname_7" value="faucet02" />
+        <property name="Focused_blockname_8" value="faucet04" />
+        <property name="Focused_blockname_9" value="faucetBrass02" />
+        <property name="Focused_blockname_10" value="faucetBrass04" />
+        <property name="Focused_blockname_11" value="cntToilet01" />
+        <property name="Focused_blockname_12" value="cntToilet02" />
+        <property name="Focused_blockname_13" value="cntToilet03" />
+        <property name="Focused_blockname_14" value="urinalCommercialMounted" />
+        <property name="Focused_blockname_15" value="drinkingfountainSingle" />
+        <property name="Focused_blockname_16" value="drinkingfountainDouble" />
+        <property name="Focused_blockname_17" value="cntWaterCoolerFull" />
+        <property name="Focused_blockname_18" value="cntWaterCoolerFullSideCentered" />
+        <property name="Focused_blockname_19" value="cntWaterCoolerBottle" />
+        <property name="Focused_blockname_20" value="cntWaterCoolerBottleSideCentered" />
+        <property name="Focused_blockname_21" value="cntCollapsedDewCollector" />
+        <property name="Focused_blockname_22" value="fireHydrant" />
+        <property name="Focused_blockname_23" value="fireHydrantYellow" />
+        <property name="Sound_start" value="bucketfill_water" />
+      </property>
+      <property name="Group" value="Resources" />
+      <property name="CustomIcon" value="drinkJarEmpty" />
+    </item>
+  </append>
+  <append xpath="/items/item[@name='foodHoney']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+  <append xpath="/items/item[@name='drinkJarRiverWater']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+  <append xpath="/items/item[@name='drinkJarBoiledWater']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+  <append xpath="/items/item[@name='drinkJarPureMineralWater']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+  <append xpath="/items/item[@name='drinkJarYuccaJuice']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+  <append xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+  <append xpath="/items/item[@name='drinkJarRedTea']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+  <append xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+  <append xpath="/items/item[@name='drinkJarCoffee']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+  <append xpath="/items/item[@name='drinkJarBeer']/property[@class='Action0']">
+    <property name="Create_item" value="drinkJarEmpty" />
+  </append>
+</config>
