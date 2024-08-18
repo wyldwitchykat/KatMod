@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <append xpath="/items">
+    <item name="BearHide">
+      <property name="HoldType" value="45" />
+      <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab" />
+      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+      <property name="Material" value="Morganic" />
+      <property name="CustomIcon" value="rugBear" />
+      <property name="Stacknumber" value="20" />
+      <property name="EconomicValue" value="500" />
+      <property name="Group" value="Resources" />
+      <property name="FuelValue" value="50" />
+      <property name="Weight" value="25" />
+    </item>
+  </append>
+</configs>

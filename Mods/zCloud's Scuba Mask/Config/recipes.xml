@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <append xpath="//recipes">
+    <recipe name="ScubaMask" count="1" craft_time="45">
+      <ingredient name="resourceBrokenGlass" count="10" />
+      <ingredient name="resourceGlue" count="5" />
+      <ingredient name="resourceSewingKit" count="1" />
+      <ingredient name="resourceScrapPolymers" count="50" />
+    </recipe>
+  </append>
+</configs>

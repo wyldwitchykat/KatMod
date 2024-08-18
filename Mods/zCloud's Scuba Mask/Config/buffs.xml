@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configs>
+  <append xpath="/buffs">
+    <buff name="ScubaMask" hidden="false" icon="ui_game_symbol_oxygen" remove_on_death="false" name_key="buffScubaMaskName" description_key="buffScubaMaskDesc" tooltip_key="buffScubaMaskTooltip" icon_color="0,255,255">
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDrowning01" />
+        <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDrowning02" />
+        <triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDrowning03" />
+      </effect_group>
+    </buff>
+  </append>
+  <append xpath="//buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@buff='buffDrowning01']">
+    <requirement name="!HasBuff" buff="ScubaMask" />
+  </append>
+</configs>

@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+rugBear,blocks,Block,,,Bear Rug
+BearHide,items,item,,,Bear Hide
+BearHideDesc,items,item,,,A bear hide is used for crafting a bear rug.
