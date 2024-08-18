@@ -1,8 +1,0 @@
-<xml>
-    <Name value="DewtasStandaloneJar" />
-    <DisplayName value="Dewtas Standalone Jar" />
-    <Description value="Adds just the jar to the game without needing consumables plus. If you combine the mods it will still work, but there will be 2 different jars that look the same." />
-    <Author value="Dewta" />
-    <Version value="1.0" />
-    <Website value="" />
-</xml>

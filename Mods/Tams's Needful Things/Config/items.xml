@@ -68,13 +68,6 @@
 	<property name="CraftingIngredientTime" value="9"/>
 	<property name="WaterCapacity" value="0.1"/>
 	
-<property class="Action0">
-  <property name="Class" value="CollectWater"/>
-  <property name="Delay" value="1.0" />
-  <property name="Change_item_to" value="drinkCanRiverWater" />
-	<property name="Sound_start" value="bucketfill_water"/>
-</property>
-	
 <property class="Action1">
 	<property name="Class" value="CollectWater"/>
 	<property name="Delay" value="1.0"/>
@@ -259,13 +252,6 @@
 	<property name="Sound_start" value="bucketfill_water"/>
 </property> -->
 
-<property class="Action0">
-  <property name="Class" value="CollectWater"/>
-  <property name="Delay" value="1.0" />
-  <property name="Change_item_to" value="drinkJarRiverWater" />
-	<property name="Sound_start" value="bucketfill_water"/>
-</property>
-	
 <property class="Action1">
 	<property name="Class" value="CollectWater"/>
 	<property name="Delay" value="1.0"/>
