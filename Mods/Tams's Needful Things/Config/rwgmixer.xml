@@ -1,0 +1,10 @@
+<configs>
+
+   <!-- Trader In Biomes -->
+   <set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_rekt']/@biomeTags">forest, burntforest, desert, snow, wasteland</set>
+   <set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_jen']/@biomeTags">forest, burntforest, desert, snow, wasteland</set>
+   <set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_bob']/@biomeTags">forest, burntforest, desert, snow, wasteland</set>
+   <set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_hugh']/@biomeTags">forest, burntforest, desert, snow, wasteland</set>
+   <set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_joel']/@biomeTags">forest, burntforest, desert, snow, wasteland</set>
+
+</configs>

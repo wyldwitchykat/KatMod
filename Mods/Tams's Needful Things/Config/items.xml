@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<items>
+  <insertBefore xpath="//item[@name='modGunBarrelExtenderSchematic']">
+    <item name="gurneyBedSchematic">
+      <property name="Extends" value="schematicNoQualityMaster" />
+      <property name="CreativeMode" value="Player" />
+      <property name="CustomIcon" value="gurneyBed" />
+      <property name="Unlocks" value="gurneyBed" />
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="HealinggurneyBed" operation="set" value="1" />
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="250" />
+      </effect_group>
+    </item>
+    <item name="hospitalBedSchematic">
+      <property name="Extends" value="schematicNoQualityMaster" />
+      <property name="CreativeMode" value="Player" />
+      <property name="CustomIcon" value="hospitalBed" />
+      <property name="Unlocks" value="hospitalBed" />
+      <effect_group tiered="false">
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="HealinghospitalBed" operation="set" value="1" />
+        <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="500" />
+      </effect_group>
+    </item>
+  </insertBefore>
+  
+  <append xpath="/items">
+    <item name="resourceIronFragmentBundle">
+      <property name="Extends" value="resourceRockSmallBundle" />
+      <property name="CustomIcon" value="resourceIronFragment" />
+      <property name="MeltTimePerUnit" value=".3" />
+      <property name="Weight" value="30000" />
+      <property class="Action0">
+        <property name="Create_item" value="resourceIronFragment" />
+        <property name="Create_item_count" value="6000" />
+      </property>
+    </item>
+    <item name="resourceIronFragment">
+      <!-- Raw Iron-->
+      <property name="CustomIcon" value="resourceIronFragment" />
+      <property name="HoldType" value="45" />
+      <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab" />
+      <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+      <property name="Material" value="MresourceScrapIron" />
+      <property name="Weight" value="5" />
+      <property name="Stacknumber" value="6000" />
+      <!-- STK resource -->
+      <property name="EconomicValue" value="10" />
+      <property name="EconomicBundleSize" value="10" />
+      <property name="Group" value="Resources" />
+      <property name="RepairTime" value=".5" />
+      <property name="RepairAmount" value="20" />
+      <property name="CraftingIngredientTime" value=".2" />
+      <property name="MeltTimePerUnit" value=".5" />
+    </item>
+  </append>
+  
+  <append xpath="/items">
+
+<item name="drinkCanEmpty">
+  <property name="CustomIcon" value="drinkCanEmpty"/>
+  <property name="DescriptionKey" value="drinkCanEmptyDesc"/>
+	<property name="HoldType" value="3"/>
+	<property name="Meshfile" value="@:Other/Items/Food/can_emptyPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="20000"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="CraftingIngredientTime" value="9"/>
+	<property name="WaterCapacity" value="0.1"/>
+	
+<property class="Action1">
+	<property name="Class" value="CollectWater"/>
+	<property name="Delay" value="1.0"/>
+	<property name="Change_item_to" value="drinkCanRiverWater"/>
+	<property name="Sound_start" value="bucketfill_water"/>
+</property>
+
+<property name="Group" value="Resources"/>	
+	
+</item>
+
+<!-- Murky Water -->
+<item name="drinkCanRiverWater">
+	<property name="Tags" value="drinks"/>
+	<property name="HoldType" value="3"/>
+	<property name="CustomIcon" value="drinkCanRiverWater"/>
+	<property name="DisplayType" value="waterDysentery"/>
+	<property name="Meshfile" value="@:Other/Items/Food/can_emptyPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="20000"/> <!-- STK drink -->
+	<!-- <property name="Weight" value="10"/> -->
+	<property name="EconomicValue" value="20"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="0"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Create_item" value="drinkCanEmpty"/>
+	</property>
+	<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+
+	<effect_group tiered="false" name="Drink Tier 0">
+		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+		<display_value name="dStaminaRegen" value=".15"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-5">
+			<!-- <requirement name="StatCompareCurrent" stat="Health" operation="GT" value="10"/> -->
+			<requirement name="!HasBuff"  buff="buffWaterPurifier"/>
+		</triggered_effect>
+		<display_value name="foodHealthAmount" value="-5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="set" value="12"/><display_value name="dDysenteryRisk" value=".12"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".DiseaseRoll" operation="add" value="@$MetabolismResist"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryCatchDrink">
+			<requirement name="RandomRoll" seed_type="Random" min_max="1,100" operation="LTE" value="@.DiseaseRoll"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="player#vomit">
+			<requirement name="!HasBuff"  buff="buffWaterPurifier"/>
+		</triggered_effect>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<requirement name="HasBuff" buff="buffIsOnFire"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+	</effect_group>
+</item>
+
+<item name="drinkCanBoiledWater">
+	<property name="Tags" value="drinks"/>
+	<property name="HoldType" value="3"/>
+	<property name="CustomIcon" value="drinkCanBoiledWater"/>
+	<property name="DisplayType" value="waterDysentery"/>
+	<property name="Meshfile" value="@:Other/Items/Food/can_emptyPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Stacknumber" value="20000"/> <!-- STK drink -->
+	<!-- <property name="Weight" value="10"/> -->
+	<property name="EconomicValue" value="40"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Create_item" value="drinkCanEmpty"/>
+	</property>
+	<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+
+	<effect_group tiered="false" name="Drink Tier 0/1">
+		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
+		<display_value name="dStaminaRegen" value=".15"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+	</effect_group>
+
+	<effect_group tiered="false">
+		<requirement name="HasBuff" buff="buffIsOnFire"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+	</effect_group>
+</item>
+
+<item name="drinkJarEmpty">
+  <property name="CustomIcon" value="drinkJarEmpty"/>
+  <property name="DescriptionKey" value="drinkJarEmptyDesc"/>
+	<property name="HoldType" value="3"/>
+	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mglass"/>
+	<property name="Stacknumber" value="20000"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="CraftingIngredientTime" value="9"/>
+	<property name="WaterCapacity" value="0.1"/>
+	
+<!-- <property class="Action0">
+  <property name="Class" value="ExchangeItem" />
+  <property name="Delay" value="1.0" />
+  <property name="Change_item_to" value="drinkJarBoiledWater" />
+  <property name="Do_block_action" value="deplete1" />
+	    <property name="Focused_blockname_1" value="utilitySink" />
+        <property name="Focused_blockname_2" value="sinkKitchen" />
+        <property name="Focused_blockname_3" value="pedestalSink" />
+        <property name="Focused_blockname_4" value="wallMountSinkCommercial" />
+        <property name="Focused_blockname_5" value="counterMountedSinkCommercial" />
+        <property name="Focused_blockname_6" value="counterMountedSinkCommercialOffset" />
+        <property name="Focused_blockname_7" value="faucet02" />
+        <property name="Focused_blockname_8" value="faucet04" />
+        <property name="Focused_blockname_9" value="faucetBrass02" />
+        <property name="Focused_blockname_10" value="faucetBrass04" />
+        <property name="Focused_blockname_11" value="cntToilet01" />
+        <property name="Focused_blockname_12" value="cntToilet02" />
+        <property name="Focused_blockname_13" value="cntToilet03" />
+        <property name="Focused_blockname_14" value="urinalCommercialMounted" />
+        <property name="Focused_blockname_15" value="drinkingfountainSingle" />
+        <property name="Focused_blockname_16" value="drinkingfountainDouble" />
+        <property name="Focused_blockname_17" value="cntWaterCoolerFull" />
+        <property name="Focused_blockname_18" value="cntWaterCoolerFullSideCentered" />
+        <property name="Focused_blockname_19" value="cntWaterCoolerBottle" />
+        <property name="Focused_blockname_20" value="cntWaterCoolerBottleSideCentered" />
+        <property name="Focused_blockname_21" value="cntCollapsedDewCollector" />
+        <property name="Focused_blockname_22" value="fireHydrant" />
+        <property name="Focused_blockname_23" value="fireHydrantYellow" />
+		<property name="Focused_blockname_24" value="cntBathTubEmpty"/>
+	    <property name="Focused_blockname_25" value="cntBathTubGore"/>
+	    <property name="Focused_blockname_26" value="decoClawFootBathTub"/>
+		<property name="Focused_blockname_27" value="water"/>
+		<property name="Focused_blockname_28" value="waterMoving"/>
+		<property name="Focused_blockname_29" value="waterStaticBucket"/>
+		<property name="Focused_blockname_30" value="waterMovingBucket"/>
+		<property name="Focused_blockname_31" value="terrWaterPOI"/>
+	    <property name="Sound_start" value="bucketfill_water"/>
+</property>
+	
+<property class="Action1">
+	<property name="Class" value="ExchangeItem"/>
+	<property name="Delay" value="1.0"/>
+	<property name="Change_item_to" value="drinkJarRiverWater"/>
+	    <property name="Focused_blockname_1" value="utilitySink" />
+        <property name="Focused_blockname_2" value="sinkKitchen" />
+        <property name="Focused_blockname_3" value="pedestalSink" />
+        <property name="Focused_blockname_4" value="wallMountSinkCommercial" />
+        <property name="Focused_blockname_5" value="counterMountedSinkCommercial" />
+        <property name="Focused_blockname_6" value="counterMountedSinkCommercialOffset" />
+        <property name="Focused_blockname_7" value="faucet02" />
+        <property name="Focused_blockname_8" value="faucet04" />
+        <property name="Focused_blockname_9" value="faucetBrass02" />
+        <property name="Focused_blockname_10" value="faucetBrass04" />
+        <property name="Focused_blockname_11" value="cntToilet01" />
+        <property name="Focused_blockname_12" value="cntToilet02" />
+        <property name="Focused_blockname_13" value="cntToilet03" />
+        <property name="Focused_blockname_14" value="urinalCommercialMounted" />
+        <property name="Focused_blockname_15" value="drinkingfountainSingle" />
+        <property name="Focused_blockname_16" value="drinkingfountainDouble" />
+        <property name="Focused_blockname_17" value="cntWaterCoolerFull" />
+        <property name="Focused_blockname_18" value="cntWaterCoolerFullSideCentered" />
+        <property name="Focused_blockname_19" value="cntWaterCoolerBottle" />
+        <property name="Focused_blockname_20" value="cntWaterCoolerBottleSideCentered" />
+        <property name="Focused_blockname_21" value="cntCollapsedDewCollector" />
+        <property name="Focused_blockname_22" value="fireHydrant" />
+        <property name="Focused_blockname_23" value="fireHydrantYellow" />
+		<property name="Focused_blockname_24" value="cntBathTubEmpty"/>
+	    <property name="Focused_blockname_25" value="cntBathTubGore"/>
+	    <property name="Focused_blockname_26" value="decoClawFootBathTub"/>
+		<property name="Focused_blockname_27" value="water"/>
+		<property name="Focused_blockname_28" value="waterMoving"/>
+		<property name="Focused_blockname_29" value="waterStaticBucket"/>
+		<property name="Focused_blockname_30" value="waterMovingBucket"/>
+		<property name="Focused_blockname_31" value="terrWaterPOI"/>
+	<property name="Sound_start" value="bucketfill_water"/>
+</property> -->
+
+<property class="Action1">
+	<property name="Class" value="CollectWater"/>
+	<property name="Delay" value="1.0"/>
+	<property name="Change_item_to" value="drinkJarRiverWater"/>
+	<property name="Sound_start" value="bucketfill_water"/>
+</property>
+
+<property name="Group" value="Resources"/>
+	
+</item>
+
+</append>
+
+<append xpath="/items/item[@name='foodHoney'
+                or @name='drinkJarRiverWater'
+				or @name='drinkJarBoiledWater'
+			    or @name='drinkJarPureMineralWater'
+				or @name='drinkJarYuccaJuice'
+				or @name='drinkYuccaJuiceSmoothie'
+				or @name='drinkJarGoldenRodTea'
+				or @name='drinkJarRedTea'
+				or @name='drinkJarCoffee'
+				or @name='drinkJarBlackStrapCoffee'
+				or @name='drinkJarBeer'
+				or @name='drinkJarGrandpasMoonshine'
+				or @name='drinkJarGrandpasAwesomeSauce'
+				or @name='drinkJarGrandpasLearningElixir'
+				or @name='drinkJarGrandpasForgettingElixir']/property[@class='Action0']">
+            <property name="Create_item" value="drinkJarEmpty"/>
+	
+</append>
+
+<append xpath="/items/item[@name='foodCanBeef'
+				or @name='foodCanChicken'
+				or @name='foodCanLamb'
+				or @name='foodCanCatfood'
+				or @name='foodCanDogfood'
+				or @name='foodCanChili'
+				or @name='foodCanTuna'
+				or @name='foodCanSham'
+				or @name='foodCanPasta'
+				or @name='foodCanSalmon'
+				or @name='foodCanMiso'
+				or @name='foodCanPeas'
+				or @name='foodCanPears'
+				or @name='foodCanSoup'
+		        or @name='foodCanStock']/property[@class='Action0']">
+	        <property name="Create_item" value="drinkCanEmpty"/>
+</append>
+
+<!-- <set xpath="/items/item[starts-with(@name, 'Canned')]/property[@name='Stacknumber']/@value">20000</set> -->
+
+</items>
