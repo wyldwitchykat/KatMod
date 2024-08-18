@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<Name value="V1_SelfSeedFarming" />
-	<DisplayName value="V1.0 Self Seed Farming" />
-	<Description value="Harvested plants return to seed as a quality of life feature with no seed drop as a trade off." />
-	<Author value="arramus" />
-	<Version value="1.1.0.0" />
-	<Website value="https://community.7daystodie.com/topic/35875-v10-arramus-modlets/" />
-</xml>
