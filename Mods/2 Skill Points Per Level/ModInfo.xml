@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Abasiyanik2SkillPointsPerLevel" />
+	<DisplayName value="2 Skill Points Per Level" />
+	<Description value="This simple mod increases the skill points earned per level from 1 to 2" />
+	<Author value="Abasiyanik" />
+	<Version value="1.0" />
+	<Website value="https://7daystodiemods.com/tag/abasiyanik/" />
+</xml>
