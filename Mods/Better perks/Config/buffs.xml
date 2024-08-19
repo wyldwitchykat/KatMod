@@ -203,11 +203,11 @@
 			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$treatedCritHealing" operation="set" value="1.9">
 				<requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="5"/></triggered_effect>
 		</effect_group>
-		<effect_group name="corpseRemoval">
+			<effect_group name="corpseRemoval">
 			<requirement name="IsCorpse" target="other"/>
 			<requirement name="HoldingItemHasTags" tags="melee"/>
 			<requirement name="EntityTagCompare" target="other" tags="walker,crawler,spider"/>
-			<passive_effect name="EntityDamage" operation="base_add" value="1000"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="300"/>
 		</effect_group>
 		
 		<!-- *** LUMBERJACK_FULL_SET_BONUS -->

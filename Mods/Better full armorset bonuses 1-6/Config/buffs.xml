@@ -788,6 +788,8 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="10">
 				<requirement name="InBiome" biome="3"/>
 				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1" tags="perkPummelPete"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05" tags="perkPummelPete"/>
 		</effect_group>
 		
 		<effect_group>
@@ -810,6 +812,8 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="20">
 				<requirement name="InBiome" biome="3"/>
 				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2" tags="perkPummelPete"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1" tags="perkPummelPete"/>
 		</effect_group>
 		
 		<effect_group>
@@ -832,6 +836,8 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="40">
 				<requirement name="InBiome" biome="3"/>
 				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3" tags="perkPummelPete"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".15" tags="perkPummelPete"/>
 		</effect_group>
 		
 		<effect_group>
@@ -854,6 +860,8 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="60">
 				<requirement name="InBiome" biome="3"/>
 				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4" tags="perkPummelPete"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".2" tags="perkPummelPete"/>
 		</effect_group>
 		
 		<effect_group>
@@ -876,6 +884,8 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="80">
 				<requirement name="InBiome" biome="3"/>
 				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5" tags="perkPummelPete"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".25" tags="perkPummelPete"/>
 		</effect_group>
 		
 		<effect_group>
@@ -898,6 +908,8 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="100">
 				<requirement name="InBiome" biome="3"/>
 				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6" tags="perkPummelPete"/>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkPummelPete"/>
 		</effect_group>
 </buff>
 </append>
@@ -1185,6 +1197,10 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".05" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1" tags="perkDeepCuts"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="2" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="1" tags="bonusCropHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="1" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="1" tags="bonusCropHarvest"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1212,6 +1228,10 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".2" tags="perkDeepCuts"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="2" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="1" tags="bonusCropHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="2" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="2" tags="bonusCropHarvest"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1239,6 +1259,10 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".2" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".15" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkDeepCuts"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="2" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="1" tags="bonusCropHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="3" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="4" tags="bonusCropHarvest"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1266,6 +1290,10 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".3" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".2" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".4" tags="perkDeepCuts"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="2" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="1" tags="bonusCropHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="4" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="6" tags="bonusCropHarvest"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1293,6 +1321,10 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".4" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".25" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".5" tags="perkDeepCuts"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="2" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="1" tags="bonusCropHarvest"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="5" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="8" tags="bonusCropHarvest"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1320,6 +1352,8 @@
 				<passive_effect name="EntityDamage" operation="perc_add" value=".5" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkJavelinMaster"/>
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".6" tags="perkDeepCuts"/>
+				<passive_effect name="HarvestCount" operation="perc_add"  value="6" tags="cropHarvest,wildCropsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_set"  value="10" tags="bonusCropHarvest"/>
 		</effect_group>
 </buff>
 </append>
@@ -1354,6 +1388,7 @@
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05" tags="perkFlurryOfFortitude">
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfFortitude"/>
 				</passive_effect>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".05"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1379,6 +1414,7 @@
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1" tags="perkFlurryOfFortitude">
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfFortitude"/>
 				</passive_effect>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".07"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1404,6 +1440,7 @@
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".15" tags="perkFlurryOfFortitude">
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfFortitude"/>
 				</passive_effect>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".09"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1429,6 +1466,7 @@
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".2" tags="perkFlurryOfFortitude">
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfFortitude"/>
 				</passive_effect>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".11"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1454,6 +1492,7 @@
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".25" tags="perkFlurryOfFortitude">
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfFortitude"/>
 				</passive_effect>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".13"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1479,6 +1518,7 @@
 				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkFlurryOfFortitude">
 				<requirement name="HoldingItemHasTags" tags="perkFlurryOfFortitude"/>
 				</passive_effect>
+				<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".15"/>
 		</effect_group>
 </buff>
 </append>
@@ -1533,6 +1573,9 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".4">			
 				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
 				</passive_effect>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".05" tags="kill">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
 		</effect_group>
 		
 		<effect_group>
@@ -1576,6 +1619,9 @@
 				</passive_effect>
 				
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".5">			
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".1" tags="kill">
 				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
 				</passive_effect>
 		</effect_group>
@@ -1623,6 +1669,9 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".6">			
 				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
 				</passive_effect>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".15" tags="kill">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
 		</effect_group>
 		
 		<effect_group>
@@ -1666,6 +1715,9 @@
 				</passive_effect>
 				
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".7">			
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".2" tags="kill">
 				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
 				</passive_effect>
 		</effect_group>
@@ -1714,6 +1766,9 @@
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".8">			
 				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
 				</passive_effect>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".25" tags="kill">
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
 		</effect_group>
 		
 		<effect_group>
@@ -1757,6 +1812,9 @@
 				</passive_effect>
 				
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".9">		
+				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
+				</passive_effect>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".3" tags="kill">
 				<requirement name="HoldingItemHasTags" tags="perkDeadEye"/>
 				</passive_effect>
 		</effect_group>
@@ -2107,31 +2165,31 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
 				
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".05">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".02">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.05">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.05">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.05">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.05">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".4">		
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".05">
@@ -2165,31 +2223,31 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
 				
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".1">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".02">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.075">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.075">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.075">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.075">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".5">			
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1">
@@ -2223,31 +2281,31 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
 				
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".2">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".02">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.1">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.1">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.1">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.1">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".6">			
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15">
@@ -2281,31 +2339,31 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
 				
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".3">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".02">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.15">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.15">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.15">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.15">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".7">			
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".2">
@@ -2339,31 +2397,31 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
 				
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".4">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".02">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.2">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.2">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.2">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.2">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".8">			
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25">
@@ -2397,35 +2455,35 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar="$treatedCommando,.armorCommandoFSBDisplay"/>
 				
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".5">
-					<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
+					<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".5">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".02">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.25">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.25">
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="WeaponHandling" operation="perc_add" value=".9">			
-				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmgun"/>
+				<requirement name="HoldingItemHasTags" tags="perkMachineGunner,9mmGun,Commandoh"/>
 				</passive_effect>
 				
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3">
@@ -2474,6 +2532,7 @@
 				<passive_effect name="SilenceBlockSteps" operation="base_set" value="1" tags="trashPile">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
 				</passive_effect>
+				<passive_effect name="MagazineSize" operation="base_add" value="1" tags="perkArchery"/>
 				<passive_effect name="JumpStrength" operation="perc_add" value=".3"/>
 				<passive_effect name="ProjectileVelocity" operation="base_add" value="5" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".05" tags="perkArchery"/>
@@ -2499,6 +2558,7 @@
 				<passive_effect name="SilenceBlockSteps" operation="base_set" value="1" tags="trashPile">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
 				</passive_effect>
+				<passive_effect name="MagazineSize" operation="base_add" value="2" tags="perkArchery"/>
 				<passive_effect name="JumpStrength" operation="perc_add" value=".4"/>
 				<passive_effect name="ProjectileVelocity" operation="base_add" value="7.5" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1" tags="perkArchery"/>
@@ -2524,6 +2584,7 @@
 				<passive_effect name="SilenceBlockSteps" operation="base_set" value="1" tags="trashPile">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
 				</passive_effect>
+				<passive_effect name="MagazineSize" operation="base_add" value="3" tags="perkArchery"/>
 				<passive_effect name="JumpStrength" operation="perc_add" value=".5"/>
 				<passive_effect name="ProjectileVelocity" operation="base_add" value="10" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".2" tags="perkArchery"/>
@@ -2542,13 +2603,14 @@
 				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".armorAssassinFSBDisplay"/>
 				<passive_effect name="EnemySearchDuration" operation="perc_add" value="-.7"/>
 				
-								<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.777">
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.777">
 				<requirement name="EntityHasMovementTag" tags="jumping,running,player"/>
 				</passive_effect>
 				
 				<passive_effect name="SilenceBlockSteps" operation="base_set" value="1" tags="trashPile">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
 				</passive_effect>
+				<passive_effect name="MagazineSize" operation="base_add" value="4" tags="perkArchery"/>
 				<passive_effect name="JumpStrength" operation="perc_add" value=".6"/>
 				<passive_effect name="ProjectileVelocity" operation="base_add" value="15" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3" tags="perkArchery"/>
@@ -2574,8 +2636,9 @@
 				<passive_effect name="SilenceBlockSteps" operation="base_set" value="1" tags="trashPile">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
 				</passive_effect>
+				
 				<passive_effect name="JumpStrength" operation="perc_add" value=".7"/>
-				<passive_effect name="MagazineSize" operation="base_add" value="1" tags="perkArchery"/>
+				<passive_effect name="MagazineSize" operation="base_add" value="5" tags="perkArchery"/>
 				<passive_effect name="ProjectileVelocity" operation="base_add" value="20" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".4" tags="perkArchery"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".4" tags="bowDrawPenalty"/>
@@ -2601,7 +2664,7 @@
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
 				</passive_effect>
 				<passive_effect name="JumpStrength" operation="perc_add" value=".8"/>
-				<passive_effect name="MagazineSize" operation="base_add" value="2" tags="perkArchery"/>
+				<passive_effect name="MagazineSize" operation="base_add" value="5" tags="perkArchery"/>
 				<passive_effect name="ProjectileVelocity" operation="base_add" value="25" tags="perkArchery"/>
 				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".5" tags="perkArchery"/>
 				<passive_effect name="RoundsPerMinute" operation="perc_add" value=".5" tags="bowDrawPenalty"/>
@@ -2835,8 +2898,22 @@
 				<passive_effect name="RunSpeed" operation="perc_add" value=".05">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="EntityDamage" operation="perc_add" value=".05" tags="perkPummelPete"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".05" tags="perkPummelPete"/>
+				
+				<passive_effect name="LootStage" operation="perc_add" value=".05">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="TraderStage" operation="base_add" value="20">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
 		</effect_group>
 		
 		<effect_group>
@@ -2859,14 +2936,28 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="20">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="WalkSpeed" operation="perc_add" value=".075">
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.1">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="RunSpeed" operation="perc_add" value=".075">
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.1">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="EntityDamage" operation="perc_add" value=".1" tags="perkPummelPete"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1" tags="perkPummelPete"/>
+
+				<passive_effect name="LootStage" operation="perc_add" value=".1">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="TraderStage" operation="base_add" value="40">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".2">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".2">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
 		</effect_group>
 		
 		<effect_group>
@@ -2886,17 +2977,31 @@
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.2" tags="jumping">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="CarryCapacity" operation="base_add" value="40">
+				<passive_effect name="CarryCapacity" operation="base_add" value="30">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="WalkSpeed" operation="perc_add" value="0.1">
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.125">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="RunSpeed" operation="perc_add" value="0.1">
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.125">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="EntityDamage" operation="perc_add" value=".2" tags="perkPummelPete"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".15" tags="perkPummelPete"/>
+
+				<passive_effect name="LootStage" operation="perc_add" value=".2">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="TraderStage" operation="base_add" value="50">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".3">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
 		</effect_group>
 		
 		<effect_group>
@@ -2919,14 +3024,28 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="60">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="WalkSpeed" operation="perc_add" value="0.125">
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.15">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="RunSpeed" operation="perc_add" value="0.125">
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.15">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="EntityDamage" operation="perc_add" value=".3" tags="perkPummelPete"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".2" tags="perkPummelPete"/>
+
+				<passive_effect name="LootStage" operation="perc_add" value=".3">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="TraderStage" operation="base_add" value="40">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".4">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".4">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
 		</effect_group>
 		
 		<effect_group>
@@ -2949,14 +3068,28 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="8">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="WalkSpeed" operation="perc_add" value="0.15">
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.175">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="RunSpeed" operation="perc_add" value="0.15">
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.175">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="EntityDamage" operation="perc_add" value=".4" tags="perkPummelPete"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".25" tags="perkPummelPete"/>
+
+				<passive_effect name="LootStage" operation="perc_add" value=".45">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="TraderStage" operation="base_add" value="60">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".5">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".5">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
 		</effect_group>
 		
 		<effect_group>
@@ -2969,7 +3102,7 @@
 				<passive_effect name="FoodLossPerStaminaPointGained" operation="perc_add" value="-.5"/>
 				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="-.5"/>
 				
-				<passive_effect name="ElementalDamageResist" operation="base_add" value="30.0" tags="toxic,radiation"/>
+				<passive_effect name="ElementalDamageResist" operation="base_add" value="60.0" tags="toxic,radiation,electrical,heat"/>
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.5" tags="running"> 
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
@@ -2979,15 +3112,28 @@
 				<passive_effect name="CarryCapacity" operation="base_add" value="100">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="WalkSpeed" operation="perc_add" value="0.175">
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0.2">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="RunSpeed" operation="perc_add" value="0.175">
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.2">
 				<requirement name="InBiome" biome="8"/>
 				</passive_effect>
-				<passive_effect name="EntityDamage" operation="perc_add" value=".5" tags="perkPummelPete"/>
-				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".3" tags="perkPummelPete"/>
-		</effect_group>
+				<passive_effect name="LootStage" operation="perc_add" value=".5">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="TraderStage" operation="base_add" value="80">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".6">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".6">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value=".6">
+				<requirement name="InBiome" biome="8"/>
+				</passive_effect>
+				</effect_group>
 </buff>
 </append>
 
@@ -3017,14 +3163,15 @@
 				<requirement name="!IsAttachedToEntity"/> 
 				<requirement name="IsAlive" target="other"/>
 				</triggered_effect>
-			
+				
 			<passive_effect name="EntityDamage" operation="perc_add" value=".05" tags="perkTurrets"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".05" tags="turretMelee"/>
 			<passive_effect name="EntityDamage" operation="perc_add"  value=".05" tags="turretMelee"/>
-			<passive_effect name="JunkTurretActiveCount" operation="base_add" value="1"/>
+			
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".1" tags="turretRanged"/>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".05" tags="turretMelee"/>
 			<passive_effect name="MagazineSize" operation="base_add" value="5" tags="perkTurrets"/>
+			<passive_effect name="JunkTurretActiveRange" operation="base_add" value="2"/>
 		</effect_group>
 		
 		<effect_group>
@@ -3044,14 +3191,16 @@
 				<requirement name="!IsAttachedToEntity"/> 
 				<requirement name="IsAlive" target="other"/>
 				</triggered_effect>
+				
 			
 			<passive_effect name="EntityDamage" operation="perc_add" value=".1" tags="perkTurrets"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".1" tags="turretMelee"/>
 			<passive_effect name="EntityDamage" operation="perc_add"  value=".1" tags="turretMelee"/>
-			<passive_effect name="JunkTurretActiveCount" operation="base_add" value="1"/>
+			
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".2" tags="turretRanged"/>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".1" tags="turretMelee"/>
 			<passive_effect name="MagazineSize" operation="base_add" value="10" tags="perkTurrets"/>
+			<passive_effect name="JunkTurretActiveRange" operation="base_add" value="4"/>
 		</effect_group>
 		
 		<effect_group>
@@ -3071,14 +3220,16 @@
 				<requirement name="!IsAttachedToEntity"/> 
 				<requirement name="IsAlive" target="other"/>
 				</triggered_effect>
+				
 			
 			<passive_effect name="EntityDamage" operation="perc_add" value=".2" tags="perkTurrets"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".2" tags="turretMelee"/>
 			<passive_effect name="EntityDamage" operation="perc_add"  value=".2" tags="turretMelee"/>
-			<passive_effect name="JunkTurretActiveCount" operation="base_add" value="1"/>
+			
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".4" tags="turretRanged"/>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".15" tags="turretMelee"/>
 			<passive_effect name="MagazineSize" operation="base_add" value="15" tags="perkTurrets"/>
+			<passive_effect name="JunkTurretActiveRange" operation="base_add" value="6"/>
 		</effect_group>
 		
 		<effect_group>
@@ -3098,14 +3249,16 @@
 				<requirement name="!IsAttachedToEntity"/> 
 				<requirement name="IsAlive" target="other"/>
 				</triggered_effect>
+				
 			
 			<passive_effect name="EntityDamage" operation="perc_add" value=".3" tags="perkTurrets"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".3" tags="turretMelee"/>
 			<passive_effect name="EntityDamage" operation="perc_add"  value=".3" tags="turretMelee"/>
-			<passive_effect name="JunkTurretActiveCount" operation="base_add" value="1"/>
+			
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".6" tags="turretRanged"/>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".2" tags="turretMelee"/>
 			<passive_effect name="MagazineSize" operation="base_add" value="20" tags="perkTurrets"/>
+			<passive_effect name="JunkTurretActiveRange" operation="base_add" value="8"/>
 		</effect_group>
 		
 		<effect_group>
@@ -3125,15 +3278,16 @@
 				<requirement name="!IsAttachedToEntity"/> 
 				<requirement name="IsAlive" target="other"/>
 				</triggered_effect>
+				
 			
 			<passive_effect name="EntityDamage" operation="perc_add" value=".4" tags="perkTurrets"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".4" tags="turretMelee"/>
 			<passive_effect name="EntityDamage" operation="perc_add"  value=".4" tags="turretMelee"/>
-			<passive_effect name="JunkTurretActiveCount" operation="base_add" value="1"/>
+			
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".8" tags="turretRanged"/>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".25" tags="turretMelee"/>
 			<passive_effect name="MagazineSize" operation="base_add" value="25" tags="perkTurrets"/>
-				
+			<passive_effect name="JunkTurretActiveRange" operation="base_add" value="10"/>	
 		</effect_group>
 		
 		<effect_group>
@@ -3153,14 +3307,18 @@
 				<requirement name="!IsAttachedToEntity"/> 
 				<requirement name="IsAlive" target="other"/>
 				</triggered_effect>
-			
+				
+			<passive_effect name="JunkTurretActiveCount" operation="base_add" value="0">
+			<requirement name="ProgressionLevel" progression_name="perkTurrets" operation="GTE" value="0"/>
+			</passive_effect>
 			<passive_effect name="EntityDamage" operation="perc_add" value=".5" tags="perkTurrets"/>
 			<passive_effect name="BlockDamage" operation="perc_add" value=".5" tags="turretMelee"/>
 			<passive_effect name="EntityDamage" operation="perc_add"  value=".5" tags="turretMelee"/>
-			<passive_effect name="JunkTurretActiveCount" operation="base_add" value="1"/>
+			
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value="1" tags="turretRanged"/>
 			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".3" tags="turretMelee"/>
 			<passive_effect name="MagazineSize" operation="base_add" value="30" tags="perkTurrets"/>
+			<passive_effect name="JunkTurretActiveRange" operation="base_add" value="12"/>
 		</effect_group>
 </buff>
 </append>

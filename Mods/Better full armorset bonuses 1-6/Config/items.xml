@@ -70,6 +70,33 @@
 				</passive_effect>
 </append>
 
+<append xpath="//item[contains(@name, 'ammoShotgunSh')]/effect_group[1]">		
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="1"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".15">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="2"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".2">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="3"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".3">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="4"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".4">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="5"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5">
+					<requirement name="ArmorGroupLowestQuality" group_name="groupCommando" operation="Equals" value="6"/>
+					<requirement name="HasBuff" buff="buffCommandoSetBonus"/>
+				</passive_effect>
+</append>
+
 <append xpath="//item[contains(@name, 'ammo762')]/effect_group[1]">
 				<passive_effect name="EntityDamage" operation="perc_add" value=".1">
 					<requirement name="ArmorGroupLowestQuality" group_name="groupRanger" operation="Equals" value="1"/>
@@ -352,4 +379,6 @@
 <append xpath="//item[contains(@name, 'gunHandgunT1')]/property[@name='Tags']/@value">,enforcerReload</append>
 <append xpath="//item[@name='gunHandgunT3SMG5']/property[@name='Tags']/@value">,rangerDamage</append>
 <append xpath="//item[@name='gunHandgunT3DesertVulture']/property[@name='Tags']/@value">,rangerDamage</append>
+<append xpath="//item[@name='gunShotgunT3AutoShotgun']/property[@name='Tags']/@value">,Commandoh</append>
+<append xpath="//item[@name='gunShotgunT2PumpShotgun']/property[@name='Tags']/@value">,Commandoh</append>
 </config>
