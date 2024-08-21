@@ -2,7 +2,6 @@
 	
 <append xpath="/recipes">
 <recipe name="toolDewGatherer" count="1" craft_time = "15" craft_area="workbench" tags="workbenchCrafting">
-	<ingredient name="resourceSnowBall" count="2"/>
 	<ingredient name="resourceScrapPolymers" count="25"/>
 	<ingredient name="resourceScrapIron" count="25"/>
 </recipe>
