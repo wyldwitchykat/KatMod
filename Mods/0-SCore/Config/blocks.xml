@@ -102,7 +102,7 @@
 				<property name="Logging" value="true"/>
 				<property name="AntiNerdPole" value="false" />
 				<!-- Player cannot jump and place a block under neath them-->
-				<property name="OneBlockCrouch" value="false" />
+				<property name="OneBlockCrouch" value="true" />
 				<!-- Allow you to fit through one block spaces -->
 				<property name="SoftHands" value="false" />
 				<!-- Damages the player if they hit something with their bare hands. -->
@@ -132,7 +132,7 @@
 				<!-- Each item that does not have a ItemWeight property will be weighed at this value. -->
 				<property name="MinimumWeight" value="0.1" />
 				
-				<property name="AutoRedeemChallenges" value="false" />
+				<property name="AutoRedeemChallenges" value="true" />
 				
 			</property>
 
