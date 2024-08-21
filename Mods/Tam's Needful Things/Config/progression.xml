@@ -1,23 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <progression>
+
+   <!-- Skillpoints -->
+   <set xpath="/progression/level/@skill_points_per_level">2</set>
+
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@name_key='medicalT2-1,medicalT2-2,medicalT2-3']"></remove>
   <remove xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@name_key='medicalT3-1,medicalT3-2,medicalT3-3']"></remove>
+  
   <insertafter xpath="/progression/crafting_skills/crafting_skill[@name='craftingMedical']/display_entry[@name_key='medicalT1-1,medicalT1-2']">
-    <display_entry icon="medicalPlasterCast,HealinggurneyBed,drugHerbalAntibiotics,drugRecog" name_key="medicalT2-1,medicalT2-2,medicalT2-3,medicalT2-4" has_quality="false" unlock_level="20,25,30,40">
+    <display_entry icon="medicalPlasterCast,gurneyBed,drugHerbalAntibiotics,drugRecog" name_key="medicalT2-1,medicalT2-2,medicalT2-3,medicalT2-4" has_quality="false" unlock_level="20,25,30,40">
       <unlock_entry item="medicalPlasterCast" unlock_tier="1" />
-      <unlock_entry item="HealinggurneyBed" unlock_tier="2" />
+      <unlock_entry item="gurneyBed" unlock_tier="2" />
       <unlock_entry item="drugHerbalAntibiotics" unlock_tier="3" />
       <unlock_entry item="drugRecog" unlock_tier="4" />
     </display_entry>
-    <display_entry icon="medicalFirstAidKit,drugAntibiotics,HealinghospitalBed,drugSteroids" name_key="medicalT3-1,medicalT3-2,medicalT3-3,medicalT3-4" has_quality="false" unlock_level="50,60,65,75">
+    <display_entry icon="medicalFirstAidKit,drugAntibiotics,hospitalBed,drugSteroids" name_key="medicalT3-1,medicalT3-2,medicalT3-3,medicalT3-4" has_quality="false" unlock_level="50,60,65,75">
       <unlock_entry item="medicalFirstAidKit" unlock_tier="1" />
       <unlock_entry item="drugAntibiotics" unlock_tier="2" />
-      <unlock_entry item="HealinghospitalBed" unlock_tier="3" />
+      <unlock_entry item="hospitalBed" unlock_tier="3" />
       <unlock_entry item="drugSteroids" unlock_tier="4" />
     </display_entry>
   </insertafter>
+  
   <append xpath="//crafting_skill[@name='craftingMedical']/effect_group">
-    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="HealinggurneyBed" />
-    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,100" value="1" tags="HealinghospitalBed" />
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="gurneyBed" />
+    <passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,100" value="1" tags="hospitalBed" />
   </append>
 </progression>

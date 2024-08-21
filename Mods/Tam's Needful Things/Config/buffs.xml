@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <configs>
   <append xpath="/buffs">
-    <buff name="buffCloudsHealing" name_key="buffCloudsHealingName" description_key="buffCloudsHealingDesc" tooltip_key="ToolTipCloudsHealing" icon="ui_game_symbol_add" icon_color="0,220,0">
+    <buff name="buffTamHealing" name_key="buffTamHealingName" description_key="buffTamHealingDesc" tooltip_key="ToolTipTamHealing" icon="ui_game_symbol_add" icon_color="0,220,0">
       <stack_type value="ignore" />
-      <display_value_key value="DisplayValueCloudsHealing" />
+      <display_value_key value="DisplayValueTamHealing" />
       <display_value value="+" />
       <duration value="3" />
       <effect_group>
@@ -13,9 +13,9 @@
         <triggered_effect action="AddBuff" trigger="onSelfBuffRemove" buff="buffPerkAbilityUpdate" />
       </effect_group>
     </buff>
-    <buff name="buffCloudsHealing1" name_key="buffCloudsHealing1Name" description_key="buffCloudsHealing1Desc" tooltip_key="ToolTipCloudsHealing1" icon="ui_game_symbol_add" icon_color="0,220,0">
+    <buff name="buffTamHealing1" name_key="buffTamHealing1Name" description_key="buffTamHealing1Desc" tooltip_key="ToolTipTamHealing1" icon="ui_game_symbol_add" icon_color="0,220,0">
       <stack_type value="ignore" />
-      <display_value_key value="DisplayValueCloudsHealing1" />
+      <display_value_key value="DisplayValueTamHealing1" />
       <display_value value="+" />
       <duration value="3" />
       <effect_group>
@@ -33,9 +33,9 @@
         <triggered_effect value="0" operation="set" action="ModifyCVar" trigger="onSelfBuffStart" cvar="$abrasionCounter" />
       </effect_group>
     </buff>
-    <buff name="buffCloudsHealing2" name_key="buffCloudsHealing2Name" description_key="buffCloudsHealing2Desc" tooltip_key="ToolTipCloudsHealing2" icon="ui_game_symbol_add" icon_color="0,220,0">
+    <buff name="buffTamHealing2" name_key="buffTamHealing2Name" description_key="buffTamHealing2Desc" tooltip_key="ToolTipTamHealing2" icon="ui_game_symbol_add" icon_color="0,220,0">
       <stack_type value="ignore" />
-      <display_value_key value="DisplayValueCloudsHealing2" />
+      <display_value_key value="DisplayValueTamHealing2" />
       <display_value value="+" />
       <duration value="3" />
       <effect_group>
