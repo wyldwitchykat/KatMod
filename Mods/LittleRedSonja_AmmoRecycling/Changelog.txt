@@ -1,0 +1,17 @@
+Ammunition Recycling v 1.0 -- by LittleRedSonja
+
+Changelog:
+
+1.0.0 - Allows you to recover 80% of the resources from unwanted ammunition in a very easy straightforward way. You open the ammo and recover the materials in the workbench. No schematics or levels in crafting skills needed. It takes some time to get the materials back. Opening and recovering materials from more complex types of ammunition, such as rockets, takes more time (but they will not explode, I promise).
+
+1.1.0 - Made the mod compatible with Izayo weapon pack, so you can recycle 5.56 and 45 ACP ammunition if you are using that mod. 
+      - Slightly increased time to recycle rockets. I guess it would take some time to open a rocket and recover fuel and explosives without exploding it. Don't worry, it is a small change and it still goes pretty fast.
+      - Since rocket ammunition can be more difficult to obtain you can now recycle rockets in stacks of 5 instead for 10.
+
+1.2.0 - Added compatibility with version 2.0 of Izayo weapon pack (that includes new weapons and several new ammunition types) and with my weapons mod "T2 into T3 weapons" (adds Hellfire shells for the Holland & Holland Paradox Shotgun).  
+ 
+I hope you enjoy the mod 💜. Let me know too if you have suggestions or find bugs.  🥰
+
+
+
+​

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+		<Name value="LittleRedSonja_AmmoRecycling" />
+		<DisplayName value="LittleRedSonja Ammunition Recycling"/>
+		<Description value="Allows you to recover 80% of the materials from unwanted ammunition in an easy straightforward way"/>
+		<Author value="LittleRedSonja" />
+		<Version value="1.2.0" />
+</xml>

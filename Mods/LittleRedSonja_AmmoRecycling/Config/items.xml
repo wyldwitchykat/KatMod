@@ -1,0 +1,418 @@
+<configs>
+
+	<append xpath="items">	
+
+		<item name="recycledAmmoSonja9mm">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="80,80,80"/>
+			</property>
+		</item>	
+		<item name="recycledAmmoSonja9mmHP">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="160,80,80"/>
+			</property>
+		</item>	
+		<item name="recycledAmmoSonja9mmAP">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="160,160,80"/>
+			</property>
+		</item>
+	
+		<item name="recycledAmmoSonja44">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="80,160,80"/>
+			</property>
+		</item>
+		<item name="recycledAmmoSonja44HP">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="160,160,80"/>
+			</property>
+		</item>
+		<item name="recycledAmmoSonja44AP">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="160,240,80"/>
+			</property>
+		</item>
+
+		<item name="recycledAmmoSonja762">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="80,240,80"/>
+			</property>
+		</item>
+		<item name="recycledAmmoSonja762HP">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="160,240,80"/>
+			</property>
+		</item>
+		<item name="recycledAmmoSonja762AP">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="160,400,80"/>
+			</property>
+		</item>
+
+		<item name="recycledAmmoSonjaShell">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBuckshot,resourceGunPowder,resourcePaper"/>
+				<property name="Create_item_count" value="80,320,80"/>
+			</property>
+		</item>
+		<item name="recycledAmmoSonjaSlug">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapPolymers"/>
+				<property name="Create_item_count" value="160,400,80"/>
+			</property>
+		</item>
+		<item name="recycledAmmoSonjaBreachingSlug">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceForgedSteel,resourceClayLump,resourceGunPowder,resourceScrapPolymers"/>
+				<property name="Create_item_count" value="240,160,320,80"/>
+			</property>
+		</item>
+	
+		<item name="recycledAmmoSonjaRocketFrag">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleExplosives"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBuckshot,resourceGunPowder,ammoGasCan,resourceRocketCasing"/>
+				<property name="Create_item_count" value="100,60,1500,4"/>
+			</property>
+		</item>
+		<item name="recycledAmmoSonjaRocketHE">
+			<property name="Extends" value="questRewardBundleMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleExplosives"/>
+			<property name="CustomIconTint" value="8E828B"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceRocketTip,resourceGunPowder,ammoGasCan,resourceRocketCasing"/>
+				<property name="Create_item_count" value="4,60,1500,4"/>
+			</property>
+		</item>
+
+	</append>
+
+	<conditional>
+	<if cond="mod_loaded('IZY_RMP_556pack')">
+		<append xpath="/items">
+			<item name="recycledAmmoSonjaIZ556">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleAmmo"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapIron,resourceBulletCasing"/>
+					<property name="Create_item_count" value="80,160,80,80"/>
+				</property>
+			</item>
+			<item name="recycledAmmoSonjaIZ556HP">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleAmmo"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapIron,resourceBulletCasing"/>
+					<property name="Create_item_count" value="80,320,80,80"/>
+				</property>
+			</item>
+			<item name="recycledAmmoSonjaIZ556AP">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleAmmo"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceScrapIron,resourceBulletCasing"/>
+					<property name="Create_item_count" value="80,240,400,80"/>
+				</property>
+			</item>
+		</append>
+	</if>
+	</conditional>
+	
+	<conditional>
+	<if cond="mod_loaded('IZY_RMP_45ACP')">
+		<append xpath="/items">
+			<item name="recycledAmmoSonjaIZ45ACP">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleAmmo"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceScrapIron,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="80,80,80,80"/>
+				</property>
+			</item>
+			<item name="recycledAmmoSonjaIZ45ACPHP">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleAmmo"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceScrapIron,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="80,160,160,80"/>
+				</property>
+			</item>
+			<item name="recycledAmmoSonjaIZ45ACPAP">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleAmmo"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceBulletTip,resourceScrapIron,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="160,160,160,80"/>
+				</property>
+			</item>
+		</append>
+	</if>
+	</conditional>
+	
+	<conditional>
+	<if cond="mod_loaded('IZY_RMP_Demopack')">
+		<append xpath="/items">
+			<item name="recycledAmmoSonjaRPGTraining">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleExplosives"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceRocketTip,resourceRocketCasing,resourceDuctTape,resourceForgedSteel,resourceGunPowder"/>
+					<property name="Create_item_count" value="16,16,32,16,240"/>
+				</property>
+			</item>
+			<item name="recycledAmmoSonjaRPGHE">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleExplosives"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceRocketTip,resourceRocketCasing,resourceDuctTape,resourceGunPowder"/>
+					<property name="Create_item_count" value="16,16,32,640"/>
+				</property>
+			</item>
+			<item name="recycledAmmoSonjaRPGIncendiary">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleExplosives"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceRocketTip,resourceRocketCasing,resourceDuctTape,resourceGunPowder,ammoGasCan"/>
+					<property name="Create_item_count" value="16,16,32,480,3000"/>
+				</property>
+			</item>
+			<item name="recycledAmmoSonjaGrenadeTraining">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleExplosives"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceForgedIron,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="40,400,160"/>
+				</property>
+			</item>
+			<item name="recycledAmmoGrenadeFRAGS">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleExplosives"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceForgedIron,resourceScrapIron,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="40,200,560,160"/>
+				</property>
+			</item>
+			<item name="recycledAmmoSonjaGrenadeHE">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleExplosives"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceForgedIron,resourceScrapIron,resourceGunPowder,resourceBulletCasing"/>
+					<property name="Create_item_count" value="40,80,640,160"/>
+				</property>
+			</item>
+		</append>
+	</if>
+	</conditional>
+	
+	<conditional>
+	<if cond="mod_loaded('LittleRedSonja_T2IT3')">
+		<append xpath="/items">
+			<item name="recycledAmmoSonjaHellFire">
+				<property name="Extends" value="questRewardBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="bundleAmmo"/>
+				<property name="CustomIconTint" value="8E828B"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="recycledAmmoSonjaDesc"/>
+				<property name="Stacknumber" value="10"/>
+				<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+				<property class="Action0">
+					<property name="Create_item" value="resourceForgedSteel,resourceGunPowder,resourceScrapPolymers,ammoGasCan"/>
+					<property name="Create_item_count" value="60,480,120,250"/>
+				</property>
+			</item>
+		</append>
+	</if>
+	</conditional>
+		
+</configs>
