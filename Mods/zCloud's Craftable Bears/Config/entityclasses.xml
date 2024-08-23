@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<configs>
-  <append xpath="/entity_classes/entity_class[@name='animalBear']">
-    <drop event="Harvest" name="BearHide" tag="butcherHarvest" count="1" prob="0.25" />
-  </append>
-  <append xpath="/entity_classes/entity_class[@name='animalZombieBear']">
-    <drop event="Harvest" name="BearHide" tag="butcherHarvest" count="1" prob="0.45" />
-  </append>
-</configs>
