@@ -1,0 +1,75 @@
+<Loot_XML>
+	
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackReg01']">
+	<item name="AssistingtheTradersJenItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersHughItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersJoelItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersBobItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersRektItem" count="1" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackReg02']">
+	<item name="AssistingtheTradersJenItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersHughItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersJoelItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersBobItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersRektItem" count="1" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackReg03']">
+	<item name="AssistingtheTradersJenItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersHughItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersJoelItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersBobItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersRektItem" count="1" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackStrong01']">
+	<item name="AssistingtheTradersJenItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersHughItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersJoelItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersBobItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersRektItem" count="1" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackStrong02']">
+	<item name="AssistingtheTradersJenItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersHughItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersJoelItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersBobItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersRektItem" count="1" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackStrong03']">
+	<item name="AssistingtheTradersJenItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersHughItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersJoelItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersBobItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersRektItem" count="1" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackBoss01']">
+	<item name="AssistingtheTradersJenItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersHughItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersJoelItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersBobItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersRektItem" count="1" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackBoss02']">
+	<item name="AssistingtheTradersJenItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersHughItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersJoelItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersBobItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersRektItem" count="1" loot_prob_template="veryLow"/>
+</append>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupZpackBoss03']">
+	<item name="AssistingtheTradersJenItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersHughItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersJoelItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersBobItem" count="1" loot_prob_template="veryLow"/>
+	<item name="AssistingtheTradersRektItem" count="1" loot_prob_template="veryLow"/>
+</append>
+	
+</Loot_XML>

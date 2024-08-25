@@ -1,0 +1,41 @@
+<configs>	
+	
+	<append xpath="//crafting_skill[@name='craftingBlades']">
+		<display_entry item="meleeWpnBladeT3SealCombatKnife" unlock_level="36,43,51,59,67,75" />
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="36,75" value="1" tags="meleeWpnBladeT3SealCombatKnife"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="43,51,59,67,75" value="1,2,3,4,5" tags="meleeWpnBladeT3SealCombatKnife"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="//crafting_skill[@name='craftingClubs']">
+		<display_entry item="meleeWpnClubT3TitaniumBaseballBat" unlock_level="36,43,51,59,67,75" />
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="36,75" value="1" tags="meleeWpnClubT3TitaniumBaseballBat"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="43,51,59,67,75" value="1,2,3,4,5" tags="meleeWpnClubT3TitaniumBaseballBat"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="//crafting_skill[@name='craftingRifles']">
+		<display_entry item="gunRifleT3WinchesterRifle" unlock_level="61,68,76,84,92,100" />
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="gunRifleT3WinchesterRifle"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="68,76,84,92,100" value="1,2,3,4,5" tags="gunRifleT3WinchesterRifle"/>
+		</effect_group>
+	</append>
+	
+	<append xpath="//crafting_skill[@name='craftingShotguns']">
+		<display_entry item="gunShotgunT3HollandParadox" unlock_level="61,68,76,84,92,100" />
+		<display_entry item="gunShotgunT3Remington" unlock_level="61,68,76,84,92,100" />
+	</append>
+	<append xpath="//crafting_skill[@name='craftingShotguns']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="gunShotgunT3HollandParadox"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="61,100" value="1" tags="gunShotgunT3Remington"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="68,76,84,92,100" value="1,2,3,4,5" tags="gunShotgunT3HollandParadox"/>
+		<passive_effect name="CraftingTier" operation="base_add" level="68,76,84,92,100" value="1,2,3,4,5" tags="gunShotgunT3Remington"/>
+	</append>
+	
+</configs>

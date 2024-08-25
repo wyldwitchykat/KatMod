@@ -1,0 +1,70 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+AssistingtheTradersJenItem,Items,item,,,"Call to Arms"
+AssistingtheTradersJenItemDesc,Items,item,,,"[c7a340]A hastily written note"
+
+AssistingtheTradersJen_name,Quest,Quest Info,,,"Assisting the WhiteRiver Faction"
+AssistingtheTradersJen_subtitle,Quest,Quest Info,,,"Assisting Trader Jen"
+AssistingtheTradersJen_description,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this, There's a huge horde heading straight for my compound! please come help me before I get over run." 
+AssistingtheTradersJen_offer,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this,\n\nThere's a huge horde heading straight for my compound!\n\n please come help me before I get over run. \n\n - Jen"
+
+AssistingtheTradersHughItem,Items,item,,,"Call to Arms"
+AssistingtheTradersHughItemDesc,Items,item,,,"[c7a340]A hastily written note"
+
+AssistingtheTradersHugh_name,Quest,Quest Info,,,"Assisting the WhiteRiver Faction"
+AssistingtheTradersHugh_subtitle,Quest,Quest Info,,,"Assisting Trader Hugh"
+AssistingtheTradersHugh_description,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this, There's a huge horde heading straight for my compound! please come help me before I get over run." 
+AssistingtheTradersHugh_offer,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this,\n\nThere's a huge horde heading straight for my compound!\n\n please come help me before I get over run. \n\n - Hugh"
+
+AssistingtheTradersJoelItem,Items,item,,,"Call to Arms"
+AssistingtheTradersJoelItemDesc,Items,item,,,"[c7a340]A hastily written note"
+
+AssistingtheTradersJoel_name,Quest,Quest Info,,,"Assisting the WhiteRiver Faction"
+AssistingtheTradersJoel_subtitle,Quest,Quest Info,,,"Assisting Trader Joel"
+AssistingtheTradersJoel_description,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this, There's a huge horde heading straight for my compound! please come help me before I get over run." 
+AssistingtheTradersJoel_offer,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this,\n\nThere's a huge horde heading straight for my compound!\n\n please come help me before I get over run. \n\n - Joel"
+
+AssistingtheTradersBobItem,Items,item,,,"Call to Arms"
+AssistingtheTradersBobItemDesc,Items,item,,,"[c7a340]A hastily written note"
+
+AssistingtheTradersBob_name,Quest,Quest Info,,,"Assisting the WhiteRiver Faction"
+AssistingtheTradersBob_subtitle,Quest,Quest Info,,,"Assisting Trader Bob"
+AssistingtheTradersBob_description,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this, There's a huge horde heading straight for my compound! please come help me before I get over run." 
+AssistingtheTradersBob_offer,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this,\n\nThere's a huge horde heading straight for my compound!\n\n please come help me before I get over run. \n\n - Bob"
+
+AssistingtheTradersRektItem,Items,item,,,"Call to Arms"
+AssistingtheTradersRektItemDesc,Items,item,,,"[c7a340]A hastily written note"
+
+AssistingtheTradersRekt_name,Quest,Quest Info,,,"Assisting the WhiteRiver Faction"
+AssistingtheTradersRekt_subtitle,Quest,Quest Info,,,"Assisting Trader Rekt"
+AssistingtheTradersRekt_description,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this, There's a huge horde heading straight for my compound! please come help me before I get over run." 
+AssistingtheTradersRekt_offer,Quest,Quest Info,,,"[00ff00]I've put out a lot of leaflets in the hopes someone finds this,\n\nThere's a huge horde heading straight for my compound!\n\n please come help me before I get over run. \n\n - Rekt"
+
+JensToken,Items,item,,,"Jens Token"
+HughsToken,Items,item,,,"Hughs Token"
+JoelsToken,Items,item,,,"Joels Token"
+BobsToken,Items,item,,,"Bobs Token"
+RektsToken,Items,item,,,"Rekts Token"
+TraderTokenDesc,Items,item,,,"[c7a340]A gift given by a Trader for your service.[-]"
+
+JensTokenLuckyDip,Items,item,,,"Jens Lucky Dip"
+HughsTokenLuckyDip,Items,item,,,"Hughs Lucky Dip"
+JoelsTokenLuckyDip,Items,item,,,"Joels Lucky Dip"
+BobsTokenLuckyDip,Items,item,,,"Bobs Lucky Dip"
+RektsTokenLuckyDip,Items,item,,,"Rekts Lucky Dip"
+TokenLuckyDipDesc,Items,item,,,"[c7a340]Do you feel lucky?.[-]"
+
+Speedyboots,item_modifiers,mod,,,"Speedy Boots"
+SpeedybootsDesc,item_modifiers,mod,,,"Increases base run speed by 25%.\n\n[ff0000]Installed in foot armour only."
+
+XpBooster,item_modifiers,mod,,,"Xp Booster"
+XpBoosterDesc,item_modifiers,mod,,,"Increases base XP by 10% for all actions and kills, stacks with other xp buffers.\n\n[ff0000]Can be installed in the Chest only."
+
+KevlarPlating,item_modifiers,mod,,,"Kevlar Plating"
+KevlarPlatingDesc,item_modifiers,mod,,,"Offers solid protection.\n\n[ff0000]Can be installed in all pieces of armour."
+
+SacredFlame,item_modifiers,mod,,,"Sacred Flame"
+SacredFlameDesc,item_modifiers,mod,,,"Grants a divine buff to ranged weapons, allowing most of your range shots to set the target on fire."
+
+ArcticSnap,item_modifiers,mod,,,"Arctic Snap"
+ArcticSnapDesc,item_modifiers,mod,,,"Grants a Chilling buff to ranged weapons, this effect brings even Radiated creatures to a crawl, allowing you much more control over hairy situations."
