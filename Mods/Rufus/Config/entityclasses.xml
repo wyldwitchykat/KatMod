@@ -19,7 +19,7 @@
 	<property name="Mesh" value="#@modfolder:Resources/EndZ4cowboy1.unity3d?EndZ4cowboy"/>
 	<property name="LookAtAngle" value="0"/>
 	<property name="Buffs" value=""/>
-	
+	<property name="HireCost" value="0" />
 <effect_group name="HasBackpack">
 	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="HasBackpack"/>		
 </effect_group>	

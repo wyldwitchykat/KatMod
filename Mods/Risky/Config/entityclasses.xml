@@ -35,7 +35,7 @@
 	<property name="SoundSense" value="player2stamina"/>
 	<property name="LookAtAngle" value="0"/>
 	<property name="Buffs" value=""/>
-	
+	<property name="HireCost" value="0" />
 <effect_group name="HasBackpack">
 	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="HasBackpack"/>		
 </effect_group>	
