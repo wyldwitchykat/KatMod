@@ -1,0 +1,33 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+zombiewesternsheriffLL,entityclasses,Entity,,,Sheriff Drifter
+
+npcwestern1,entityclasses,Entity,,,Buck
+zombiewestern1,entityclasses,Entity,,,Zombie Buck
+
+npcwestern2,entityclasses,Entity,,,Amos
+zombiewestern2,entityclasses,Entity,,,Zombie Amos
+
+npcwestern3,entityclasses,Entity,,,Colt
+zombiewestern3,entityclasses,Entity,,,Zombie Colt
+
+npcwestern4,entityclasses,Entity,,,Rufus
+zombiewestern4,entityclasses,Entity,,,Zombie Rufus
+
+npcwestern5,entityclasses,Entity,,,Tex
+zombiewestern5,entityclasses,Entity,,,Zombie Tex
+
+npcwestern6,entityclasses,Entity,,,Wyatt
+zombiewestern6,entityclasses,Entity,,,Zombie Wyatt
+
+npcwestern7,entityclasses,Entity,,,Alice
+zombiewestern7,entityclasses,Entity,,,Zombie Alice
+
+npcwestern8,entityclasses,Entity,,,Clara
+zombiewestern8,entityclasses,Entity,,,Zombie Clara
+
+npcwestern9,entityclasses,Entity,,,Josephine
+zombiewestern9,entityclasses,Entity,,,Zombie Josephine
+
+npcwestern10,entityclasses,Entity,,,Virginia
+zombiewestern10,entityclasses,Entity,,,Zombie Virginia
