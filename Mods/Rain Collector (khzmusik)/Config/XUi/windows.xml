@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<config>
-    <!--
-        To change the grid size of the dew collector, set these values.
-        The mod should automatically set the dew collector slots next time it is opened.
-    -->
-    <!-- <set xpath="//window[@name='windowDewCollector']/rect/grid/@cols">4</set>
-    <set xpath="//window[@name='windowDewCollector']/rect/grid/@rows">2</set> -->
-</config>

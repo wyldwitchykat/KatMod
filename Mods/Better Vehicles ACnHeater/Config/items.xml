@@ -1,4 +1,0 @@
-<config>
-<!--<append xpath="//item[@name='vehicleTruck4x4Placeable']/property[@name='Tags' and @value]/@value">,bwhasroof</append>
-<append xpath="//item[@name='vehicleMotorcyclePlaceable']/property[@name='Tags' and @value]/@value">,bwnoroof</append>-->
-</config>

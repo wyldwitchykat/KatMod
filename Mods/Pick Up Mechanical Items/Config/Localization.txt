@@ -1,2 +1,0 @@
-Key,english
-ttScrapForgedSteel,Place forged steel items on the crafting grid to get scrap forged steel

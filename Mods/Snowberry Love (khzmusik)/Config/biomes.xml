@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<configs>
-    <!-- Halve the amount of snowberries spawned in the forest biome -->
-    <set xpath="//biome[@name='pine_forest']//decoration[@blockname='plantedSnowberry3Harvest']/@prob">.0005</set>
-
-    <!-- Halve the amount of snowberries spawned in the "Grass and Blueberries" snow sub-biome -->
-    <set xpath="//biome[@name='snow']//decoration[@blockname='plantedSnowberry3Harvest' and @prob='.1']/@prob">.05</set>
-</configs>

@@ -1,9 +1,0 @@
-<configs>
-
-    <append xpath="blocks/block[@name='lanternDecorLightWhite']">
-        <property name="CanPickup" value="true" param1="lanternDecorLightBlockVariantHelper" />
-        <property name="Takedelay" value="1" />
-        <property name="Class" value="" />
-    </append>
-
-</configs>

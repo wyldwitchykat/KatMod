@@ -1,8 +1,0 @@
-﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-
-shapeBBIronBars,shapes,Block,,,BetterBars Bars NoCollider,,,,,,,,,,,,,
-shapeBBIronBarsCorner,shapes,Block,,,BetterBars Corner NoCollider,,,,,,,,,,,,,
-shapeBBIronBarsTRUECornerH,shapes,Block,,,BetterBars Bars TRUE Corner Horizontal ,,,,,,,,,,,,,
-shapeBBIronBarsTRUECornerV,shapes,Block,,,BetterBars TRUE Bars Corner Vertical,,,,,,,,,,,,,
-shapeBBRailingTRUECornerH,shapes,Block,,,BetterBars TRUE Railing Corner Horizontal,,,,,,,,,,,,,
-shapeBBRailingTRUECornerV,Block,,,BetterBars TRUE Railing Corner Vertical,,,,,,,,,,,,,

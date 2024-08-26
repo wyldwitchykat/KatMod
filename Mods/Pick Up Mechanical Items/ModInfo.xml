@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-  <Name value="PickUpMechanicalItems" />
-  <DisplayName value="Pick Up Mechanical Items" />
-  <Version value="1.0" />    
-  <Description value="Pick up non player items like Stations, Solar Panels and Vending Machines" />
-  <Author value="napalm1" />
-  <Website value="" />
-</xml>

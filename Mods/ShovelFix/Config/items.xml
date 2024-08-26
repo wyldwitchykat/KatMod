@@ -1,9 +1,0 @@
-<items>
-
-	<setattribute xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/property[@name='Tags']" name="value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,miningTool</setattribute> 
-	<setattribute xpath="/items/item[@name='meleeToolShovelT1IronShovel']/property[@name='Tags']" name="value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,miningTool</setattribute>
-	<setattribute xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='Tags']" name="value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,miningTool</setattribute> 
-	
-	
-	
-</items>

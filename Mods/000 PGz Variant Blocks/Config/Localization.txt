@@ -1,4 +1,0 @@
-﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-
-shapeCategoryPGz,XUi,Shape Window,,,PGz Custom Shapes,,PGz,PGz,PGz,PGz,PGz,PGz,PGz,PGz,PGz,PGz,PGz,PGz
-shapePGzCube,shapes,Block,,,TestBlock,,,,,,,,,,,,,

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<Name value="Add_Acid" />
-	<DisplayName value="Craft Acid at the Workbench" />
-	<Description value="Add acid recipe to workbench." />
-	<Author value="Pahbi" />
-	<Version value="1.0" />
-	<Website value="" />
-</xml>

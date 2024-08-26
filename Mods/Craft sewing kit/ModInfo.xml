@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<Name value="Add_Sewkit" />
-	<DisplayName value="Craft sewing kit." />
-	<Description value="Add sewing kit recipe to workbench." />
-	<Author value="Pahbi" />
-	<Version value="1.0" />
-	<Website value="" />
-</xml>

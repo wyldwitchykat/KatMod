@@ -1,8 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english
-
-ScubaMask,Items,item,,,"Scuba Mask"
-ScubaMaskDesc,Items,item,,,"Wear this scuba mask to prevent drowning."
-
-buffScubaMaskDesc,buffs,buff,,,"You are wearing a scuba mask and cannot drown."
-buffScubaMaskName,buffs,buff,,,"[00FFFF]Scuba Mask[ffffff]"
-buffScubaMaskTooltip,buffs,buff,,,"[00FFFF]You are wearing a scuba mask and cannot drown.[ffffff]"

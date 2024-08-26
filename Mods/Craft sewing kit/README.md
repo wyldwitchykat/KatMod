@@ -1,1 +1,0 @@
-Sets parameters in recipies.xml to add SewingKit to workbench recipies

@@ -1,4 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english
-FPSPaintbrush,items,Item,,,FPS Paintbrush
-FPSPaintbrushDesc,items,Item,,,"A special paintbrush that never needs refilling!"
-

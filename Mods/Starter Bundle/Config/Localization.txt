@@ -1,3 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-AbasiyanikStarterBundle,items,Item,,,"Starter Bundle",,,,,,,,,,,,,,
-AbasiyanikStarterBundleDesc,items,Item,,,"It contains some items that will make things easier. Take care of them.",,,,,,,,,,,,,,

@@ -1,3 +1,0 @@
-key,English,schinese
-noteSkillPEZ,A StiffNotes Page,僵硬风化的笔记
-noteSkillPEZDesc,"Someone has written down some insightful tips on a piece of paper. It looks like it references one of the books you've recently encountered. You might learn something from reading it.\n\n[00FF00]+1[-] Skill Point","有人在笔记上写下了一些有见地的提示,它看起来像是引用了你最近遇到的一本书,你可能会从阅读中学到一些东西.\n\n[00FF00]+1[-] 技能点"

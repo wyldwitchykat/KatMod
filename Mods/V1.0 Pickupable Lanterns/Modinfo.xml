@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-    <Name value="Pickupable_Lanterns" />
-    <DisplayName value="Pickupable Lanterns" />
-    <Description value="Enables you to pick up the camping lanterns around the world and in POIs" />
-    <Author value="Specifii" />
-    <Version value="1.0.0.0" />
-    <Website value="" />
-</xml>

@@ -1,8 +1,0 @@
-<configs>
-	<!-- Append water filter recipe to end of recipes -->
-	<append xpath="/recipes">
-		<recipe name="resourceScrapPolymers" count="1" craft_area="chemistryStation" craft_time="10">
-			<ingredient name="resourceOilShale" count="100"/>
-		</recipe>
-	</append>
-</configs>

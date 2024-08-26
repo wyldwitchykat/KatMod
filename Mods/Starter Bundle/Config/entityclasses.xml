@@ -1,5 +1,0 @@
-<asb>
-	<append xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']/@value">,AbasiyanikStarterBundle</append>
-	<append xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']/@value">,AbasiyanikStarterBundle</append>
-	<append xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']/@value">,AbasiyanikStarterBundle</append>
-</asb>

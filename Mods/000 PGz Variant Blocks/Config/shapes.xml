@@ -1,7 +1,0 @@
-<Phys1csGamez>
-
-<insertAfter xpath="/shapes/categories/category[14]">
-<category name="PGz" icon="ui_game_symbol_pg" order="15" />
-</insertAfter>
-
-</Phys1csGamez>

@@ -1,2 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english
-cntBirdnestEmpty,blocks,block,,,Empty Birds Nest

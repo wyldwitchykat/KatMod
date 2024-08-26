@@ -1,1 +1,0 @@
-This modlet will set parameters in recipies.xml to add water to campfire

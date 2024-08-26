@@ -1,6 +1,0 @@
-<xSteel>
-  <set xpath="//perk[@name='perkPackMule']//passive_effect[@name='CarryCapacity']/@value">6,12,18,24,32</set>
-  <remove xpath="//perk[@name='perkPackMule']//effect_description"></remove>
-  <set xpath="//book[@name='perkFiremansAlmanacComplete']//passive_effect[@name='CarryCapacity']/@value">80</set>
-  <set xpath="//book[@name='perkNightStalkerThiefAdrenaline']//passive_effect[@name='CarryCapacity']/@value">80</set>
-</xSteel>
