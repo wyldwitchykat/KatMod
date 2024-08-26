@@ -1,7 +1,0 @@
-<World_Lighting_Tuned>
-    <append xpath="/windows">
-        <window name="wltHighPass" depth="-150" width="5200" height="2200" >
-            <sprite name="reduction" color="1,1,1,105" pivot="center"/>
-        </window>
-    </append>
-</World_Lighting_Tuned>

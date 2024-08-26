@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<Name value="World_Lighting_Tuned" />
-	<DisplayName value="World Lighting Tuned" />
-	<Description value="Inside/Outside and Day/Night world lighting that's been finely tuned to reach the triple point of realism, gameplay balance, and horror immersion." />
-	<Author value="ILokhart" />
-	<Version value="2.0" />
-	<Website value="https://github.com/EverythingsJake/7D2D-World-Lighting-Tuned" />
-</xml>
