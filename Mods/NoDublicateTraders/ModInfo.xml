@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="No_dublicates_traders" />
+    <DisplayName value="No Dublicates Trader in World" />
+    <Version value="1.1" />
+    <Description value="This mod makes it impossible for duplicate traders to appear in the generated game world. You will always have only one Rect, one Jen, and so on." />
+    <Author value="Survager" />
+</xml>

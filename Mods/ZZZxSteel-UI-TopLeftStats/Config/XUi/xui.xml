@@ -1,0 +1,8 @@
+<mod>
+
+		<append xpath="//window_group[@name='compass']">
+			<window name="windowTopLeftStats" />
+		</append>
+
+
+</mod>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="PGzVariantBlocks" />
+	<DisplayName value="PGz Variant Block Mod" />
+	<Description value="Required modlet for all current and future PGz block/shapes mods." />
+	<Author value="Phys1csGamez" />
+	<Version value="1.0.0.0" />
+	<Website value="https://www.youtube.com/@Phys1csGamez" />" />
+</xml>

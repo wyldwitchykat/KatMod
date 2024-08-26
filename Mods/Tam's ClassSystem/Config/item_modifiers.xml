@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tamz>
+    <!-- Bandanapierce Mod -->
+	<append xpath="/item_modifiers">
+	
+		<!-- Add Bandana as Helmet Mod -->	
+		<item_modifier name="modArmorBandana" installable_tags="armorHead" modifier_tags="bandana" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="resourceCloth"/>			<!--apparelBandanna removed, so temp subsitite-->
+			<property name="DisplayType" value="clothingBandana"/>
+			<property name="TraderStageTemplate" value="modsTier2"/>
+			<property name="Material" value="Mcloth"/>		
+			<property name="EconomicValue" value="1000"/>
+
+			<effect_group tiered="false">
+			<passive_effect name="HyperthermalResist" operation="base_add" value="2"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.025"/>
+			<display_value name="dNoiseMultiplier" value="-.025"/>	
+			</effect_group>
+		</item_modifier>	
+
+		<!-- Add Facial Piercings as Helmet Mod -->	
+		<item_modifier name="modArmorFacialPiercings" installable_tags="armorHead" modifier_tags="facial piercings" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="hubCaps"/>				<!--apparelFacialPiercings removed, so temp subsitite-->
+			<property name="DisplayType" value="clothingFacialPiercings"/>
+			<property name="TraderStageTemplate" value="modsTier2"/>
+			<property name="Material" value="Msteel"/>		
+			<property name="EconomicValue" value="1000"/>
+
+			<effect_group tiered="false">
+			<passive_effect name="BarteringSelling" operation="base_add" value=".1"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".1"/>
+			<display_value name="dPlayerExpGain" value=".1"/>		
+			</effect_group>
+		</item_modifier>
+
+	</append>
+	
+<!-- add thermal resist to Cigar -->
+	<append xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/effect_group">
+		<passive_effect name="HypothermalResist" operation="base_add" value="2"/>
+	</append>
+
+<!-- remove bartering selling from Cigar -->
+<remove xpath="/item_modifiers/item_modifier[@name='modArmorCigar']/effect_group/passive_effect[@name='BarteringSelling']"/>	
+
+</tamz>

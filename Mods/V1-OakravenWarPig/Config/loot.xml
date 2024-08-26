@@ -1,0 +1,21 @@
+<configs>
+	
+<!-- Vehicles -->
+
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuest4x4Parts']">
+	<lootgroup name="groupQuestWarPigCarParts" count="all">
+		<item name="questRewardvehicleWarPigCarPartsBundle"/>
+	</lootgroup>
+	</insertBefore>
+	
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+	<lootgroup name="WarPigCarParts">
+		<item name="vehicleWarPigCarChassis"/>
+		<item name="vehicleWarPigCarAccessories"/>
+		<item name="vehicleWheels"/>
+		<item name="smallEngine"/>
+		<item name="carBattery"/>
+	</lootgroup>	
+	</insertBefore>
+	
+</configs>

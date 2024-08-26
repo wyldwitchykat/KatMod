@@ -1,0 +1,5 @@
+<FPS>
+
+<remove xpath="/quests/quest/objective[@type='RallyPoint']/property[@value='quest_treasure_replace_road']"></remove>
+
+</FPS>

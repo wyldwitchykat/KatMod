@@ -1,0 +1,41 @@
+﻿<configs>
+	<!-- // ********  ******** -->
+	<!-- <set xpath="/blocks/block//property[@class='FireManagement']/property[@name='Tags']/@value">,openbyhorn</set> -->
+	
+	<!-- *** Log_Wall_Gate -->
+	<append xpath="/blocks/block[@name='doorWoodLargeGate']/property[@name='Tags']/@value">,openbyhorn,distlong</append>
+	<!-- <append xpath="/blocks/block[@name='doorWoodLargeGate']">
+		<property name="CreativeMode" value="Dev"/>
+	</append> -->
+	<!-- chainlinkGateDoubleWide  chainlinkGateDouble  chainlinkFenceDoor  chainlinkFenceDoorDouble  rollUpGate3x3White  rollUpGate4x3White  rollUpGate5x3White  rollUpDoor3x3White  rollUpDoor5x4White  rollUpDoor7x4White  ironDoorWhite  ironDoorDoubleWhite  vaultDoor01  vaultDoor01Double -->
+	<!-- <property name="Class" value="DoorSecure"/> -->
+	<append xpath="/blocks/block[@name='chainlinkGateDoubleWide']/property[@name='Tags']/@value">,openbyhorn,distlong</append>
+	<!-- <append xpath="/blocks/block[@name='chainlinkGateDouble']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='chainlinkFenceDoor']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='chainlinkFenceDoorDouble']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	
+	<!-- <append xpath="/blocks/block[@name='rollUpGate3x3White']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='rollUpGate4x3White']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='rollUpGate5x3White']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='rollUpDoor3x3White']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='rollUpDoor5x4White']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='rollUpDoor7x4White']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='ironDoorWhite']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='ironDoorDoubleWhite']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='vaultDoor01']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='vaultDoor01Double']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	
+	<!-- <append xpath="/blocks/block[@name='ironGarageDoorWhite']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='doorWoodLargeGate']">
+		<property name="Tags" value="door,openbyhorn"/>
+	</append> -->
+	<!-- <append xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	
+	<!-- *** ROLL_UP_SECURITY_GATES -->
+	<!-- <append xpath="/blocks/block[@name='rollUpGate4x3White']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<!-- <append xpath="/blocks/block[@name='rollUpGate4x3DiagonalWhite']/property[@name='Tags']/@value">,openbyhorn</append> -->
+	<append xpath="/blocks/block[@name='metalReinforcedWoodDrawBridge']/property[@name='Tags']/@value">,openbyhorn,distlong</append>
+	
+	
+	<append xpath="/blocks/block/property[@name='Tags'][@value='door']/@value">,openbyhorn</append>
+</configs>

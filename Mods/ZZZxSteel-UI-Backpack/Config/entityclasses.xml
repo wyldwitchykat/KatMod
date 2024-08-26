@@ -1,0 +1,4 @@
+<xSteel>
+	<set xpath="//entity_class[@name='playerMale']//passive_effect[@name='BagSize']/@value">80</set>
+	<set xpath="//entity_class[@name='playerMale']//passive_effect[@name='CarryCapacity']/@value">48</set>
+</xSteel>

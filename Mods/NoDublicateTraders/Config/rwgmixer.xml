@@ -1,0 +1,23 @@
+<configs>
+	
+	<!-- Trader Rect Count in World -->
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_rekt']/@min_count">1</set>
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_rekt']/@max_count">1</set>
+	
+	<!-- Trader Jen Count in World -->
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_jen']/@min_count">1</set>
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_jen']/@max_count">1</set>
+	
+	<!-- Trader Bob Count in World -->
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_bob']/@min_count">1</set>
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_bob']/@max_count">1</set>
+	
+	<!-- Trader Hugh Count in World -->
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_hugh']/@min_count">1</set>
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_hugh']/@max_count">1</set>
+	
+	<!-- Trader Joel Count in World -->
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_joel']/@min_count">1</set>
+	<set xpath="/rwgmixer/prefab_spawn_adjust[@partial_name='trader_joel']/@max_count">1</set>
+	
+</configs>

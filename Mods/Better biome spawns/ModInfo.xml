@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="Bettersnowspawns"/> 
+    <DisplayName value="Better biome spawns"/> 
+    <Version value="1.0"/>
+    <Description value="Spawns a bigger variety of zombies in the snow biome"/> 
+    <Author value="Black Wolf"/> 
+    <Website value="" /> 
+</xml>

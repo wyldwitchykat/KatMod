@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+<!-- My Classes -->
+<append xpath="/recipes">
+
+<recipe name="classLumberjack" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classPreacher" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classRogue" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classAthletic" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classEnforcer" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+
+<recipe name="classFarmer" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classBiker" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classScavenger" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classRanger" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classCommando" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classAssassin" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classMiner" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classNomad" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classNerd" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<recipe name="classRaider" count="1" craft_time="25">
+	<ingredient name="classPacketW1" count="1"/>
+	<ingredient name="resourcePaper" count="5"/>
+</recipe>
+
+<!-- Bandanapierce Mod -->
+<recipe name="modArmorBandana" count="1" craft_area="workbench">
+	<ingredient name="resourceCloth" count="250"/>
+	<ingredient name="resourceSewingKit" count="5"/>
+</recipe>
+
+<recipe name="modArmorFacialPiercings" count="1" craft_area="workbench">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceSilverNugget" count="2"/>
+</recipe>
+
+</append>
+
+</configs>

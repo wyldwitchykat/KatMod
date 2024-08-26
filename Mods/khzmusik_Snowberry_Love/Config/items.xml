@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+    <!-- Snowberries -->
+    <insertBefore xpath="/items/item[@name='foodCropBlueberries']">
+        <item name="resourceCropSnowberryPlant">
+            <property name="Tags" value="food,foodSkill,fitness" />
+            <property name="CustomIcon" value="foodCropBlueberries" />
+            <property name="CustomIconTint" value="ffffaf" />
+            <property name="HoldType" value="31" />
+            <property name="DisplayType" value="foodRaw" />
+            <property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab" />
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+            <property name="Material" value="MresourceCrop" />
+            <property name="Stacknumber" value="125" /> <!-- STK resource -->
+            <property name="EconomicValue" value="10" />
+            <property name="CraftingIngredientTime" value="8" />
+
+            <property class="Action0">
+                <property name="Class" value="Eat" />
+                <property name="Delay" value="1.0" />
+                <property name="Sound_start" value="player_eating" />
+            </property>
+            <property name="Group" value="Food/Cooking,CFFood/Cooking" />
+
+            <effect_group tiered="false" name="Food Tier 0">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables" />
+            </effect_group>
+        </item>
+    </insertBefore>
+
+    <!-- Snowberry tea -->
+    <insertAfter xpath="/items/item[@name='drinkJarRedTea']">
+        <item name="drinkJarSnowberryTea">
+            <property name="Tags" value="drinks,foodSkill,fitness" />
+            <property name="HoldType" value="3" />
+            <property name="DisplayType" value="waterGoldenrod" />
+            <property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab" />
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+            <property name="Material" value="Mglass" />
+            <property name="Stacknumber" value="10" />
+            <property name="EconomicValue" value="48" />
+            <property name="UnlockedBy" value="craftingFood" />
+            <property name="SoundPickup" value="jars_grab" />
+            <property name="SoundPlace" value="jars_place" />
+
+            <property class="Action0">
+                <property name="Class" value="Eat" />
+                <property name="Delay" value="1.0" />
+                <property name="Sound_start" value="player_drinking" />
+            </property>
+            <property name="Group" value="Food/Cooking,CFDrink/Cooking" />
+
+            <effect_group tiered="false" name="Drink Tier 1">
+                <requirement name="NotHasBuff" buff="buffIsOnFire" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="24" />
+                <display_value name="dStaminaRegen" value=".15" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables" />
+
+                <display_value name="dCureDysentery" value=".10" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDysenteryAddCurePerc" operation="add" value="10" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryAddCure" />
+            </effect_group>
+
+            <effect_group tiered="false">
+                <requirement name="HasBuff" buff="buffIsOnFire" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire" />
+            </effect_group>
+        </item>
+    </insertAfter>
+
+    <!-- Snowberry paste - copied near-verbatim from aloe cream-->
+    <insertAfter xpath="/items/item[@name='medicalAloeCream']">
+        <item name="medicalSnowberryPaste">
+            <property name="Tags" value="medical" />
+            <property name="DisplayType" value="medical" />
+            <property name="HoldType" value="64" />
+            <property name="Meshfile" value="@:Other/Items/Health/bandage.FBX" />
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+            <property name="Material" value="Morganic" />
+            <property name="EconomicValue" value="10" />
+            <property name="Stacknumber" value="15" />
+            <property name="Group" value="Science,CFChemicals,Medical" />
+            <property class="Action0">
+                <property name="Class" value="Eat" />
+                <property name="Delay" value="1.0" />
+                <property name="Sound_start" value="player_ointment" />
+            </property>
+            <property class="Action1">
+                <property name="Class" value="UseOther" />
+                <property name="Delay" value="1.0" />
+                <property name="Sound_start" value="player_ointment" />
+            </property>
+
+            <effect_group tiered="false">
+                <!-- used on self -->
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="healAbrasionMult" operation="set" value="2" />
+                <display_value name="dhealAbrasionMult" value="2" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInjuryAbrasionTreated">
+                    <requirement name="HasBuff" buff="buffInjuryAbrasion" />
+                </triggered_effect>
+
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medicalRegHealthAmount" operation="add" value="5" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="medRegHealthIncSpeed" operation="set" value="@$medicRegHealthIncreaseSpeed" />
+                <display_value name="foodHealthAmount" value="5" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables" />
+
+                <!-- used on other -->
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="healAbrasionMult" operation="set" value="2" />
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medicalRegHealthAmount" operation="add" value="5" />
+
+                <!-- used on other, regular health per tick based on perkPhysician -->
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="2">
+                    <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="0" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="2.5">
+                    <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="1" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="2.8">
+                    <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="2" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="3.1">
+                    <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="3" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="medRegHealthIncSpeed" operation="set" value="3.5">
+                    <requirement name="ProgressionLevel" progression_name="perkPhysician" operation="Equals" value="4" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffProcessConsumables" />
+                <triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffInjuryAbrasionTreated">
+                    <requirement name="HasBuff" buff="buffInjuryAbrasion" />
+                </triggered_effect>
+            </effect_group>
+        </item>
+    </insertAfter>
+
+    <!-- Grandma's Gin -->
+    <insertAfter xpath="/items/item[@name='drinkJarGrandpasMoonshine']">
+        <item name="drinkJarGrandmasGin">
+            <property name="Tags" value="drinks,foodSkill,fitness" />
+            <property name="HoldType" value="3" />
+            <property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab" />
+            <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+            <property name="Material" value="Mglass" />
+            <property name="Stacknumber" value="10" />
+            <property name="EconomicValue" value="500" />
+            <property name="UnlockedBy" value="craftingFood" />
+            <property name="DisplayType" value="waterGrandmasGin" />
+            <property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical" />
+            <property class="Action0">
+                <property name="Class" value="Eat" />
+                <property name="Delay" value="2" />
+                <property name="Sound_start" value="player_drinking" />
+            </property>
+            <effect_group tiered="false" name="Drink Tier 5">
+                <requirement name="NotHasBuff" buff="buffIsOnFire" />
+                <!-- Show buffs from beer -->
+                <display_value name="dStaminaRegen" value=".4" />
+                <display_value name="dEntityDamageBrawling" value="3" />
+                <display_value name="dStunResist" value="1" />
+                <!-- Show buffs from (what used to be) nerdy glasses -->
+                <display_value name="dIntellect" value="1" />
+                <display_value name="dCraftingTime" value="-.1" />
+                <display_value name="dPlayerExpGain" value=".1" />
+                <!-- Duration - same as beer and moonshine, +3 is added to the duration CVar for whatever reason -->
+                <display_value name="dDuration" value="60" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandmasGinDuration" operation="add" value="63" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffGrandmasGinDuration" operation="set" value="183">
+                    <requirement name="CVarCompare" cvar="$buffGrandmasGinDuration" operation="GT" value="183" />
+                </triggered_effect>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrunkGrandmasGin" />
+            </effect_group>
+            <effect_group tiered="false">
+                <requirement name="HasBuff" buff="buffIsOnFire" />
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire" />
+            </effect_group>
+        </item>
+    </insertAfter>
+
+    <!-- If Bad Medicine is installed, drinking Grandma's Gin while on fire gives makes it worse. -->
+    <conditional>
+        <if cond="mod_loaded('khzmusik_Bad_Medicine')">
+            <set xpath="//item[@name='drinkJarGrandmasGin']/effect_group/triggered_effect[@buff='buffExtinguishFire']/@buff">buffFireBad</set>
+        </if>
+    </conditional>
+
+    <!-- If Food Spoilage is installed, make snowberries and snowberry tea spoil. -->
+    <conditional>
+        <if cond="mod_loaded('khzmusik_Food_Spoilage')">
+            <append xpath="//item[@name='resourceCropSnowberryPlant']">
+                <property name="Spoilable" value="true" />
+                <property name="ShowQuality" value="false" />
+                <property name="QualityTierColor" value="1" />
+                <property name="SpoiledItem" value="resourceFertilizer" />
+                <property name="TickPerLoss" value="168" />
+                <property name="SpoilageMax" value="1000" />
+                <property name="SpoilagePerTick" value="3" />
+            </append>
+            <append xpath="//item[@name='drinkJarSnowberryTea']">
+                <property name="Spoilable" value="true" />
+                <property name="ShowQuality" value="false" />
+                <property name="QualityTierColor" value="1" />
+                <property name="SpoiledItem" value="drinkJarRiverWater" />
+                <property name="TickPerLoss" value="168" />
+                <property name="SpoilageMax" value="1000" />
+                <property name="SpoilagePerTick" value="3" />
+            </append>
+        </if>
+    </conditional>
+</configs>

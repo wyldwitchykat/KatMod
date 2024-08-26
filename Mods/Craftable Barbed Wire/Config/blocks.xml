@@ -1,0 +1,534 @@
+<config>
+
+<append xpath="/blocks">
+
+	<!-- *** BANDIT_BARBWIRE_SPINDLE -->
+
+<block name="Angry Alfred">
+	<property name="Extends" value="cntBarrelMetalMaster" param1="CustomIcon"/>
+	<property name="LootList" value="gasBarrel"/>
+	<property name="CustomIcon" value="ammoBarrelBoom"/>
+	<property name="Explosion.ParticleIndex" value="14"/>
+	<property name="EconomicValue" value="12"/>
+	<property name="DescriptionKey" value="alfredDesc"/>
+	<property name="Model" value="Entities/Industrial/barrelGasPrefab"/>
+	<property name="SortOrder1" value="B260"/>
+	<property name="SortOrder2" value="0100"/>
+</block>
+
+</append>
+
+<!-- Cainlionk -->
+	<append xpath="/blocks">
+	
+	<block name="ReinforcedChainlinkFenceVariantHelper">
+		<property name="CustomIcon" value="chainlinkFenceTopRailBridge" /> 
+		<property name="CustomIconTint" value="373737"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="ItemTypeIcon" value="all_blocks"/> 
+        <property name="Material" value="Mmetal"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Collide" value="movement,melee,rocket,vehicle"/>
+        <property name="UnlockedBy" value="craftingWorkstations"/>
+		<property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="1"/>
+        <property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="5000"/>
+		<property class="RepairItems">
+			<property name="resourceScrapIron" value="20"/> 
+		</property>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<drop event="Destroy" count="0" />
+		<property name="SelectAlternates" value="true"/>
+		<property name="PlaceAltBlockValue" value="ReinforcedChainlinkFenceTopRailBridge,ReinforcedChainlinkFencePole,ReinforcedChainlinkFenceBottomRail,ReinforcedChainlinkFenceBottomRailPoleLeft,ReinforcedChainlinkFenceBottomRailPoleRight,ReinforcedChainlinkFenceBottomRailPoleCorner,ReinforcedChainlinkFenceMiddleRail,ReinforcedChainlinkFenceMiddleRailPoleLeft,ReinforcedChainlinkFenceMiddleRailPoleRight,ReinforcedChainlinkFenceMiddleRailPoleCorner,ReinforcedChainlinkFenceTopRail,ReinforcedChainlinkFenceTopRailPoleLeft,ReinforcedChainlinkFenceTopRailPoleRight,ReinforcedChainlinkFenceTopRailCorner,ReinforcedChainlinkFenceBottomPlain,ReinforcedChainlinkFenceBottomPlainPoleLeft,ReinforcedChainlinkFenceBottomPlainPoleRight,ReinforcedChainlinkFenceBottomPlainCorner,ReinforcedChainlinkFenceTopPlainRail,ReinforcedChainlinkFenceTopPlainRailPoleLeft,ReinforcedChainlinkFenceTopPlainRailPoleRight,ReinforcedChainlinkFenceTopPlainRailCorner"/>
+		<property name="DescriptionKey" value="ReinforcedChainlinkFenceVariantHelperGroupDesc"/>
+	</block>
+	
+		<block name="ReinforcedChainlinkFenceTopRailBridge">
+			<property name="CustomIcon" value="chainlinkFenceTopRailBridge" /> 
+			<property name="CustomIconTint" value="373737"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceTopBridgePrefab"/>
+			<property name="TintColor" value="373737"/>
+			<property name="Collide" value="movement,melee,rocket,vehicle"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="Group" value="Building,Building2"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="MaxDamage" value="5000"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="CanPickup" value="false"/>
+			<drop event="Destroy" count="0" />
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="20"/>
+			</property>
+		</block>
+		
+		<block name="ReinforcedChainlinkFencePole">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFencePole" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencePolePrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+	
+		<block name="ReinforcedChainlinkFenceBottomRail">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceBottomRail" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencebottomPrefab"/>
+		</block>
+		
+		<block name="ReinforcedChainlinkFenceBottomRailPoleLeft">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceBottomRailPoleLeft" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceBottomPoleLeftPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceBottomRailPoleRight">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceBottomRailPoleRight" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceBottomPoleRightPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceBottomRailPoleCorner">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceBottomRailPoleCorner" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceCornerBottomPrefab"/>
+		</block>
+	
+		<block name="ReinforcedChainlinkFenceMiddleRail">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceMiddleRail" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceMiddlePrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceMiddleRailPoleLeft">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceMiddleRailPoleLeft" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceMiddleLeftPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceMiddleRailPoleRight">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceMiddleRailPoleRight" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceMiddleRightPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceMiddleRailPoleCorner">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceMiddleRailPoleCorner" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceCornerMiddlePrefab"/>
+		</block>
+	
+		<block name="ReinforcedChainlinkFenceTopRail">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceTopRail" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceTopPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceTopRailPoleLeft">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceTopRailPoleLeft" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceTopPoleLeftPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceTopRailPoleRight">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceTopRailPoleRight" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceTopPoleRightPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceTopRailCorner">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceTopRailCorner" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceCornerTopPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceBottomPlain">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceBottomPlain" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencePlainPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceBottomPlainPoleLeft">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceBottomPlainPoleLeft" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencePlainLeftPolePrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceBottomPlainPoleRight">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceBottomPlainPoleRight" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencePlainRighttPolePrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceBottomPlainCorner">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceBottomPlainCorner" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencePlainCornerPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceTopPlainRail">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceTopPlainRail" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencePlainTopBarPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceTopPlainRailPoleLeft">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceTopPlainPoleLeft" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencePlainLeftPoleTopPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceTopPlainRailPoleRight">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceTopPlainPoleRight" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencePlainRighttPoleTopPrefab"/>
+		</block>
+
+		<block name="ReinforcedChainlinkFenceTopPlainRailCorner">
+			<property name="Extends" value="ReinforcedChainlinkFenceTopRailBridge"/>
+			<property name="CustomIcon" value="chainlinkFenceTopPlainCorner" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFencePlainCornerTopPrefab"/>
+		</block>
+	
+	<block name="ReinforcedbarbedWireVariantHelper">
+		<property name="CustomIcon" value="barbedWireSpindle1m" /> 
+		<property name="CustomIconTint" value="373737"/>
+		<property name="AllowAllRotations" value="true"/>
+		<property name="ItemTypeIcon" value="all_blocks"/> 
+        <property name="Material" value="Mmetal"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Collide" value="movement,melee,rocket,vehicle"/>
+        <property name="UnlockedBy" value="craftingWorkstations"/>
+		<property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="1"/>
+        <property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="3000"/>
+		<property class="RepairItems">
+			<property name="resourceScrapIron" value="20"/> 
+		</property>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<drop event="Destroy" count="0" />
+		<property name="SelectAlternates" value="true"/>
+		<property name="PlaceAltBlockValue" value="ReinforcedbarbedSpindle,ReinforcedbarbedSpindleCentered,ReinforcedbarbedWireSheet,ReinforcedbarbedFence"/>
+		<property name="DescriptionKey" value="ReinforcedBarbedWireVariantHelperGroupDesc"/>
+	</block>
+	
+		<block name="ReinforcedbarbedSpindle">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="barbedWireSpindle1m"/>
+			<property name="CustomIconTint" value="373737"/>
+			<property name="Class" value="Damage"/>
+			<property name="BlockTag" value="Spike"/>
+			<property name="Material" value="MbarbedWire"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Damage" value="10"/>
+			<property name="DamageType" value="BarbedWire"/>
+			<property name="Damage_received" value="3"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+			<property name="LightOpacity" value="0"/>
+			<property name="Model" value="Entities/Bandits/Barbedwire/barbedwire_spindle_1mPrefab"/>
+			<property name="TintColor" value="373737"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="ModelOffset" value="0,0,-0.2"/>
+			<property name="MaxDamage" value="3000"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="Collide" value="melee,rocket"/>
+			<property name="Texture" value="518"/>
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="20"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="5" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="CanPlayersSpawnOn" value="false"/>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="EconomicValue" value="11"/>
+			<property name="FilterTags" value="MC_building,MC_playerBlocks,SC_traps"/>
+			<property name="SortOrder1" value="70g0"/>
+			<property name="VehicleHitScale" value="8"/>
+		</block>
+		
+		<block name="ReinforcedbarbedSpindleCentered">
+			<property name="Extends" value="ReinforcedbarbedSpindle"/>
+			<property name="CustomIcon" value="barbedWireSpindle1m" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Bandits/Barbedwire/barbedwire_spindle_1mPrefab"/>
+			<property name="ModelOffset" value="0,0,0.25"/>
+		</block>
+		
+		<block name="ReinforcedbarbedWireSheet">
+			<property name="Extends" value="ReinforcedbarbedSpindle"/>
+			<property name="CustomIcon" value="barbedWireSheet" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Bandits/Barbedwire/barbedwire_planePrefab"/>
+			<property name="TintColor" value="373737"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		</block>
+		
+		<block name="ReinforcedbarbedFence">
+			<property name="Extends" value="ReinforcedbarbedSpindle"/>
+			<property name="CustomIcon" value="barbedFence" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/barbedFence_01Prefab"/>
+			<property name="Texture" value="518"/>
+			<property name="TintColor" value="373737"/>
+			<property name="LightOpacity" value="0"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+		</block>
+		
+		<block name="ReinforcedchainlinkFenceDoor">
+			<property name="Class" value="DoorSecure"/>
+			<property name="OpenSound" value="door_chainlink_single_open"/>
+			<property name="CloseSound" value="door_chainlink_single_close"/>
+			<property name="IndexName" value="TraderOnOff"/>
+			<property name="DescriptionKey" value="ReinforcedchainlinkFenceDoorGroupDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="CustomIcon" value="chainlinkFenceDoor" /> 
+			<property name="CustomIconTint" value="128,128,128"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceDoorPrefab"/>
+			<property name="TintColor" value="128,128,128"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Place" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Collide" value="movement,melee,rocket"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="MaxDamage" value="10000"/>
+			<property name="StartDamage" value="0"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="MeshDamage" value="
+				Door/DMG0, 5000,
+				Door/DMG1, 2500,
+				"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="40"/>
+			</property>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B255"/>
+			<property name="SortOrder2" value="0002"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="Tags" value="door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="FilterTags" value="MC_building,SC_doors,A21_NEW"/>
+		</block>
+
+		<block name="ReinforcedchainlinkFenceDoorDouble">
+			<property name="Class" value="DoorSecure"/>
+			<property name="OpenSound" value="door_chainlink_double_open"/>
+			<property name="CloseSound" value="door_chainlink_double_close"/>
+			<property name="IndexName" value="TraderOnOff"/>
+			<property name="DescriptionKey" value="ReinforcedchainlinkFenceDoorDoubleGroupDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="CustomIcon" value="chainlinkFenceDoorDouble" /> 
+			<property name="CustomIconTint" value="128,128,128"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkFenceDoorDoublePrefab"/>
+			<property name="TintColor" value="128,128,128"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="2,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Place" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Collide" value="movement,melee,rocket"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="MaxDamage" value="20000"/>
+			<property name="StartDamage" value="0"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="MeshDamage" value="
+				Door/DMG0, 10000,
+				Door/DMG1, 5000,
+				"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="80"/>
+			</property>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder1" value="B255"/>
+			<property name="SortOrder2" value="0003"/> 
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="Tags" value="door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="FilterTags" value="MC_building,SC_doors,A21_NEW"/>
+		</block>
+		
+		<block name="ReinforcedchainlinkGateSmall">
+			<property name="Class" value="DoorSecure"/>
+			<property name="OpenSound" value="gate_chainlink_open"/>
+			<property name="CloseSound" value="gate_chainlink_close"/>
+			<property name="IndexName" value="TraderOnOff"/>
+			<property name="DescriptionKey" value="ReinforcedchainlinkGateSmallGroupDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="CustomIcon" value="chainlinkGateDouble" /> 
+			<property name="CustomIconTint" value="128,128,128"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkGateDoublePrefab"/>
+			<property name="TintColor" value="128,128,128"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="MultiBlockDim" value="5,3,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Place" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Collide" value="movement,melee,rocket"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="MaxDamage" value="50000"/>
+			<property name="StartDamage" value="0"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="Stage2Health" value="1"/>
+			<property name="MeshDamage" value="
+				Door/DMG0, 25000,
+				Door/DMG1, 1250,
+				Door/DMG2, 5000,
+				-, 1
+				"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="100"/>
+			</property>
+			<property class="RepairItemsMeshDamage">
+				<property name="resourceForgedIron" value="20"/>
+			</property>
+			<drop event="Destroy" count="0"/>
+			<property name="DestroyFX" value="door_damage_metal,metaldestroy"/>
+			<property name="SortOrder1" value="B255"/>
+			<property name="SortOrder2" value="0001"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="Tags" value="door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="FilterTags" value="MC_building,SC_doors,A21_NEW"/>
+		</block>
+		
+		<block name="ReinforcedchainlinkGateWide">
+			<property name="Class" value="DoorSecure"/>
+			<property name="OpenSound" value="gate_chainlink_trader_open"/>
+			<property name="CloseSound" value="gate_chainlink_trader_close"/>
+			<property name="IndexName" value="TraderOnOff"/>
+			<property name="DescriptionKey" value="ReinforcedchainlinkGateWideGroupDesc"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="CustomIcon" value="chainlinkGateDoubleWide" /> 
+			<property name="CustomIconTint" value="128,128,128"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Buildings/chainlinkGateWidePrefab"/>
+			<property name="TintColor" value="128,128,128"/>
+			<property name="ModelOffset" value="0,0,-0.5"/>
+			<property name="MultiBlockDim" value="5,3,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Place" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Collide" value="movement,melee,rocket"/>
+			<property name="UnlockedBy" value="craftingWorkstations"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="MaxDamage" value="50000"/>
+			<property name="StartDamage" value="0"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="MeshDamage" value="
+				Door/DMG0, 25000,
+				Door/DMG1, 12500,
+				Door/DMG2, 5000,
+				"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="200"/>
+			</property>
+			<drop event="Destroy" count="0"/>
+			<property name="DestroyFX" value="door_damage_metal,metaldestroy"/>
+			<property name="SortOrder1" value="B255"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="Tags" value="door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="FilterTags" value="MC_building,SC_doors,A21_NEW"/>
+		</block>
+		
+	</append>
+</config>

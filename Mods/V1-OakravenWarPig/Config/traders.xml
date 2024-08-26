@@ -1,0 +1,11 @@
+<configs>
+	
+	<!-- *** Vehicles -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupVehicles']">
+		<!-- *** War Pig Car -->
+			<item name="vehicleWarPigCarChassis"/>
+			<item name="vehicleWarPigCarAccessories"/>
+			<item name="vehicleWarPigCarPlaceable"/>		
+	</append>
+
+</configs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="FPS_Buried_Supplies_Fix" />
+    <DisplayName value="FPS Buried Supplies Fix" />
+    <Version value="1.0.1" />
+    <Description value="Fixes quest failing when taking intro buried treasure quest and buried treasure quests when activating check point in roads." />
+    <Author value="fatrap" />
+    <Website value="" />
+</xml>

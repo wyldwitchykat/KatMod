@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <remove xpath="/recipes/recipe[@name='drinkJarYuccaJuice']"></remove>
+  <append xpath="/recipes">
+    <recipe name="drinkJarEmpty" count="1" material_based="true" craft_area="forge" is_trackable="false" tags="perkAdvancedEngineering">
+      <ingredient name="unit_glass" count="10" />
+      <ingredient name="unit_clay" count="1" />
+      <effect_group>
+        <passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,1,2,3,4" value=".25,.25,.25,.12,.06" tags="unit_clay,unit_glass" />
+      </effect_group>
+    </recipe>
+    <recipe name="drinkJarYuccaJuice" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+      <ingredient name="foodCropYuccaFruit" count="4" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+    <recipe name="drinkJarBoiledWater" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+      <ingredient name="resourceSnowBall" count="1" />
+      <ingredient name="drinkJarEmpty" count="1" />
+    </recipe>
+  </append>
+</config>

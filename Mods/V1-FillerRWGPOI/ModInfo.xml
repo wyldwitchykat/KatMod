@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="V1_FillerRWGPOI" />
+	<DisplayName value="V1.0 RWG POI Filler" />
+	<Description value="Allows for greater POI fill ratio for all non City locations in all World sizes." />
+	<Author value="arramus" />
+	<Version value="1.1.0.0" />
+	<Website value="" />
+</xml>

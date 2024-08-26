@@ -1,0 +1,8 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+questRewardvehicleWarPigCarPartsBundle,items,item,,,War Pig Parts Bundle,,,,,,,,,,,,,,
+vehicleWarPigCarAccessories,vehicles,item,,,War Pig Accessories,,,,,,,,,,,,,,
+vehicleWarPigCarChassis,vehicles,item,,,War Pig Chassis,,,,,,,,,,,,,,
+vehicleWarPigCar,entityclasses,Entity,,,War Pig,,,,,,,,,,,,,
+vehicleWarPigCarPlaceable,vehicles,vehicle,,,War Pig,,,,,,,,,,,,,
+vehiclesT4,progression,Attribute,,,Tier 4: 4x4 & War Pig,,,,,,,,,,,,,

@@ -1,0 +1,74 @@
+<config>
+<csv xpath="/entitygroups/entitygroup[@name='SnowZombies']/text()" delim="\n" op="add" >
+		zombieBoe
+		zombieJoe
+		zombieSteve
+		zombieTomClark
+		zombieMoe
+		zombieYo
+		zombieBusinessMan
+		zombieArlene
+		zombieDarlene
+		zombieMarlene
+		zombieSkateboarder
+		zombieSpider
+		zombieBiker, .3
+		zombiePartyGirl, .3
+		zombieUtilityWorker, .3
+		zombieJanitor, .2
+		zombieNurse, .3
+		zombieSteveCrawler
+		zombieFatHawaiian, .3
+		animalZombieDog, .05
+		zombieSteveCrawler
+		zombieFatCop, .1
+		zombieSoldier, .1
+		zombieMutated, .1
+		zombieFemaleFat, .1
+		zombieBurnt, .1
+		zombieMaleHazmat, .1
+		zombieDemolition, .01
+		animalZombieVulture, .1
+		zombieWightFeral, .01
+		zombieLumberjack
+</csv>
+
+<csv xpath="/entitygroups/entitygroup[@name='ZombiesBurntForest']/text()" delim="\n" op="add" >
+		zombieBoe
+		zombieJoe
+		zombieSteve
+		zombieTomClark
+		zombieMoe
+		zombieYo
+		zombieBusinessMan
+		zombieArlene
+		zombieDarlene
+		zombieMarlene
+		zombieSkateboarder
+		zombieSpider
+		zombieBiker, .3
+		zombiePartyGirl, .3
+		zombieUtilityWorker, .3
+		zombieJanitor, .2
+		zombieNurse, .3
+		zombieSteveCrawler
+		animalZombieDog, .05
+		zombieSteveCrawler
+		zombieMaleHazmat, .1
+		animalZombieVulture, .1
+		zombieLumberjack, .1
+</csv>
+
+
+<csv xpath="/entitygroups/entitygroup[@name='ZombiesBoss']/text()" delim="\n" op="add" >
+		zombieSoldier, .1
+		zombieMutated, .1
+		zombieFemaleFat, .1
+		animalZombieDog, .05
+		zombieBiker, .3
+		zombieWightFeral, .01
+		zombieDemolition, .01
+		zombieLumberjack
+		zombieFatHawaiian
+</csv>
+</config>

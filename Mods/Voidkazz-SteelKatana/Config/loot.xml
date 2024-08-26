@@ -1,0 +1,7 @@
+<configs>
+
+<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Melee']">
+	<item name="steelKatana"/>
+</append>
+
+</configs>

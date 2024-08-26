@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <Name value="Boat_ModletV8" /> 
+    <DisplayName value="The Boating Modlet" />
+    <Version value="1.0.8.100" compat="V1.0"/>
+    <Description value="Adds a Wooden Flat Bottomed Boat and Dinghy to the Game" />
+    <Author value="Ragsy2145" />
+    <Website value=""/> 
+</xml>
