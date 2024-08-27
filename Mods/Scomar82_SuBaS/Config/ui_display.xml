@@ -1,9 +1,0 @@
-<Scomar82_SuBaS>
-	<append xpath="/ui_display_info/crafting_category_display">	
-		<crafting_category_list display_type="Schematicswp">
-			<crafting_category name="Quest" icon="ui_game_symbol_quest" display_name="lblCategoryQuest"/>
-			<crafting_category name="Books" icon="ui_game_symbol_book" display_name="lblCategoryPerkbooks"/>
-			<crafting_category name="Schematics" icon="ui_game_symbol_assemble" display_name="lblCategorySchematics"/>
-		</crafting_category_list>	
-	</append>	
-</Scomar82_SuBaS>
