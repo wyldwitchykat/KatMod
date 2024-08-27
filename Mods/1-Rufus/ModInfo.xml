@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
 		
-		<Name value="Lonewolf" />
-		<DisplayName value="Lonewolf" />
+		<Name value="1-Rufus" />
+		<DisplayName value="Rufus" />
 		<Description value="Adds western style entities to the game for more variety fun. Dependencies is NpcCore and Score." />
 		<Author value="TheeLegion" />
 		<Version value="21.2" />

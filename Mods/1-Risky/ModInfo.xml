@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xml>
 		
-		<Name value="Risky" />
+		<Name value="1-Risky" />
 		<DisplayName value="Risky" />
 		<Description value="Adds western style entities to the game for more variety fun. Dependencies is NpcCore and Score." />
 		<Author value="TheeLegion" />

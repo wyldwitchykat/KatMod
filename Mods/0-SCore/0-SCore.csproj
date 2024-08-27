@@ -60,6 +60,7 @@
     <Compile Include="Features\Farming\Scripts\DataClasses\PipeData.cs" />
     <Compile Include="Features\Farming\Scripts\DataClasses\PlantData.cs" />
     <Compile Include="Features\Farming\Scripts\FarmPlotManager.cs" />
+    <Compile Include="Features\Farming\Scripts\NetPackage\NetPackageToggleSprinkler.cs" />
     <Compile Include="Features\Farming\Scripts\WaterPipeManager.cs" />
     <Compile Include="Features\Fire\Harmony\ChunkSetBlock.cs" />
     <Compile Include="Features\Fire\Harmony\Explosion.cs" />
@@ -76,6 +77,9 @@
     <Compile Include="Features\Fire\Scripts\NetPackage\NetPackageRemoveFirePosition.cs" />
     <Compile Include="Features\Fire\Scripts\NetPackage\NetPackageRemoveParticleEffect.cs" />
     <Compile Include="Features\FlickeringLights\Harmony\DisableFlickeringLights.cs" />
+    <Compile Include="Features\FoodSpoilage\Harmony\FoodSpoilage.cs" />
+    <Compile Include="Features\FoodSpoilage\Harmony\Freshness.cs" />
+    <Compile Include="Features\FoodSpoilage\Harmony\XUiC_ItemInfoWindow.cs" />
     <Compile Include="Features\LockPicking\Harmony\BlockSecureLootPatch.cs" />
     <Compile Include="Features\LockPicking\Harmony\BlockDoorSecurePatch.cs" />
     <Compile Include="Features\LockPicking\Harmony\LockPickingUtils.cs" />
@@ -99,6 +103,8 @@
     <Compile Include="Features\ParticleAttractor\Scripts\MinEvent\MinEventActionSetParticleAttractorFromSource.cs" />
     <Compile Include="Features\ParticleAttractor\Scripts\MinEvent\SCoreParticleAttractor.cs" />
     <Compile Include="Features\ParticleAttractor\Scripts\Particles\particleAttractorLinear.cs" />
+    <Compile Include="Features\ParticlesOnBlocks\Harmony\Blocks.cs" />
+    <Compile Include="Features\PlayerMetrics\KillTracking\Scripts\SCoreKillTracker.cs" />
     <Compile Include="Features\RemoteCrafting\Harmony\DropBoxToContainers.cs" />
     <Compile Include="Features\RemoteCrafting\Harmony\IngredientsFromContainers.cs" />
     <Compile Include="Features\RemoteCrafting\Harmony\ItemActionRepairPatches.cs" />
@@ -138,7 +144,6 @@
     <Compile Include="Harmony\ErrorHandling\NoExceptionHijack.cs" />
     <Compile Include="Harmony\Faction\FactionRelationshipCVars.cs" />
     <Compile Include="Harmony\Faction\FactionTweaks.cs" />
-    <Compile Include="Harmony\FoodSpoilage\FoodSpoilage.cs" />
     <Compile Include="Harmony\GameManager\BroadcastHook.cs" />
     <Compile Include="Harmony\GamePath\TraversalProvider.cs" />
     <Compile Include="Harmony\GamePath\UtilsDrawLine.cs" />
@@ -196,6 +201,7 @@
     <Compile Include="Harmony\UtilityAI\UAIPackage.cs" />
     <Compile Include="Harmony\UtilityAI\UAITaskBase.cs" />
     <Compile Include="Harmony\UtilityAI\UtilityAIPatches.cs" />
+    <Compile Include="Harmony\Vehicles\EntityVehicleDropCorpse.cs" />
     <Compile Include="Harmony\Vehicles\NoVehicleTake.cs" />
     <Compile Include="Harmony\WorldGen\CaveProject.cs" />
     <Compile Include="Harmony\WorldGen\HeightMapCaveSystem.cs" />
@@ -203,6 +209,7 @@
     <Compile Include="Harmony\XUIC\SirillionThings.cs" />
     <Compile Include="Harmony\XUIC\XUiController.cs" />
     <Compile Include="Harmony\XUIC\XUiC_ItemStack.cs" />
+    <Compile Include="Harmony\XUIC\XUiC_ItemStack_SlotTags.cs" />
     <Compile Include="Harmony\XUIC\XUiC_TargetBar.cs" />
     <Compile Include="Harmony\ZombieFeatures\EntityFlyingEAITasks.cs" />
     <Compile Include="Harmony\ZombieFeatures\HeadshotOnly.cs" />
@@ -251,6 +258,7 @@
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdActionFireClear.cs" />
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdAdjustCVar.cs" />
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdReloadDialog.cs" />
+    <Compile Include="Scripts\ConsoleCmd\ConsoleCmdReloadSCore.cs" />
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdUnitTestSCore.cs" />
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdlock.cs" />
     <Compile Include="Scripts\ConsoleCmd\ConsoleCmdUtilityAI.cs" />
@@ -322,6 +330,8 @@
     <Compile Include="Scripts\Entities\IEntityOrderReceiverSDX.cs" />
     <Compile Include="Scripts\Entities\LegacyEntityClasses.cs" />
     <Compile Include="Scripts\Entities\ModGeneralUtilities.cs" />
+    <Compile Include="Scripts\Events\OnBloodMoonEnd.cs" />
+    <Compile Include="Scripts\Events\OnBloodMoonStart.cs" />
     <Compile Include="Scripts\Events\OnBuffAdded.cs" />
     <Compile Include="Scripts\Events\OnEnterPoi.cs" />
     <Compile Include="Scripts\Features\AdvLogging.cs" />
@@ -339,6 +349,7 @@
     <Compile Include="Scripts\Managers\SCoreQuestEventManager.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionAddBuffByFactionSDX.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionAddScriptToTransform.cs" />
+    <Compile Include="Scripts\MinEvents\MinEventActionAdjustTransformValues.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionAnimatorFireTriggerSDX.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionAnimatorSetFloatSDX.cs" />
     <Compile Include="Scripts\MinEvents\MinEventActionAnimatorSetIntSDX.cs" />
@@ -701,7 +712,10 @@
     <None Include="Scripts\Mods.dll.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Features\FoodSpoilage\Scripts\" />
     <Folder Include="Features\ParticleAttractor\Harmony\" />
+    <Folder Include="Features\PlayerMetrics\BloodMoonTracking\Harmony\" />
+    <Folder Include="Features\PlayerMetrics\KillTracking\Harmony\" />
     <Folder Include="Harmony\Recipes" />
     <Folder Include="Harmony\Weather\" />
     <Folder Include="Scripts\Particles\" />

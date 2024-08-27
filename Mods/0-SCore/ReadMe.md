@@ -23,6 +23,325 @@ Direct Download to the 0-SCore.zip available on gitlab mirror:
 ### Change Logs
 
 [ Change Log ]
+Version: 1.0.60.1241
+		[ MinEvent ]
+			- Added a new MinEvent to allow changing local transform / rotation on a particular transform on an entity.
+				<triggered_effect trigger="onSelfBuffUpdate"
+					action="AdjustTransformValues, SCore"  
+					parent_transform="AK47"
+					local_offset="-0.05607828,0.07183618,-0.02150292"
+					local_rotation="-3.98,-9.826,-5.901"
+					<!-- Optional. Defaults to false -->
+					debug="true"  
+				/>
+
+		[ Console Command ]
+			- Added a new console command to assist testing of the above MinEvent. 
+			- Use this cautiously. 
+			- Example:
+				ReloadSCore buffs
+				ReloadSCore entityclasses
+			
+		[ Particles On Block ]
+			- Fixed a few issues where particles were being loaded incorrectly, causing a hard crash
+			- Added a patch on the init to pre-load Particles
+			- Added a check for to keep a particle upon removal of its block
+				<property name="PeristAfterRemove" value="false" />
+
+			- Somewhat realistic example:
+		    <append xpath="/blocks/block[contains(@name,'emberPile')]">
+        		<property class="Particles" >
+            		<property name="OnSpawnParticle" value="#@modfolder(0-SCore_sphereii):Resources/gupFireParticles.unity3d?gupBeavis02-CampFire,#@modfolder(0-SCore_sphereii):Resources/gupFireParticles.unity3d?gupBeavis03-Cartoon,#@modfolder(0-SCore_sphereii):Resources/gupFireParticles.unity3d?gupBeavis04-SlowFire,#@modfolder(0-SCore_sphereii):Resources/gupFireParticles.unity3d?gupBeavis06-HeavyLight"/>
+            		<property name="OnSpawnProb" value="0.1"/>
+					<property name="PeristAfterRemove" value="false" />
+        		</property>
+    		</append>
+
+
+Version: 1.0.59.1007
+		[ Food Spoilage ]
+			- Added missing FreshnessOnly check on the ModifyCVar minevent patch.
+			- The FreshnessOnly patch to execute if the item has the "FreshnessBonus" property on the item, and it's set to true.
+
+
+Version: 1.0.58.1256
+	[ Resharpen ]
+		- Fixed an issue where I confused UseTimes with Quantity.
+		- When you sharpen an item, it'll remove a random amount from the UseTime, capped at 20% of the total max usages
+		- Added 2 no location entries to be over-ridden in Localization.txt
+			TooDamagedToSharpen,"This item is too worn out to be resharpened.",""
+			NotDamagedEnoughToSharpen,"This item is still in pretty good shape.",""
+		- Cleaned up the code to make it seem like it wasn't developed by a drug addled raccoon.
+		- If you have used the item 70 times, with a max usage of 250
+			- A Random number between 51 and 70 is generated.
+			- 51 comes from 250 max usage * 0.2.
+			- At most, the Use times will be reduced to 51, with a possible minimum of 69.
+
+	[ Powered Workstation ]
+		- Added a check to see if fuel slots were null before checking if anything was in them.
+
+	[ EntityVehicle ]
+		- Added Harmony patch to EntityVehicle's Kill() to trigger EntityAlive's dropCorpseBlock()
+		- If the entity vehicle is configured using the following parameters, it'll drop a corpse block.
+			<property name="CorpseBlock" value="goreBlockAnimal"/>
+			<property name="CorpseBlockChance" value="1"/>
+
+	[ Events ]
+		- Added two new Mod events to subscribe too
+			- OnBloodMoonStart / OnBloodMoonEnd.	
+		- This feature is still under development.
+
+	[ Solution ]
+		- Added Peace of Mind and Sample Project to SphereII.Mods Solution
+
+	[ Peace of Mind ]	
+		- Fixed an issue where the noose block was causing a warning [ thanks blue name ]
+
+	[ Sample Project ]
+		- Fixed an a block warning [ thanks blue name ]
+
+
+
+Version: 1.0.56.1453
+	[ Sprinklers ]
+		- Fixed an issue where water sprinklers were not turning on and off on dedicated servers
+
+	[ Freshness ]
+		- Removed test buff of "buffFreshnessSCore" when using the Freshness system and Food Spoilage.
+
+	[ Portals ]
+		- Fixed a null reference when adding a portal key to the text
+		- Fixed another null reference where there was not a smart mesh on the block
+		- Fixed an issue where the player would exist in the same block space as the portal, causing the player unstuck message
+			- Moved player position up by 1 on teleport.
+
+	[ Advanced Items - Sharpen ]
+		- Changed the Sharpen feature to put new item right into backpack / ground, rather than through the crafting queue
+		- Previously, if you cancelled the resharpen from the crafting queue, you'd get the ingredients of the item back, and not the item you were sharpening.
+
+	[ Spawn Particle On Block ]
+		- Experimental
+		- Added a series of Harmony patches under Features/Particles/Harmony/Blocks.xml
+		- OnBlockDamaged, OnBlockAdded, OnBlockRemove
+		- This will add the specified particle to the block whenever those events are added, if defined on the block.
+		- The following syntax is supported:
+
+		<block name="blah" >
+    		<property class="Particles" >
+				<!-- Use this particle when the block is added to the world. -->
+				<!-- comma delimited, if you want to randomize which particle. -->
+				<!-- otherwise, just a single bundle reference.
+       			<property name="OnSpawnParticle" value="unitybundle,unitybundle2"/>
+
+				<!-- If you want to change the particle based on biome?-->
+				<!-- Use OnSpawn_<biome name> -->
+       			<property name="OnSpawnParticle_pine_forest" value="unitybundle,unitybundle2"/>
+				<!-- Probably of each block that gets a particle -->
+       			<property name="OnSpawnProb" value="0.2"/>
+
+       			<!-- If you want a different particle for when it gets damaged -->
+       			<property name="OnDamagedParticle" value="unitybundle,unitybundle2"/>
+       			<property name="OnDamagedParticle_snow" value="unitybundle,unitybundle2"/>
+       			<property name="OnDamagedProb" value="0.2"/>
+    		</property>
+		</block>
+
+Version: 1.0.51.1516
+	[ Resharpen ]
+		- Fixed an issue where the option would not be properly enabled.
+			- Was looking for the wrong property name.
+		<property name="SharpenItem" value="sharpeningStone" />
+
+	[ SphereII A Better Life ]
+		- Many fixes to the models to improve and add hit boxes ( xyth )
+		- Enables more fishes from pipermac. (xyth)
+		- Fixed the ModInfo.xml's name entry so it's properly ordered.
+
+Version: 1.0.49.1202
+
+	[ Repair From Containers ]
+		- Adjusted ordering of Nearby Enemy filter
+			- Check to see if in Party
+			- Check if nearby entity is in party
+			- Check if nearby entity is an ally
+			- Then check if nearby entity can damage you.
+		- Previously, the "can damage you" check was before the Party check
+
+	[ Food Spoilage ]
+		- Moved Food Spoilage to a Feature folder
+		- Food Spoilage items will have a new MetaData called "Freshness", which is a percentage of freshness less max durability.
+			currentSpoilage / maxSpoilage
+		- Freshness percentage is stored as 0,1 value, with 0.1 being 10%, and 1 being 100% fresh.
+		- The following vanilla code should be able to compare it through a requirement.
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffStillFresh">
+				<requirement name="CompareItemMetaFloat" operation="GTE" value="0.1" key="Freshness"/>
+			</triggered_effect>
+
+		- New Harmony Patches to allow custom Item Type Icons.
+		- If the Freshness % is above 0%, it will use the AltItemTypeIcon, if it's defined.
+		- If no AltItemTypeIcon is defined, nothing will display.
+		- Once freshness reaches 0%, the ItemTypeIcon will be used, if it's defined.
+		- Example item entry.
+				<!-- If there's freshness still available, display the campfire icon -->
+				<property name="AltItemTypeIcon" value="campfire"/>
+				<!-- If there's no freshness left, display the cold  icon -->
+				<property name="ItemTypeIcon" value="cold"/>
+
+
+	[ FreshnessOnly - A Food Spoilage Sub-Feature ]
+		- Added a Freshness Only property for ItemClass entry.
+			<property name="FreshnessOnly" value="true" />
+		- This FreshnessOnly property unlocks a light-weight food spoilage implementation.
+		- The concept of this feature is to provide an incentive to eat food fresh, without punishing players who are not interested in it.
+		- If the FreshnessCVar property is defined, then only the cvars listed will be executed again with the multiplier.
+			<property name="FreshnessCVar" value="cvar1,cvar2" />
+		- By default, FreshnessCVar is "all". 
+		- If FreshnessCVar is "none", then all ModifyCVars will be ignored from the multiplier.
+
+		- Items with this property set to true will not downgrade to another item when spoiled.
+		- All items in the same stack will lose its freshness at once.
+		- If this freshness value is 0%, then it will no longer perform calculations
+		- If this freshness value is 0%, the durability bar will disappear, and the item will appear normally.
+		- If a freshness value is greater than 0%, then the value of the consumable will be multiplied by that percentage
+
+		- Example:
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
+			With a freshness value of 0.5 ( 50% )
+				- the $waterAmountAdd will be increased by 20
+				- the $waterAmountAdd will be further increased by 10.    20 * (.50 + 1 )
+				- The total $waterAmount will be 30
+
+		- When a consumable is ate when it's still fresh, a buff will be applied, letting the player know a bonus is active.
+		- Example Implementation:
+			<append xpath="/items/item[@name='drinkJarBlackStrapCoffee']">
+				<property name="Spoilable" value="true" />
+				<property name="SpoiledItem" value="drinkJarBlackStrapCoffee" />
+				<property name="ShowQuality" value="false" />
+				<property name="SpoilageMax" value="1000" />
+				<property name="FreshnessOnly" value="true" />
+				<!-- if specified, it'll only re-trigger the following cvars -->
+				<property name="FreshnessCVar" value="cvar1,cvar2" />
+				<!-- If there's freshness still available, display the campfire icon -->
+				<property name="AltItemTypeIcon" value="campfire"/>
+				<!-- If there's no freshness left, display the cold  icon -->
+				<property name="ItemTypeIcon" value="cold"/>
+			</append>
+			
+	[ SphereII Larger Party ]
+		- Added a XUi/Config/windows.xml to increase the side of the window for more players.
+
+Version: 1.0.46.1010
+	[ EntitySwimingSDX / EntitySwimmingSDX ]
+		- Fixed an issue where fish were leaving the water.
+		- Each fish searches for water blocks in its area, and uses that to validate it's pathing.
+		- If a fish has less than 20 water blocks, it'll despawn.
+		- If a fish leaves the water, it'll despawn.
+		- Added new class reference to fix spelling error in Swimming.
+			EntitySwimmingSDX and EntitySwimingSDX are the same, code-wise.
+		- Kept spelling error to maintain references
+		
+
+	[ A Better Life 1.0.0.732 ]
+		- Adjusted the ModInfo.xml's Name value
+		- Added the ability to auto-generate the version number.
+		- Adjusted the entityclasses.xml for class reference for extends.
+		
+
+Version: 1.0.45.1058
+	[ Check Items For Valid Containers ]
+		- Fixed another null reference when blocking an item from the NPC's loot container.
+		- Added filter for ItemValue's MetaData to exclude them from being added to a chest
+		- If an ItemValue has a Meta Data of "NoStorage", with a value greater than 0, it will be blocked.
+	
+	[ NPCs ]
+		- Added a few new properties to NPCs to block them from being added to storage.
+		- These are processed regardless of tags on the storage container or item.
+		- When an NPC is being picked up, NoStorage is read from the entityclass.
+		- By default, without this property, storage is allowed.
+		- npcNoStorage localization is added to the 0-SCore's Localization
+
+		Example syntax:
+			<append xpath="/entity_classes/entity_class[@name='npcMeleeTemplate']">
+				<property name="NoStorage" value="true" />
+				<property name="DisallowedKey" value="npcNoStorage" />
+			</append>
+	
+Version: 1.0.45.853
+	[ Check Items For Valid Containers ]
+		- Fixed a null reference when opening up zombie loot bags, because they do not have block properties.
+		- Questioning life choices that I did not name this feature correctly, and will be forever doomed calling it "Check Items For valid Containers"
+		- Added additional check for block at the tile location's position
+
+	[ ModEvents ]
+		- Removed a usefuless warning about duplicate mods folder ( this is the standard now )
+		- This provides a quick hash of all installed mods, allowing overhauls to quickly see at a glance if it matches the expected value.
+		- The hash is made up of modlet name + version number. 
+		- If more mods are installed than expected, or it has different version numbers, the hash will change.
+		- Changed the mod hash from a GetHashCode() to a truncated Sha256 value
+			Modlet List Hash: 7E5FF
+
+Version: 1.0.44.1602
+	[ Check Items For Valid Containers]
+		- Introduced a new feature through a series of Harmony patches that allows you to filter items from storage containers.
+		- Allows you to filter items being added to any given Loot Container based on tags.
+		- A container with the AllowTags set to "all", will allow all items.
+		- A container with no AllowTags or DisallowTags will not be checked at all, and act normally.
+
+		- If a loot container has the following property, then it will only allow items that have those tags to be stored.
+			<!-- Only melee, axe, and repairTool items are allowed to be added -->
+			<!-- But it will not accept any lightarmor -->
+			<property name="AllowTags" value="melee,axe,repairTool" />
+			<property name="DisallowTags" value="lightarmor" />
+
+			<!-- Items.xml entry -->
+			<item name="meleeToolRepairT0StoneAxe">
+				<property name="Tags" value="axe,melee,light,tool,longShaft,repairTool,miningTool,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic,harvestingSkill,corpseRemoval"/>
+
+			<!-- Example -->
+			<block name="cntSphereTagTest">
+				<property name="Extends" value="cntWoodWritableCrate"/>
+				<property name="LootList" value="playerWoodWritableStorage"/>
+				<property name="AllowTags" value="melee,axe,repairTool" />
+			</block>
+
+		- If an item is blocked, a denied UI sound will be triggered.
+		- If an item is dragged and dropped in a blocked container, a tooltip will also display.
+		- Shift clicking on an item to move it will play the denied UI.
+	
+		- If a block has the following Property, this will be used to check for localization and display a custom blocked message.
+			<property name="DisallowedKey" value="NoPickUpForNPCs" />
+		- This property can also exist on the Item entry as well, and will over-ride the block's message, if it's set.
+		- If not otherwise set, the default localization entry will be displayed.
+			
+Version: 1.0.43.1207
+	[ Fire Manager ]
+		- Removed the DynamicMeshChunk update, which was likely needless, and likely caused a performance issue.
+
+		- Added new property on a block to replace the target block with an ExtinguishedUpgradeBlock.
+			<property name='ExtinguishedUpgradeBlock' value='burntBlock' />
+		- When a block is extinguished, it will turn into this block.
+		- Damage from the original block is transfered over to the new block
+		- If the damage from the original block is greater than the new block's max health, it'll turn into an air block.
+		
+
+	[ SphereII Larger Parties ]
+		- New modlet that allows Parties up to 100 members.
+		- Added a Minimum exp value for shared exp.
+		- Default Minimum Exp is 200.
+		- Not included into 0-SCore, because there is a transpiler patch.
+
+Version: 1.0.39.746
+
+	[ One Block Crouch ]
+		- Disabled one block crouch by default.
+	
+	[ Take And Replace ]
+		- Fixed an issue where the original default behaviour was broken.
+		- A new Configuration Block entry called "Legacy" is set to true, going to default behaviour.
+
+		<!-- To enable advance configuration settings. -->
+		<set xpath="/blocks/block[@name='ConfigFeatureBlock']/property[@class='AdvancedPickUpAndPlace']/property[@name='Legacy']/@value">false</>
+
 Version: 1.0.38.1615
 
 	[ Food Spoilage ]
@@ -69,10 +388,6 @@ Version: 1.0.38.1615
 				<property name="WoodenFenceTools" value="meleeToolRepairT0StoneAxe,meleeToolRepairT0TazasStoneAxe,meleeToolRepairT1ClawHammer,meleeToolAxeT1IronFireaxe,meleeToolAxeT2SteelAxe,meleeToolAxeT3Chainsaw" />
 			</append>
 		
-			
-		
-			
-
 Version: 1.0.37.1432
 	[ Localization ]
 		- Updated some missing localization entries.
