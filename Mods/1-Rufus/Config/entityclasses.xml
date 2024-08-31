@@ -1,14 +1,6 @@
 <configs>
 
 <!--NPC CORE, PLAYERS CAN DAMAGE FRIENDLY NPC'S-->
-<append xpath="//entity_class[@name='playerMale']">
-<effect_group name="Damage All NPCs">
-	<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="1001" />
-	<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="1001" />
-	<triggered_effect trigger="onSelfRespawn" action="ModifyCVar" cvar="DamageRelationship" operation="set" value="1001" />
-</effect_group>
-</append>
-
 <append xpath="/entity_classes">
 <!--ENTITY 4 NPC AND TRANSFORM-->
 <entity_class name="npcwestern4" extends="npcAdvancedPShotgunTemplate"> 
