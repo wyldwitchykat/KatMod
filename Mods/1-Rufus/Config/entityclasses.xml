@@ -12,7 +12,7 @@
 <append xpath="/entity_classes">
 <!--ENTITY 4 NPC AND TRANSFORM-->
 <entity_class name="npcwestern4" extends="npcAdvancedPShotgunTemplate"> 
-	<property name="UserSpawnType" value="Menu"/> 
+	<property name="UserSpawnType" value="none"/> 
  	<property name="Tags" value="entity,male,npc,walker,melee,DRMid,PShotgun"/>
 	<property name="Faction" value="whiteriver"/>
 	<property name="Names" value="Rufus" />				
