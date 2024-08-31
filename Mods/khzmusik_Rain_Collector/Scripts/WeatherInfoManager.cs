@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using UnityEngine;
+using static RainCollector.Harmony.RainCollector;
 
 namespace RainCollector
 {
@@ -61,7 +62,7 @@ namespace RainCollector
         /// </summary>
         /// <param name="biomeId">Biome ID.</param>
         /// <param name="deltaTime">Optional delta time to use.</param>
-        /// <param name="deltaTime">Optional position to use to determine biome intensity.</param>
+        /// <param name="position">Optional position to use to determine biome intensity.</param>
         /// <returns><c>null</c> if the ID is not a valid biome ID.</returns>
         public static WeatherInfo GetActiveWeatherInfo(
             byte biomeId,
@@ -101,6 +102,7 @@ namespace RainCollector
             return new WeatherInfo
             {
                 BiomeId = avg.BiomeId,
+                BiomeName = avg.BiomeName,
                 IsAverage = avg.IsAverage,
                 FogDensity = avg.FogDensity,
                 Rainfall = avg.Rainfall,
@@ -142,6 +144,7 @@ namespace RainCollector
             return new WeatherInfo
             {
                 BiomeId = biomeId,
+                BiomeName = GetBiomeName(WeatherManager.currentWeather),
                 FogDensity = SkyManager.GetFogDensity(),
                 Rainfall = WeatherManager.Instance.GetCurrentRainfallValue(),
                 Temperature = WeatherManager.Instance.GetCurrentTemperatureValue(),
@@ -172,6 +175,7 @@ namespace RainCollector
             return new WeatherInfo
             {
                 BiomeId = biomeId,
+                BiomeName = GetBiomeName(biomeWeather),
                 FogDensity = GetFogDensity(biomeWeather, blockPosition),
                 Rainfall = GetCurrentRainfallValue(biomeWeather),
                 Temperature = GetCurrentTemperature(biomeWeather),
@@ -186,8 +190,7 @@ namespace RainCollector
         /// </summary>
         public static void Initialize(bool enabled, float minTemperature)
         {
-            Harmony.RainCollector.DebugLog(
-                $@"Initializing WeatherInfoManager: enabled={enabled} / minTemperature={minTemperature}");
+            DebugLog($@"Initializing WeatherInfoManager: enabled={enabled} / minTemperature={minTemperature}");
 
             if (Initialized)
                 return;
@@ -296,6 +299,11 @@ namespace RainCollector
             return biomeWeather.biomeDefinition.m_Id;
         }
 
+        private static string GetBiomeName(WeatherManager.BiomeWeather biomeWeather)
+        {
+            return biomeWeather?.biomeDefinition.LocalizedName ?? "unknown";
+        }
+
         private static WeatherManager.BiomeWeather GetBiomeWeather(byte biomeId)
         {
             return WeatherManager.Instance.biomeWeather
@@ -339,14 +347,31 @@ namespace RainCollector
                 worldEnvironment.dayTimeScalar,
                 AtmosphereEffect.ESpecIdx.Fog);
 
-            var weatherSpectrum = WeatherManager.Instance.GetWeatherSpectrum(
-                fogColorSpectrum,
-                AtmosphereEffect.ESpecIdx.Fog,
-                worldEnvironment.dayTimeScalar);
+            // If we are not on a dedicated server, we can issue a command to force a weather
+            // spectrum. But the field that holds the forced spectrum value does not even exist in
+            // the dedicated server .dll, so don't even try to access it.
+            if (!GameManager.IsDedicatedServer)
+            {
+                if (WeatherManager.forcedSpectrum != SpectrumWeatherType.None)
+                {
+                    var forcedSpectrum = (int)WeatherManager.forcedSpectrum;
+                    var specIdx = (int)AtmosphereEffect.ESpecIdx.Fog;
+
+                    var forcedColor = WeatherManager
+                        .atmosphereSpectrum[forcedSpectrum]?
+                        .spectrums[specIdx]?
+                        .GetValue(worldEnvironment.dayTimeScalar);
+
+                    if (forcedColor.HasValue)
+                    {
+                        fogColorSpectrum = forcedColor.Value;
+                    }
+                }
+            }
 
             var fogDensity =
                 Mathf.Pow(
-                    weatherSpectrum.a,
+                    fogColorSpectrum.a,
                     Utils.FastLerpUnclamped(
                         WorldEnvironment.dataFogPow.y,
                         WorldEnvironment.dataFogPow.x,
@@ -426,6 +451,7 @@ namespace RainCollector
                 biomeWeatherInfo[id] = new WeatherInfo
                 {
                     BiomeId = id,
+                    BiomeName = GetBiomeName(WeatherManager.Instance.biomeWeather.Find(w => w.biomeDefinition.m_Id == id)),
                     IsAverage = true,
                     // Subtract the variance so it's always prior to the current world time,
                     // and let the biomes with the lowest IDs update the earliest.

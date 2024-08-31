@@ -11,6 +11,11 @@
         public byte BiomeId { get; set; }
 
         /// <summary>
+        /// The name of the biome in which this weather occurs.
+        /// </summary>
+        public string BiomeName { get; set; }
+
+        /// <summary>
         /// True if these values represent incremental averages, false if they represent the
         /// current weather values.
         /// </summary>
@@ -108,7 +113,7 @@
         /// <inheritdoc />
         public override string ToString()
         {
-            return $@"(Biome {BiomeId
+            return $@"({BiomeName
                 }) Rainfall = {Rainfall
                 } / Fog Density = {FogDensity
                 } / Temperature = {Temperature
