@@ -10,29 +10,13 @@
 </append>
 
 <append xpath="/entity_classes">
-<!--ENTITY 7 NPC AND TRANSFORM-->
-<entity_class name="npcwestern7" extends="npcAdvancedPShotgunTemplate"> 
+<!--ENTITY 4 NPC AND TRANSFORM-->
+<entity_class name="npcwestern4" extends="npcAdvancedPShotgunTemplate"> 
 	<property name="UserSpawnType" value="Menu"/> 
  	<property name="Tags" value="entity,male,npc,walker,melee,DRMid,PShotgun"/>
 	<property name="Faction" value="whiteriver"/>
-	<property name="Names" value="Risky" />				
-	<property name="Mesh" value="#@modfolder:Resources/EndZ1cowgirl1.unity3d?EndZ1cowgirl"/>
-	<property name="SoundHurt" value="player2painlg"/>
-	<property name="SoundHurtSmall" value="player2painsm"/>
-	<property name="SoundDeath" value="player2death"/>
-	<property name="SoundStamina" value="player2stamina"/>
-	<property name="SoundDrownPain" value="player2drownpain"/>
-	<property name="SoundWaterSurface" value="player2drownsurface"/>
-	<property name="SoundDrownDeath" value="player2drowndeath"/>
-	<property name="SoundJump" value="player2Jump"/>
-	<property name="SoundLandSoft" value="player2LandSoft"/>
-	<property name="SoundLandHard" value="player2LandHard"/>
-	<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
-	<property name="SoundRandom" value="player2stamina" />
-	<property name="SoundRandomTime" value="60"/>
-	<property name="SoundAlert" value="player2stamina"/>
-	<property name="SoundAttack" value="player2stamina"/>
-	<property name="SoundSense" value="player2stamina"/>
+	<property name="Names" value="Rufus" />				
+	<property name="Mesh" value="#@modfolder:Resources/EndZ4cowboy1.unity3d?EndZ4cowboy"/>
 	<property name="LookAtAngle" value="0"/>
 	<property name="Buffs" value=""/>
 	<property name="HireCost" value="0" />
@@ -47,7 +31,7 @@
 	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
-<!--ENTITY 7 NPC AND TRANSFORM-->
+<!--ENTITY 4 NPC AND TRANSFORM-->
 
 
 <!--ENTITY 10 NPC AND TRANSFORM-->
