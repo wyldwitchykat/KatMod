@@ -1,4 +1,6 @@
 <FPS>
+<remove xpath="/blocks/block[@name='cntVendingMachineTrader']" />
+
 <append xpath="/blocks">
 
 <block name="FPSPortableTraderNumber9">
@@ -28,6 +30,28 @@
 	<property name="SortOrder1" value="B453"/>
 	<property name="SortOrder2" value="3333"/>
 	<property name="Group" value="Science,TCScience"/>
+	<property name="FilterTags" value="MC_building,MC_playerBlocks,SC_electrical,SC_commercial"/>
+</block>
+
+	<!-- *** TRADER_RENTAL_VENDING_MACHINE -->
+<block name="cntVendingMachineTrader">
+	<property name="Extends" value="FPSPortableTraderNumber9"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CustomIcon" value="cntVendingMachine"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Commercial/vendingMachinePlayerPrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property name="Path" value="solid"/>
+	<property name="StabilitySupport" value="false"/>
 	<property name="FilterTags" value="MC_building,MC_playerBlocks,SC_electrical,SC_commercial"/>
 </block>
 
