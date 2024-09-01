@@ -18,5 +18,5 @@
     <set xpath="//block[@name='cntDewCollector']/property[@name='MaxConvertTime']/@value">43200</set>
 
     <!-- Un-comment if you do not want dew collectors to produce "heat" for the heat map. -->
-    <!-- <remove xpath="//block[@name='cntDewCollector']/property[starts-with(@name, 'HeatMap')]" /> -->
+    <remove xpath="//block[@name='cntDewCollector']/property[starts-with(@name, 'HeatMap')]" />
 </config>
