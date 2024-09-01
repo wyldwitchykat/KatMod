@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+FPSPortableTraderNumber9,blocks,Block,,,FPS Portable Trader Number 9
+FPSPortableTraderNumber9Desc,blocks,Block,,,"A vending machine that can travel with you. Simply destroy it to get a new one!"

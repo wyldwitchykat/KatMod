@@ -1,0 +1,15 @@
+<FPS>
+
+<append xpath="/recipes">
+
+<recipe name="FPSPortableTraderNumber9" count="1">
+	<ingredient name="resourceWood" count="5"/>
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+</recipe>
+
+</append>
+
+</FPS>

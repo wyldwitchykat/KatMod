@@ -1,0 +1,36 @@
+<FPS>
+<append xpath="/blocks">
+
+<block name="FPSPortableTraderNumber9">
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="VendingMachine"/>
+	<property name="CustomIcon" value="cntATMSecure"/>
+	<property name="DescriptionKey" value="FPSPortableTraderNumber9Desc"/>
+	<property name="TraderID" value="9"/>
+	<property name="TraderStageTemplate" value="midTier1"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Mmetal_hard"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Commercial/ATMPrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="18"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property name="Path" value="solid"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="EconomicValue" value="690"/>
+	<property name="MaxDamage" value="500"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="30"/>
+	</property>
+	<drop event="Destroy" name="FPSPortableTraderNumber9" count="1"/>
+	<property name="SortOrder1" value="B453"/>
+	<property name="SortOrder2" value="3333"/>
+	<property name="Group" value="Science,TCScience"/>
+	<property name="FilterTags" value="MC_building,MC_playerBlocks,SC_electrical,SC_commercial"/>
+</block>
+
+</append>
+
+</FPS>
