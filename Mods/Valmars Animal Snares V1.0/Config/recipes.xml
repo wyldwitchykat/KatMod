@@ -1,10 +1,10 @@
 <Valmar>
 <append xpath="/recipes">
-    <recipe name="animalFeed" count="1" scrapable="False"  >
-  <ingredient name="foodCropPumpkin" count="3" />
+    <recipe name="animalFeed" count="10" scrapable="False"  >
+  <ingredient name="foodCropPumpkin" count="1" />
     </recipe>
-    <recipe name="animalFeed" count="1" scrapable="False" >
-  <ingredient name="foodCropCorn" count="3" />
+    <recipe name="animalFeed" count="10" scrapable="False" >
+  <ingredient name="foodCropCorn" count="1" />
     </recipe>
     <recipe name="animalSnare" count="1" scrapable="False" tags="learnable">
         <ingredient name="resourceWood" count="5"/>
