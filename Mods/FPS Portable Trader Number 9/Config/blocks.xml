@@ -1,4 +1,7 @@
 <FPS>
+<remove xpath="/blocks/block[@name='cntVendingMachine']" />
+<remove xpath="/blocks/block[@name='cntVendingMachineTrader']" />
+
 <append xpath="/blocks">
 
 <block name="FPSPortableTraderNumber9">
@@ -29,6 +32,28 @@
 	<property name="SortOrder2" value="3333"/>
 	<property name="Group" value="Science,TCScience"/>
 	<property name="FilterTags" value="MC_building,MC_playerBlocks,SC_electrical,SC_commercial"/>
+</block>
+
+<!-- *** PLAYER_VENDING_MACHINE -->
+<block name="cntVendingMachine">
+	<property name="Extends" value="FPSPortableTraderNumber9"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="cntVendingMachine"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="Model" value="Entities/Commercial/vendingMachinePlayerPrefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="5"/>
+	</property>
+	<drop event="Destroy" name="cntVendingMachine" count="1"/>
+</block>
+
+	<!-- *** TRADER_RENTAL_VENDING_MACHINE -->
+<block name="cntVendingMachineTrader">
+	<property name="Extends" value="cntVendingMachine"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CustomIcon" value="cntVendingMachine"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
 </block>
 
 </append>
