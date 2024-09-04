@@ -1,0 +1,40 @@
+ <Bridges>	
+	<append xpath="/blocks">	
+		<block name="smallDrawBridge">
+			<property name="Class" value="DrawBridge"/>
+			<!-- <property name="Class" value="PoweredDoor"/>
+			<property name="Material" value="MmetalDrawbridge"/> -->
+			<property name="DescriptionKey" value="smallDrawBridgeDesc"/>
+			<property name="Material" value="Mbridge_metal"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="CustomIcon" value="SmallDrawBrigde" />
+			<property name="Texture" value="241"/> <!-- intentionally generates wood hit sounds -->
+			<property name="Model" value="#@modfolder:Resources/Bridges.unity3d?SmallDrawbridge"/>
+			<property name="Place" value="DrawBridge"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,3,1"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+			<!--property name="BlockTag" value="Door" /--> <!-- this signals the path finder that it shall try doors prefered, we don't want this on draw bridges -->
+			<property name="OpenSound" value="smallDrawbridgeSound"/>
+			<property name="CloseSound" value="smallDrawbridgeSound"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="10"/>
+			</property>
+			<drop event="Harvest" name="DrawBridge" count="1" tool_category="Disassemble"/> 
+			<!--<drop event="Destroy" name="DrawBridge" count="1"/> tag="salvageHarvest" -->
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="ActivationDistance" value="14"/> <!-- This is how far away you can PLACE the block and how far away you can ACTIVATE it -->
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="MC_building,SC_doors"/>
+			<property name="SortOrder1" value="7060"/>
+			<property name="SortOrder2" value="0600"/>
+			<property name="CanPickup" value="true"/>
+			<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+		</block>
+	</append>
+</Bridges>

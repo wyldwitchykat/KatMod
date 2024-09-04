@@ -1,0 +1,8 @@
+<Bridges>
+	<append xpath="/recipes" >
+		<recipe name="smallDrawBridge" count="1" craft_area="workbench">
+	    <ingredient name="resourceMechanicalParts" count="12"/>
+      <ingredient name="resourceForgedIron" count="60"/>
+		</recipe>
+	</append>
+</Bridges>

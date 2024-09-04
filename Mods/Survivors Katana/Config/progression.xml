@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+	<set xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/@max_level">100</set>
+	
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']">
+		<display_entry item="meleeTantoKnife" unlock_level="25,32,37,43,49,55" />
+		<display_entry item="meleeKatanaSword" unlock_level="64,73,82,91,95,100" />
+	</append>
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingBlades']/effect_group">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="meleeTantoKnife"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="32,37,43,49,55,100" value="1,2,3,4,5,5" tags="meleeTantoKnife"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="64,100" value="1" tags="meleeKatanaSword,partsKatanaBlade,partsKatanaHandle,partsKatanaSpacer"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="73,82,91,95,100" value="1,2,3,4,5" tags="meleeKatanaSword"/>
+	</append>
+</configs>

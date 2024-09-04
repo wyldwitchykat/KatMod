@@ -6,9 +6,9 @@
 		<recipe name="Magbow" count="1" tags="learnable,magbow" craft_area="workbench">
 			<ingredient name="gunBowT1WoodenBowParts" count="2"/>
 			<ingredient name="magBowStringParts" count="2"/>
-			<ingredient name="resourceForgedSteel" count="5"/>
-			<ingredient name="resourceScrapPolymers" count="20"/>
-			<ingredient name="resourceLegendaryParts" count="1"/>
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="40"/>
+			<ingredient name="resourceLegendaryParts" count="0"/>
 			<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="1,5" tags="gunBowT1WoodenBowParts,magBowStringParts"/>
 		<passive_effect name="CraftingIngredientCount" level="2,6" operation="base_add" value="2,10" tags="resourceForgedSteel"/>
@@ -17,10 +17,11 @@
 	</effect_group>
 		</recipe>
 		<recipe name="magBowStringParts" count="1" craft_area="workbench">
-			<ingredient name="resourceSpring" count="10"/>
-			<ingredient name="resourceAcid" count="1"/>
-			<ingredient name="resourceScrapPolymers" count="5"/>
+			<ingredient name="resourceYuccaFibers" count="10"/>
+			<ingredient name="resourceAcid" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
 			<ingredient name="resourceCloth" count="20"/>
+			<ingredient name="resourceSpring" count="5"/>
 		</recipe>
 		<recipe name="MagbowScopeLarge" count="1">
 			<ingredient name="modGunScopeLarge" count="1"/>

@@ -1,0 +1,3 @@
+Key,Source,Context,Changes,English
+smallDrawBridge,Door,,,Small Drawbridge
+smallDrawBridgeDesc,Door,New,,Small Metal Drawbridge
