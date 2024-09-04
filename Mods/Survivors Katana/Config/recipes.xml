@@ -34,9 +34,5 @@
 			<ingredient name="unit_clay" count="20"/>
 		</recipe>
 
-		<recipe name="q_wayoftheblade" count="1">
-			<ingredient name="resourcePaper" count="1"/>
-		</recipe>
-
 	</append>
 </configs>
