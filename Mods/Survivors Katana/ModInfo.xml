@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Survivors_Katana" />
+	<DisplayName value="Survivor's Katana" />
+	<Description value="Adds a few bladed weapons to the game so you can keep using melee for end game." />
+	<Author value="RussianDood" />
+	<Version value="3.0" />
+	<Website value="http://7daystodie.com" />
+</xml>
