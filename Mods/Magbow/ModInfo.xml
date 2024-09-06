@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="Magbow" />
+    <DisplayName value="Magbow" />
+    <Version value="3.0" />
+    <Description value="Adds a new Crossbow that has a magazine for a repeating crossbow." />
+    <Author value="RussianDood" />
+    <Website value="" />
+</xml>

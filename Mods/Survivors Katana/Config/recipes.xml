@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+	<append xpath="/recipes">
+		<recipe name="meleeKatanaSword" count="1" tags="learnable" craft_area="workbench">
+			<ingredient name="partsKatanaBlade" count="1"/>
+			<ingredient name="partsKatanaHandle" count="1"/>
+			<ingredient name="partsKatanaSpacer" count="1"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+		</recipe>
+		
+		<recipe name="partsKatanaBlade" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true" tags="learnable">
+			<ingredient name="unit_iron" count="500"/>
+			<ingredient name="unit_clay" count="100"/>
+		</recipe>
+		
+		<recipe name="partsKatanaHandle" count="1" tags="learnable" craft_area="workbench">
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="resourceOil" count="2"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceGlue" count="2"/>
+		</recipe>
+		
+		<recipe name="partsKatanaSpacer" count="1" craft_area="forge" craft_tool="toolForgeCrucible" material_based="true" tags="learnable">
+			<ingredient name="unit_brass" count="200"/>
+			<ingredient name="unit_clay" count="20"/>
+		</recipe>
+
+	</append>
+</configs>

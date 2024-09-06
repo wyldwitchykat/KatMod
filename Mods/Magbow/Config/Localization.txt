@@ -1,0 +1,8 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+Magbow,Items,Gun,,,Magbow,,,,,,,,,,,,,
+MagbowDesc,Items,Gun,,,"A stealthy and powerful semi-automatic Crossbow, with origins unknown. \nRepair with a Repair Kit.\nScrap to Bow / Crossbow Parts.",,,,,,,,,,,,,
+magBowStringParts,Items,Gun,,,Military-Grade Polymer String,,,,,,,,,,,,,
+magBowStringPartsDesc,Items,Gun,,,Extremely strong and slightly elastic crossbow string that can withstand repeated use within a small interval. Used as a crafting ingredient for the Magbow.,,,,,,,,,,,,,
+MagbowScopeLarge,Items,Gun,,,Magbow 8x Scope,,,,,,,,,,,,,
+MagbowScopeLargeDesc,Items,Gun,,,Can craft into normal x8 Scope,,,,,,,,,,,,,
+MagbowSchematic,Items,Gun,,,Magbow Schematic,,,,,,,,,,,,,
