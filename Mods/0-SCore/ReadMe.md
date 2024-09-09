@@ -23,6 +23,67 @@ Direct Download to the 0-SCore.zip available on gitlab mirror:
 ### Change Logs
 
 [ Change Log ]
+Version: 1.0.75.721
+	[ Farming ]
+		- Fixed a null reference error when world is null / not ready.
+
+Version: 1.0.72.659
+	[ Process Options ]
+		- Added additional checks again a player being null or being on dedi.
+
+Version: 1.0.71.2148
+	[ Remote Crafting / Repair ]
+		- Fixed an issue where 2x the amount of resources was available. Display only bug.
+		- Removed debug lines.
+
+Version: 1.0.70.1352
+	[ Remote Crafting / Repair ]
+		- Fixed an issue where ItemActionEntryRepair wasn't detecting ingredients from an open container.
+		- Added checks for IsUserAccessing to check if the current user has a chest open, allowing them to pull resources from that container.
+
+	[ CanSway ]
+		- Fixed a null reference when exiting a game.
+
+Version: 1.0.65.1554
+
+	[ No Changes to SCore, only Better Life ]
+
+	[ SphereII A Better Life ]
+		- 1.0.19.1554
+		- Fixed an issue where errors would occur without NPC Core installed, due to factions.
+
+
+Version: 1.0.64.2041
+		[ SCore Options ]
+			- Added toggle for WeaponSway
+			- Added Toggle for gfx st set 0
+				- Game needs to be restarted after checked.
+				- Every start after will have that automatically running.
+			- Added Toggle for gfx pp enable 0
+				- Game needs to be restarted after checked.
+				- Every start after will have that automatically running.
+
+		[ Weapon Sway ]
+			- Added patches to vp_Weapon / vp_Camera to block swaying and bob code from running.
+			- This feature is configured via a cvar called "$WeaponSway". 
+				- Value of 0 will enable sway.
+				- Value of 1 or more will disable sway.
+			- This is included into 0-SCore, and as a standalone mod.
+				- The standalone mod disables it completely, with no option to toggle it back on.
+			- This feature can be toggled using the SCore Utilities, or through a console command
+			- Added new console Command weaponsway
+				- "weaponsway true" will turn on weapon and camera sway.
+				- "weaponsway false" will turn off weapon and camera sway.
+
+		[ Zombie Random Walk Type ]
+			- Removed default Spider / Crawler walk types
+			- Spider's head position look wonky, and crawlers were too slow.
+			
+
+		[ A Better Life ]
+			- Added notrample tag on fish
+			- Merged in new plants from blue name.
+
 Version: 1.0.60.1241
 		[ MinEvent ]
 			- Added a new MinEvent to allow changing local transform / rotation on a particular transform on an entity.
