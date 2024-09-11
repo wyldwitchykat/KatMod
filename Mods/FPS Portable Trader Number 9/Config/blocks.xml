@@ -11,7 +11,7 @@
 	<property name="DisplayType" value="blockHardenedMulti"/>
 	<property name="Material" value="Mmetal_hard"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="Entities/Commercial/ATMPrefab"/>
+	<property name="Model" value="Entities/Commercial/vendingMachinePlayerPrefab"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="18"/>
 	<property name="WaterFlow" value="permitted"/>
