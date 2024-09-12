@@ -25,9 +25,15 @@
 			<style_entry name="collider_scale" value="1.0" />
 			<style_entry name="defaultcolor" value="0,0,0,1" />
 			<style_entry name="selectedcolor" value="[color_element_accent]" />
+			<style_entry name="hovercolor" value="[color_element_accent]" />
 			<style_entry name="disabledcolor" value="0,0,0" />
 			<style_entry name="globalopacitymod" value="1.2" />
-			<style_entry name="sound" value="[paging_click]" />
+			<!-- <style_entry name="sound" value="[paging_click]" /> -->
+			<!-- <style_entry name="sound_play_on_press" value="false" /> -->
+			<style_entry name="sound_play_on_hover" value="[default_hover]" />
+			<style_entry name="sound" value="Sounds/UI/ui_menu_back" />
+			<style_entry name="sound_volume" value="0.75" />
+			<style_entry name="type" value="sliced" />
 		  </style>
 
 		  
@@ -48,6 +54,12 @@
 			<style_entry name="effect" value="Outline8" />
 			<style_entry name="effect_distance" value="1,1" />
 			<style_entry name="effect_color" value="20,20,20,230" />
+		  </style>
+		  <style name="style_outline" type="label">
+			<style_entry name="crispness" value="OnDesktop" />
+			<style_entry name="effect" value="Outline8" />
+			<style_entry name="effect_distance" value="1,1" />
+			<style_entry name="effect_color" value="0,0,0,200" />
 		  </style>
 		   <style name="style_label_header" type="label">
 			<style_entry name="font_size" value="24" />
@@ -136,7 +148,15 @@
 	
 	<setattribute xpath="//style_entry[@value='ui_game_panel_header']" name="value">ui_game_header_fill</setattribute>
 	<append xpath="//style[@name='header.panel']">
-		  <style_entry name="backgroundcolor" value="[black]" />
+		<style_entry name="backgroundcolor" value="[black]" />
+		<style_entry name="crispness" value="OnDesktop" />
+		<style_entry name="effect" value="Outline8" />
+		<style_entry name="effect_distance" value="2,2" />
+		<style_entry name="effect_color" value="30,30,30,200" />
 	</append>
 
+
+	<!-- <setattribute xpath="//style_entry[@name='default_click']" name="value">Sounds/UI/ui_menu_back</setattribute> -->
+	<setattribute xpath="//style_entry[@name='default_click']" name="value">Sounds/UI/ui_tab</setattribute>
+	<!-- <setattribute xpath="//style_entry[@name='craft_click']" name="value">Sounds/UI/ui_menu_back</setattribute> -->
 </xSteel>

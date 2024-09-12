@@ -28,4 +28,7 @@
 		
 	</append>
 	
+	<set xpath="//SoundDataNode[contains(@name,'_place')]/MaxVoices/@value">10</set>
+	<set xpath="//SoundDataNode[contains(@name,'_place')]/MaxRepeatRate/@value">0.01</set>
+	
 </xSteel>

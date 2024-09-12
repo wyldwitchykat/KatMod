@@ -1,4 +1,6 @@
 <xSteel>
+	<!-- <append xpath="//label[@style and not(contains(@style,'style_'))]/@style">,style_outline</append> -->
+	<!-- <setattribute xpath="//label[not(@style)]" name="style">style_outline</setattribute> -->
 	
 	<setattribute xpath="//sprite[@name='backgroundMainColor']" name="globalopacitymod">0.9</setattribute>
 	<setattribute xpath="//sprite[@name='backgroundMainColor']" name="color">[black]</setattribute>
@@ -31,12 +33,10 @@
 		<setattribute xpath="/controls/trader_item//label[@text='{itemname}']" name="color">{#itemtypeicon == 'book' ? '170,255,170,255' : statecolor}</setattribute>
 		<setattribute xpath="/controls/trader_item//label[@text='{itemname}']" name="width">390</setattribute>
 		<setattribute xpath="/controls/recipe_entry//sprite[@name='background']" name="globalopacitymod">0.3</setattribute>
+		<setattribute xpath="/controls/recipe_entry//label" name="pos">200,-22</setattribute>
 		
 		<setattribute xpath="/controls/ingredient_header//sprite[@color='[black]']" name="globalopacitymod">0.01</setattribute>
 		<setattribute xpath="/controls/unlocked_by_header//sprite[@color='[black]']" name="globalopacitymod">0.01</setattribute>
-		
-		<setattribute xpath="/controls/item_action_entry//sprite[@name='background']" name="color">1,1,1,1</setattribute>
-		<setattribute xpath="/controls/item_action_entry/rect" name="default_background_color">1,1,1,1</setattribute>
 		
 		<setattribute xpath="//sprite[@color='[lightGrey]']" name="globalopacitymod">0.01</setattribute>
 		<setattribute xpath="//sprite[@name='thumb']" name="globalopacitymod">1</setattribute>
@@ -47,9 +47,19 @@
 		<setattribute xpath="//sprite[@name='highlightOverlay']" name="color">[black]</setattribute>
 		
 		
-		<setattribute xpath="/controls/skill_entry//sprite[@color='{rowstatecolor}']" name="globalopacitymod">0.6</setattribute>
+		<!-- <setattribute xpath="/controls/quest_entry//sprite[@name='background']" name="globalopacitymod">0.01</setattribute> -->
+		<setattribute xpath="/controls/quest_entry//sprite[@color='{rowstatecolor}']" name="sprite">ui_game_header_fill</setattribute>
+		<setattribute xpath="/controls/quest_entry//sprite[@color='{rowstatecolor}']" name="globalopacitymod">0.3</setattribute>
+		<setattribute xpath="/controls/quest_entry//sprite[@color='{rowstatecolor}']" name="color">{# rowstatecolor == '255,255,255,255' ? rowstatecolor : '0,0,0,0'}</setattribute>
+		<setattribute xpath="/controls/quest_entry/rect" name="row_color">0,0,0,0</setattribute>
+		<setattribute xpath="/controls/quest_entry/rect" name="hover_color">255,255,255,255</setattribute>
+		
+		<setattribute xpath="/controls/skill_entry//sprite[@color='{rowstatecolor}']" name="sprite">ui_game_header_fill</setattribute>
+		<setattribute xpath="/controls/skill_entry//sprite[@color='{rowstatecolor}']" name="globalopacitymod">0.3</setattribute>
+		<setattribute xpath="/controls/skill_entry//sprite[@color='{rowstatecolor}']" name="color">{# rowstatecolor == '255,255,255,255' ? rowstatecolor : '0,0,0,0'}</setattribute>
+		<!-- <setattribute xpath="/controls/skill_entry//label" name="style">style_label_outline</setattribute> -->
 		<setattribute xpath="/controls/skill_entry/panel" name="row_color">0,0,0,0</setattribute>
-		<setattribute xpath="/controls/skill_entry/panel" name="hover_color">255,255,255,130</setattribute>
+		<setattribute xpath="/controls/skill_entry/panel" name="hover_color">255,255,255,255</setattribute>
 		<setattribute xpath="/controls/skill_attribute_level//sprite[@name='backgroundMainColor']" name="globalopacitymod">0.01</setattribute>
 		<setattribute xpath="/controls/skill_perk_level//sprite[@name='backgroundMainColor']" name="globalopacitymod">0.01</setattribute>
 		<setattribute xpath="/controls/skill_book_level//sprite[@name='backgroundMainColor']" name="globalopacitymod">0.01</setattribute>
@@ -60,7 +70,6 @@
 		<setattribute xpath="/controls/invites_entry//sprite[@name='background']" name="globalopacitymod">0.4</setattribute>
 		<setattribute xpath="/controls/active_buff_entry//sprite[@name='background']" name="globalopacitymod">0.2</setattribute>
 		
-		<setattribute xpath="/controls/quest_entry//sprite[@name='background']" name="globalopacitymod">0.2</setattribute>
 		<setattribute xpath="/controls/challenge_list_entry//sprite[@name='background']" name="globalopacitymod">0.01</setattribute>
 		<setattribute xpath="/controls/challenge_entry//sprite[@name='highlightOverlay']" name="globalopacitymod">0.01</setattribute>
 		<setattribute xpath="/controls/radial_entry//sprite[@color='96,96,96,192']" name="color">0,0,0,230</setattribute>
@@ -217,6 +226,8 @@
 			  
 		</append>
 		
+		<setattribute xpath="/controls/drag_item_stack//label" name="style">style_label_outline</setattribute>
+		
 		<remove xpath="/controls/party_entry"></remove>
 		<remove xpath="/controls/companion_entry"></remove>
 		<append xpath="/controls">
@@ -251,11 +262,11 @@
 		<append xpath="/controls">
 			  <item_action_entry>
 				<rect height="43" controller="ItemActionEntry" disabled_font_color="[disabledLabelColor]" default_font_color="[labelColor]" default_background_color="1,1,1,1">
-				  <sprite depth="3" name="background" color="1,1,1,1" type="sliced" on_press="true" on_hover="true" width="147" sound_play_on_hover="[default_hover]" gamepad_selectable="false">				  </sprite>
+				  <sprite depth="3" name="background" color="1,1,1,1" type="sliced" on_press="true" on_hover="true" width="154" sound_play_on_hover="[default_hover]" gamepad_selectable="false" globalopacitymod="0.4" >				  </sprite>
 				  <sprite depth="4" name="Icon" sprite="{actionicon}" size="24,24" color="1,1,1,1" pos="2,-10" foregroundlayer="true" />
-				  <label depth="4" name="Name" pos="4,-22" width="122" height="22" text="{actionname}" font_size="26" color="{statuscolor}" effect="shadow" pivot="left" justify="left"  />
-				  <label depth="4" name="keyboardButton" pos="152,-22" width="36" height="26" text="&lt;W&gt;" font_size="20" color="{statuscolor}" effect="shadow" pivot="right" justify="right" />
-				  <gamepad_icon depth="4" name="gamepadIcon" size="44,44" pos="152,-22" pivot="Right" visible="{inspectheld}" />
+				  <label depth="4" name="Name" pos="4,-22" width="126" height="22" text="{actionname}" font_size="26" color="{statuscolor}" effect="shadow" pivot="left" justify="left"  />
+				  <label depth="4" name="keyboardButton" pos="150,-22" width="36" height="26" text="&lt;W&gt;" font_size="20" color="{statuscolor}" effect="shadow" pivot="right" justify="right" />
+				  <gamepad_icon depth="4" name="gamepadIcon" size="44,44" pos="150,-22" pivot="Right" visible="{inspectheld}" />
 				</rect>
 			  </item_action_entry>
 		</append>	

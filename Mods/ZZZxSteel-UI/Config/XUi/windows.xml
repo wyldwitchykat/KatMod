@@ -1,5 +1,7 @@
 <xSteel>
 
+<!-- <append xpath="//label[@style]/@style">,style_outline</append> -->
+<!-- <setattribute xpath="//label[not(@style)]" name="style">style_outline</setattribute> -->
 
 <setattribute xpath="//sprite[@color='[darkestGrey]']" name="color">[black]</setattribute>
 <setattribute xpath="//sprite[@sprite='ui_game_panel_header']" name="color">[black]</setattribute>
@@ -174,6 +176,13 @@
 <setattribute xpath="//window[@name='windowQuestOffer']//sprite[@name='backgroundMain']" name="globalopacitymod">0.01</setattribute>
 <setattribute xpath="//window[@name='windowQuestOffer']//sprite[@name='background']" name="globalopacitymod">0.01</setattribute>
 <setattribute xpath="//window[@name='windowQuestOffer']//panel[@name='content']" name="backgroundcolor">1,1,1,1</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//panel[@name='content']" name="bordercolor">1,1,1,1</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//button[@defaultcolor='[mediumGrey]']" name="sound_play_on_hover">[default_hover]</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//button[@defaultcolor='[mediumGrey]']" name="sound_volume">0.75</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//button[@defaultcolor='[mediumGrey]']" name="width">300</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//button[@defaultcolor='[mediumGrey]']" name="sprite">ui_game_header_fill</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//button[@defaultcolor='[mediumGrey]']" name="hoversprite">ui_game_header_fill</setattribute>
+<setattribute xpath="//window[@name='windowQuestOffer']//button[@defaultcolor='[mediumGrey]']" name="hovercolor">0,0,0,250</setattribute>
 <setattribute xpath="//window[@name='windowQuestOffer']//button[@defaultcolor='[mediumGrey]']" name="defaultcolor">0,0,0,240</setattribute>
 <append xpath="//window[@name='windowQuestOffer']//panel[@name='content']">
           <sprite color="[black]" type="sliced" sprite="ui_game_header_fill" globalopacitymod="1"  >      </sprite>
@@ -194,7 +203,10 @@
 </append>
 
 <setattribute xpath="//window[@name='windowFuel']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
-<setattribute xpath="//window[@name='windowFuel']//button[@defaultcolor]" name="defaultcolor">40,40,40,200</setattribute>
+<setattribute xpath="//window[@name='windowFuel']//button" name="defaultcolor">40,40,40,200</setattribute>
+<setattribute xpath="//window[@name='windowFuel']//button" name="sprite">ui_game_header_fill</setattribute>
+<setattribute xpath="//window[@name='windowFuel']//button" name="hoversprite">ui_game_header_fill</setattribute>
+<setattribute xpath="//window[@name='windowFuel']//button" name="hovercolor">255,255,255,100</setattribute>
 <setattribute xpath="//window[@name='windowForgeInput']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
 <append xpath="//window[@name='windowForgeInput']//rect[@name='content2']">
           <sprite color="[black]" type="sliced" sprite="ui_game_header_fill" globalopacitymod="1"  >      </sprite>
@@ -228,7 +240,10 @@
 
 <setattribute xpath="//window[@name='windowPowerSourceSlots']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
 <setattribute xpath="//window[@name='windowPowerSourceStats']//sprite[@color]" name="globalopacitymod">0.01</setattribute>
-<setattribute xpath="//window[@name='windowPowerSourceStats']//button[@defaultcolor]" name="defaultcolor">40,40,40,220</setattribute>
+<setattribute xpath="//window[@name='windowPowerSourceStats']//button" name="defaultcolor">40,40,40,200</setattribute>
+<setattribute xpath="//window[@name='windowPowerSourceStats']//button" name="sprite">ui_game_header_fill</setattribute>
+<setattribute xpath="//window[@name='windowPowerSourceStats']//button" name="hoversprite">ui_game_header_fill</setattribute>
+<setattribute xpath="//window[@name='windowPowerSourceStats']//button" name="hovercolor">255,255,255,100</setattribute>
 <append xpath="//window[@name='windowPowerSourceStats']/rect[@name='content']">
           <sprite color="[black]" type="sliced" sprite="ui_game_header_fill" globalopacitymod="1" height="{# showfuel ? 270 : 236}" >      </sprite>
 </append>
@@ -252,10 +267,10 @@
 <append xpath="/windows">
 	  <window name="windowNonPagingHeader" depth="99" pos="-300,1" width="600" height="50" anchor="CenterTop" controller="WindowNonPagingHeader">
 		<sprite name="header_background" depth="0" pos="0,0" width="1844" anchor_left="#cam,0,-5" anchor_right="#cam,1,5" color="[black]" type="sliced" globalopacitymod="1" />
-		<sprite name="button_background" depth="1" pos="200,0" width="200" color="[color_element_accent]" globalopacitymod="1" />
-		<sprite name="button_separator" depth="2" pos="197,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
-		<sprite name="button_separator" depth="2" pos="400,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
-		<label name="lblWindowName" depth="5" pos="300,-25" size="150,40" style="style_label_normal" font_size="32" pivot="center" justify="center" upper_case="true" overflow="ShrinkContent" />
+		<sprite name="button_background" type="sliced" depth="1" pos="200,0" width="200" color="[color_element_accent]" globalopacitymod="1" />
+		<sprite name="button_separator" type="sliced" depth="2" pos="197,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+		<sprite name="button_separator" type="sliced" depth="2" pos="400,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+		<label name="lblWindowName" depth="5" pos="300,-25" size="180,40" style="style_label_normal" font_size="30" pivot="center" justify="center" upper_case="true" overflow="ShrinkContent" />
 		
 		<label name="date_display" depth="5" pos="50,-25" size="250,40" style="style_label_normal, style_label_header_date" text="{currentday}   |   {currenttime}" pivot="center" justify="right" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location" ></label>
 		<label name="location_display" depth="5" pos="600,-25" size="350,40" style="style_label_normal" text="{locationname}   |   GS {gamestage}   |   LS {lootstage}" pivot="center" justify="left" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location">		</label>
@@ -264,40 +279,40 @@
 	  <window name="windowPagingHeader" depth="99" pos="{#is_creative ? '-301,1' : '-226,1'}" width="600" height="50" anchor="CenterTop" cursor_area="true" normal_color="[black]" select_color="[color_element_accent]" hover_color="[white]" blink_color="[white]" controller="WindowSelector" >
 			<label name="lblWindowName" depth="5" pos="99999,99999" style="style_label_normal" font_size="40" pivot="center" justify="center" upper_case="true" overflow="ShrinkContent" />
 			
-			<sprite name="header_background" depth="0" pos="0,0" width="1844" anchor_left="#cam,0,-5" anchor_right="#cam,1,5" color="[black]" type="sliced" globalopacitymod="1" />
+			<sprite name="header_background" depth="-2" pos="0,0" width="1844" anchor_left="#cam,0,-5" anchor_right="#cam,1,5" color="[black]" type="sliced" globalopacitymod="1" />
 			
-			<sprite name="header_button_separator" depth="2" pos="-303,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
-			<button name="Crafting" pos="-300,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiCrafting" />
+			<sprite name="header_button_separator" type="sliced" depth="-1" pos="-303,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Crafting" pos="-300,0" style="press, hover, style_window_paging_buttons"   />
 			<label name="Crafting" depth="3" pos="-300,-13" style="style_label_normal, style_label_header" text_key="xuiCrafting" />
 			
-			<sprite name="header_button_separator" depth="2" pos="-153,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
-			<button name="Character" pos="-150,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiCharacter" />
+			<sprite name="header_button_separator" type="sliced" depth="-1" pos="-153,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Character" pos="-150,0" style="press, hover, style_window_paging_buttons"   />
 			<label name="Character" depth="3" pos="-150,-13" style="style_label_normal, style_label_header" text_key="xuiCharacter" />
 			
-			<sprite name="header_button_separator" depth="2" pos="-3,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
-			<button name="Map" pos="0,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiMap" />
+			<sprite name="header_button_separator" type="sliced" depth="-1" pos="-3,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Map" pos="0,0" style="press, hover, style_window_paging_buttons"   />
 			<label name="Map" depth="3" pos="0,-13"  style="style_label_normal, style_label_header" text_key="xuiMap" />
 			
-			<sprite name="header_button_separator" depth="2" pos="147,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
-			<button name="Skills" pos="150,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiSkills" />
+			<sprite name="header_button_separator" type="sliced" depth="-1" pos="147,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Skills" pos="150,0" style="press, hover, style_window_paging_buttons"   />
 			<label name="Skills" depth="3" pos="150,-13"  style="style_label_normal, style_label_header" text_key="xuiSkills" />
 			
-			<sprite name="header_button_separator" depth="2" pos="297,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
-			<button name="Quests" pos="300,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiQuests" />
+			<sprite name="header_button_separator" type="sliced" depth="-1" pos="297,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Quests" pos="300,0" style="press, hover, style_window_paging_buttons"  />
 			<label name="Quests" depth="3" pos="300,-13"  style="style_label_normal, style_label_header" text_key="xuiQuests" />
 			
-			<sprite name="header_button_separator" depth="2" pos="447,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
-			<button name="Challenges" depth="3" pos="450,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiChallenges" />
+			<sprite name="header_button_separator" type="sliced" depth="-1" pos="447,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Challenges" depth="3" pos="450,0" style="press, hover, style_window_paging_buttons"   />
 			<label name="Challenges" depth="3" pos="450,-13"  style="style_label_normal, style_label_header" text_key="xuiChallenges" />
 			
-			<sprite name="header_button_separator" depth="2" pos="597,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
-			<button name="Players" pos="600,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiPlayers" />
+			<sprite name="header_button_separator" type="sliced" depth="-1" pos="597,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
+			<button name="Players" pos="600,0" style="press, hover, style_window_paging_buttons"   />
 			<label name="Players" depth="3" pos="600,-13"  style="style_label_normal, style_label_header" text_key="xuiPlayers" />
 			
-			<sprite name="header_button_separator" depth="2" pos="747,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1"  />
-			<button name="Creative" pos="750,0" style="press, hover, style_window_paging_buttons"  tooltip_key="xuiCreative" visible="{is_creative}" />
+			<sprite name="header_button_separator" type="sliced" depth="-1" pos="747,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1"  />
+			<button name="Creative" pos="750,0" style="press, hover, style_window_paging_buttons"  visible="{is_creative}" />
 			<label name="Creative" depth="3" pos="750,-13"  style="style_label_normal, style_label_header" text_key="xuiCreative" visible="{is_creative}" />
-			<sprite name="header_button_separator" depth="2" pos="897,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1"  visible="{is_creative}" />
+			<sprite name="header_button_separator" type="sliced" depth="-1" pos="897,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1"  visible="{is_creative}" />
 			
 			<label name="date_display2" depth="5" pos="-675,-14" size="350,40" style="style_label_normal, style_label_header_date" text="{currentday}   |   {currenttime}" justify="right" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location" >		</label>
 			<label name="location_display2" depth="5" pos="{#is_creative ? '925,-14' : '775,-14'}" size="350,40" style="style_label_normal" text="{locationname}   |   GS {gamestage}   |   LS {lootstage}" justify="left" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location"></label>
@@ -346,7 +361,7 @@
 
 <remove xpath="//window[@name='windowLocation']"/>
 <append xpath="/windows">
-	<window name="windowLocation" depth="100" pos="0,0" width="600" height="60" anchor="CenterTop" tooltip_key="xuiLocationWindowHUD" controller="HUDStatBar" visible="{statvisible}">
+	<window name="windowLocation" depth="100" pos="0,0" width="600" height="60" anchor="CenterTop" controller="HUDStatBar" visible="{statvisible}">
 		
 		<label name="location" depth="3" pos="-410,-57" width="600" height="30" style="style_label_outline" text="{locationname}" font_size="18" justify="right" upper_case="true" pivot="center" controller="Location" />
 		<rect name="compasslocation" visible="{#cvar('BloodMoonActive') == 0 ? true : false}">
@@ -651,6 +666,13 @@
 
 <!-- <append xpath="/windows/window[@name='windowVehicleStorage']//rect[@controller='ContainerStandardControls']"> -->
 		<!-- <combobox depth="3" name="cbxLockedSlots" pos="74,-7" width="100" height="30" tooltip_key="xuiStashLockedSlots" type="ComboBoxInt" value_min="0" value_max="{container_slots}" value_wrap="true" value_increment="1" /> -->
+<!-- </append> -->
+
+<!-- <append xpath="/windows/window[@name='windowSkillList']//rect[@name='categoryHeader']"> -->
+	<!-- <panel depth="1" pos="240,50" width="200" disableautobackground="true" console_enabled="false"> -->
+		<!-- <sprite depth="1" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/> -->
+		<!-- <textfield depth="2" pos="22,-7" width="120" height="30" name="searchInput" search_field="true" close_group_on_tab="true" clear_button="true" /> -->
+	<!-- </panel> -->
 <!-- </append> -->
 
 
