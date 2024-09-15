@@ -16,10 +16,10 @@
 	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="HasBackpack"/>		
 </effect_group>	
 <effect_group name="Base Effects">
-	<passive_effect name="HealthMax" operation="base_set" value="2500"/>
+	<passive_effect name="HealthMax" operation="base_set" value="10000"/>
 	<passive_effect name="HealthMax" operation="perc_set" value="1"/>
 	<passive_effect name="PhysicalDamageResist" operation="base_set" value="30" />
-	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
 	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
