@@ -3808,7 +3808,7 @@
 			<property name="UserSpawnType" value="Menu"/> 
  			<property name="Tags" value="entity,female,npc,walker,ranged,voiceharley,DRMid,Knife,Machete,ClubWood,BatWood,Axe,Spear,SMG,PipePistol,PipeShotgun,PipeRifle,PipeMG,M60,Pistol,DPistol,Ak47,TRifle,HRifle,SRifle,LBow,XBow,PShotgun,AShotgun,RocketL"/>
 			<property name="Faction" value="whiteriver"/>
-			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
+			<property name="Names" value="Harley" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="player2painlg"/>
 			<property name="SoundHurtSmall" value="player2painsm"/>
