@@ -1,0 +1,119 @@
+<ramos>
+
+	<!-- color -->
+	<!-- ZOMBIE TRACKER DEL MOD YOUR END -->
+	<!-- EL USO PARA OTRO MOD ESTA PERMITIDO SOLO TIENE QUE DAR CREDITOS -->
+
+	<!-- 255,0,150,255 -->	<!-- rosado -->
+	<!-- 64,233,5,255 -->	<!-- verde -->
+	<!-- 255,240,0,255 -->	<!-- dorado -->
+	<!-- 255,255,255,255 --><!-- blanco -->
+	<!-- 0,222,255,255 -->	<!-- celeste -->
+	<!-- 255,0,0,255 -->	<!-- rojo -->
+	<!-- 0,0,255,255 -->	<!-- azul -->
+	<!-- 0,0,0,255 -->		<!-- negro -->
+	<!-- 250,255,163,255-->	<!-- beige -->
+	
+	<append xpath="/nav_object_classes">
+
+		<!-- NORMAL ZOMBIE -->
+
+		<nav_object_class name="yetrackingz1" >
+			<property name="requirement_type" 	value="Tracking" />
+			<property name="use_override_icon" 	value="true" />
+			
+			<map_settings>
+				<property name="sprite_name" 	value="ui_game_symbol_zombie" />
+				<property name="min_distance" 	value="0"/>
+				<property name="max_distance" 	value="-1"/>
+				<property name="color" 			value="255,255,255,255" />
+				<property name="has_pulse" 		value="true"/>
+			</map_settings>
+			
+			<compass_settings>
+				<property name="sprite_name" 	value="ui_game_symbol_zombie" />
+				<property name="min_distance" 	value="0"/>
+				<property name="max_scale_distance" value="1024"/>
+				<property name="has_pulse" 		value="true"/>
+				<property name="icon_clamped" 	value="false" />
+				<property name="color" 			value="255,255,255,255" />
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" 	value="ui_game_symbol_zombie" />
+				<property name="min_distance" 	value="0"/>
+				<property name="max_distance" 	value="25"/>
+				<property name="has_pulse" 		value="false"/>
+				<property name="color" 			value="255,255,255,255" />
+				<property name="offset" 		value="0,1.2,0" />
+			</onscreen_settings>
+		</nav_object_class>
+
+		<!-- FERAL ZOMBIE -->
+		
+		<nav_object_class name="yetrackingz2">
+			<property name="requirement_type" 	value="Tracking" />
+			<property name="use_override_icon" 	value="true" />
+			
+			<map_settings>
+				<property name="sprite_name" 	value="ui_game_symbol_zombie" />
+				<property name="min_distance" 	value="0"/>
+				<property name="max_distance" 	value="-1"/>
+				<property name="color" 			value="250,255,163,255" />
+				<property name="has_pulse" 		value="true"/>
+			</map_settings>
+			
+			<compass_settings>
+				<property name="sprite_name" 	value="ui_game_symbol_zombie" />
+				<property name="min_distance" 	value="0"/>
+				<property name="max_scale_distance" value="1024"/>
+				<property name="has_pulse" 		value="true"/>
+				<property name="icon_clamped" 	value="false" />
+				<property name="color" 			value="250,255,163,255" />
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" 	value="ui_game_symbol_zombie" />
+				<property name="min_distance" 	value="0"/>
+				<property name="max_distance" 	value="25"/>
+				<property name="has_pulse" 		value="false"/>
+				<property name="color" 			value="250,255,163,255" />
+				<property name="offset" 		value="0,1.2,0" />
+			</onscreen_settings>
+		</nav_object_class>
+
+		<!-- RADIATED ZOMBIE -->
+		
+		<nav_object_class name="yetrackingz3">
+			<property name="requirement_type" 	value="Tracking" />
+			<property name="use_override_icon" 	value="true" />
+			
+			<map_settings>
+				<property name="sprite_name" 	value="ui_game_symbol_zombie" />
+				<property name="min_distance" 	value="0"/>
+				<property name="max_distance" 	value="-1"/>
+				<property name="color" 			value="64,233,5,255" />
+				<property name="has_pulse" 		value="true"/>
+			</map_settings>
+			
+			<compass_settings>
+				<property name="sprite_name" 	value="ui_game_symbol_zombie" />
+				<property name="min_distance" 	value="0"/>
+				<property name="max_scale_distance" value="1024"/>
+				<property name="has_pulse" 		value="true"/>
+				<property name="icon_clamped" 	value="false" />
+				<property name="color" 			value="64,233,5,255" />
+			</compass_settings>
+			
+			<onscreen_settings>
+				<property name="sprite_name" 	value="ui_game_symbol_zombie" />
+				<property name="min_distance" 	value="0"/>
+				<property name="max_distance" 	value="25"/>
+				<property name="has_pulse" 		value="false"/>
+				<property name="color" 			value="64,233,5,255" />
+				<property name="offset" 		value="0,1.2,0" />
+			</onscreen_settings>
+		</nav_object_class>
+
+	</append>
+</ramos>

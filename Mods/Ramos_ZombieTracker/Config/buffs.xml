@@ -1,0 +1,127 @@
+<ramos>
+
+<append xpath="/buffs">
+
+	<buff name="buffZombieTracker" name_key="buffZombieTrackerName" description_key="buffZombieTrackerDesc" icon="ui_game_symbol_run">
+		<duration value="0"/>
+		<update_rate value=".5"/>
+		<display_value value=".ZombieTrackerDelay"/>
+		<display_value_format value="time"/>
+
+		<effect_group name="Startup">
+			<!-- set the time delay for Zombie tracking -->
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ZombieTrackerDelay" operation="set" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="LT" value="2"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ZombieTrackerDelay" operation="set" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ZombieTrackerDelay" operation="set" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="3"/></triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ZombieTrackerDelay" operation="set" value="0"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerDelay" operation="add" value="-.5"/>
+		</effect_group>
+
+		<effect_group name="check conditions for a successful track">
+			<requirement name="CVarCompare" cvar=".ZombieTrackerDelay" operation="LTE" value="0"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerDelay" operation="set" value=".0117">
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="1"/>
+				<requirement name="HasTrackedEntity" tags="yez1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerDelay" operation="set" value=".0117">
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="2"/>
+				<requirement name="HasTrackedEntity" tags="yez3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerDelay" operation="set" value=".0117">
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="3"/>
+				<requirement name="HasTrackedEntity" tags="yez3"/>
+			</triggered_effect>
+		</effect_group>
+
+		<effect_group>
+			<!-- tracking successful, activate next buff -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffZombieTrackerAcquired">
+				<requirement name="CVarCompare" cvar=".ZombieTrackerDelay" operation="Equals" value=".0117"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffZombieTracker">
+				<requirement name="CVarCompare" cvar=".ZombieTrackerDelay" operation="Equals" value=".0117"/>
+			</triggered_effect>
+
+			<!-- abort -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffZombieTracker">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="0"/>
+			</triggered_effect>
+		</effect_group>
+
+		<effect_group name="Tracking not successful, shutdown">
+			<requirement name="CVarCompare" cvar=".ZombieTrackerDelay" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffZombieTrackerNoneTooltip"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffZombieTracker"/>
+		</effect_group>
+	</buff>
+
+	<buff name="buffZombieTrackerAcquired" name_key="buffZombieTrackerName" description_key="buffZombieTrackerAcquiredDesc" icon="ui_game_symbol_run" icon_color="0,255,0">
+		<duration value="0"/>
+		<display_value value=".ZombieTrackerLoseTimer"/>
+		<display_value_format value="time"/>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffZombieTracker"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar=".ZombieTrackerLoseTimer" operation="set" value="20"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerLoseTimer" operation="add" value="-1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerLoseTimer" operation="set" value="20">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			</triggered_effect>
+
+			<!-- Reset counters -->
+			<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".ZombieTrackerLoseTimer,.ZombieTrackerTerminate"/>
+			<!-- <triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ZombieTrackerLoseTimer" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ZombieTrackerTerminate" operation="set" value="0"/> -->
+		</effect_group>
+
+		<effect_group name="check conditions for no trackable Zombies">
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerTerminate" operation="set" value="1"/>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar=".ZombieTrackerTerminate">
+			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerTerminate" operation="set" value="0"> -->
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="1"/>
+				<requirement name="HasTrackedEntity" tags="yez1" />
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar=".ZombieTrackerTerminate">
+			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerTerminate" operation="set" value="0"> -->
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="2"/>
+				<requirement name="HasTrackedEntity" tags="yez2" />
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveCVar" cvar=".ZombieTrackerTerminate">
+			<!-- <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ZombieTrackerTerminate" operation="set" value="0"> -->
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="3"/>
+				<requirement name="HasTrackedEntity" tags="yez3" />
+			</triggered_effect>
+		</effect_group>
+
+		<effect_group name="Track Zombies">
+			<passive_effect name="Tracking" operation="base_set" value="1" tags="yez1">
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="Tracking" operation="base_set" value="1" tags="yez2">
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="Tracking" operation="base_set" value="1" tags="yez3">
+				<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="GTE" value="3"/></passive_effect>
+		</effect_group>
+
+		<effect_group name="Tracking time ran out or no targets">
+			<requirements compare_type="or">
+				<requirement name="CVarCompare" cvar=".ZombieTrackerLoseTimer" operation="LTE" value="0"/>
+				<requirement name="CVarCompare" cvar=".ZombieTrackerTerminate" operation="Equals" value="1"/>
+			</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message_key="buffPerkZombieTrackerLostTooltip"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffZombieTrackerAcquired"/>
+		</effect_group>
+	</buff>
+
+	</append>
+
+</ramos>

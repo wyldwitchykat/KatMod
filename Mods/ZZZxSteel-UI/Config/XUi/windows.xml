@@ -272,7 +272,7 @@
 		<sprite name="button_separator" type="sliced" depth="2" pos="400,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1" />
 		<label name="lblWindowName" depth="5" pos="300,-25" size="180,40" style="style_label_normal" font_size="30" pivot="center" justify="center" upper_case="true" overflow="ShrinkContent" />
 		
-		<label name="date_display" depth="5" pos="50,-25" size="250,40" style="style_label_normal, style_label_header_date" text="{currentday}   |   {currenttime}" pivot="center" justify="right" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location" ></label>
+		<label name="date_display" depth="5" pos="50,-25" size="250,40" style="style_label_normal, style_label_header_date" text="{currentday}   |   {currenttime}" pivot="center" justify="right" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="HUDStatBar" ></label>
 		<label name="location_display" depth="5" pos="600,-25" size="350,40" style="style_label_normal" text="{locationname}   |   GS {gamestage}   |   LS {lootstage}" pivot="center" justify="left" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location">		</label>
 	  </window>
 	  
@@ -314,7 +314,7 @@
 			<label name="Creative" depth="3" pos="750,-13"  style="style_label_normal, style_label_header" text_key="xuiCreative" visible="{is_creative}" />
 			<sprite name="header_button_separator" type="sliced" depth="-1" pos="897,0" width="3" color="[white_quarter_alpha]" globalopacitymod="1"  visible="{is_creative}" />
 			
-			<label name="date_display2" depth="5" pos="-675,-14" size="350,40" style="style_label_normal, style_label_header_date" text="{currentday}   |   {currenttime}" justify="right" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location" >		</label>
+			<label name="date_display2" depth="5" pos="-675,-14" size="350,40" style="style_label_normal, style_label_header_date" text="{currentday}   |   {currenttime}" justify="right" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="HUDStatBar" >		</label>
 			<label name="location_display2" depth="5" pos="{#is_creative ? '925,-14' : '775,-14'}" size="350,40" style="style_label_normal" text="{locationname}   |   GS {gamestage}   |   LS {lootstage}" justify="left" overflow="ShrinkContent" upper_case="true" color="[lightestGrey]" controller="Location"></label>
 	  </window>
 </append>

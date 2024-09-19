@@ -1,0 +1,32 @@
+<ramos>
+	
+	<insertAfter xpath="/progression/perks/perk[@name='perkFromTheShadows']">
+		<perk name="perkZombieTracker" max_level="3" parent="skillAgilityStealth" name_key="perkZombieTrackerName" desc_key="perkZombieTrackerDesc" icon="ui_game_symbol_zombie">
+			<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="3" desc_key="reqAgilityLevel03"/></level_requirements>
+			<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="6" desc_key="reqAgilityLevel06"/></level_requirements>
+			<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="9" desc_key="reqAgilityLevel09"/></level_requirements>
+			<effect_group>
+				<passive_effect name="TrackDistance" operation="base_set" level="1,3" value="25,120"/>
+
+				<triggered_effect trigger="onSelfCrouch" action="AddBuff" buff="buffZombieTracker">
+					<requirement name="NotHasBuff" buff="buffZombieTrackerAcquired"/>
+					<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="GT" value="0"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfCrouchWalk" action="AddBuff" buff="buffZombieTracker">
+					<requirement name="NotHasBuff" buff="buffZombieTrackerAcquired"/>
+					<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="GT" value="0"/>
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfCrouchRun" action="AddBuff" buff="buffZombieTracker">
+					<requirement name="NotHasBuff" buff="buffZombieTrackerAcquired"/>
+					<requirement name="ProgressionLevel" progression_name="perkZombieTracker" operation="GT" value="0"/>
+				</triggered_effect>
+
+				<effect_description level="1" desc_key="perkZombieTrackerRank1Desc" long_desc_key="perkZombieTrackerRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkZombieTrackerRank2Desc" long_desc_key="perkZombieTrackerRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkZombieTrackerRank3Desc" long_desc_key="perkZombieTrackerRank3LongDesc"/>
+			</effect_group>
+		</perk>
+	</insertAfter>
+</ramos>

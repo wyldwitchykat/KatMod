@@ -1,0 +1,402 @@
+<ramos>
+
+<!-- SI QUIERES USAR EN TU MOD SOLO TIENES QUE DAR CREDITOS -->
+
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='Tags']/@value">entity,zombie,walker,yez1,yez2,yez3</set>
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TrackerIcon']/@value">ui_game_symbol_zombie</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='NavObject']/@value">twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1</set>
+
+<!-- TAGS DE ZOMBIES NORMALES -->
+
+<set xpath="/entity_classes/entity_class[@name='zombieSkateboarder'   
+	 									or @name='zombieArlene' 
+	 									or @name='zombieMarlene' 
+	 									or @name='zombiePartyGirl' 
+	 									or @name='zombieNurse' 
+										or @name='zombieJoe' 
+										or @name='zombieSteve' 
+										or @name='zombieTomClark' 
+										or @name='zombieBusinessMan' 
+										or @name='zombieBurnt' 
+										or @name='zombieSpider' 
+										or @name='zombieBoe' 
+										or @name='zombieMaleHazmat' 
+										or @name='zombieJanitor' 
+										or @name='zombieInmate' 
+										or @name='zombieMoe' 
+										or @name='zombieLab' 
+										or @name='zombieDarlene' 
+										or @name='zombieYo'
+										or @name='zombieUtilityWorker' 
+										or @name='zombieBiker' 
+										or @name='zombieLumberjack' 
+										or @name='zombieFemaleFat' 
+										or @name='zombieFatHawaiian' 
+										or @name='zombieBowler'
+										or @name='zombieScreamer' 
+										or @name='zombieMutated']/property[@name='Tags']/@value">entity,zombie,walker,yez1,yez2,yez3</set>
+
+<!-- TAGS DE ZOMBIES FERALES -->
+
+<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral' 
+										or @name='zombieArleneFeral' 
+										or @name='zombieMarleneFeral' 
+										or @name='zombiePartyGirlFeral' 
+										or @name='zombieNurseFeral' 
+										or @name='zombieJoeFeral' 
+										or @name='zombieSteveFeral' 
+										or @name='zombieTomClarkFeral' 
+										or @name='zombieBusinessManFeral' 
+										or @name='zombieBurntFeral' 
+										or @name='zombieSpiderFeral' 
+										or @name='zombieBoeFeral' 
+										or @name='zombieMaleHazmatFeral' 
+										or @name='zombieJanitorFeral' 
+										or @name='zombieInmateFeral' 
+									    or @name='zombieMoeFeral' 
+										or @name='zombieLabFeral' 
+										or @name='zombieDarleneFeral' 
+										or @name='zombieYoFeral' 
+										or @name='zombieUtilityWorkerFeral' 
+										or @name='zombieBikerFeral' 
+										or @name='zombieLumberjackFeral' 
+										or @name='zombieFemaleFatFeral' 
+										or @name='zombieFatHawaiianFeral' 
+										or @name='zombieBowlerFeral'
+										or @name='zombieWightFeral' 
+										or @name='zombieScreamerFeral' 
+										or @name='zombieMutatedFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,yez2,yez3</set>
+
+<!-- TAGS DE ZOMBIE RADIATED -->
+
+<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated' 
+										or @name='zombieArleneRadiated' 
+										or @name='zombieMarleneRadiated' 
+										or @name='zombiePartyGirlRadiated' 
+										or @name='zombieNurseRadiated' 
+										or @name='zombieJoeRadiated' 
+										or @name='zombieSteveRadiated' 
+										or @name='zombieTomClarkRadiated' 
+										or @name='zombieBusinessManRadiated' 
+										or @name='zombieBurntRadiated' 
+										or @name='zombieSpiderRadiated' 
+										or @name='zombieBoeRadiated' 
+										or @name='zombieMaleHazmatRadiated' 
+										or @name='zombieJanitorRadiated' 
+										or @name='zombieInmateRadiated' 
+										or @name='zombieMoeRadiated' 
+										or @name='zombieLabRadiated' 
+										or @name='zombieDarleneRadiated' 
+										or @name='zombieYoRadiated' 
+										or @name='zombieUtilityWorkerRadiated' 
+										or @name='zombieBikerRadiated' 
+										or @name='zombieLumberjackRadiated' 
+										or @name='zombieFemaleFatRadiated' 
+										or @name='zombieFatHawaiianRadiated' 
+										or @name='zombieBowlerRadiated' 
+										or @name='zombieWightRadiated' 
+										or @name='zombieScreamerRadiated' 
+										or @name='zombieMutatedRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,yez3</set>
+
+<!-- OTHER TAGS -->
+
+<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='Tags']/@value">entity,zombie,walker,boss,yez1,yez2,yez3</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']/property[@name='Tags']/@value">entity,zombie,yez1,yez2,yez3</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']/property[@name='Tags']/@value">entity,zombie,yez2,yez3</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='Tags']/@value">entity,zombie,walker,zombieCop,yez1,yez2,yez3</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,zombieCop,yez2,yez3</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,zombieCop,yez3</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='Tags']/@value">entity,zombie,walker,zombieSoldier,yez1,yez2,yez3</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']/property[@name='Tags']/@value">entity,zombie,walker,feral,zombieSoldier,yez2,yez3</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']/property[@name='Tags']/@value">entity,zombie,walker,feral,radiated,zombieSoldier,yez3</set>
+
+<!-- ZOMBIE CAMMINANTE -->
+
+<append xpath="/entity_classes/entity_class[@name='zombieSkateboarder']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieArlene']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+	<!-- <property name="TrackerIcon" value="ui_game_symbol_run"/> -->
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMarlene']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombiePartyGirl']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieNurse']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieJoe']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSteve']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieTomClark']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBusinessMan']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBurnt']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSpider']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBoe']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieJanitor']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieInmate']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMoe']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieLab']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieDarlene']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieYo']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBiker']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieLumberjack']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleFat']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBowler']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFatCop']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSoldier']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieScreamer']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMutated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieDemolition']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz1" />
+</append>
+
+<!-- ZOMBIE FERAL -->
+
+<append xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieArleneFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombiePartyGirlFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieNurseFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieJoeFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSteveFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieTomClarkFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBurntFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBoeFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmatFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieJanitorFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieInmateFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMoeFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieLabFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieYoFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBikerFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieLumberjackFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBowlerFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieWightFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMutatedFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz2" />
+</append>
+
+<!-- ZOMBIE RADIATED -->
+
+<append xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMarleneRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombiePartyGirlRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieTomClarkRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBusinessManRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBurntRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmatRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieJanitorRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieInmateRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMoeRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieLabRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieDarleneRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieYoRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieLumberjackRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFatHawaiianRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieBowlerRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieWightRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieMutatedRadiated']">
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,clear_sleeper,yetrackingz3" />
+</append>
+
+</ramos>

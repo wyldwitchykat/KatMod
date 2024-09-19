@@ -1,0 +1,16 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,spanish
+
+
+buffZombieTrackerName,buffs,,,,"tracking zombies",,"Rastreando zombies",
+buffZombieTrackerDesc,buffs,,,,"tracking zombies around here",,"Rastreando zombies por aqui",
+buffZombieTrackerAcquiredDesc,buffs,,,,"zombies detected within 120 meters",,"se detecto zombies a menos de 120 metros",
+
+perkZombieTracker,progression,,,,"Zombie Tracker",,"Rastreador de Zombies",
+perkZombieTrackerName,progression,,,,"Zombie Tracker",,"Rastreador de Zombies",
+perkZombieTrackerDesc,progression,,,,"Learn to detect and track Zombies within 120  meters to kill them silently.",,"Aprende a detectar y rastrear zombis a 120 metros.",
+perkZombieTrackerRank1Desc,progression,,,,"Normal Zombie",,"Zombie Normal",
+perkZombieTrackerRank2Desc,progression,,,,"Zombie Feral",,"Zombie Feral",
+perkZombieTrackerRank3Desc,progression,,,,"Radiated Zombie",,"Zombie Irradiado",
+perkZombieTrackerRank1LongDesc,progression,,,,"you will detect the normal zombies (25 meters)",,"detectaras a los zombis normales (25 metros)",
+perkZombieTrackerRank2LongDesc,progression,,,,"you will detect the feral zombies(60 meters) ",,"detectaras a los zombis ferales (60 metros)",
+perkZombieTrackerRank3LongDesc,progression,,,,"you will detect the radiated zombies(120 meters) ",,"detectaras a los zombis irradiados (120 metros)",
