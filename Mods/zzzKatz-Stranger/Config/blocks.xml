@@ -1,0 +1,52 @@
+﻿<configs>
+
+<!--Uncomment to alter the default traderspawn block-->
+
+  <remove xpath="/blocks/block[@name='spawnTrader']"></remove> 
+
+<append xpath="/blocks">
+
+<block name="spawnTrader">
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Class" value="SpawnEntity"/>
+	<property name="SpawnClass" value="npcTraderJoel,npcTraderRekt,npcTraderHugh,npcTraderBob,npcTraderJen,Stranger"/>
+	<property name="IndexName" value="Trader"/>
+	<property name="CustomIcon" value="decoMannequinFemale"/>
+	<property name="CustomIconTint" value="FF8000"/>
+	<property name="DisplayType" value="blockHardened"/>
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Commercial/mannequinFemalePrefab"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Collide" value="sight"/>
+	<property name="StabilitySupport" value="false"/>
+	<drop event="Destroy" name="resourceScrapIron" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="SortOrder1" value="LD04"/>
+	<property name="SortOrder2" value="0500"/>
+	<property name="FilterTags" value="MC_helpers,SC_questblocks"/>
+</block>   
+
+</append> 
+
+<append xpath="/blocks">
+
+	<block name="SpawnCubeKatX">
+		<property name="CreativeMode" value="Player"/>
+		<property name="Extends" value="SpawnCube"/> <!-- loads from SCore mod  -->
+		<property name="Class" value="SpawnCube2SDX, SCore" />
+		<property name="Config" value="ec=Stranger;buff=buffOrderStay;pc=0" />
+		<property name="Model" value="Entities/Commercial/mannequinFemalePrefab"/>
+		<property name="ModelOffset" value="0,0,0"/>
+	</block>
+	
+	<block name="KatTraderSpawner">
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Commercial/mannequinFemalePrefab"/>
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="Stranger"/>			
+		</block>
+		
+</append>	
+</configs>

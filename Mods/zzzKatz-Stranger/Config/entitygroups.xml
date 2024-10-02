@@ -1,0 +1,11 @@
+<configs>
+
+	<append xpath="/entitygroups">
+		
+		<entitygroup name="SpawnStranger">
+			<entity name="Stranger"/>
+		</entitygroup>
+		
+	</append>
+	
+</configs>

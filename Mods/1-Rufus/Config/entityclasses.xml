@@ -23,10 +23,9 @@
 	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 </effect_group>
 </entity_class>
-<!--ENTITY 4 NPC AND TRANSFORM-->
-
 
 <!--ENTITY 10 NPC AND TRANSFORM-->
+
 </append>
 
 </configs>

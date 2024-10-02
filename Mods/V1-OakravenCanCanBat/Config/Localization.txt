@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+meleeWpnClubT1CanCanBat,items,Melee,,,Oak Can Can Bat,,,,,,,,,,,,,
+meleeWpnClubT1CanCanBatDesc,items,Melee,,,"This Oak Can Can Bat can do what an Oak Can Can Bat can do. Cannot be crafted. Can only be found in loot, rewards, or the trader inventory.\n\nRepair with a Repair Kit.\nScrap to Wood.",,,,,,,,,,,,,

@@ -1,0 +1,19 @@
+<configs>
+
+	<!-- Oakraven Rock Drill -->	
+	
+	<append xpath="//crafting_skill[@name='craftingWorkstations']/display_entry[contains(@icon, 'chemistryStation')]/@icon">,rockdrill</append>	
+	<append xpath="//crafting_skill[@name='craftingWorkstations']/display_entry[contains(@icon, 'chemistryStation')]/@name_key">,workstationsT4-2</append>
+	<append xpath="//crafting_skill[@name='craftingWorkstations']/display_entry[contains(@icon, 'chemistryStation')]/@unlock_level">,60</append>
+	
+	<append xpath="//crafting_skill[@name='craftingWorkstations']/display_entry[contains(@icon, 'chemistryStation')]">
+			<unlock_entry item="RockDrillEmpty" unlock_tier="2" />
+	</append>
+	
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingWorkstations']">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="RockDrillEmpty"/>
+		</effect_group>
+	</append>
+	
+</configs>

@@ -1,0 +1,19 @@
+<configs>
+
+	<append xpath="/recipes">
+	
+	<recipe name="DrillGasCan" count="1" craft_time="60" craft_area="chemistryStation">
+		<ingredient name="resourceOilShale" count="100"/>
+	</recipe>
+
+	<recipe name="RockDrillEmpty" count="1" craft_time="150" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedSteel" count="40"/>
+		<ingredient name="resourceSpring" count="6"/>
+		<ingredient name="resourceMechanicalParts" count="12"/>
+		<ingredient name="resourceElectricParts" count="12"/>
+		<ingredient name="resourceMetalPipe" count="10"/>
+	</recipe>
+	
+	</append>
+	
+</configs>

@@ -1,0 +1,10 @@
+<configs>
+
+	<append xpath="/entitygroups">
+	<!-- BIOMES -->	
+	<entitygroup name="riskygroup">
+		npcwestern7, 1
+	</entitygroup>	
+	</append>
+	
+</configs>

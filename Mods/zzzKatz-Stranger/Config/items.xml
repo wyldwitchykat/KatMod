@@ -1,0 +1,19 @@
+﻿<configs>
+<append xpath="/items">
+	<item name="Warrant"> <!-- scrap material -->
+	<property name="Extends" value="resourcePaper"/>
+	<property name="HoldType" value="45"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourcePaper"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="FuelValue" value="1"/>
+	<property name="Weight" value="1"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+	<property name="CraftingIngredientTime" value=".2"/>
+</item>
+</append>	
+</configs>

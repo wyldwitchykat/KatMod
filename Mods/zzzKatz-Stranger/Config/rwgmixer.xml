@@ -1,0 +1,5 @@
+<Diegar>	
+	<append xpath="/rwgmixer">
+		<prefab_spawn_adjust partial_name="diegar_downtown_traderJoel" biomeTags="wasteland,desert,forest,burntforest,snow" bias="20" min_count="2" max_count="4"/>
+	</append>
+</Diegar>

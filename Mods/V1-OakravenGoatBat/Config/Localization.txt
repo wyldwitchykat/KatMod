@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+meleeWpnClubT1GoatBat,items,Melee,,,Oak Goat Bat,,,,,,,,,,,,,
+meleeWpnClubT1GoatBatDesc,items,Melee,,,"This Oak Goat Bat can butt and bash. Cannot be crafted. Can only be found in loot, rewards, or the trader inventory.\n\nRepair with a Repair Kit.\nScrap to Wood.",,,,,,,,,,,,,

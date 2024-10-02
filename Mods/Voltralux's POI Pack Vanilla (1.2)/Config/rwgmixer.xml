@@ -1,0 +1,14 @@
+<voltraLux>
+<append xpath="/rwgmixer">
+
+<streettile name="rwg_tile_commercial_intersection_rpd">
+<property name="mintiles" value="4"/>
+<property name="maxtiles" value="4"/>
+<property name="maxdensity" value="200"/>
+</streettile>
+
+<prefab_spawn_adjust partial_name="Casino_Voltralux" biomeTags="desert"/>
+<prefab_spawn_adjust partial_name="Crystal_Creek_Voltralux" biomeTags="forest"/>
+
+</append>
+</voltraLux>

@@ -1,0 +1,9 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+workstationsT4-2,progression,Attribute,,,Tier 4: Oakraven Rock Drill,,,,,,,,,,,,,
+RockDrillEmpty,blocks,Block,,,Oakraven Rock Drill,,,,,,,,,,,,,
+RockDrillEmptyDesc,blocks,Block,,,"The Oakraven Rock Drill allows players to drill for random mining resources. Upon completion of a drill cycle, players can access the storage box to collect resources. Requires an Oakraven Drill Gas Can to power.",,,,,,,,,,,,,
+RockDrillWorking,blocks,Block,,,Oakraven Rock Drill (Drilling Stage),,,,,,,,,,,,,
+RockDrillFull,blocks,Block,,,Oakraven Rock Drill (Collection Stage),,,,,,,,,,,,,
+DrillGasCan,items,Item,,,Oakraven Drill Gas Can,,,,,,,,,,,,,
+DrillGasCanDesc,items,Item,,,"The Oakraven Drill Gas Can allows players to power the Oakraven Rock Drill for one complete drill cycle.",,,,,,,,,,,,,

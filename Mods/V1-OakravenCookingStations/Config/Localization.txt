@@ -1,0 +1,11 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+OaksCooker,blocks,Block,,,Oakraven Cooker,,Oakraven-Kochherd,,,,,,,,,,,
+OaksCookerDesc,blocks,Block,,,"The Oakraven Cooker allows players to combine recipe ingredients into meals, beverages, and resources.",,"Der Oakraven-Kochherd ermöglicht es Spielern, Rezeptzutaten zu Mahlzeiten, Getränken und Ressourcen zu verarbeiten.",,,,,,,,,,,
+PotStove,blocks,Block,,,Oakraven Pot Stove,,Oakraven-Herd,,,,,,,,,,,
+PotStoveDesc,blocks,Block,,,"The Oakraven Pot Stove allows players to combine recipe ingredients into meals, beverages, and resources.",,"Der Oakraven-Herd ermöglicht es Spielern, Rezeptzutaten zu Mahlzeiten, Getränken und Ressourcen zu verarbeiten.",,,,,,,,,,,
+IronStove,blocks,Block,,,Oakraven Iron Stove,,Oakraven-Eisenherd,,,,,,,,,,,
+IronStoveDesc,blocks,Block,,,"The Oakraven Iron Stove allows players to combine recipe ingredients into meals, beverages, and resources.",,"Der Oakraven-Eisenherd ermöglicht es Spielern, Rezeptzutaten zu Mahlzeiten, Getränken und Ressourcen zu verarbeiten.",,,,,,,,,,,
+StoneStove,blocks,Block,,,Oakraven Stone Stove,,Oakraven-Steinofen,,,,,,,,,,,
+StoneStoveDesc,blocks,Block,,,"The Oakraven Stone Stove allows players to combine recipe ingredients into meals, beverages, and resources. Pick up like a regular campfire, or destroy it to return it to your inventory.",,"Der Oakraven-Steinofen ermöglicht es Spielern, Rezeptzutaten zu Mahlzeiten, Getränken und Ressourcen zu verarbeiten. Heben Sie es wie ein normales Lagerfeuer auf oder zerstören Sie es, um es in Ihr Inventar zurückzubringen.",,,,,,,,,,,
+CookerVariantHelper,blocks,Block,,, Oakraven Cookers,,Oakraven-Öfen,,,,,,,,,,,

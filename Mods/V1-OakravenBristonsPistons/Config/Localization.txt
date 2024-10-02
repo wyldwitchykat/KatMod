@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+meleeWpnKnucklesT3SteelOakravenBristonKnuckles,items,Melee,,,Briston's Pistons,,,,,,,,,,,,,
+meleeWpnKnucklesT3SteelOakravenBristonKnucklesDesc,items,Melee,,,"Briston's Pistons are custom made from Damascus Steel. Their coloration and pattern come from a one in a kind hand crafting process. As such, they cannot be crafted. Can only be found in loot, rewards, or the trader inventory. These blades can also be useful for gutting animals.\n\nRepair with a Repair Kit.\nScrap to Steel Knuckles parts.",,,,,,,,,,,,,

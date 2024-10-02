@@ -1,0 +1,7 @@
+<configs>
+	<!-- Power and Solar Cell hooked into Car Battery Crafting Tier  -->
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/display_entry[@icon='carBattery']/unlock_entry/@item">,PowerCell,solarCell</append>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='55,100']/@tags">,PowerCell,solarCell</append>	
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingElectrician']/effect_group/passive_effect[@name='CraftingTier'][@level='60,70,80,90,100']/@tags">,PowerCell,solarCell</append>
+</configs>

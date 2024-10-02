@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
+Stranger,entityclasses,Entity,,,the strange person who looks like Jen,,
+Strange_Trader,POI,POIName,,x,Strange Trader,,,,,,,,,,,,,
+kat_mini_trader,POI,POIName,,x,Strange Trader,,,,,,,,,,,,,

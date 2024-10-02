@@ -1,0 +1,16 @@
+<configs>
+
+<append xpath="/recipes">
+	
+<!-- WORKSTATIONS -->
+<recipe name="CookerVariantHelper" count="1" craft_area="workbench" craft_time="90" tags="workbenchCrafting">
+		<ingredient name="toolCookingPot" count="1"/>
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceClayLump" count="100"/>
+		<ingredient name="resourceRockSmall" count="200"/>
+		<ingredient name="resourceScrapIron" count="25"/>
+</recipe>
+	
+</append>
+	
+</configs>

@@ -1,0 +1,11 @@
+<configs>
+	
+	<append xpath="/entitygroups">
+	
+	<!-- *** POI_INDIVIDUAL_NPC_GROUPS -->
+	<entitygroup name="npcRileyRoo">npcwestern7</entitygroup>
+	<entitygroup name="npcJohnSmith">npcFriendlyHarleyAShotgun</entitygroup>
+	
+	</append>
+
+</configs>

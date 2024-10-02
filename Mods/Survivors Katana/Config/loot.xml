@@ -1,0 +1,22 @@
+<configs>
+
+<!-- *** T1_Melee_Weapons -->	
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_Melee']">
+		<item name="meleeKatanaSword"/>
+	</append>
+	
+<!-- *** T2&T3_Melee_Weapons -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Melee']">
+		<item name="meleeKatanaSword"/>
+	</append>
+	
+<!-- *** Quest_Rewards -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMeleeT1']">
+		<item name="meleeKatanaSword"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestWeaponsMeleeT2']">
+		<item name="meleeKatanaSword"/>
+	</append>
+	
+</configs>

@@ -1,0 +1,21 @@
+<configs>
+
+	<append xpath="/npc">
+	
+				<!-- Nikke Trader NPCs -->
+		<npc_info
+			id="traderMarian"
+			name="The Stranger"
+			name_key="npc_traderMarian"
+			faction="whiteriver"
+			portrait="npc_jen"
+			greeting_type="nearby"
+			trader_id="12"
+			stance="Like" voice_set=""
+			dialog_id="trader"
+			quest_list="stranger_quests"
+			localization_id="npcTraderMarian" />
+	
+	</append>
+	
+</configs>

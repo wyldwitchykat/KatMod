@@ -1,0 +1,22 @@
+<configs>
+
+<!--NPC CORE, PLAYERS CAN DAMAGE FRIENDLY NPC'S-->
+<append xpath="/entity_classes">
+<!--ENTITY 4 NPC AND TRANSFORM-->
+<entity_class name="Stranger" extends="npcTraderTemplate">
+	<property name="Tags" value="entity,npc,human,trader"/>
+	<property name="Names" value="The Stranger" />
+	<property name="PhysicsBody" value="npcHDSexyTraderJen"/>
+	<property name="AvatarController" value="AvatarZombieController"/>
+    <property name="ModelType" value="Standard"/>
+    <property name="HasRagdoll" value="false"/>
+    <property name="LookAtAngle" value="0"/>
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Mesh" value="#@modfolder:Resources/HDSexyJen.unity3d?HDSexyJenCovered"/> <!--HDSexyJen/HDSexyJenCovered/HDSexyJenTopLess-->
+	<property name="NPCID" value="traderMarian"/>
+	<property name="DanceType" value="2"/>
+</entity_class>
+
+</append>
+
+</configs>

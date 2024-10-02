@@ -1,0 +1,22 @@
+﻿<configs>
+   <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalSpikes']">   
+		<item_property_overrides name="meleeWpnClubT1GoatBat">
+            <property name="HandMeshfile" value="#@modfolder:Resources/oakbat.unity3d?oakbatspike"/>
+        </item_property_overrides>        
+    </append> 
+    <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBarbedWire']">			
+		<item_property_overrides name="meleeWpnClubT1GoatBat">
+            <property name="HandMeshfile" value="#@modfolder:Resources/oakbat.unity3d?oakbatwire"/>
+        </item_property_overrides>       
+    </append>	
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubMetalChain']">		
+		 <item_property_overrides name="meleeWpnClubT1GoatBat">
+            <property name="HandMeshfile" value="#@modfolder:Resources/oakbat.unity3d?oakbatchain"/>
+        </item_property_overrides>     
+    </append>
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
+	   <item_property_overrides name="meleeWpnClubT1GoatBat">
+            <property name="FlameEffect" value="#@modfolder:Resources/oakbat.unity3d?oakflame"/>
+       </item_property_overrides>
+    </append>
+</configs>
