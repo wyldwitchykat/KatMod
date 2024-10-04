@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="Stallionsdens_Extra_Recipes_V1"/>
+	<Author value="Stallionsden"/>
+	<Description value="Adds recipes to items and blocks that have none."/>
+	<DisplayName value="Extra Recipes."/>
+	<Version value="1.1.1.0"/>
+	<Website value=""/>
+</xml>

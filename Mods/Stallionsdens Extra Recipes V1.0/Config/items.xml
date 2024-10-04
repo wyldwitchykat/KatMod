@@ -1,0 +1,16 @@
+
+<Stallionsden>
+<append xpath="/items">
+	<item name="hessianBag">
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="100"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="FuelValue" value="2"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Group" value="Clothing"/>
+	</item>
+</append>	
+</Stallionsden>
