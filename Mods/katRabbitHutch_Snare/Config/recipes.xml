@@ -1,0 +1,23 @@
+<config>
+	<append xpath="/recipes">
+		<recipe name="RabbitHutch" count="1" craft_time="300" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceNail" count="20"/>
+			<ingredient name="resourceForgedIron" count="15"/>
+			<ingredient name="Bunny" count="4"/>
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+		
+		<recipe name="SmallAnimalTrapEmpty" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="foodCropCorn" count="3"/>
+			<ingredient name="resourceWood" count="75"/>
+		</recipe>
+		
+	<recipe name="BirdSanctuaryEmpty" count="1" craft_time="10" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceCobblestones" count="100"/>
+			<ingredient name="resourceCloth" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="10"/>
+		</recipe>
+		
+	</append>
+</config>

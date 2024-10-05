@@ -1,0 +1,15 @@
+Key,File,Type,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+RabbitHutch,Blocks,block,Rabbit Hutch,,,,,,,,,,
+RabbitHutchDesc,Blocks,block,"Collect meat from your personal rabbit hutch.",,,,,,,,,,
+RabbitHutchFull,Blocks,block,Rabbit Hutch Full,,,,,,,,,,
+
+SmallAnimalTrapEmpty,Blocks,block,Small Animal Trap (Empty),,,,,,,,,,
+SmallAnimalTrapEmptyDesc,Blocks,block,"Set up this trap and wait for it to catch something.\n\nSurely you catch something by this time tomorrow?.",,,,,,,,,,
+SmallAnimalTrapFull,Blocks,block,"You've Caught Something!",,,,,,,,,,
+SmallAnimalTrapFullDesc,Blocks,block,"You've Caught Something!",,,,,,,,,,
+
+BirdSanctuaryEmpty,Blocks,block,Bird Sanctuary,,,,,,,,,,
+BirdSanctuaryEmptyDesc,Blocks,block,"Place this down and over time the birds will produce gifts they've collected.",,,,,,,,,,
+BirdSanctuaryFull,Blocks,block,Check on Birds,,,,,,,,,,
+BirdSanctuaryFullDesc,Blocks,block,"Check on Birds!",,,,,,,,,,

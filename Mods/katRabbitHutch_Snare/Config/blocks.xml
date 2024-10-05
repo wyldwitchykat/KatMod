@@ -1,0 +1,184 @@
+<config>
+	<append xpath="/blocks">
+	
+		<block name="RabbitHutch">
+			<property name="Class" value="PlantGrowing"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="Material" value="Mwood"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="DescriptionKey" value="RabbitHutchDesc"/>
+			<property name="Model" value="Entities/OutdoorDecor/largePetCagePrefab"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="TintColor" value="B09A1C"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="EconomicValue" value="350"/>
+			<property name="Collide" value="movement,rockets,sight,melee"/>
+			<property name="CustomIcon" value="decoLargePetCage"/>
+			<property name="CustomIconTint" value="B09A1C"/>
+			<property class="PlantGrowing">
+				<property name="Next" value="RabbitHutchFull"/>
+				<property name="GrowthRate" value="55"/>
+				<property name="FertileLevel" value="0"/>
+				<property name="IsRandom" value="false"/> 
+			</property>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10" />	
+			</property>	
+			<drop event="Destroy" name="RabbitHutch" count="1"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+		</block>
+		<block name="RabbitHutchFull">
+			<property name="Class" value="Loot"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="Material" value="Mwood"/>
+			<property name="Model" value="Entities/OutdoorDecor/largePetCagePrefab"/>
+			<property name="ModelOffset" value="0,0.5,0"/>
+			<property name="TintColor" value="80FF80"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="MultiBlockDim" value="1,1,1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Path" value="solid"/>
+			<property name="Collide" value="movement,rockets,sight,melee"/>
+			<property name="LootList" value="RabbitHutch"/>
+			<property name="CustomIcon" value="decoLargePetCage"/>
+			<property name="CustomIconTint" value="80FF80"/>
+			<property name="DowngradeBlock" value="RabbitHutch"/>
+		</block>
+		
+		<block name="SmallAnimalTrapEmpty"> <!-- The player crafts this one -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="woodPillar50UtilityTop"/>
+			<property name="CustomIconTint" value="218,200,135"/> 
+			<property name="DescriptionKey" value="SmallAnimalTrapEmptyDesc"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Material" value="Mwood"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="pole0.5m_utility_top"/>
+			<property name="Texture" value="379,379,379,379,379,379"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="22"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="Class" value="PlantGrowing"/> 
+			<property name="PlantGrowing.Next" value="SmallAnimalTrapFull"/> <!-- This is the loot table, found in loot.xml of this mod -->
+			<property name="PlantGrowing.GrowthRate" value="55"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowIfAnythinOnTop" value="false"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10" />	
+			</property>	
+			<drop event="Harvest" count="0" tag="allHarvest"/>
+			<drop event="Destroy" name="SmallAnimalTrapEmpty" count="1" tag="allHarvest"/> <!-- you can move these by harvesting them like a farm plot -->
+			<property name="EconomicValue" value="50"/>
+			<property name="Group" value="Food/Cooking,Building,advBuilding"/>
+			<property name="FilterTags" value="MC_outdoor,SC_crops,fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0403"/>
+		</block>
+		
+		<block name="SmallAnimalTrapFull"> <!-- Full of spoils, time to harvest that bish -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="woodPillar50UtilityTop"/>
+			<property name="CustomIconTint" value="218,200,135"/>
+			<property name="DescriptionKey" value="SmallAnimalTrapFullDesc"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Class" value="Loot" />
+			<property name="LootList" value="SmallTrap" />
+			<property name="Material" value="Mwood"/>
+			<property name="Shape" value="New"/>
+			<property name="Model" value="pole0.5m_utility_top"/>
+			<property name="Texture" value="540,540,540,540,540,443"/>
+			<property name="UseGlobalUV" value="Local"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="22"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10" />	
+			</property>	
+			<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="Group" value="Food/Cooking,Building,advBuilding"/>
+			<property name="FilterTags" value="MC_outdoor,SC_crops,fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="a090"/>
+			<property name="SortOrder2" value="0002"/>
+			<property name="DowngradeBlock" value="SmallAnimalTrapEmpty"/> <!-- Once you've collected your delicious spoils the trap will reset for more catches -->
+		</block>
+		
+		<block name="BirdSanctuaryEmpty"> <!-- The player crafts this one -->
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="birdBathPlanter"/>
+			<property name="CustomIconTint" value="218,200,135"/> 
+			<property name="DescriptionKey" value="BirdSanctuaryEmptyDesc"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Material" value="MstoneNoGlue"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/birdBathPlanterPrefab"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="LODCullScale" value=".6"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="170"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property name="Class" value="PlantGrowing"/> 
+			<property name="PlantGrowing.Next" value="BirdSanctuaryFull"/> <!-- This is the loot table, found in loot.xml of this mod -->
+			<property name="PlantGrowing.GrowthRate" value="55"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.GrowIfAnythinOnTop" value="false"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10" />	
+			</property>	
+			<drop event="Harvest" count="0" tag="allHarvest"/>
+			<drop event="Destroy" name="BirdSanctuaryEmpty" count="1" tag="allHarvest"/> <!-- you can move these by harvesting them like a farm plot -->
+			<property name="EconomicValue" value="50"/>
+			<property name="Group" value="Food/Cooking,Building,advBuilding"/>
+			<property name="FilterTags" value="MC_outdoor,SC_crops,fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="B278"/>
+			<property name="SortOrder2" value="0403"/>
+		</block>
+		
+		<block name="BirdSanctuaryFull"> <!-- Full of spoils, time to harvest that bish -->
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="birdBathPlanter"/>
+			<property name="CustomIconTint" value="218,200,135"/>
+			<property name="DescriptionKey" value="BirdSanctuaryFullDesc"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Class" value="Loot" />
+			<property name="LootList" value="BirdSanctuaryLoot" />
+			<property name="Material" value="MstoneNoGlue"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/birdBathPlanterPrefab"/>
+			<property name="LODCullScale" value=".6"/>
+			<property name="ImposterExchange" value="imposterDontBlockCTRQuarter" param1="170"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="CanMobsSpawnOn" value="false"/>
+			<property class="RepairItems">
+				<property name="resourceWood" value="10" />	
+			</property>	
+			<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="Group" value="Food/Cooking,Building,advBuilding"/>
+			<property name="FilterTags" value="MC_outdoor,SC_crops,fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="a090"/>
+			<property name="SortOrder2" value="0002"/>
+			<property name="DowngradeBlock" value="BirdSanctuaryEmpty"/> <!-- Once you've collected your delicious spoils the sanctuary will reset for more loot -->
+		</block>
+		
+	</append>
+</config>

@@ -1,0 +1,33 @@
+<config>
+	<append xpath="/lootcontainers" >
+			<lootcontainer name="RabbitHutch" size="2,2" count="2,4" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" destroy_on_close="true" loot_quality_template="qualBaseTemplate">
+				<item name="foodRawMeat" count="5,10"/>
+				<item name="resourceBone" count="1,5"/>
+				<item name="resourceLeather" count="2,10"/>
+				<item name="resourceAnimalFat" count="2,10"/>
+				<item name="Bunny" count="0,1"/>
+			</lootcontainer>
+			
+			<!-- Small Animal Trap -->
+		<lootcontainer name="SmallTrap" count="1,2" size="2,4" destroy_on_close="true" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+			<item name="resourceBone" count="1,2" prob="0.30"/>
+			<item name="resourceAnimalFat" count="1,2" prob="0.10"/>
+			<item name="foodRawMeat" count="1,4" prob="0.30"/>
+			<item name="resourceLeather" count="2,10" prob="0.3"/>
+			<item name="Bunny" count="0,1" prob="0.10"/>
+		</lootcontainer>
+		
+		<!-- Bird Sanctuary -->
+		<lootcontainer name="BirdSanctuaryLoot" count="1,3" size="2,4" destroy_on_close="true" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="qualBaseTemplate" buff="buffScavengingServerHack,buffScavengingSkillXPTick">
+			<item name="resourceFeather" count="1,100" prob="0.60"/>
+			<item name="resourceSilverNugget" count="1" prob="0.05"/>
+			<item name="foodEgg" count="1,3" prob="0.60"/>
+			<item name="resourceBulletCasing" count="50,200" prob="0.10"/>
+			<item name="resourceBulletTip" count="50,200" prob="0.10"/>
+			<item name="resourceScrapPolymers" count="30,70" prob="0.10"/>
+			<item name="casinoCoin" count="100,1000" prob="0.10"/>
+			<item name="resourceLegendaryParts" count="1" prob="0.01"/>
+		</lootcontainer>
+			
+	</append>
+</config>

@@ -1,0 +1,18 @@
+<configs>
+	<append xpath="/items">
+		
+<item name="Bunny">
+<property name="CreativeMode" value="Player"/>
+<property name="CustomIcon" value="BabyBunny"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic" />
+	<property name="HoldType" value="31" />
+	<property name="CraftingIngredientTime" value="8" />
+	<property name="Stacknumber" value="250" />
+	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+</item>
+
+
+	</append>
+</configs>
