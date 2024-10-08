@@ -1,0 +1,8 @@
+<configs>
+
+		<!-- *** GENERAL_RESOURCES -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='tools']">
+			<item name="meleeToolRepairT2AxeSpike" quality="1,5"/>		
+	</append>
+
+</configs>

@@ -1,0 +1,12 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+
+meleeToolRepairT2AxeGold,items,Melee,,,Axe (Golden),,,,,,,,,,,,,
+meleeToolRepairT2AxeGoldDesc,items,Melee,,,"This Golden Axe can chop, chip, cut and butcher like a knife, or repair like a hammer. A very versatile tool that is a master of none, but jack of all.\n\nRepair with a Repair Kit.\nScrap to Iron.",,,,,,,,,,,,,
+meleeToolRepairT2AxeSpike,items,Melee,,,Axe (Dragon Spike),,,,,,,,,,,,,
+meleeToolRepairT2AxeSpikeDesc,items,Melee,,,"This Dragon Spike Axe can chop, chip, cut and butcher like a knife, or repair like a hammer. A very versatile tool that is a master of none, but jack of all.\n\nRepair with a Repair Kit.\nScrap to Iron.",,,,,,,,,,,,,
+meleeToolRepairT2AxeSpike2,items,Melee,,,Axe (Raptor Spike),,,,,,,,,,,,,
+meleeToolRepairT2AxeSpike2Desc,items,Melee,,,"This Raptor Spike Axe can chop, chip, cut and butcher like a knife, or repair like a hammer. A very versatile tool that is a master of none, but jack of all.\n\nRepair with a Repair Kit.\nScrap to Iron.",,,,,,,,,,,,,
+meleeToolRepairT2AxeV,items,Melee,,,Axe (Norse),,,,,,,,,,,,,
+meleeToolRepairT2AxeVDesc,items,Melee,,,"This Norse Axe can chop, chip, cut and butcher like a knife, or repair like a hammer. A very versatile tool that is a master of none, but jack of all.\n\nRepair with a Repair Kit.\nScrap to Iron.",,,,,,,,,,,,,
+meleeToolRepairT2AxeViking,items,Melee,,,Axe (Battle),,,,,,,,,,,,,
+meleeToolRepairT2AxeVikingDesc,items,Melee,,,"This Battle Axe can chop, chip, cut and butcher like a knife, or repair like a hammer. A very versatile tool that is a master of none, but jack of all.\n\nRepair with a Repair Kit.\nScrap to Iron.",,,,,,,,,,,,,

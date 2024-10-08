@@ -1,0 +1,24 @@
+<configs>
+
+<!-- *** T1_Tool_Loot -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupToolsT1']">
+	<item name="meleeToolRepairT2AxeSpike"/>
+	</append>
+	
+<!-- *** T1_Tool_Loot_Bonus -->
+<!-- Only used in Working Stiffs crates -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupToolsT1Bonus']">
+	<item name="meleeToolRepairT2AxeSpike"/>
+	</append>
+	
+<!-- *** Quest_Rewards -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupQuestToolsT1']">
+	<item name="meleeToolRepairT2AxeSpike"/>
+	</append>
+	
+<!-- *** Fire_Truck_Loot -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupFireTruck03']">
+	<item name="meleeToolRepairT2AxeSpike"/>
+	</append>
+	
+</configs>
