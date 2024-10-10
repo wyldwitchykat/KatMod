@@ -1,0 +1,26 @@
+<MeanCloud_Cannabis>
+
+	<append xpath="/recipes">
+
+		<recipe name="plantedCannabis1" count="1" craft_time="1" craft_exp_gain="0" tags="learnable">
+			<ingredient name="resourceCropCannabisBud" count="1"/>
+		</recipe>
+
+		<recipe name="drugCannabisJointRolled" count="1" craft_time="30" craft_exp_gain="0" always_unlocked="true">
+			<ingredient name="resourceCropCannabisBud" count="1"/>
+			<ingredient name="resourcePaper" count="1"/>
+		</recipe>
+
+		<recipe name="toolBong" count="1" craft_area="workbench" craft_time="60" tags="learnable">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="resourceMetalPipe" count="1"/>
+		</recipe>
+
+		<recipe name="toolBongFilled" count="1" craft_time="5" craft_exp_gain="0" always_unlocked="true">
+			<ingredient name="toolBong" count="1"/>
+			<ingredient name="resourceCropCannabisBud" count="2"/>
+		</recipe>
+
+	</append>
+
+</MeanCloud_Cannabis>
