@@ -1,0 +1,48 @@
+<configs>
+
+<!--NPC CORE, PLAYERS CAN DAMAGE FRIENDLY NPC'S-->
+<append xpath="/entity_classes">
+<!--ENTITY 7 NPC AND TRANSFORM-->
+<entity_class name="npcwestern7" extends="npcAdvancedPShotgunTemplate"> 
+	<property name="UserSpawnType" value="Menu"/> 
+ 	<property name="Tags" value="entity,female,npc,walker,melee,DRMid,PShotgun"/>
+	<property name="Faction" value="whiteriver"/>
+	<property name="Names" value="Risky" />				
+	<property name="Mesh" value="#@modfolder:Resources/EndZ1cowgirl1.unity3d?EndZ1cowgirl"/>
+	<property name="SoundHurt" value="player2painlg"/>
+	<property name="SoundHurtSmall" value="player2painsm"/>
+	<property name="SoundDeath" value="player2death"/>
+	<property name="SoundStamina" value="player2stamina"/>
+	<property name="SoundDrownPain" value="player2drownpain"/>
+	<property name="SoundWaterSurface" value="player2drownsurface"/>
+	<property name="SoundDrownDeath" value="player2drowndeath"/>
+	<property name="SoundJump" value="player2Jump"/>
+	<property name="SoundLandSoft" value="player2LandSoft"/>
+	<property name="SoundLandHard" value="player2LandHard"/>
+	<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
+	<property name="SoundRandom" value="player2stamina" />
+	<property name="SoundRandomTime" value="60"/>
+	<property name="SoundAlert" value="player2stamina"/>
+	<property name="SoundAttack" value="player2stamina"/>
+	<property name="SoundSense" value="player2stamina"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Buffs" value=""/>
+	<property name="HireCost" value="0" />
+<effect_group name="HasBackpack">
+	<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="HasBackpack"/>		
+</effect_group>	
+<effect_group name="Base Effects">
+	<passive_effect name="HealthMax" operation="base_set" value="10000"/>
+	<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+	<passive_effect name="PhysicalDamageResist" operation="base_set" value="30" />
+	<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
+	<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+</effect_group>
+</entity_class>
+<!--ENTITY 7 NPC AND TRANSFORM-->
+
+
+<!--ENTITY 10 NPC AND TRANSFORM-->
+</append>
+
+</configs>
