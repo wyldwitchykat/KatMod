@@ -1,7 +1,0 @@
-<configs>
-	
-	<!-- Oakraven Axes -->
-	<append xpath="//crafting_skill[@name='craftingHarvestingTools']/display_entry/unlock_entry[contains(@item, 'meleeToolPickT1IronPickaxe')]/@item">,meleeToolRepairT2AxeGold,meleeToolRepairT2AxeSpike,meleeToolRepairT2AxeSpike2,meleeToolRepairT2AxeV,meleeToolRepairT2AxeViking</append>
-	<append xpath="//crafting_skill[@name='craftingHarvestingTools']/effect_group/passive_effect[contains(@tags, 'meleeToolPickT1IronPickaxe')]/@tags">,meleeToolRepairT2AxeGold,meleeToolRepairT2AxeSpike,meleeToolRepairT2AxeSpike2,meleeToolRepairT2AxeV,meleeToolRepairT2AxeViking</append>
-	
-</configs>
