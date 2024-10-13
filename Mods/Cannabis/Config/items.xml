@@ -81,7 +81,7 @@
 			<property class="Action0">
 				<property name="Class" value="CollectWater"/>
 				<property name="Delay" value="1.0"/>
-				<property name="Change_item_to" value="Bong"/>
+				<property name="Change_item_to" value="toolBong"/>
 				<property name="Focused_blockname_1" value="water"/>
 				<property name="Focused_blockname_2" value="waterMoving"/>
 				<property name="Focused_blockname_3" value="waterStaticBucket"/>
@@ -108,7 +108,7 @@
 				<property name="Delay" value="15"/>
 				<property name="Use_time" value="..."/>
 				<property name="Sound_start" value="chem_station_mix_click"/>
-				<property name="Create_item" value="toolBongDirty"/>
+				<property name="Create_item" value="toolBong"/>
 				<requirement name="NotHasBuff" buff="buffDrugSmokedJoint"/>
 				<requirement name="NotHasBuff" buff="buffDrugRippedBong"/>
 			</property>
