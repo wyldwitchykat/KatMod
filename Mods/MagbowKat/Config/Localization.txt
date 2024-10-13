@@ -1,6 +1,6 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
-Magbow,Items,Gun,,,Daryl's Zombie-Killer Mag Crossbow,,,,,,,,,,,,,
-MagbowDesc,Items,Gun,,,"Legend has it that this compound crossbow has killed over 1,000 zombies. It has a name carved into the side of it: Daryl \nRepair with a Repair Kit.\nScrap to Bow / Crossbow Parts.",,,,,,,,,,,,,
+Magbow,Items,Gun,,,Magbow,,,,,,,,,,,,,
+MagbowDesc,Items,Gun,,,"A stealthy and powerful semi-automatic Crossbow, with origins unknown. \nRepair with a Repair Kit.\nScrap to Bow / Crossbow Parts.",,,,,,,,,,,,,
 magBowStringParts,Items,Gun,,,Military-Grade Polymer String,,,,,,,,,,,,,
 magBowStringPartsDesc,Items,Gun,,,Extremely strong and slightly elastic crossbow string that can withstand repeated use within a small interval. Used as a crafting ingredient for the Magbow.,,,,,,,,,,,,,
 MagbowScopeLarge,Items,Gun,,,Magbow 8x Scope,,,,,,,,,,,,,

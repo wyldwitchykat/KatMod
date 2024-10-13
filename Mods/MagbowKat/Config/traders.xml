@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>	
+    <append xpath="/traders/trader_item_groups/trader_item_group[@name='groupRangedAll']">
+		<item name="Magbow" quality="2,6"/>
+	</append>
+</configs>
