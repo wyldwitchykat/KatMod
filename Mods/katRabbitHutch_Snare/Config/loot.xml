@@ -14,7 +14,7 @@
 			<item name="resourceAnimalFat" count="1,2" prob="0.10"/>
 			<item name="foodRawMeat" count="1,4" prob="0.30"/>
 			<item name="resourceLeather" count="2,10" prob="0.3"/>
-			<item name="Bunny" count="0,1" prob="0.10"/>
+			<item name="Bunny" count="1,2" prob="0.10"/>
 		</lootcontainer>
 		
 		<!-- Bird Sanctuary -->
