@@ -58,7 +58,7 @@
 		<item name="toolBong">
 			<property name="HoldType" value="3"/>
 			<property name="Tags" value="junk"/>
-			<property name="UnlockedBy" value="Bong Schematic"/>
+			<property name="UnlockedBy" value="toolBongSchematic"/>
 			<property name="Meshfile" value="#@modfolder:Resources/bong.unity3d?bong"/>
 			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="Material" value="Mmetal_hard"/>
