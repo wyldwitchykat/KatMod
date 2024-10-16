@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>	
+    <append xpath="/traders/trader_item_groups/trader_item_group[@name='schematicsModsCommon']">
+		<item name="plantedCannabis1Schematic"/>
+		<item name="toolBongSchematic"/>
+	</append>
+</configs>
