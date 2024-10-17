@@ -136,6 +136,7 @@
 			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="plantedCannabis1"/>
+			<property name="EconomicValue" value="800"/>
 			<property name="Unlocks" value="plantedCannabis1"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedCannabis1" operation="set" value="1"/>
@@ -148,6 +149,7 @@
 			<property name="EconomicValue" value="600"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="CustomIcon" value="toolBong"/>
+			<property name="EconomicValue" value="800"/>
 			<property name="Unlocks" value="toolBong"/>
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="toolBong" operation="set" value="1"/>
