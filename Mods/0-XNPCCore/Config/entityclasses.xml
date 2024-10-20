@@ -4034,8 +4034,8 @@
 			<property name="Names" value="Bob,Billy,Beau,Ben,Brody,Byron,Brian,Bruce" />	
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Baker_X"/> 
 			<property name="PickUpItem" value="bakerPickUpNPC" />
-		</entity_class> 
-		
+		</entity_class>
+
 		<entity_class name="npcFriendlyHarleyAShotgun" extends="npcAdvancedAShotgunTemplate"> 
 			<property name="UserSpawnType" value="Menu"/> 
  			<property name="Tags" value="entity,female,npc,walker,ranged,DRMid,Knife,Machete,ClubWood,BatWood,Axe,Spear,SMG,PipePistol,PipeShotgun,PipeRifle,PipeMG,M60,Pistol,DPistol,Ak47,TRifle,HRifle,SRifle,LBow,XBow,PShotgun,AShotgun,RocketL"/>
@@ -4069,7 +4069,7 @@
 			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="100"/>
 			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
 		</effect_group>
-    </entity_class>
+    </entity_class>		
 
 	
 		<!-- Loot drop containers  -->
