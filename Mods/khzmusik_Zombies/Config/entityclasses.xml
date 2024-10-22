@@ -10,6 +10,13 @@
             <property name="RootMotion" value="true" />
             <property name="HasRagdoll" value="true" />
             <property name="Mass" value="120" />
+            <property name="SoundRandom" value="zombieburnta21roam" />
+            <property name="SoundAlert" value="zombieburnta21alert" />
+            <property name="SoundAttack" value="zombieburnta21attack" />
+            <property name="SoundHurt" value="zombieburnta21pain" />
+            <property name="SoundDeath" value="zombieburnta21death" />
+            <property name="SoundSense" value="zombieburnta21sense" />
+            <property name="SoundFootstepModifier" value="zombieburnta21footstep" />
 
             <!--
                 We need to totally reset the dismemberment or else the game will freeze!
@@ -121,8 +128,7 @@
             <property name="LootDropProb" value=".03" /> 
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="350" />
-                <passive_effect name="PhysicalDamageResist" operation="base_set" value="20" />
+                <passive_effect name="HealthMax" operation="base_set" value="550" />
             </effect_group>
         </entity_class>
 
@@ -139,9 +145,8 @@
             <property name="LootDropEntityClass" value="EntityLootContainerStrong" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="1100" />
-                <passive_effect name="PhysicalDamageResist" operation="base_set" value="20" />
-                <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9" />
+                <passive_effect name="HealthMax" operation="base_set" value="1300" />
+                <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen" />
             </effect_group>
         </entity_class>
@@ -177,7 +182,7 @@
             <property name="ExperienceGain" value="750" /><!-- XP strong -->
             <property name="LootDropEntityClass" value="EntityLootContainerStrong" />
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="375" />
+                <passive_effect name="HealthMax" operation="base_set" value="450" />
             </effect_group>
         </entity_class>
 
@@ -197,7 +202,7 @@
             <property name="LootDropProb" value=".03" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="700" />
+                <passive_effect name="HealthMax" operation="base_set" value="950" />
             </effect_group>
         </entity_class>
 
@@ -214,14 +219,14 @@
             <property name="LootDropEntityClass" value="EntityLootContainerStrong" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="1350" />
+                <passive_effect name="HealthMax" operation="base_set" value="1900" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen" />
             </effect_group>
         </entity_class>
 
-        <!-- Zombie cowgirl KHz: "grunt" female (Arlene) -->
-        <entity_class name="zombieCowgirlKhz" extends="zombieTemplateShort">
+        <!-- Zombie cowgirl KHz: "grunt" female (Party Girl) -->
+        <entity_class name="zombieCowgirlKhz" extends="zombieTemplateSlimFemale">
             <property name="UserSpawnType" value="Menu" />
             <property name="Tags" value="entity,female,zombie,walker,melee" />
             <property name="Mesh" value="#@modfolder:Resources/ZombieFemales_KHz.unity3d?ZombieCowgirl_KHz" />
@@ -245,7 +250,7 @@
             <property name="MoveSpeedAggro" value="0.3, 1.35" /> <!-- slim, regular -->
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="125" />
+                <passive_effect name="HealthMax" operation="base_set" value="150" />
             </effect_group>
         </entity_class>
 
@@ -265,7 +270,7 @@
             <property name="LootDropProb" value=".03" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="300" />
+                <passive_effect name="HealthMax" operation="base_set" value="500" />
             </effect_group>
         </entity_class>
 
@@ -281,7 +286,7 @@
             <property name="ExperienceGain" value="1200" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="550" />
+                <passive_effect name="HealthMax" operation="base_set" value="1000" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen" />
             </effect_group>
@@ -309,7 +314,7 @@
             <!-- Gameplay zombieNurse -->
             <property name="MoveSpeedAggro" value="0.3, 1.35" />
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="125" />
+                <passive_effect name="HealthMax" operation="base_set" value="150" />
             </effect_group>
         </entity_class>
 
@@ -329,7 +334,7 @@
             <property name="LootDropProb" value=".03" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="300" />s
+                <passive_effect name="HealthMax" operation="base_set" value="500" />s
             </effect_group>
         </entity_class>
 
@@ -345,7 +350,7 @@
             <property name="ExperienceGain" value="1200" /><!-- XP grunt radiated -->
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="550" />
+                <passive_effect name="HealthMax" operation="base_set" value="1000" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--><!-- Feral damage -->
                 <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen" />
@@ -357,13 +362,13 @@
             <property name="UserSpawnType" value="Menu" />
             <property name="Tags" value="entity,female,zombie,walker" />
             <property name="Mesh" value="#@modfolder:Resources/ZombieFemales_KHz.unity3d?ZombieFemaleLumberjack_KHz" />
-            <property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam" />
-            <property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert" />
-            <property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack" />
-            <property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain" />
-            <property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death" />
-            <property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense" />
-            <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
+            <property name="SoundRandom" value="zombiefemalelumberjack_roam" />
+            <property name="SoundAlert" value="zombiefemalelumberjack_alert" />
+            <property name="SoundAttack" value="zombiefemalelumberjack_attack" />
+            <property name="SoundHurt" value="zombiefemalelumberjack_pain" />
+            <property name="SoundDeath" value="zombiefemalelumberjack_death" />
+            <property name="SoundSense" value="zombiefemalelumberjack_sense" />
+            <property name="SoundFootstepModifier" value="zombiefemalelumberjack_footstep" />
             <property name="Faction" value="undead" />
             <property name="PhysicsBody" value="mixamoZombieKHz" />
             <property name="RootMotion" value="true" />
@@ -378,13 +383,15 @@
             <property name="SmellAlertThreshold" value="20" /> <!-- for awake zombies -->
 
             <!-- Gameplay -->
-            <property name="MoveSpeedAggro" value="0.2, 1.2" />
+            <!-- "MoveSpeed" and "MoveSpeedAggro" values chosen to minimize that weird knee-bendy animation glitch -->
+            <property name="MoveSpeed" value="0.065" />
+            <property name="MoveSpeedAggro" value=".4, 1.3" />
             <property name="JumpMaxDistance" value=".8, 1.1" />
             <property name="HandItem" value="meleeHandZombieStrong" />
             <property name="ExperienceGain" value="750" /><!-- XP strong -->
             <property name="LootDropEntityClass" value="EntityLootContainerStrong" />
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="375" />
+                <passive_effect name="HealthMax" operation="base_set" value="450" />
             </effect_group>
         </entity_class>
 
@@ -404,7 +411,7 @@
             <property name="LootDropProb" value=".03" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="700" />
+                <passive_effect name="HealthMax" operation="base_set" value="950" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
             </effect_group>
         </entity_class>
@@ -422,7 +429,7 @@
             <property name="LootDropEntityClass" value="EntityLootContainerStrong" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="1350" />
+                <passive_effect name="HealthMax" operation="base_set" value="1900" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
                 <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen" />
@@ -449,7 +456,7 @@
 
             <!-- Gameplay -->
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="150" />
+                <passive_effect name="HealthMax" operation="base_set" value="200" />
             </effect_group>
         </entity_class>
 
@@ -468,7 +475,7 @@
             <property name="LootDropProb" value=".03" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="350" />
+                <passive_effect name="HealthMax" operation="base_set" value="550" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
             </effect_group>
         </entity_class>
@@ -485,7 +492,7 @@
             <property name="ExperienceGain" value="1200" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="650" />
+                <passive_effect name="HealthMax" operation="base_set" value="1100" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
                 <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen" />
@@ -515,7 +522,7 @@
             <!-- Gameplay -->
             <property name="HandItem" value="meleeHandZombieWorker" />
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="150" />
+                <passive_effect name="HealthMax" operation="base_set" value="200" />
                 <passive_effect name="PhysicalDamageResist" operation="base_set" value="20" />
             </effect_group>
         </entity_class>
@@ -535,7 +542,7 @@
             <property name="LootDropProb" value=".03" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="350" />
+                <passive_effect name="HealthMax" operation="base_set" value="1000" />
                 <passive_effect name="PhysicalDamageResist" operation="base_set" value="20" />
             </effect_group>
         </entity_class>
@@ -552,7 +559,7 @@
             <property name="ExperienceGain" value="1200" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="1100" />
+                <passive_effect name="HealthMax" operation="base_set" value="1300" />
                 <passive_effect name="EntityDamage" operation="perc_add" value="1" /> <!-- Boss damage -->
                 <passive_effect name="HealthChangeOT" operation="base_set" value="1.4" /> <!-- Boss regen, 1% -->
                 <triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1" />
@@ -588,7 +595,7 @@
             <property name="LootDropProb" value=".03" /> 
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="300" />
+                <passive_effect name="HealthMax" operation="base_set" value="500" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
             </effect_group>
         </entity_class>
@@ -605,7 +612,7 @@
             <property name="ExperienceGain" value="1200" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="550" />
+                <passive_effect name="HealthMax" operation="base_set" value="1000" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
                 <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen" />
@@ -656,7 +663,7 @@
             <property name="LootDropEntityClass" value="EntityLootContainerStrong" />
             <property name="ExplodeHealthThreshold" value="0" />
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="375" />
+                <passive_effect name="HealthMax" operation="base_set" value="450" />
             </effect_group>
         </entity_class>
 
@@ -676,7 +683,7 @@
             <property name="LootDropProb" value=".03" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="700" />
+                <passive_effect name="HealthMax" operation="base_set" value="950" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
             </effect_group>
         </entity_class>
@@ -694,7 +701,7 @@
             <property name="LootDropEntityClass" value="EntityLootContainerStrong" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="1350" />
+                <passive_effect name="HealthMax" operation="base_set" value="1900" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
                 <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen" />
@@ -736,7 +743,7 @@
             <property name="LootDropProb" value=".03" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="300" />
+                <passive_effect name="HealthMax" operation="base_set" value="500" />
                 <!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
             </effect_group>
         </entity_class>
@@ -754,7 +761,7 @@
             <property name="ExperienceGain" value="1200" />
 
             <effect_group name="Base Effects">
-                <passive_effect name="HealthMax" operation="base_set" value="550" />
+                <passive_effect name="HealthMax" operation="base_set" value="1000" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4" />
                 <triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen" />
             </effect_group>
@@ -782,7 +789,9 @@
             <property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep" />
 
             <!-- Gameplay zombieSoldier -->
-            <property name="MoveSpeedAggro" value="0.3, 1.35" /> <!-- fit, regular -->
+            <!-- "MoveSpeed" and "MoveSpeedAggro" values chosen to minimize that weird knee-bendy animation glitch -->
+            <property name="MoveSpeed" value="0.06" />
+            <property name="MoveSpeedAggro" value=".6, 1.3" />
             <property name="HandItem" value="meleeHandZombieWorker" />
             <property name="ExperienceGain" value="750" /><!-- XP strong -->
 
@@ -856,7 +865,9 @@
             <property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense" />
 
             <!-- Gameplay zombieSoldier -->
-            <property name="MoveSpeedAggro" value="0.3, 1.35" /> <!-- fit, regular -->
+            <!-- "MoveSpeed" and "MoveSpeedAggro" values chosen to minimize that weird knee-bendy animation glitch -->
+            <property name="MoveSpeed" value="0.065" />
+            <property name="MoveSpeedAggro" value=".4, 1.3" />
             <property name="HandItem" value="meleeHandZombieWorker" />
             <property name="ExperienceGain" value="750" /><!-- XP strong -->
 
