@@ -1,0 +1,134 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context 
+OneChipToRuleThemAll,item_modifiers,mod,,,"One Chip To Rule Them All"
+OneChipToRuleThemAllDesc,item_modifiers,mod,,,"This AI chip combines all the attributes into the ultamate chip. The one chip to rule them all. \n\n+1 Intellect\n+1 Agility\n+1 Fortitude\n+1 Strength\n+1 Perception"
+OneChipToRuleThemAll_TreasureHunter,item_modifiers,mod,,,"One Chip To Rule Them All Treasure Hunter Edition"
+OneChipToRuleThemAll_TreasureHunterDesc,item_modifiers,mod,,,"The one chip to rule them all just got better. Now with added treasure hunting capabilities. \n\n+1 Intellect\n+1 Agility\n+1 Fortitude\n+1 Strength\n+1 Perception\n+10% XP Gain\n+5 Loot Stage\n-1 Treasure Radius"
+modArmorIntellect_Strength,item_modifiers,mod,,,"Combined Intellect and Strength chip"
+modArmorIntellect_StrengthDesc,item_modifiers,mod,,,"An AI chip that enhances both your Strength and Intellect.\n\n+1 Intellect\n+1 Strength"
+modArmorIntellect_Agility,item_modifiers,mod,,,"Combined Intellect and Agilitiy chip"
+modArmorIntellect_AgilityDesc,item_modifiers,mod,,,"An AI chip that enhances both your Agility and Intellect.\n\n+1 Intellect\n+1 Agility"
+modArmorIntellect_Fortitude,item_modifiers,mod,,,"Combined Intellect and Fortitude chip"
+modArmorIntellect_FortitudeDesc,item_modifiers,mod,,,"An AI chip that enhances both your Fortitude and Intellect.\n\n+1 Intellect\n+1 Fortitude"
+modArmorIntellect_Perception,item_modifiers,mod,,,"Combined Intellect and Perception chip"
+modArmorIntellect_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances both your Perception and Intellect.\n\n+1 Intellect\n+1 Perception"
+modArmorAgility_Strength,item_modifiers,mod,,,"Combined Agility and Strength chip"
+modArmorAgility_StrengthDesc,item_modifiers,mod,,,"An AI chip that enhances both your Strength and Agility.\n\n+1 Agility\n+1 Strength"
+modArmorAgility_Fortitude,item_modifiers,mod,,,"Combined Agility and Fortitude chip"
+modArmorAgility_FortitudeDesc,item_modifiers,mod,,,"An AI chip that enhances both your Fortitude and Agility.\n\n+1 Agility\n+1 Fortitude"
+modArmorAgility_Perception,item_modifiers,mod,,,"Combined Agility and Percetion chip"
+modArmorAgility_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances both your Perception and Agility.\n\n+1 Agility\n+1 Perception"
+modArmorStrength_Fortitude,item_modifiers,mod,,,"Combined Strength and Fortitude chip"
+modArmorStrength_FortitudeDesc,item_modifiers,mod,,,"An AI chip that enhances both your Strength and Fortitude.\n\n+1 Strength\n+1 Fortitude"
+modArmorStrength_Perception,item_modifiers,mod,,,"Combined Strength and Perception chip"
+modArmorStrength_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances both your Strength and Perception. \n\n+1 Strength\n+1 Perception"
+modArmorFortitude_Perception,item_modifiers,mod,,,"Combined Fortitude and Perception chip"
+modArmorFortitude_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances both your Fortitude and Perception. \n\n+1 Fortitude\n+1 Perception"
+modArmorIntellect_Strength_Agility,item_modifiers,mod,,,"Combined Intellect, Strength and Agility chip"
+modArmorIntellect_Strength_AgilityDesc,item_modifiers,mod,,,"An AI chip that enhances three attributes Intellect, Strength and Agility.\n\n+1 Intellect\n+1 Strength\n+1 Agility" 
+modArmorIntellect_Strength_Fortitude,item_modifiers,mod,,,"Combined Intellect, Strength and Fortitude chip"
+modArmorIntellect_Strength_FortitudeDesc,item_modifiers,mod,,,"An AI chip that enhances three attributes Intellect, Strength and Fortitude.\n\n+1 Intellect\n+1 Strength\n+1 Fortitude" 
+modArmorIntellect_Strength_Perception,item_modifiers,mod,,,"Combined Intellect, Strength and Perception chip"
+modArmorIntellect_Strength_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances three attributes Intellect, Strength and Perception.\n\n+1 Intellect\n+1 Strength\n+1 Perception"
+modArmorAgility_Strength_Fortitude,item_modifiers,mod,,,"Combined Agility, Strength and Fortitude chip"
+modArmorAgility_Strength_FortitudeDesc,item_modifiers,mod,,,"An AI chip that enhances three attributes Agility, Strength and Fortitude.\n\n+1 Agility\n+1 Strength\n+1 Fortitude"
+modArmorAgility_Strength_Perception,item_modifiers,mod,,,"Combined Agility, Strength and Perception chip"
+modArmorAgility_Strength_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances three attributes Agility, Strength and Perception.\n\n+1 Agility\n+1 Strength\n+1 Perception"
+modArmorStrength_Fortitude_Perception,item_modifiers,mod,,,"Combined Strength, Fortitude and Perception chip"
+modArmorStrength_Fortitude_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances three attributes Strength, Fortitude and Perception.\n\n+1 Strengthn+1 Fortitude\n+1 Perception"
+modArmorIntellect_Strength_Agility_Fortitude,item_modifiers,mod,,,"Combined Intellect, Strength, Agility and Fortitude chip"
+modArmorStrength_Fortitude_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances four attributes Intellect, Strength, Agility and Fortitude.\n\n+1 Intellect\n+1 Strength\n+1 Agility\n+1 Fortitude"
+modArmorIntellect_Strength_Agility_Perception,item_modifiers,mod,,,"Combined Intellect, Strength, Agility and Perception chip"
+modArmorIntellect_Strength_Agility_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances four attributes Intellect, Strength, Agility and Perception.\n\n+1 Intellect\n+1 Strength\n+1 Agility\n+1 Perception"
+modArmorIntellect_Strength_Fortitude_Perception,item_modifiers,mod,,,"Combined Intellect, Strength, Fortitude and Perception chip"
+modArmorIntellect_Strength_Fortitude_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances four attributes Intellect, Strength, Fortitude and Perception.\n\n+1 Intellect\n+1 Strength\n+1 Fortitude\n+1 Perception"
+modArmorIntellect_Agility_Fortitude_Perception,item_modifiers,mod,,,"Combined Intellect, Agility, Fortitude and Perception chip"
+modArmorIntellect_Agility_Fortitude_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances four attributes Intellect, Agility, Fortitude and Perception.\n\n+1 Intellect\n+1 Agility\n+1 Fortitude\n+1 Perception"
+modArmorAgility_Strength_Fortitude_Perception,item_modifiers,mod,,,"Combined Agility, Strength, Fortitude and Perception chip"
+modArmorAgility_Strength_Fortitude_PerceptionDesc,item_modifiers,mod,,,"An AI chip that enhances four attributes Agility, Strength, Fortitude and Perception.\n\n+1 Agility\n+1 Strength\n+1 Fortitude\n+1 Perception"
+
+ChipCombiner,blocks,Workstation,,,"Chip Combiner"
+ChipCombinerDesc,blocks,Workstation,,,"A machine to combiner attribute chips.\n\nRepair with Forged Iron, Mechanical Parts, and Wood."
+
+scrapChipBoxAllExp,items,Item,,,"Limited edition Box of chips"
+scrapChipBoxAllExpDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Agility chip\n+1 Fortitude chip\n+1 Strength chip\n+1 Perception chip\n+1 Treasure Hunter mod"
+
+scrapChipBoxAll,items,Item,,,"Box of chips"
+scrapChipBoxAllDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Agility chip\n+1 Fortitude chip\n+1 Strength chip\n+1 Perception chip"
+
+scrapChipBoxIntStr,items,Item,,,"Box of IntStr chips"
+scrapChipBoxIntStrDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Strength chip"
+
+scrapChipBoxIntAgi,items,Item,,,"Box of IntAgi chips"
+scrapChipBoxIntAgiDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Agility chip"
+
+scrapChipBoxIntFor,items,Item,,,"Box of IntFor chips"
+scrapChipBoxIntForDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chipn+1 Fortitude chip"
+
+scrapChipBoxIntPer,items,Item,,,"Box of IntPer chips"
+scrapChipBoxIntPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Perception chip"
+
+scrapChipBoxAgiStr,items,Item,,,"Box of AgiStr chips"
+scrapChipBoxAgiStrDesc,items,Item,,,"A box of chips containing: \n\n+1 Agility chip\n+1 Strength chip"
+
+scrapChipBoxAgiFor,items,Item,,,"Box of AgiFor chips"
+scrapChipBoxAgiForDesc,items,Item,,,"A box of chips containing: \n\n+1 Agility chip\n+1 Fortitude chip"
+
+scrapChipBoxAgiPer,items,Item,,,"Box of AgiPer chips"
+scrapChipBoxAgiPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Agility chip\n+1 Perception chip"
+
+scrapChipBoxStrFor,items,Item,,,"Box of StrFor chips"
+scrapChipBoxStrForDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Agility chip\n+1 Fortitude chip\n+1 Strength chip\n+1 Perception chip"
+
+scrapChipBoxStrPer,items,Item,,,"Box of StrPer chips"
+scrapChipBoxStrPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Strength chip\n+1 Perception chip"
+
+scrapChipBoxForPer,items,Item,,,"Box of ForPer chips"
+scrapChipBoxForPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Fortitude chip\n+1 Perception chip"
+
+scrapChipBoxIntStrAgi,items,Item,,,"Box of IntStrAgi chips"
+scrapChipBoxIntStrAgiDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Agility chip\n+1 Strength chip"
+
+
+scrapChipBoxIntStrFor,items,Item,,,"Box of IntStrFor chips"
+scrapChipBoxIntStrForDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Fortitude chip\n+1 Strength chip"
+
+scrapChipBoxIntStrPer,items,Item,,,"Box of IntStrPer chips"
+scrapChipBoxIntStrPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Strength chip\n+1 Perception chip"
+
+scrapChipBoxAgiStrFor,items,Item,,,"Box of AgiStrFor chips"
+scrapChipBoxAgiStrForDesc,items,Item,,,"A box of chips containing: \n\n+1 Agility chip\n+1 Fortitude chip\n+1 Strength chip"
+
+
+scrapChipBoxAgiStrPer,items,Item,,,"Box of AgiStrPer chips"
+scrapChipBoxAgiStrPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Agility chip\n+1 Strength chip\n+1 Perception chip"
+
+scrapChipBoxStrForPer,items,Item,,,"Box of StrForPer chips"
+scrapChipBoxStrForPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Fortitude chip\n+1 Strength chip\n+1 Perception chip"
+
+scrapChipBoxIntStrAgiFor,items,Item,,,"Box of IntStrAgiFor chips"
+scrapChipBoxIntStrAgiForDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Fortitude chip\n+1 Strength chip\n+1 Perception chip"
+
+scrapChipBoxIntStrAgiPer,items,Item,,,"Box of IntStrAgiPer chips"
+scrapChipBoxIntStrAgiPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Agility chip\n+1 Strength chip\n+1 Perception chip"
+
+scrapChipBoxIntStrForPer,items,Item,,,"Box of IntStrForPer chips"
+scrapChipBoxIntStrForPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Fortitude chip\n+1 Strength chip\n+1 Perception chip"
+
+scrapChipBoxIntAgiForPer,items,Item,,,"Box of IntAgiForPer chips"
+scrapChipBoxIntAgiForPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Intellect chip\n+1 Agility chip\n+1 Fortitude chip\n+1 Perception chip"
+
+scrapChipBoxAgiStrForPer,items,Item,,,"Box of AgiStrForPer chips"
+scrapChipBoxAgiStrForPerDesc,items,Item,,,"A box of chips containing: \n\n+1 Agility chip\n+1 Fortitude chip\n+1 Strength chip\n+1 Perception chip"
+
+
+
+
+
+
+
+
+
+
+
+
+

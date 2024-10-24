@@ -1,0 +1,36 @@
+<configs>
+	<append xpath="/buffs">
+	
+		<buff name="buffIce" name_key="foodIce" description_key="foodIceDesc" icon="ui_game_symbol_coffee">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value value=".buffIceDisplay"/>
+			<display_value_format value="time"/>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffIceDuration" operation="subtract" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffIceDisplay" operation="set" value="@$buffIceDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffIceDisplay" operation="divide" value="@$MetabolismDuration"/>
+			</effect_group>
+
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffIce">
+					<requirement name="CVarCompare" cvar="$buffIceDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".buffIceDisplay,$buffIceDuration"/>
+			</effect_group>
+
+			<effect_group>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="15"/>
+			</effect_group>
+		</buff>
+			
+	
+	
+	</append>
+
+
+
+
+
+</configs>

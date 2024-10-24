@@ -1,0 +1,7 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context 
+icemachine,blocks,Workstation,,,"Ice Machine"
+icemachineDesc,blocks,Workstation,,,"An ice machine to make all your frozen dreams.\n\nRepair with Forged Iron, Mechanical Parts, and Wood."
+
+foodIce,items,Food,,,Ice
+foodIceDesc,items,Food,,,A piece of Ice. Eat it to help keep cool on those hot days.
+

@@ -1,0 +1,39 @@
+<configs>
+	
+	<append xpath="/recipes">
+
+		<recipe name="foodIce" count="6" craft_time="10" craft_area="icemachine" tags="icemachineCrafting">
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			
+		</recipe>
+		
+		<recipe name="resourceSnowBall" count="4" craft_time="5" craft_area="icemachine" tags="icemachineCrafting">
+			<ingredient name="foodIce" count="6"/>
+		
+		</recipe>
+		
+		<recipe name="icemachine" count="1" craft_time="10" craft_area="workbench" tags="icemachineCrafting">
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceMechanicalParts" count="10"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+			<ingredient name="resourceNail" count="20"/>
+			<ingredient name="resourceWood" count="20"/>
+		</recipe>
+<!--		
+		<recipe name="drinkYuccaJuiceSmoothie" count="1" craft_area="icemachine" tags="perkMasterChef,learnable,icemachineCrafting">
+			<ingredient name="foodCropYuccaFruit" count="4"/>
+			<ingredient name="foodCropBlueberries" count="4"/>
+			<ingredient name="resourceSnowBall" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="1,3" operation="base_add" value="-1,-2" tags="foodCropYuccaFruit,foodCropBlueberries"/>
+			</effect_group>
+		</recipe>
+	-->
+	</append>
+	
+	<!-- <setattribute xpath="/recipes/recipe[@name='drinkYuccaJuiceSmoothie']" name="craft_area">
+	icemachine
+	</setattribute> -->
+		
+	
+</configs>

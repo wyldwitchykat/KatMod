@@ -1,0 +1,309 @@
+<config>
+	<append xpath="/recipes">
+	<!-- modArmorPerception
+		 modArmorStrength
+		 modArmorFortitude
+		 modArmorAgility
+		 modArmorIntellect
+		 modArmorTreasureHunter -->
+		 <!-- * * * * * * * * * * * * Workstation crafting * * * * * * * * * * * * -->
+		 <recipe name="ChipCombiner" count="1" craft_time="10" craft_area="workbench" tags="ChipCombinerCrafting">
+			<ingredient name="resourceForgedIron" count="100"/>
+			<ingredient name="resourceMechanicalParts" count="20"/>
+			<ingredient name="resourceDuctTape" count="5"/>
+			<ingredient name="resourceNail" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="20"/>
+		</recipe>
+		 
+		 
+		 <!-- * * * * * * * * * * * * scrap material recipes * * * * * * * * * * * * -->
+		 <!--<recipe name="scrapChipBoxAllExp" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+		 -->
+		<recipe name="scrapChipBoxAllExp" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="OneChipToRuleThemAll_TreasureHunter" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxAll" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="OneChipToRuleThemAll" count="1"/>
+		</recipe>
+		 
+		<recipe name="scrapChipBoxIntStr" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Strength" count="1"/>
+		</recipe>
+		 
+		<recipe name="scrapChipBoxIntAgi" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Agility" count="1"/>
+		</recipe>
+		 
+		<recipe name="scrapChipBoxIntFor" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Fortitude" count="1"/>
+		</recipe>
+		 
+		<recipe name="scrapChipBoxIntPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Perception" count="1"/>
+		</recipe>
+		 
+		 <recipe name="scrapChipBoxAgiStr" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorAgility_Strength" count="1"/>
+		</recipe>
+		 
+		<recipe name="scrapChipBoxAgiFor" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorAgility_Fortitude" count="1"/>
+		</recipe>
+		 
+		<recipe name="scrapChipBoxAgiPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorAgility_Perception" count="1"/>
+		</recipe>
+		 
+		<recipe name="scrapChipBoxStrFor" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorStrength_Fortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxStrPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorStrength_Perception" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxForPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorFortitude_Perception" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxIntStrAgi" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Strength_Agility" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxIntStrFor" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Strength_Fortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxIntStrPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Strength_Perception" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxAgiStrFor" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorAgility_Strength_Fortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxAgiStrPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorAgility_Strength_Perception" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxStrForPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorStrength_Fortitude_Perception" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxIntStrAgiFor" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Strength_Agility_Fortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxIntStrAgiPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Strength_Agility_Perception" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxIntStrForPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Strength_Fortitude_Perception" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxIntAgiForPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorIntellect_Agility_Fortitude_Perception" count="1"/>
+		</recipe>
+		
+		<recipe name="scrapChipBoxAgiStrForPer" count="1" craft_area="ChipCombiner" craft_time="10">
+			<ingredient name="modArmorAgility_Strength_Fortitude_Perception" count="1"/>
+		</recipe>
+		
+		
+		 <!-- * * * * * * * * * * * * chip recipes * * * * * * * * * * * * -->
+		<recipe name="OneChipToRuleThemAll" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorPerception" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorIntellect" count="1"/>
+		</recipe>
+		
+		<recipe name="OneChipToRuleThemAll_TreasureHunter" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="OneChipToRuleThemAll" count="1"/>
+			<ingredient name="modArmorTreasureHunter" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Strength" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Agility" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorAgility" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Fortitude" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorAgility_Strength" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorAgility_Fortitude" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorAgility_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorStrength_Fortitude" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorStrength_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorFortitude_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorFortitude" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Strength_Agility" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorAgility" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Strength_Fortitude" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Strength_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorAgility_Strength_Fortitude" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorAgility_Strength_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorStrength_Fortitude_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Strength_Agility_Fortitude" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Strength_Agility_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Strength_Fortitude_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorIntellect_Agility_Fortitude_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorIntellect" count="1"/>
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorAgility_Strength_Fortitude_Perception" count="1" craft_area="ChipCombiner" craft_time="30">
+			<ingredient name="modArmorStrength" count="1"/>
+			<ingredient name="modArmorAgility" count="1"/>
+			<ingredient name="modArmorFortitude" count="1"/>
+			<ingredient name="modArmorPerception" count="1"/>
+		</recipe>
+		
+		<recipe name="modArmorAgility" count="1" craft_area="ChipCombiner" craft_time="3">
+			<ingredient name="resourceFeather" count="50"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+
+			
+		</recipe>
+		
+		<recipe name="modArmorFortitude" count="1" craft_area="ChipCombiner" craft_time="3">
+			<ingredient name="medicalFirstAidBandage" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+
+			
+		</recipe>
+		
+		<recipe name="modArmorStrength" count="1" craft_area="ChipCombiner" craft_time="3">
+			<ingredient name="resourceTestosteroneExtract" count="10"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+
+			
+		</recipe>
+		
+		<recipe name="modArmorIntellect" count="1" craft_area="ChipCombiner" craft_time="3">
+			<ingredient name="resourcePaper" count="100"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+
+		</recipe>
+		
+		<recipe name="modArmorPerception" count="1" craft_area="ChipCombiner" craft_time="3">
+			<ingredient name="resourceScopeLens" count="20"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+			
+		</recipe>
+		
+		<recipe name="modArmorTreasureHunter" count="1" craft_area="ChipCombiner" craft_time="3">
+			<ingredient name="meleeToolShovelT2SteelShovel" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="50"/>
+			<ingredient name="resourceElectricParts" count="20"/>
+			<ingredient name="resourceForgedIron" count="10"/>
+			<ingredient name="resourceLegendaryParts" count="1"/>
+			
+		</recipe>
+		
+		
+	</append>
+</config>

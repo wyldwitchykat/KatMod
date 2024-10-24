@@ -1,0 +1,350 @@
+<config>
+	
+	<append xpath="/items">
+	
+		<item name="chipBundleMaster">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="resourcePaper"/>
+			<property name="ItemTypeIcon" value="computer"/>
+			<property name="CustomIconTint" value="210,0,210"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Msteel"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="scrapchip"/>
+			<property class="Action0">
+				<property name="Class" value="OpenBundle"/>
+				<property name="Delay" value="0"/>
+			</property>
+		</item>
+		
+		<item name="scrapChipBoxAllExp">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="Material" value="MscrapChipBoxAllExp"/>
+				<property name="DescriptionKey" value="scrapChipBoxAllExpDesc"/>
+				
+				<property class="Action0">
+					<property name="Create_item" value="modArmorTreasureHunter,modArmorPerception,modArmorIntellect,modArmorStrength,modArmorFortitude,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1,1,1,1,1"/>
+				</property>
+		
+		</item>
+		<item name="scrapChipBoxAll">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxAllDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorIntellect,modArmorStrength,modArmorFortitude,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1,1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxIntStr">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntStrDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorIntellect,modArmorStrength"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+		
+		<item name="scrapChipBoxIntAgi">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntAgiDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorIntellect,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+		
+		<item name="scrapChipBoxIntFor">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntForDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorIntellect,modArmorFortitude"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxIntPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorIntellect"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxAgiStr">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxAgiStrDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorStrength,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxAgiFor">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxAgiForDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorFortitude,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxAgiPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxAgiPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxStrFor">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxStrForDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorStrength,modArmorFortitude"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxStrPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxStrPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorStrength"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxForPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxForPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorFortitude"/>
+					<property name="Create_item_count" value="1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxIntStrAgi">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntStrAgiDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorIntellect,modArmorStrength,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxIntStrFor">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntStrForDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorIntellect,modArmorStrength,modArmorFortitude"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxIntStrPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntStrPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorIntellect,modArmorStrength"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxAgiStrFor">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxAgiStrForDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorStrength,modArmorFortitude,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxAgiStrPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxAgiStrPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorStrength,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxStrForPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxStrForPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorStrength,modArmorFortitude"/>
+					<property name="Create_item_count" value="1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxIntStrAgiFor">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntStrAgiForDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorIntellect,modArmorStrength,modArmorFortitude,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxIntStrAgiPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntStrAgiPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorIntellect,modArmorStrength,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxIntStrForPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntStrForPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorIntellect,modArmorStrength,modArmorFortitude"/>
+					<property name="Create_item_count" value="1,1,1,1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxIntAgiForPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxIntAgiForPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorIntellect,modArmorFortitude,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1,1,1"/>
+				</property>
+		
+		</item>
+
+		<item name="scrapChipBoxAgiStrForPer">
+			<property name="Extends" value="chipBundleMaster"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="CustomIcon" value="scrapChipBox"/>
+				<property name="CustomIconTint" value="bf00ff"/>
+				<property name="ItemTypeIcon" value="bundle"/>
+				<property name="DescriptionKey" value="scrapChipBoxAgiStrForPerDesc"/>
+				<property class="Action0">
+					<property name="Create_item" value="modArmorPerception,modArmorStrength,modArmorFortitude,modArmorAgility"/>
+					<property name="Create_item_count" value="1,1,1,1"/>
+				</property>
+		
+		</item>
+
+	
+	</append>
+
+</config>

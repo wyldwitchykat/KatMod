@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<xml>
+		<Name value="icemaker"/>
+		<DisplayName value="ice maker workstation"/>
+		<Description value="ice maker workstation"/>
+		<Author value="Chichos"/>
+		<Version value="1.0"/>
+	</xml>

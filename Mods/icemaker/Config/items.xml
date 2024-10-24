@@ -1,0 +1,55 @@
+<configs>
+	<append xpath="/items">
+		<item name="foodIce">
+			<property name="Tags" value="drinks,fitness"/>
+			<property name="HoldType" value="3"/>
+			<property name="DisplayType" value="Iceomatic"/>
+			<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mglass"/>
+			<property name="Stacknumber" value="100"/> <!-- STK drink -->
+			<!-- <property name="Weight" value="10"/> -->
+			<property name="EconomicValue" value="40"/>
+			<property name="CraftingIngredientTime" value="15"/>
+			<property name="SoundPickup" value="coal_grab"/>
+			<property name="SoundPlace" value="coal_place"/>
+			<property name="CustomIcon" value="toolDewGatherer"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1"/>
+				<property name="Sound_start" value="player_drinking"/>
+				<!-- <property name="Create_item" value="drinkJarEmpty"/> -->
+			</property>
+			<property name="Group" value="IMFood/Cooking"/>
+
+			<effect_group tiered="false" name="Drink Tier 0/1">
+				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="15"/>
+				<display_value name="dStaminaRegen" value=".15"/>
+				<display_value name="dHyperthermalResist" value="15"/>
+				<display_value name="dDuration" value="360"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffIceDuration" operation="add" value="363"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffIceDuration" operation="set" value="2703">
+					<requirement name="CVarCompare" cvar="$buffIceDuration" operation="GT" value="2703"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffIce"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<requirement name="HasBuff" buff="buffIsOnFire"/>
+					<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
+			</effect_group>
+				
+		</item>
+		
+		
+		
+	</append>
+	
+	<set xpath="/items/item[@name='resourceSnowBall']/property[@name='Group']/@value">Resources,IMFood/Cooking</set>
+	<!-- <set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='Group']/@value">IMDrink/Cooking</set> -->
+</configs>
+
+
+

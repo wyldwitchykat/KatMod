@@ -1,0 +1,421 @@
+<config>
+	<setattribute xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']" name='modifier_tags'>treasureBoost</setattribute>
+	
+	
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modArmorCigar']">
+		<item_modifier name="modSinglechips" type="attachment">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="missingIcon"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="EconomicValue" value="400"/>
+			<property name="Group" value="Singlechip"/>
+		</item_modifier>
+	</insertAfter>
+	
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorStrength']/property[@name='Extends']/@value">modSinglechips</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorPerception']/property[@name='Extends']/@value">modSinglechips</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorFortitude']/property[@name='Extends']/@value">modSinglechips</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorAgility']/property[@name='Extends']/@value">modSinglechips</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']/property[@name='Extends']/@value">modSinglechips</set>
+	<set xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']/property[@name='Extends']/@value">modSinglechips</set>
+	
+	
+	
+	<insertAfter xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']">
+<!-- fully combined chip-->		
+		<item_modifier name="OneChipToRuleThemAll" installable_tags="armorHead" modifier_tags="attributeBoost" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="OneChipToRuleThemAll"/>
+			<property name="CustomIcon" value="OneChipToRuleThemAll"/>
+			<property name="TraderStageTemplate" value="modsTier6"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="6000"/>
+			<property name="Group" value="Finalchip"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		
+		<item_modifier name="OneChipToRuleThemAll_TreasureHunter" installable_tags="armorHead" modifier_tags="attributeBoost" blocked_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="OneChipToRuleThemAll_TreasureHunter"/>
+			<property name="CustomIcon" value="OneChipToRuleThemAll_TreasureHunter"/>
+			
+			<property name="Material" value="MscrapChipBoxAllExp"/>
+			<property name="Weight" value="1"/>
+			<property name="EconomicValue" value="6000"/>
+			<property name="Group" value="Finalchip"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+			
+			
+			<passive_effect name="LootStage" operation="base_add" value="5"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".1"/>
+			<passive_effect name="TreasureBlocksPerReduction" operation="base_add" value="-1"/>
+			<display_value name="dTreasureBlocksPerReduction" value="-1"/>
+			<display_value name="dPlayerExpGain" value=".1"/>
+		</effect_group>
+		</item_modifier>
+		
+<!--*** 2 combine chips-->		
+	
+	<!-- 2 combine Intellect chips-->
+		<item_modifier name="modArmorIntellect_Strength" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Strength"/>
+			<property name="CustomIcon" value="modArmorIntellect_Strength"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorIntellect_Agility" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Agility"/>
+			<property name="CustomIcon" value="modArmorIntellect_Agility"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorIntellect_Fortitude" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Fortitude"/>
+			<property name="CustomIcon" value="modArmorIntellect_Fortitude"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+		<item_modifier name="modArmorIntellect_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Perception"/>
+			<property name="CustomIcon" value="modArmorIntellect_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+	<!-- 2 combine Agility chips-->
+		<item_modifier name="modArmorAgility_Strength" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorAgility_Strength"/>
+			<property name="CustomIcon" value="modArmorAgility_Strength"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorAgility_Fortitude" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorAgility_Fortitude"/>
+			<property name="CustomIcon" value="modArmorAgility_Fortitude"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+		<item_modifier name="modArmorAgility_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorAgility_Perception"/>
+			<property name="CustomIcon" value="modArmorAgility_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+	<!-- 2 combine strenght chips-->
+		<item_modifier name="modArmorStrength_Fortitude" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorStrength_Fortitude"/>
+			<property name="CustomIcon" value="modArmorStrength_Fortitude"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+		<item_modifier name="modArmorStrength_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorStrength_Perception"/>
+			<property name="CustomIcon" value="modArmorStrength_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+	<!-- 2 combine Fortitude chips-->
+		<item_modifier name="modArmorFortitude_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorFortitude_Perception"/>
+			<property name="CustomIcon" value="modArmorFortitude_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier3"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="3000"/>
+			<property name="Group" value="Doublechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+<!-- *** 3 combine chips-->
+	
+	<!-- 3 combine intellect chips-->
+		<item_modifier name="modArmorIntellect_Strength_Agility" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Strength_Agility"/>
+			<property name="CustomIcon" value="modArmorIntellect_Strength_Agility"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="Group" value="Triplechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorIntellect_Strength_Fortitude" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Strength_Fortitude"/>
+			<property name="CustomIcon" value="modArmorIntellect_Strength_Fortitude"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="Group" value="Triplechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorIntellect_Strength_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Strength_Perception"/>
+			<property name="CustomIcon" value="modArmorIntellect_Strength_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="Group" value="Triplechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+	<!-- 3 combine Agility chips-->	
+		<item_modifier name="modArmorAgility_Strength_Fortitude" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorAgility_Strength_Fortitude"/>
+			<property name="CustomIcon" value="modArmorAgility_Strength_Fortitude"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="Group" value="Triplechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorAgility_Strength_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorAgility_Strength_Perception"/>
+			<property name="CustomIcon" value="modArmorAgility_Strength_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="Group" value="Triplechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+	<!-- 3 combine Strenght chips-->
+		<item_modifier name="modArmorStrength_Fortitude_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorStrength_Fortitude_Perception"/>
+			<property name="CustomIcon" value="modArmorStrength_Fortitude_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier4"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="Group" value="Triplechip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+
+<!-- *** 4 combine chips-->
+		<item_modifier name="modArmorIntellect_Strength_Agility_Fortitude" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Strength_Agility_Fortitude"/>
+			<property name="CustomIcon" value="modArmorIntellect_Strength_Agility_Fortitude"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="Group" value="Quadchip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorIntellect_Strength_Agility_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Strength_Agility_Perception"/>
+			<property name="CustomIcon" value="modArmorIntellect_Strength_Agility_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="Group" value="Quadchip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorIntellect_Strength_Fortitude_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Strength_Fortitude_Perception"/>
+			<property name="CustomIcon" value="modArmorIntellect_Strength_Fortitude_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="Group" value="Quadchip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorIntellect_Agility_Fortitude_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorIntellect_Agility_Fortitude_Perception"/>
+			<property name="CustomIcon" value="modArmorIntellect_Agility_Fortitude_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="Group" value="Quadchip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+		
+		<item_modifier name="modArmorAgility_Strength_Fortitude_Perception" installable_tags="armorHead" modifier_tags="attributeBoost" block_tags="noMods" type="attachment">
+			<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+			<property name="DisplayType" Value="modArmorAgility_Strength_Fortitude_Perception"/>
+			<property name="CustomIcon" value="modArmorAgility_Strength_Fortitude_Perception"/>
+			<property name="TraderStageTemplate" value="modsTier5"/>
+			<property name="Material" value="Msteel"/>
+			<property name="EconomicValue" value="5000"/>
+			<property name="Group" value="Quadchip"/>
+		
+		<effect_group tiered="false">
+			<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+			<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+		</effect_group>
+		</item_modifier>
+	
+
+	</insertAfter>
+	
+
+</config>

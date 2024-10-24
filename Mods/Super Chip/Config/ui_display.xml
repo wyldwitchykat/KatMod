@@ -1,0 +1,32 @@
+<config>
+	<append xpath="/ui_display_info/item_display">
+	
+		<item_display_info display_type="OneChipToRuleThemAll" display_group="groupAttire">
+		
+			<display_entry name="AttributeLevel" tags="attPerception" title_key="statShowPerception" display_leading_plus="true"/>
+			<display_entry name="AttributeLevel" tags="attStrength" title_key="statShowStrength" display_leading_plus="true"/>
+			<display_entry name="AttributeLevel" tags="attFortitude" title_key="statShowFortitude" display_leading_plus="true"/>
+			<display_entry name="AttributeLevel" tags="attAgility" title_key="statShowAgility" display_leading_plus="true"/>
+			<display_entry name="AttributeLevel" tags="attIntellect" title_key="statShowIntellect" display_leading_plus="true"/>
+			
+			
+		</item_display_info>
+		
+		
+	</append>
+
+	<append xpath="/ui_display_info/crafting_category_display">
+	
+		<crafting_category_list display_type="ChipCombiner">
+			
+			<crafting_category name="Singlechip" icon="ui_customIcon_one" display_name="Base chip" />
+			<crafting_category name="Doublechip" icon="ui_customIcon_two" display_name="2nd chip" />
+			<crafting_category name="Triplechip" icon="ui_customIcon_three" display_name="3rd chip"/>
+			<crafting_category name="Quadchip" icon="ui_customIcon_four" display_name="4th chip" />
+			<crafting_category name="Finalchip" icon="ui_customIcon_five" display_name="full chip" />
+			<crafting_category name="scrapchip" icon="ui_customIcon_decon" display_name="Deconstructed"/>
+		</crafting_category_list>
+		
+		
+	</append>
+</config>

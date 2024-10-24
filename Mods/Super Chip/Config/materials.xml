@@ -1,0 +1,22 @@
+<config>
+	<append xpath="/materials">
+		<material id="MscrapChipBoxAllExp">
+			<property name="damage_category" value="metal"/>
+			<property name="surface_category" value="metal"/>
+			<property name="forge_category" value="scrapChipBoxAllExp"/>
+			<property name="Experience" value="100"/>
+		
+		</material>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</append>
+
+</config>
