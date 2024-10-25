@@ -1,0 +1,26 @@
+<configs>
+    <append xpath="/recipes">
+
+        <!-- Recipe for TM1 Grass Cutter (Sickle) -->
+        <recipe name="meleeToolGrassCutterT1Sickle" count="1" tags="learnable,craftingHarvestingTools,workbenchCrafting" craft_area="workbench" craft_time="30">
+            <ingredient name="resourceForgedIron" count="10"/>
+            <ingredient name="resourceWood" count="5"/>
+            <ingredient name="resourceDuctTape" count="2"/>
+            <effect_group>
+                <!-- Modifying crafting ingredient amounts based on levels -->
+                <passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="0.5,2.5" tags="resourceForgedIron,resourceWood,resourceDuctTape"/>
+            </effect_group>
+        </recipe>
+
+        <!-- Recipe for TM1 Grass Cutter Schematic -->
+        <recipe name="meleeToolGrassCutterT1SickleSchematic" count="1" tags="learnable,craftingHarvestingTools,workbenchCrafting" craft_area="workbench" craft_time="15">
+            <ingredient name="resourcePaper" count="5"/>
+            <ingredient name="resourceGlue" count="2"/>
+            <effect_group>
+                <!-- Modifying schematic crafting ingredient amounts based on levels -->
+                <passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value="0.5,2.5" tags="resourcePaper,resourceGlue,resourceInk"/>
+            </effect_group>
+        </recipe>
+
+    </append>
+</configs>

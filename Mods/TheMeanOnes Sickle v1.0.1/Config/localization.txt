@@ -1,0 +1,6 @@
+Key,English
+# Localization for Grass Cutter Tool and Schematic
+meleeToolGrassCutterT1Sickle,[00BFFF]TM1 Sickle[-]
+meleeToolGrassCutterT1SickleDesc,A specialized tool for cutting grass and vegetation more efficiently.
+meleeToolGrassCutterT1SickleSchematic,[00BFFF]TM1 Sickle Schematic[-]
+meleeToolGrassCutterT1SickleSchematicDesc,A schematic that unlocks only the workbench crafting.\n[FF0000]Can be looted to unlock sickle sooner.This is NOT craftable[-]

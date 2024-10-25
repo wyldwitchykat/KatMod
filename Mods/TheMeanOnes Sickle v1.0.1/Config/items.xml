@@ -1,0 +1,98 @@
+<configs>
+    <append xpath="/items">
+
+        <!-- TM1 Grass Cutter Sickle Definition -->
+        <item name="meleeToolGrassCutterT1Sickle">
+            <property name="Tags" value="sickle,melee,light,tool,attStrength,harvestingSkill,corpseRemoval,perkTheHuntsman"/>
+            <property name="DisplayType" value="meleeKnife"/>
+            <property name="HoldType" value="47"/>
+            <property name="Meshfile" value="#@modfolder:Resources/tm1farming.unity3d?prefab_sickle_tm1"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="CustomIcon" value="sickle"/>
+            <property name="TintColor" value="102, 153, 0"/>
+            <property name="ScrapTimeOverride" value="10.0"/>
+            <property name="RepairTools" value="resourceRepairKit"/>
+            <property name="DegradationBreaksAfter" value="false"/>
+            <property name="SoundJammed" value="ItemNeedsRepair"/>
+            <property name="EconomicValue" value="1100"/> <!-- Based on machete for tier equivalence -->
+            <property name="TraderStageTemplate" value="baseTier2"/> <!-- Set equivalent to machete -->
+            <property name="SoundDestroy" value="wooddestroy1"/>
+            <property name="UnlockedBy" value="craftingHarvestingTools"/>
+            <property name="ShowQuality" value="true"/>
+            <property name="Group" value="Ammo/Weapons,Melee Weapons"/>
+            <property name="RepairExpMultiplier" value="5.5"/>
+            <property name="SoundUnholster" value="weapon_unholster"/>
+            <property name="SoundHolster" value="weapon_holster"/>
+            <property name="SoundPickup" value="sickle_grab"/>
+            <property name="SoundPlace" value="sickle_place"/>
+            <property name="LocalizedName" value="[00BFFF]TM1 Grass Cutter[-]"/>
+            <property name="LocalizedDescription" value="A powerful harvesting tool for cutting through vegetation with ease."/>
+        
+            <!-- Primary Melee Action -->
+            <property class="Action0">
+                <property name="Class" value="DynamicMelee"/>
+                <property name="Damage_type" value="Slashing"/>
+                <property name="Sphere" value=".15"/>
+                <property name="Sound_start" value="knife_swinglight"/>
+                <property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+                <property name="UseGrazingHits" value="true"/>
+                <property name="GrazeStart" value=".4"/>
+                <property name="GrazeEnd" value=".6"/>
+                <property name="SwingDegrees" value="100"/>
+                <property name="SwingAngle" value="180"/>
+                <property class="HitSounds">
+                    <property name="Override0" value="grass" param1="metalcutgrass"/>
+                </property>
+            </property>
+
+            <!-- Secondary Melee Action (Power Attack) -->
+            <property class="Action1">
+                <property name="Class" value="DynamicMelee"/>
+                <property name="Damage_type" value="Slashing"/>
+                <property name="Sphere" value=".15"/>
+                <property name="Sound_start" value="knife_swingheavy"/>
+                <property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+                <property name="UsePowerAttackAnimation" value="true"/>
+                <property name="GrazeStart" value=".3"/>
+                <property name="GrazeEnd" value=".6"/>
+                <property name="SwingDegrees" value="100"/>
+                <property name="SwingAngle" value="180"/>
+                <property class="HitSounds">
+                    <property name="Override0" value="grass" param1="metalcutgrass"/>
+                </property>
+            </property>
+
+            <!-- Effect Groups: Adjusting Entity Damage -->
+            <effect_group name="meleeToolGrassCutterT1Sickle">
+                <passive_effect name="EntityDamage" operation="base_set" value="9" tags="perkTheHuntsman"/> <!-- Adjust damage based on gameplay needs -->
+                <passive_effect name="BlockDamage" operation="base_set" value="8" tags="harvestingSkill"/> <!-- Set block damage for harvesting -->
+                <passive_effect name="AttacksPerMinute" operation="base_set" value="150" tags="harvestingSkill"/> <!-- Set high attack speed for faster swings -->
+                <passive_effect name="StaminaLoss" operation="base_set" value="4.0" tags="primary"/> <!-- Low stamina loss for faster swinging -->
+                <passive_effect name="DegradationMax" operation="base_set" value="1000,2000" tier="1,6" tags="harvestingSkill"/>
+                <passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="harvestingSkill"/>
+                <passive_effect name="MaxRange" operation="base_set" value="2.3" tags="harvestingSkill"/>
+                <passive_effect name="BlockRange" operation="base_set" value="3.5" tags="harvestingSkill"/>
+            </effect_group>
+
+            <effect_group name="Power Attack">
+                <passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+                <passive_effect name="StaminaLoss" operation="base_set" value="25.0" tags="secondary"/> <!-- Low stamina for power attack -->
+            </effect_group>
+        </item>
+
+        <!-- TM1 Grass Cutter Schematic -->
+        <item name="meleeToolGrassCutterT1SickleSchematic">
+            <property name="Extends" value="schematicMaster"/>
+            <property name="CreativeMode" value="Player"/> 
+            <property name="CustomIcon" value="schematic"/>
+            <property name="Unlocks" value="meleeToolGrassCutterT1Sickle"/>
+            <property name="Tags" value="noCrafting"/>
+            <property name="DescriptionKey" value="meleeToolGrassCutterT1SickleSchematicDesc"/> 
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeToolGrassCutterT1Sickle" operation="set" value="1"/>
+                <triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+            </effect_group>
+        </item>
+    </append>
+</configs>

@@ -1,0 +1,31 @@
+<config>
+
+    <!-- Adding Grass Cutter Sickle to Harvesting Tools Skill Progression -->
+
+    <append xpath="/progression/crafting_skills/crafting_skill[@name='craftingHarvestingTools']">
+        
+        <!-- Display Entry for Iron Tools (Adding the Grass Cutter Sickle to Iron tier) -->
+        <display_entry icon="meleeToolGrassCutterT1Sickle" name_key="[00BFFF]TheMeanOnes Sickle[-]" has_quality="true" unlock_level="13,16,19,22,25" >
+            <unlock_entry item="meleeToolGrassCutterT1Sickle" unlock_tier="1" />
+        </display_entry>
+        
+        <!-- Display Entry for Steel Tools (Adding the Grass Cutter Schematic to Steel tier) -->
+        <display_entry icon="meleeToolGrassCutterT1SickleSchematic" name_key=",[00BFFF]TheMeanOnes Sickle Schematic[-]" has_quality="true" unlock_level="26,32,39,46,53,60" >
+            <unlock_entry item="meleeToolGrassCutterT1SickleSchematic" unlock_tier="1" />
+        </display_entry>
+
+        <!-- Add the Sickle and Schematic to the effect group under appropriate levels -->
+        <effect_group>
+            <!-- Unlock Sickle with Iron Tools at level 13 -->
+            <passive_effect name="RecipeTagUnlocked" operation="base_set" level="13,100" value="1" tags="meleeToolGrassCutterT1Sickle"/>
+            <!-- Unlock Sickle Schematic with Steel Tools at level 26 -->
+            <passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="meleeToolGrassCutterT1SickleSchematic"/>
+
+            <!-- Add crafting tiers for the sickle to improve its quality over time -->
+            <passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,25,100" value="1,2,3,4,5" tags="meleeToolGrassCutterT1Sickle"/>
+            <passive_effect name="CraftingTier" operation="base_add" level="26,32,39,46,53,60,100" value="1,2,3,4,5" tags="meleeToolGrassCutterT1SickleSchematic"/>
+        </effect_group>
+
+    </append>
+
+</config>
