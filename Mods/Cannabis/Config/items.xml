@@ -9,7 +9,7 @@
 			<property name="CustomIcon" value="resourceCropCannabisBud"/>
 			<property name="Material" value="MresourceCrop"/>
 			<property name="Stacknumber" value="500"/> <!-- STK resource -->
-			<property name="EconomicValue" value="5"/>
+			<property name="EconomicValue" value="200"/>
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="SellableToTrader" value="true"/>
 			<property name="CraftingIngredientTime" value="20"/>
@@ -25,7 +25,7 @@
 			<property name="DropMeshfile" value="@Other/Items?Misc/sack_droppedPrefab.prefab"/>
 			<property name="CustomIcon" value="drugCannabisJointRolled"/>
 			<property name="Material" value="MresourceCrop"/>
-			<property name="EconomicValue" value="80"/>
+			<property name="EconomicValue" value="200"/>
 			<property name="Stacknumber" value="25"/>
 			<property name="Group" value="Science,CFChemicals,Medical"/>
 			<property class="Action0">
