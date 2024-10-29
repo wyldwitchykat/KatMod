@@ -13,7 +13,7 @@
   <property name="YOffset" value="-7" />
   <property name="Zoning" value="none" />
   <property name="EditorGroups" value="Wilderness" />
-  <property name="Tags" value="wilderness" />
+  <property name="Tags" value="countrytown, rural" />
   <property name="DuplicateRepeatDistance" value="10000" />
   <property name="TeleportVolumeSize" value="" />
   <property name="TeleportVolumeStart" value="" />

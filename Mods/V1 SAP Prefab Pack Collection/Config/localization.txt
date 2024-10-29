@@ -1,0 +1,15 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+sap_apollon_bunker,POI,POIName,,x,Apollon Bunker,,,,,,,,,,,,,
+sap_bigbluebox,POI,POIName,,x,Big Blue Box,,,,,,,,,,,,,
+sap_dataden,POI,POIName,,x,Data Den,,,,,,,,,,,,,
+sap_espressoyourself,POI,POIName,,x,Espresso Yourself,,,,,,,,,,,,,
+sap_greenhousehaven,POI,POIName,,x,Greenhouse Haven,,,,,,,,,,,,,
+sap_malibu_club,POI,POIName,,x,Malibu Club,,,,,,,,,,,,,
+sap_take_four_film_studio,POI,POIName,,x,Take Four Film Studio,,,,,,,,,,,,,
+sap_ultrascans_clinic,POI,POIName,,x,UltraScans,,,,,,,,,,,,,
+sap_wilderness1,POI,POIName,,x,Wilderness,,,,,,,,,,,,,
+sap_wilderness2,POI,POIName,,x,Wilderness,,,,,,,,,,,,,
+sap_wilderness3,POI,POIName,,x,Wilderness,,,,,,,,,,,,,
+sap_wilderness4,POI,POIName,,x,Wilderness,,,,,,,,,,,,,
+sap_wilderness5,POI,POIName,,x,Wilderness,,,,,,,,,,,,,
