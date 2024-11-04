@@ -59,7 +59,10 @@
 		<block name="plantedCannabis3HarvestPlayer">
 			<property name="Extends" value="plantedCannabis3Harvest"/>
 			<property name="CreativeMode" value="Dev"/>
-			<drop event="Harvest" name="resourceCropCannabisBud" count="2,4" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropCannabisBud" count="2" tag="cropHarvest"/>
+			<drop event="Harvest" name="resourceCropCannabisBud" prob="0.5" count="1" tag="bonusCropHarvest"/>
+	<drop event="Harvest" name="resourceCropCannabisBud" count="1" tag="farmerBonusHarvest"/>
+	<drop event="Harvest" name="plantedCannabis1" count="1" tag="farmerBonusSeed"/>
 			<property name="DowngradeBlock" value="plantedCannabis1"/>
 			<!-- Credit to doughphungus: fix error reported by Gouki on forum thread.
 			      "PlantedCannabis3HarvestPlayer needs a deco shape assigned but has not" *none

@@ -32,6 +32,7 @@
 		<property name="UpgradeHitCount" value="1"/>
 	</property>
 	<property name="Group" value="Science,Building,advBuilding"/>
+	<property name="CanPickup" value="true" param1="RockDrillEmpty"/>
 	<property class="RepairItems">
 		<property name="resourceSpring" value="3"/>
 		<property name="resourceMechanicalParts" value="3"/>
