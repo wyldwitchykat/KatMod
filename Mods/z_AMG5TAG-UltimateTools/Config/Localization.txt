@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
+meleeToolAxeT4UltimateHarvestingTool,items,Tool,,,Ultimate Harvesting Tool,,,,,,,,,,,,终极采收工具
+meleeToolAxeT4UltimateHarvestingToolDesc,items,Tool,,,The Ultimate Harvesting Tool every survivor needs. An all in one Shovel/Axe/Pickaxe/Crowbar/Knife.,,,,,,,,,,,,每个幸存者梦寐以求的终极采收工具。一把集成五合一功能的工具，结合了铲子/斧头/镐子/撬棍/刀具。,,
+meleeToolSalvageT4UltimateSalvageTool,items,Tool,,,Ultimate Salvage Tool,,,,,,,,,,,,终极回收工具
+meleeToolSalvageT4UltimateSalvageToolDesc,items,Tool,,,The Ultimate Salvage Tool every survivor needs. An all in one Nailgun/Impact Driver.,,,,,,,,,,,,每个幸存者梦寐以求的终极回收工具。一把集成二合一功能的工具，结合了钉枪/扳手。,,
+harvestToolsUltimate,progression,Attribute,,,Ultimate Tool.,,,,,,,,,,,,

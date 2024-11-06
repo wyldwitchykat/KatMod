@@ -1,0 +1,6 @@
+<AMG5TAG>
+	<append xpath="lootcontainers/lootgroup[@name='groupQuestToolsT3']">
+        <item name="meleeToolAxeT4UltimateHarvestingTool" loot_prob_template="QuestT3Prob"/>
+        <item name="meleeToolSalvageT4UltimateSalvageTool" loot_prob_template="QuestT3Prob"/>
+    </append>
+</AMG5TAG>

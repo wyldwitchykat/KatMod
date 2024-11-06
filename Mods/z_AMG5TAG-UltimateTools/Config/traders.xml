@@ -1,0 +1,12 @@
+<configs>
+
+<!-- *** Melee_Weapons -->
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeAll']">
+		<item name="meleeToolAxeT4UltimateHarvestingTool" quality="3,6"/>		
+	</append>
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='groupMeleeAll']">
+		<item name="meleeToolSalvageT4UltimateSalvageTool" quality="3,6"/>		
+	</append>
+
+</configs>
