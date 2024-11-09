@@ -1,0 +1,38 @@
+<configs>
+    <append xpath="/lootcontainers/lootgroup[@name='groupFarmTruck03']">
+        <item name="meleeToolGrassCutterT1SickleSchematic" count="1" weight="0.5"/> <!-- 5% chance -->
+        <item name="meleeToolGrassCutterT1Sickle" min="3" max="5" weight="0.05"/> <!-- 5% chance -->
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupFarmTruck04']">
+        <item name="meleeToolGrassCutterT1SickleSchematic" count="1" weight="0.5"/> <!-- 5% chance -->
+        <item name="meleeToolGrassCutterT1Sickle" min="3" max="5" weight="0.05"/> <!-- 5% chance -->
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot']">
+        <item name="meleeToolGrassCutterT1SickleSchematic" count="1" weight="0.5"/> <!-- 5% chance -->
+        <item name="meleeToolGrassCutterT1Sickle" min="3" max="5" weight="0.05"/> <!-- 5% chance -->
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupCrackabookCrate03']">
+        <item name="meleeToolGrassCutterT1SickleSchematic" count="1" weight="0.05"/> <!-- 5% chance -->
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupCars01']">
+        <item name="meleeToolGrassCutterT1SickleSchematic" count="1" weight="0.03"/> <!-- 3% chance -->
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupCars02']">
+        <item name="meleeToolGrassCutterT1SickleSchematic" count="1" weight="0.03"/> <!-- 3% chance -->
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupCars03']">
+        <item name="meleeToolGrassCutterT1SickleSchematic" count="1" weight="0.03"/> <!-- 3% chance -->
+    </append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='groupToolsT0']">
+        <item name="meleeToolGrassCutterT1SickleSchematic" count="1" weight="0.08"/> <!-- 8% chance -->
+        <item name="meleeToolGrassCutterT1Sickle" min="3" max="5" weight="0.05"/> <!-- 5% chance -->
+    </append>
+</configs>
+
